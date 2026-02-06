@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>High Schooler’s Tool (HST)</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <main class="landing" aria-label="HST landing page">
+    <!-- Top bar / logo -->
+    <header class="top">
+      <div class="brand" aria-label="HST brand">
+        <div class="brand-badge" aria-hidden="true">
+          <span class="badge-arc"></span>
+          <span class="badge-text">HST</span>
+        </div>
+      </div>
+
+      <div class="title-right">
+        <div class="title-en">HIGH SCHOOLER’S</div>
+        <div class="title-en big">TOOL – 2026</div>
+      </div>
+    </header>
+
+    <!-- Hero content -->
+    <section class="hero hero-single">
+      <div class="hero-left" id="enterArea" tabindex="0" role="button" aria-label="Enter HST Home">
+        <div class="hero-toprow">
+          <div class="arrow-row" aria-hidden="true">
+            <div class="curve-arrow"></div>
+            <div class="count">၁၆၀+</div>
+          </div>
+
+          <!-- Single main CTA (best place: top-right of the content card) -->
+          <button class="btn primary cta-float" id="enterBtn" type="button">
+            Enter HST Home
+          </button>
+        </div>
+
+        <h1 class="mm-head">
+          HST Website တွင် မြန်မာနိုင်ငံအတွင်းရှိ တက္ကသိုလ်များ၏ ၀င်ခွင့်အမှတ်၊ သင်ယူနိုင်သောဘာသာရပ်၊ ရရှိမည့်ဘွဲ့အမျိုးအစား၊ သင်ကြားရမည့်နှစ်အရေအတွက်၊
+          မိမိနှစ်သက်သည့်တက္ကသိုလ်များတွင် ပြုလုပ်လျက်ရှိသော ပွဲအခမ်းအနားများ၊ ပရောဂျက်များကို လေ့လာကြည့်ရှူနိုင်မည့်အပြင်
+          မိမိနှစ်သက်သောတက္ကသိုလ် မှကျောင်းအောင်မြင်ပြီးဆုံးသွားပါက မိမိရယူထားသောဘွဲ့နှင့် လျှောက်လှမ်းနိုင်သော အလုပ်အကိုင်အကိုင်များ
+          ခန့်မှန်းခြေလစာများကိုပါ ကြည့်ရှုလေ့လာနိုင်မည်ဖြစ်သည်။
+        </h1>
+
+        <!-- University images collage -->
+        <div class="collage" aria-label="University image preview collage">
+          <figure class="shot s1">
+            <img class="uimg" src="wytu.jpg" alt="နည်းပညာတက္ကသိုလ်များ" />
+            <figcaption>နည်းပညာတက္ကသိုလ်များ</figcaption>
+          </figure>
+
+          <figure class="shot s2">
+            <img class="uimg" src="um1.jpg" alt="ဆေးတက္ကသိုလ်များ" />
+            <figcaption>ဆေးတက္ကသိုလ်များ</figcaption>
+          </figure>
+
+          <figure class="shot s3">
+            <img class="uimg" src="beds.jpg" alt="ပညာရေးတက္ကသိုလ်များ" />
+            <figcaption>ပညာရေးတက္ကသိုလ်များ</figcaption>
+          </figure>
+
+          <figure class="shot s4">
+            <img class="uimg" src="UYangon.jpg" alt="ဝိဇ္ဇာ၊ သိပ္ပံတက္ကသိုလ်များ" />
+            <figcaption>ဝိဇ္ဇာ၊ သိပ္ပံတက္ကသိုလ်များ</figcaption>
+          </figure>
+
+          <figure class="shot s5">
+            <img class="uimg" src="uit3.jpg" alt="IT ကျောင်းများ" />
+            <figcaption>IT ကျောင်းများ</figcaption>
+          </figure>
+
+          <figure class="shot s6">
+            <img class="uimg" src="Yezin.jpg" alt="စိုက်ပျိုးရေး နှင့် မွေးမြူရေးတက္ကသိုလ်များ" />
+            <figcaption>စိုက်ပျိုးရေး နှင့် မွေးမြူရေးတက္ကသိုလ်များ</figcaption>
+          </figure>
+        </div>
+
+        <p class="hint">Click the button or tap anywhere on this card to enter.</p>
+      </div>
+    </section>
+
+    <footer class="bottom">
+      <div>© 2026 High Schooler’s Tool. All rights reserved.</div>
+    </footer>
+  </main>
+
+  <script>
+    const goHome = () => { window.location.href = "hst.html"; }; // redirect [web:41]
+
+    document.getElementById("enterBtn").addEventListener("click", (e) => {
+      e.stopPropagation();
+      goHome();
+    });
+
+    // Optional: click anywhere on the big card to enter
+    const enterArea = document.getElementById("enterArea");
+    enterArea.addEventListener("click", goHome);
+
+    // Keyboard accessibility: Enter/Space
+    enterArea.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") goHome();
+    });
+  </script>
+</body>
+</html>
