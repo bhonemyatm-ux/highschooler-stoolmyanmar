@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - High Schooler's Tool</title>
+
+  <!-- Your main site CSS (navbar/footer/base styles) -->
+  <link rel="stylesheet" href="hst.css" />
+
+  <style>
+    /* =========================
+       ABOUT PAGE (STYLES)
+       ========================= */
+
+    /* Hero */
+    .about-hero{
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 84px 0 64px;
+      text-align: center;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    .about-hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background: radial-gradient(900px 420px at 50% 0%, rgba(255,255,255,0.18), transparent 65%);
+      opacity: .9;
+      pointer-events:none;
+    }
+    .about-hero .container{ position: relative; z-index: 1; }
+
+    .about-hero h1{
+      font-size: 3rem;
+      margin-bottom: 18px;
+      letter-spacing: .2px;
+    }
+    .about-hero p{
+      font-size: 1.25rem;
+      opacity: 0.95;
+      max-width: 820px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Sections */
+    .about-content{ padding: 78px 0; }
+    .about-section{ margin-bottom: 76px; }
+
+    .about-section h2{
+      font-size: 2.2rem;
+      color: #2c3e50;
+      margin-bottom: 22px;
+      text-align: center;
+    }
+    .about-section p{
+      font-size: 1.08rem;
+      line-height: 1.85;
+      color: #555;
+      max-width: 880px;
+      margin: 0 auto 18px;
+      text-align: center;
+    }
+
+    /* Mission / Vision */
+    .mission-vision{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 26px;
+      margin-top: 46px;
+    }
+    .mv-card{
+      background: white;
+      padding: 38px;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.10);
+      text-align: center;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      border: 1px solid rgba(102,126,234,0.10);
+    }
+    .mv-card:hover{
+      transform: translateY(-8px);
+      box-shadow: 0 18px 60px rgba(102,126,234,0.18);
+    }
+    .mv-card .icon{ font-size: 3.6rem; margin-bottom: 16px; }
+    .mv-card h3{
+      font-size: 1.7rem;
+      color: #667eea;
+      margin-bottom: 12px;
+    }
+    .mv-card p{
+      font-size: 1rem;
+      color: #666;
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    /* Features */
+    .features-grid{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 44px;
+    }
+    .feature-box{
+      background: linear-gradient(135deg, rgba(102,126,234,0.06) 0%, rgba(118,75,162,0.06) 100%);
+      padding: 28px;
+      border-radius: 16px;
+      text-align: center;
+      border: 2px solid transparent;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+    }
+    .feature-box:hover{
+      border-color: rgba(102,126,234,0.75);
+      background: #fff;
+      box-shadow: 0 10px 30px rgba(102,126,234,0.18);
+      transform: translateY(-4px);
+    }
+    .feature-box .icon{ font-size: 2.8rem; margin-bottom: 12px; }
+    .feature-box h4{
+      font-size: 1.25rem;
+      color: #2c3e50;
+      margin-bottom: 8px;
+    }
+    .feature-box p{
+      font-size: 0.98rem;
+      color: #666;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* Stats */
+    .stats-section{
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 62px 0;
+      color: white;
+    }
+    .stats-grid{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 34px;
+      text-align: center;
+    }
+    .stat-box{
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 18px;
+      padding: 22px 16px;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.12);
+    }
+    .stat-box h3{
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      font-weight: 900;
+      letter-spacing: .4px;
+    }
+    .stat-box p{
+      font-size: 1.05rem;
+      opacity: 0.92;
+      margin: 0;
+    }
+
+    /* Team */
+    .team-section{
+      background: #f8f9fa;
+      padding: 80px 0;
+    }
+    .team-head{
+      text-align: center;
+      margin-bottom: 44px;
+    }
+    .team-head h2{
+      font-size: 2.2rem;
+      color: #2c3e50;
+      margin-bottom: 14px;
+      text-align: center;
+    }
+    .team-head p{
+      text-align: center;
+      color: #666;
+      max-width: 740px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .team-grid{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 26px;
+      margin-top: 20px;
+    }
+
+    .team-card{
+      background: white;
+      padding: 28px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      border: 1px solid rgba(102,126,234,0.12);
+      position: relative;
+      overflow: hidden;
+    }
+    .team-card::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background: radial-gradient(700px 220px at 50% 0%, rgba(102,126,234,0.16), transparent 60%);
+      pointer-events:none;
+    }
+    .team-card:hover{
+      transform: translateY(-6px);
+      box-shadow: 0 16px 44px rgba(102,126,234,0.18);
+    }
+
+    /* Profile photo */
+    .team-photo{
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover; /* crop nicely, no stretch */ /* [web:120] */
+      object-position: center;
+      display: block;
+      margin: 6px auto 16px;
+      border: 4px solid #fff;
+      box-shadow: 0 12px 26px rgba(102,126,234,0.22);
+      background: #e9eef7;
+      position: relative;
+      z-index: 1;
+    }
+
+    .team-card h4{
+      font-size: 1.25rem;
+      color: #2c3e50;
+      margin-bottom: 8px;
+      position: relative;
+      z-index: 1;
+    }
+    .team-card .role{
+      color: #667eea;
+      font-weight: 900;
+      margin-bottom: 12px;
+      line-height: 1.45;
+      position: relative;
+      z-index: 1;
+    }
+    .team-card p{
+      font-size: 0.95rem;
+      color: #666;
+      line-height: 1.7;
+      margin: 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Contact CTA */
+    .contact-cta{
+      background: #f8f9fa;
+      padding: 80px 0;
+      text-align: center;
+    }
+    .contact-cta h2{
+      font-size: 2.5rem;
+      color: #2c3e50;
+      margin-bottom: 18px;
+    }
+    .contact-cta p{
+      font-size: 1.15rem;
+      color: #666;
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+    .contact-buttons{
+      display: flex;
+      gap: 18px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn-contact{
+      padding: 14px 38px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 800;
+      transition: all 0.25s ease;
+      display: inline-block;
+    }
+    .btn-primary{
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+    .btn-primary:hover{
+      transform: translateY(-3px);
+      box-shadow: 0 12px 34px rgba(102,126,234,0.35);
+    }
+    .btn-secondary{
+      background: white;
+      color: #667eea;
+      border: 2px solid #667eea;
+    }
+    .btn-secondary:hover{
+      background: #667eea;
+      color: white;
+    }
+
+    /* Footer layout like your centered screenshot */
+    .footer .container{
+      text-align: center;
+    }
+    .footer-content{
+      justify-items: center;
+      align-items: start;
+    }
+    .footer-section{
+      width: 100%;
+      max-width: 320px;
+      text-align: left;
+      justify-self: center;
+    }
+    .footer-bottom{
+      text-align: center;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px){
+      .about-hero h1{ font-size: 2rem; }
+      .about-hero p{ font-size: 1.05rem; padding: 0 10px; }
+      .about-section h2{ font-size: 1.8rem; }
+    }
+    @media (max-width: 480px){
+      .team-photo{ width: 96px; height: 96px; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h2>HST</h2>
+        <span>High Schooler's Tool</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="hst.html">Home</a></li>
+        <li><a href="uni.html">Universities</a></li>
+        <li><a href="career-journey.html">Career journey</a></li>
+        <li><a href="study-mode.html">Study mode</a></li>
+        <li><a href="scholarships.html">Scholarships</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+      </ul>
+
+      <div class="hamburger" role="button" aria-label="Open menu" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="container">
+      <h1>About High Schooler's Tool</h1>
+      <p>Empowering Myanmar students to make informed decisions about university education and future careers.</p>
+    </div>
+  </section>
+
+  <!-- Our story + mission -->
+  <section class="about-content">
+    <div class="container">
+      <div class="about-section">
+        <h2>Our Story</h2>
+        <p>High Schooler's Tool was created to solve a common student problem: it’s hard to find clear, trusted university information in one place.</p>
+        <p>We built this platform so students can explore universities, majors, degree types, and requirements more easily and confidently.</p>
+      </div>
+
+      <div class="mission-vision">
+        <div class="mv-card">
+          <div class="icon">🎯</div>
+          <h3>Our Mission</h3>
+          <p>To provide accurate and accessible university information for Myanmar students, helping them choose the right university and major.</p>
+        </div>
+
+        <div class="mv-card">
+          <div class="icon">🌟</div>
+          <h3>Our Vision</h3>
+          <p>A Myanmar where every student can access useful education information and plan their future with confidence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="about-content" style="padding-top: 0;">
+    <div class="container">
+      <div class="about-section">
+        <h2>What We Offer</h2>
+
+        <div class="features-grid">
+          <div class="feature-box">
+            <div class="icon">🎓</div>
+            <h4>160+ Universities</h4>
+            <p>Explore universities with structured information.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="icon">🔍</div>
+            <h4>Smart Search</h4>
+            <p>Search and filter to quickly find what you want.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="icon">📊</div>
+            <h4>Detailed Profiles</h4>
+            <p>View majors, degree types, duration, and entry requirements.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="icon">💼</div>
+            <h4>Career Guidance</h4>
+            <p>Understand possible career paths after graduation.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="icon">🏆</div>
+            <h4>Scholarships</h4>
+            <p>Scholarship information and guidance for students.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="icon">📱</div>
+            <h4>Mobile Friendly</h4>
+            <p>Works well on phones, tablets, and computers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-box">
+          <h3>160+</h3>
+          <p>Universities Listed</p>
+        </div>
+        <div class="stat-box">
+          <h3>200+</h3>
+          <p>Major Programs</p>
+        </div>
+        <div class="stat-box">
+          <h3>15+</h3>
+          <p>Scholarships</p>
+        </div>
+        <div class="stat-box">
+          <h3>2026</h3>
+          <p>Active Version</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="team-section">
+    <div class="container">
+      <div class="team-head">
+        <h2>Our Team</h2>
+        <p>One team, one mission — build something useful for students in Myanmar.</p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <img class="team-photo" src="me.jpg" alt="Bhone Myat Min profile photo">
+          <h4>Bhone Myat Min</h4>
+          <p class="role">Founder & Developer</p>
+          <p>Building the platform and improving features for students.</p>
+        </div>
+
+        <div class="team-card">
+          <img class="team-photo" src="kst.jpg" alt="Kywat Shin Thant profile photo">
+          <h4>Kywat Shin Thant</h4>
+          <p class="role">Team Member</p>
+          <p>Supporting design, content, and testing.</p>
+        </div>
+
+        <div class="team-card">
+          <img class="team-photo" src="kcl.jpg" alt="Khun Chit Lal profile photo">
+          <h4>Khun Chit Lal</h4>
+          <p class="role">Team Member</p>
+          <p>Helping research and improvements.</p>
+        </div>
+
+        <div class="team-card">
+          <img class="team-photo" src="team/zinzin.jpg" alt="Zin Zin Myint profile photo">
+          <h4>Zin Zin Myint</h4>
+          <p class="role">Team Member</p>
+          <p>Supporting data and content.</p>
+        </div>
+
+        <div class="team-card">
+          <img class="team-photo" src="kka.jpg" alt="Sai Kyaw Kyaw Aung profile photo">
+          <h4>Sai Kyaw Kyaw Aung</h4>
+          <p class="role">Team Member</p>
+          <p>Helping with testing and feedback.</p>
+        </div>
+
+        <div class="team-card">
+          <img class="team-photo" src="team/htunhtet.jpg" alt="Htun Htet Aung profile photo">
+          <h4>Htun Htet Aung</h4>
+          <p class="role">Team Member</p>
+          <p>Supporting project development.</p>
+        </div>
+
+        <div class="team-card">
+          <img class="team-photo" src="mpk.jpg" alt="Myat Phone Kyaw profile photo">
+          <h4>Myat Phone Kyaw</h4>
+          <p class="role">Team Member</p>
+          <p>UI/UX support and design ideas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact-cta">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <p>Have questions, suggestions, or want to contribute?<br>We'd love to hear from you!</p>
+      <div class="contact-buttons">
+        <a href="mailto:highschoolertoolmm@gmail.com" class="btn-contact btn-primary">Email Us</a>
+        <a href="https://www.facebook.com/share/17isKhcumg/" class="btn-contact btn-secondary" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>High Schooler’s Tool</h3>
+          <p>Empowering Myanmar students to make informed university choices.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="hst.html">Home</a></li>
+            <li><a href="uni.html">Universities</a></li>
+            <li><a href="career-journey.html">Career Journey</a></li>
+            <li><a href="study-mode.html">Study mode</a></li>
+            <li><a href="scholarships.html">Scholarships</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>High Schooler’s Tool</p>
+          <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+          <p>
+            Facebook:
+            <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+              High Schooler’s Tool ARP
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 High Schooler’s Tool. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Hamburger toggle -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => { // [web:101]
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+      if (!hamburger || !navLinks) return;
+
+      const toggle = () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('active');
+      };
+
+      hamburger.addEventListener('click', toggle);
+      hamburger.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') toggle();
+      });
+
+      navLinks.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+          hamburger.classList.remove('active');
+        });
+      });
+    });
+  </script>
+
+  <!-- If you already have script.js for other pages, you can keep it too -->
+  <script src="script.js"></script>
+</body>
+</html>
