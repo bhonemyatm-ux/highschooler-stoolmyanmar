@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Government Technical Institute (Taunggyi) - High Schooler's Tool</title>
+
+  <link rel="stylesheet" href="hst.css" />
+  <link rel="stylesheet" href="new.css" />
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h2>HST</h2>
+        <span>High Schooler's Tool</span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="hst.html">Home</a></li>
+        <li><a href="uni.html" class="active">Universities</a></li>
+        <li><a href="career-journey.html">Career Journey</a></li>
+        <li><a href="study-mode.html">Study mode</a></li>
+        <li><a href="scholarships.html">Scholarships</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <button
+        class="hamburger"
+        id="hamburger"
+        type="button"
+        aria-label="Open menu"
+        aria-controls="navLinks"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="uni-hero uni-hero--compact">
+    <div class="hero-overlay"></div>
+    <div class="hero-bg" style="background-image:url('gti-taunggyi-banner.jpg');"></div>
+
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="hst.html">Home</a> /
+        <a href="uni.html">Universities</a> /
+        <span>GTI (Taunggyi)</span>
+      </div>
+
+      <!-- HERO WARNING -->
+      <div class="hero-notice data-notice data-notice--hero" id="gtiNotice" role="alert" aria-live="assertive">
+        <div class="notice-icon" aria-hidden="true">⚠️</div>
+        <div class="notice-text">
+          <h4>We are updating this profile</h4>
+          <p>
+            Some official information online is published under “GTHS (Taunggyi)”.
+            We’re keeping this page as “GTI (Taunggyi)” for consistency and will update once GTI-specific data is confirmed.
+          </p>
+        </div>
+        <button type="button" class="notice-close" id="gtiNoticeClose" aria-label="Dismiss notice">✕</button>
+      </div>
+
+      <div class="uni-hero-content">
+        <div class="uni-title">
+          <h1>Government Technical Institute (Taunggyi)</h1>
+          <div class="uni-meta">
+            <span><i>📍</i> Taunggyi, Shan State</span>
+            <span><i>🏛</i> GTI / TVET</span>
+            <span><i>🎓</i> Diploma pathway</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Stats Bar -->
+  <section class="quick-stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item"><div class="stat-icon">🎓</div><div class="stat-info"><h3>Diploma</h3><p>Pathway</p></div></div>
+        <div class="stat-item"><div class="stat-icon">🛠️</div><div class="stat-info"><h3>TVET</h3><p>Practical</p></div></div>
+        <div class="stat-item"><div class="stat-icon">🏫</div><div class="stat-info"><h3>Departments</h3><p>Listed online</p></div></div>
+        <div class="stat-item"><div class="stat-icon">📍</div><div class="stat-info"><h3>Taunggyi</h3><p>Shan</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="profile-content">
+    <div class="container">
+      <div class="content-layout">
+
+        <!-- Sidebar -->
+        <aside class="profile-sidebar">
+          <div class="sidebar-card">
+            <h3>Quick Info</h3>
+            <div class="info-list">
+              <div class="info-item"><strong>Type</strong><span>Government (TVET)</span></div>
+              <div class="info-item"><strong>Location</strong><span>Taunggyi, Shan State</span></div>
+              <div class="info-item"><strong>System</strong><span>DTVET (MoST)</span></div>
+              <div class="info-item"><strong>Address</strong><span>Ayetharyar, Montawa Village No-85</span></div>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>Entrance Requirements</h3>
+            <div class="requirement-box">
+              <div class="requirement-item">
+                <span class="req-label">Requirement</span>
+                <span class="req-value">Varies</span>
+              </div>
+              <div class="requirement-item">
+                <span class="req-label">Notes</span>
+                <div class="subject-tags">
+                  <span class="subject-tag">Check official intake announcements</span>
+                  <span class="subject-tag">Majors may change by year</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card contact-card">
+            <h3>Contact</h3>
+            <div class="contact-info">
+              <p><i>☎️</i> 081-2127661</p>
+              <p><i>📧</i> <a href="mailto:gthstgi@dtve.org" style="color:#fff; text-decoration:underline;">gthstgi@dtve.org</a></p>
+              <p><i>🌐</i>
+                <a href="https://gthstaunggyi.dtvet.edu.mm" target="_blank" rel="noopener noreferrer"
+                   style="color:#fff; text-decoration:underline;">
+                  gthstaunggyi.dtvet.edu.mm
+                </a>
+              </p>
+            </div>
+            <button class="contact-btn" type="button">Get in Touch</button>
+          </div>
+        </aside>
+
+        <!-- Main panel -->
+        <section class="profile-main">
+          <div class="tab-content">
+            <div class="tab-panel active" id="overview">
+
+              <div class="content-card">
+                <h2>About (TVET)</h2>
+                <p>
+                  Technical and vocational education focuses on hands-on learning, labs/workshops, and career-ready skills.
+                  Schools under the DTVET system publish updates and contact info online.
+                </p>
+              </div>
+
+              <div class="content-card">
+                <h2>Departments (Listed online)</h2>
+                <p class="subtitle">These departments are listed on the Taunggyi technical school website.</p>
+
+                <div class="majors-list">
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">🏗️</div>
+                      <div>
+                        <h3>Building Technology Department</h3>
+                        <div class="major-degree">Department</div>
+                      </div>
+                    </div>
+                    <p class="major-desc">Construction/building-related technical learning (details vary by curriculum).</p>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">🚗</div>
+                      <div>
+                        <h3>Automobile Technology Department</h3>
+                        <div class="major-degree">Department</div>
+                      </div>
+                    </div>
+                    <p class="major-desc">Vehicle systems and maintenance-related technical learning.</p>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">📡</div>
+                      <div>
+                        <h3>Electronics Technology Department</h3>
+                        <div class="major-degree">Department</div>
+                      </div>
+                    </div>
+                    <p class="major-desc">Electronics fundamentals and practical skills.</p>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">🧩</div>
+                      <div>
+                        <h3>Manufacturing of Machine Parts Technology Department</h3>
+                        <div class="major-degree">Department</div>
+                      </div>
+                    </div>
+                    <p class="major-desc">Manufacturing/workshop practice related to machine parts.</p>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">⚡</div>
+                      <div>
+                        <h3>Electrical Technology Department</h3>
+                        <div class="major-degree">Department</div>
+                      </div>
+                    </div>
+                    <p class="major-desc">Electrical installation and practical electrical skills.</p>
+                  </div>
+                </div>
+
+                <div class="contact-research" style="margin-top:18px;">
+                  <strong>Note:</strong> If you want, I can convert these into “AGTI major cards” later when GTI-specific diploma program details are confirmed.
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- CTA Section -->
+  <section class="cta-profile">
+    <div class="container">
+      <h2>Ready to Start Your Journey?</h2>
+      <p>Explore more universities or get in touch with admissions</p>
+      <div class="cta-buttons">
+        <a href="uni.html" class="btn-secondary">Explore More Universities</a>
+        <a href="error.html" class="btn-primary">Apply Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+
+        <div class="footer-section">
+          <h3>High Schooler’s Tool</h3>
+          <p>Empowering Myanmar students to make informed university choices.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="hst.html">Home</a></li>
+            <li><a href="uni.html">Universities</a></li>
+            <li><a href="career-journey.html">Career Journey</a></li>
+            <li><a href="study-mode.html">Study mode</a></li>
+            <li><a href="scholarships.html">Scholarships</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>High Schooler’s Tool</p>
+          <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+          <p>
+            Facebook:
+            <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+              High Schooler’s Tool ARP
+            </a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 High Schooler’s Tool. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="ucsy.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Navbar toggle
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("navLinks");
+
+      if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+          const isOpen = navLinks.classList.toggle("active");
+          hamburger.classList.toggle("active", isOpen);
+          hamburger.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        navLinks.querySelectorAll("a").forEach(link => {
+          link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            hamburger.classList.remove("active");
+            hamburger.setAttribute("aria-expanded", "false");
+          });
+        });
+      }
+
+      // Notice close
+      const notice = document.getElementById("gtiNotice");
+      const closeBtn = document.getElementById("gtiNoticeClose");
+
+      if (notice && closeBtn) {
+        closeBtn.addEventListener("click", () => {
+          notice.classList.add("is-hiding");
+          setTimeout(() => notice.remove(), 200);
+        });
+      }
+    });
+  </script>
+</body>
+</html>

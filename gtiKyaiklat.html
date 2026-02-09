@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GTI (Kyaiklat) - High Schooler's Tool</title>
+  <link rel="stylesheet" href="hst.css" />
+  <link rel="stylesheet" href="upp.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo"><h2>HST</h2><span>High Schooler's Tool</span></div>
+      <ul class="nav-links">
+        <li><a href="hst.html">Home</a></li>
+        <li><a href="uni.html" class="active">Universities</a></li>
+        <li><a href="career-journey.html">Career journey</a></li>
+        <li><a href="study-mode.html">Study mode</a></li>
+        <li><a href="scholarships.html">Scholarships</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <section class="uni-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-bg" style="background-image:url('gti-kyaiklat-banner.jpg');"></div>
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="hst.html">Home</a> / <a href="uni.html">Universities</a> / <span>GTI (Kyaiklat)</span>
+      </div>
+      <div class="uni-hero-content">
+        <div class="uni-logo"><img src="gti-kyaiklat-logo.png" alt="GTI Kyaiklat Logo"></div>
+        <div class="uni-title">
+          <h1>Government Technical Institute (Kyaiklat)</h1>
+          <p class="uni-subtitle">TVET institute under DTVET (Ministry of Science and Technology).</p>
+          <div class="uni-meta">
+            <span><i>📍</i> Kyaiklat, Ayeyarwady Region</span>
+            <span><i>🏛️</i> GTI / TVET</span>
+            <span><i>📅</i> Founded: Not publicly listed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="profile-content">
+    <div class="container">
+      <div class="content-layout">
+        <aside class="profile-sidebar">
+          <div class="sidebar-card">
+            <h3>Quick Info</h3>
+            <div class="info-list">
+              <div class="info-item"><strong>Type</strong><span>Government Technical Institute (GTI)</span></div>
+              <div class="info-item"><strong>Department</strong><span>DTVET (MoST)</span></div>
+              <div class="info-item"><strong>Location</strong><span>Kyaiklat, Ayeyarwady Region</span></div>
+              <div class="info-item"><strong>Email</strong><span>gtiklt@dtve.org</span></div>
+            </div>
+          </div>
+
+          <div class="sidebar-card contact-card">
+            <h3>Contact (Official)</h3>
+            <div class="contact-info">
+              <p><i>☎️</i> 045-48593</p>
+              <p><i>📱</i> 09-8554016</p>
+              <p><i>📧</i> <a href="mailto:gtiklt@dtve.org">gtiklt@dtve.org</a></p>
+            </div>
+            <button class="contact-btn">Get in Touch</button>
+          </div>
+        </aside>
+
+        <main class="profile-main">
+          <div class="profile-tabs">
+            <button class="tab-btn active" data-tab="overview">Overview</button>
+            <button class="tab-btn" data-tab="majors">Diplomas</button>
+            <button class="tab-btn" data-tab="campus">Campus Life</button>
+            <button class="tab-btn" data-tab="careers">Career Paths</button>
+          </div>
+
+          <div class="tab-content">
+            <div class="tab-panel active" id="overview">
+              <div class="content-card">
+                <h2>About GTI (Kyaiklat)</h2>
+                <p>GTI (Kyaiklat) is listed by DTVET with official phone and email contact information.</p>
+              </div>
+            </div>
+
+            <div class="tab-panel" id="majors"><div class="content-card"><h2>Diploma Programs</h2><p class="subtitle">Not listed on the DTVET address list page.</p></div></div>
+            <div class="tab-panel" id="campus"><div class="content-card"><h2>Campus Life</h2><p class="subtitle">Workshop/lab-based learning (confirm details with the institute).</p></div></div>
+            <div class="tab-panel" id="careers">
+              <div class="content-card">
+                <h2>Career Paths</h2>
+                <div class="career-paths">
+                  <div class="career-card"><div class="career-icon">🏭</div><h3>Technician</h3><p>Industry maintenance and technical services.</p></div>
+                  <div class="career-card"><div class="career-icon">⚙️</div><h3>Engineering support</h3><p>Workshop and site support roles.</p></div>
+                  <div class="career-card"><div class="career-icon">🧰</div><h3>Skilled trades</h3><p>Trade pathways depending on specialization.</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="container"><div class="footer-bottom"><p>© 2026 High Schooler’s Tool. All rights reserved.</p></div></div></footer>
+  <script src="script.js"></script><script src="upp.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+          document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+          btn.classList.add("active");
+          document.getElementById(btn.dataset.tab).classList.add("active");
+        });
+      });
+    });
+  </script>
+</body>
+</html>

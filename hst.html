@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High Schooler's Tool - Myanmar University Guide</title>
+  <link rel="stylesheet" href="hst.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h2>HST</h2>
+        <span>High Schooler's Tool</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="hst.html" class="active">Home</a></li>
+        <li><a href="uni.html">Universities</a></li>
+        <li><a href="career-journey.html">Career journey</a></li>
+        <li><a href="study-mode.html">Study mode</a></li>
+        <li><a href="scholarships.html">Scholarships</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero + Search Section -->
+  <section class="hero-search">
+    <div class="container">
+
+      <div class="hero-content">
+        <h1>Find Your Perfect University Path</h1>
+        <p>Explore universities across Myanmar, discover majors, and plan your academic future</p>
+      </div>
+
+      <!-- Search Container -->
+      <div class="search-container">
+        <form class="search-form" id="searchForm">
+          <div class="search-input-group">
+            <input
+              type="text"
+              id="homeSearch"
+              placeholder="Search by university name, major, or location..."
+              autocomplete="off"
+            >
+            <button type="submit" class="search-btn">
+              <span>🔍</span>
+              <span class="btn-text">Search</span>
+            </button>
+          </div>
+        </form>
+
+        <!-- Quick Filter Chips -->
+        <div class="quick-filters">
+          <p class="filter-label">Popular searches:</p>
+          <button type="button" class="filter-chip" data-search="Computer">💻 Computer </button>
+          <button type="button" class="filter-chip" data-search="Engineering">⚙️ Engineering</button>
+          
+          <button type="button" class="filter-chip" data-search="Medical">⚕️ Medicine</button>
+          
+        </div>
+      </div>
+
+      <!-- ✅ Swiper (NOW BELOW search bar) -->
+      <div class="promo-wrap" id="promoWrap">
+        <button class="promo-x" id="promoX" aria-label="Close promo" type="button">×</button>
+
+        <div class="swiper promo-swiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <img src="banner5 .jpg" alt="Banner 1">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="banner2.jpg" alt="Banner 2">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="banner3.jpg" alt="Banner 3">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="banner4.jpg" alt="Banner 4">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="banner.jpg" alt="Banner 5">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="banner6.jpg" alt="Banner 6">
+            </div>
+
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title">What You'll Discover</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="icon">🎓</div>
+          <h3>All Universities</h3>
+          <p>Complete database of universities across all Myanmar regions with detailed profiles</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">📚</div>
+          <h3>Major Information</h3>
+          <p>Explore majors, entrance requirements, and prerequisites for every program</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">💰</div>
+          <h3>Scholarship Guide</h3>
+          <p>Discover available scholarships, eligibility criteria, and application deadlines</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">💼</div>
+          <h3>Career Paths</h3>
+          <p>Learn about diverse careers beyond traditional doctor and engineer roles</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to Plan Your Future?</h2>
+      <p>Start exploring universities and find the perfect match for your interests</p>
+      <button class="cta-button" onclick="window.location.href='uni.html'">Get Started</button>
+    </div>
+  </section>
+
+ <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+
+      <div class="footer-section">
+        <h3>High Schooler’s Tool</h3>
+        <p>Empowering Myanmar students to make informed university choices.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="hst.html">Home</a></li>
+          <li><a href="uni.html">Universities</a></li>
+          <li><a href="career-journey.html">Career Journey</a></li>
+          <li><a href="study-mode.html">Study mode</a></li>
+          <li><a href="scholarships.html">Scholarships</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>High Schooler’s Tool</p>
+        <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+        <p>
+          Facebook:
+          <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+            High Schooler’s Tool ARP
+          </a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 High Schooler’s Tool. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+  <!-- ✅ IMPORTANT: load Swiper JS BEFORE your custom script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Your JavaScript -->
+  <script>
+    console.log('🎓 High Schooler\'s Tool - Loading...');
+
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('✅ Page loaded!');
+
+      // ✅ Swiper init (THIS was missing before)
+      // Swiper supports loop/autoplay/pagination via these options. [web:17]
+      new Swiper(".promo-swiper", {
+        loop: true,
+        autoplay: { delay: 2500, disableOnInteraction: false },
+        pagination: { el: ".promo-wrap .swiper-pagination", clickable: true }
+      });
+
+      // Close promo (optional)
+      const promoWrap = document.getElementById("promoWrap");
+      const promoX = document.getElementById("promoX");
+      if (promoWrap && promoX) {
+        promoX.addEventListener("click", () => promoWrap.style.display = "none");
+      }
+
+      // Search functionality
+      const searchForm = document.getElementById('searchForm');
+      const searchInput = document.getElementById('homeSearch');
+
+      if (searchForm && searchInput) {
+        console.log('✅ Search elements found!');
+
+        searchForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          console.log('🔍 Search button clicked!');
+
+          const searchTerm = searchInput.value.trim();
+          console.log('Search term:', searchTerm);
+
+          if (searchTerm === '') {
+            searchInput.style.animation = 'shake 0.3s';
+            searchInput.placeholder = '⚠️ Please enter a search term';
+            searchInput.focus();
+
+            setTimeout(() => {
+              searchInput.style.animation = '';
+              searchInput.placeholder = 'Search by university name, major, or location...';
+            }, 2000);
+            return;
+          }
+
+          console.log('✅ Redirecting to uni.html...');
+          window.location.href = 'uni.html?search=' + encodeURIComponent(searchTerm);
+        });
+
+        console.log('✅ Form submit handler attached!');
+      } else {
+        console.error('❌ Search elements NOT found!');
+      }
+
+      // Filter chips
+      const filterChips = document.querySelectorAll('.filter-chip');
+      console.log('Found ' + filterChips.length + ' filter chips');
+
+      filterChips.forEach(function(chip) {
+        chip.addEventListener('click', function() {
+          const searchTerm = this.getAttribute('data-search');
+          console.log('Quick search:', searchTerm);
+
+          if (searchTerm) {
+            window.location.href = 'uni.html?search=' + encodeURIComponent(searchTerm);
+          }
+        });
+      });
+
+      // Mobile menu
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+
+      if (hamburger && navLinks) {
+        hamburger.addEventListener('click', function() {
+          navLinks.classList.toggle('active');
+          hamburger.classList.toggle('active');
+          console.log('📱 Mobile menu toggled');
+        });
+
+        document.addEventListener('click', function(e) {
+          if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+            navLinks.classList.remove('active');
+            hamburger.classList.remove('active');
+          }
+        });
+      }
+
+      console.log('✅ All scripts initialized!');
+    });
+
+    // Shake animation
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes shake {
+        0%, 100% { transform: translateX(0); }
+        25% { transform: translateX(-10px); }
+        75% { transform: translateX(10px); }
+      }
+    `;
+    document.head.appendChild(style);
+  </script>
+</body>
+</html>
