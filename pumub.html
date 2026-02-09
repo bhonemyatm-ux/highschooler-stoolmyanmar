@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Profile - High Schooler's Tool</title>
+    <link rel="stylesheet" href="hst.css">
+    <link rel="stylesheet" href="ucsy.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h2>HST</h2>
+                <span>High Schooler's Tool</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="hst.html">Home</a></li>
+                <li><a href="uni.html" class="active">Universities</a></li>
+                <li><a href="creer-journey.html">Career Journey</a></li>
+                <li><a href="study-mode.html">Study mode</a></li>
+                <li><a href="Scholarships.html">Scholarships</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="uni-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-bg" style="background-image: url('pumub.jpg');"></div>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / 
+                <a href="universities.html">Universities</a> / 
+                <span>Polytechnic University, Maubin</span>
+            </div>
+            <div class="uni-hero-content">
+                <div class="uni-logo">
+                    <img src="pumub1.jpg" alt="Polytechnic University PangLong Logo">
+                </div>
+                <div class="uni-title">
+                    <h1>Polytechnic University, Maubin</h1>
+                    <p class="uni-subtitle">Leading Technical Education in Irrawaddy Region</p>
+                    <div class="uni-meta">
+                        <span><i>📍</i> Maubin</span>
+                        <span><i>🏛️</i> Polytechnic University</span>
+                        <span><i>📅</i> Founded 2002</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats Bar -->
+    <section class="quick-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">🎓</div>
+                    <div class="stat-info">
+                        <h3>800+</h3>
+                        <p>Students</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">📚</div>
+                    <div class="stat-info">
+                        <h3>12</h3>
+                        <p>Programs</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">👨‍🏫</div>
+                    <div class="stat-info">
+                        <h3>45+</h3>
+                        <p>Faculty</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-info">
+                        <h3>50+</h3>
+                        <p>Projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="profile-content">
+        <div class="container">
+            <div class="content-layout">
+                
+                <!-- Sidebar -->
+                <aside class="profile-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Quick Info</h3>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <strong>Type</strong>
+                                <span>Government</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Location</strong>
+                                <span>Maubin, Irrawaddy Region</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Campus Size</strong>
+                                <span>50.14 Acres</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Language</strong>
+                                <span>Myanmar, English</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Entrance Requirements</h3>
+                        <div class="requirement-box">
+                            <div class="requirement-item">
+                                <span class="req-label">Minimum Marks</span>
+                                <span class="req-value">343/329</span>
+                            </div>
+                            <div class="requirement-item">
+                                <span class="req-label">Required Subjects</span>
+                                <div class="subject-tags">
+                                    <span class="subject-tag">Mathematics</span>
+                                    <span class="subject-tag">English</span>
+                                    <span class="subject-tag">Physics</span>
+                                    <span class="subject-tag">Chemistry</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card contact-card">
+                        <h3>Contact</h3>
+                        <div class="contact-info">
+                            <p><i>📞</i> 0452030109</p>
+                            <p><i>📧</i> tumaubin.2024@gmail.com</p>
+                            <p><i>🌐</i> www.pumub.edu.mm</p>
+                        </div>
+                        <button class="contact-btn">Get in Touch</button>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="profile-main">
+                    
+                    <!-- Navigation Tabs -->
+                    <div class="profile-tabs">
+                        <button class="tab-btn active" data-tab="overview">Overview</button>
+                        <button class="tab-btn" data-tab="majors">Majors</button>
+                        <button class="tab-btn" data-tab="projects">Projects</button>
+                        <button class="tab-btn" data-tab="campus">Campus Life</button>
+                        <button class="tab-btn" data-tab="careers">Career Paths</button>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content">
+                        
+                        <!-- Overview Tab -->
+                        <div class="tab-panel active" id="overview">
+                            <div class="content-card">
+                                <h2>About the University</h2>
+                                <p>Polytechnic University, Maubin သည် ဧရာဝတီတိုင်းဒေသကြီးအတွင်းရှိ နည်းပညာနှင့် ကွန်ပျူတာပညာရပ်များ ဖွံ့ဖြိုးတိုးတက်ရေးအတွက် အဓိကကျသော အဆင့်မြင့်ပညာကျောင်းတော်ကြီး တစ်ခုဖြစ်ပါသည်။ ၂၀၂၆ ခုနှစ်၊ ဇန်နဝါရီလတွင် နိုင်ငံတော်၏ ပညာရေးမူဝါဒအရ ယခင် နည်းပညာတက္ကသိုလ် (မအူပင်) နှင့် ကွန်ပျူတာတက္ကသိုလ် (မအူပင်) တို့ကို ပေါင်းစည်းကာ "Polytechnic University, Maubin" အဖြစ် အဆင့်မြှင့်တင် ဖွဲ့စည်းခဲ့ပါသည်။ ဤသို့ပြောင်းလဲလိုက်ခြင်းဖြင့် မအူပင်မြို့နှင့် ပတ်ဝန်းကျင်ဒေသရှိ ကျောင်းသား၊ ကျောင်းသူများအတွက် အင်ဂျင်နီယာအတတ်ပညာနှင့် ဒစ်ဂျစ်တယ်နည်းပညာရပ်များကို တစ်နေရာတည်းတွင် ဟန်ချက်ညီညီ ပေါင်းစပ်သင်ယူနိုင်မည့် အခွင့်အလမ်းသစ်များ ပေါ်ထွက်လာခဲ့ပါသည်။
+ဤတက္ကသိုလ်၏ သမိုင်းကြောင်းမှာ ၂၀၀၂ ခုနှစ်တွင် အစိုးရနည်းပညာကောလိပ် (G.T.C.) အဖြစ် စတင်အခြေတည်ခဲ့ပြီး၊ ၂၀၀၇ ခုနှစ်တွင် တက္ကသိုလ်အဆင့်သို့ တိုးမြှင့်သတ်မှတ်ခြင်း ခံခဲ့ရပါသည်။ ဆယ်စုနှစ်နှစ်ခုကျော် သက်တမ်းရှိပြီဖြစ်သော ဤကျောင်းတော်ကြီးသည် မြစ်ဝကျွန်းပေါ်ဒေသ၏ လိုအပ်ချက်နှင့်အညီ မြို့ပြ၊ လျှပ်စစ်စွမ်းအား၊ စက်မှုနှင့် အီလက်ထရောနစ် အင်ဂျင်နီယာဘာသာရပ်များကို အစဉ်အဆက် သင်ကြားပေးခဲ့ပါသည်။ ယခုအခါ ပိုလီတက်ကနစ်တက္ကသိုလ်အဖြစ် အဆင့်မြှင့်တင်လိုက်သဖြင့် ခေတ်မီစက်မှုလုပ်ငန်းများတွင် မရှိမဖြစ်လိုအပ်သော ကွန်ပျူတာသိပ္ပံနှင့် သတင်းအချက်အလက်နည်းပညာ ကဏ္ဍများကိုပါ ပိုမိုကျယ်ပြန့်စွာ သင်ကြားပို့ချပေးလျက်ရှိပါသည်။
+မအူပင်နည်းပညာတက္ကသိုလ်သည် "လူမှုအကျိုးပြု နည်းပညာရှင်များ မွေးထုတ်ပေးရန်" ဟူသော ရည်မှန်းချက်ဖြင့် ကျောင်းသားများ၏ အရည်အသွေးကို မြှင့်တင်ပေးနေပါသည်။ နိုင်ငံတကာအဆင့်မီ သင်ကြားရေးပတ်ဝန်းကျင်ကို ဖန်တီးပေးခြင်း၊ သုတေသနလုပ်ငန်းများကို အားပေးခြင်းနှင့် ပညာရပ်ဆိုင်ရာ ကျင့်ဝတ်များကို လေးစားလိုက်နာသော အင်ဂျင်နီယာကောင်းများဖြစ်စေရန် လေ့ကျင့်ပေးခြင်းတို့မှာ တက္ကသိုလ်၏ အဓိကတာဝန်များ ဖြစ်ပါသည်။ ဤတက္ကသိုလ်သည် ဧရာဝတီတိုင်းဒေသကြီး၏ လူသားအရင်းအမြစ် ဖွံ့ဖြိုးတိုးတက်ရေးနှင့် နိုင်ငံတော်၏ စက်မှုကဏ္ဍ အရှိန်အဟုန်ဖြင့် တိုးတက်လာစေရေးအတွက် အရေးပါသော အခန်းကဏ္ဍမှ ဆက်လက်ပါဝင်နေမည် ဖြစ်ပါသည်။</p>
+                            </div>
+
+                            <div class="content-card">
+                                <h2>Why Choose PU(Maubin)?</h2>
+                                <div class="features-list">
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🏔️</div>
+                                        <div>
+                                            <h4>Scenic Campus</h4>
+                                            <p>Beautiful Irrawaddy Region location with modern facilities</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">👨‍🏫</div>
+                                        <div>
+                                            <h4>Expert Faculty</h4>
+                                            <p>Learn from industry experts and PhD holders</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🌟</div>
+                                        <div>
+                                            <h4>Industry Connections</h4>
+                                            <p>Strong partnerships with regional industries</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🔧</div>
+                                        <div>
+                                            <h4>Practical Training</h4>
+                                            <p>Hands-on workshops and industry projects</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content-card">
+                                <h2>Campus Gallery</h2>
+                                <div class="gallery-grid">
+                                    <div class="gallery-item">
+                                        <img src="images/panglong-workshop.jpg" alt="Workshop">
+                                        <p>Engineering Workshop</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="images/panglong-lab.jpg" alt="Laboratory">
+                                        <p>Modern Laboratory</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="images/panglong-campus.jpg" alt="Main Campus">
+                                        <p>Main Campus Building</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="images/panglong-ground.jpg" alt="Sports Ground">
+                                        <p>Sports Ground</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Majors Tab -->
+                        <div class="tab-panel" id="majors">
+                            <div class="content-card">
+                                <h2>Available Programs</h2>
+                                <p class="subtitle">Choose from our comprehensive engineering programs</p>
+                                
+                                <div class="majors-list">
+                                    <!-- Major Card 1 -->
+                                    <div class="major-card">
+                                        <div class="major-header">
+                                            <div class="major-icon">⚙️</div>
+                                            <div>
+                                                <h3>Mechanical Engineering</h3>
+                                                <span class="major-degree">B.E.(Mech)</span>
+                                            </div>
+                                        </div>
+                                        <p class="major-desc">Design, manufacturing, and maintenance of mechanical systems and machinery.</p>
+                                        <div class="major-details">
+                                            <div class="detail-row">
+                                                <strong>Duration:</strong>
+                                                <span>5 Years</span>
+                                            </div>
+                                            <div class="detail-row">
+                                                <strong>Min. Marks:</strong>
+                                                <span>343</span>
+                                            </div>
+                                            <div class="detail-row">
+                                                <strong>Prerequisites:</strong>
+                                                <span>Math, English, Physics, Chemistry</span>
+                                            </div>
+                                        </div>
+                                        <div class="major-subjects">
+                                            <span>Thermodynamics</span>
+                                            <span>Machine Design</span>
+                                            <span>Manufacturing</span>
+                                            <span>CAD/CAM</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Major Card 2 -->
+                                    <div class="major-card">
+                                        <div class="major-header">
+                                            <div class="major-icon">⚡</div>
+                                            <div>
+                                                <h3>Electrical Power Engineering</h3>
+                                                <span class="major-degree">B.E.(EPE)</span>
+                                            </div>
+                                        </div>
+                                        <p class="major-desc">Power generation, transmission, distribution, and electrical systems design.</p>
+                                        <div class="major-details">
+                                            <div class="detail-row">
+                                                <strong>Duration:</strong>
+                                                <span>5 Years</span>
+                                            </div>
+                                            <div class="detail-row">
+                                                <strong>Min. Marks:</strong>
+                                                <span>343</span>
+                                            </div>
+                                            <div class="detail-row">
+                                                <strong>Prerequisites:</strong>
+                                                <span>Math, English, Physics, Chemistry</span>
+                                            </div>
+                                        </div>
+                                        <div class="major-subjects">
+                                            <span>Power Systems</span>
+                                            <span>Electrical Machines</span>
+                                            <span>Control Systems</span>
+                                            <span>Renewable Energy</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Major Card 3 -->
+                                    <div class="major-card">
+                                        <div class="major-header">
+                                            <div class="major-icon">🏗️</div>
+                                            <div>
+                                                <h3>Civil Engineering</h3>
+                                                <span class="major-degree">B.E.(Civil)</span>
+                                            </div>
+                                        </div>
+                                        <p class="major-desc">Infrastructure design, construction management, and structural engineering.</p>
+                                        <div class="major-details">
+                                            <div class="detail-row">
+                                                <strong>Duration:</strong>
+                                                <span>5 Years</span>
+                                            </div>
+                                            <div class="detail-row">
+                                                <strong>Min. Marks:</strong>
+                                                <span>343</span>
+                                            </div>
+                                            <div class="detail-row">
+                                                <strong>Prerequisites:</strong>
+                                                <span>Math, English, Physics, Chemistry</span>
+                                            </div>
+                                        </div>
+                                        <div class="major-subjects">
+                                            <span>Structural Analysis</span>
+                                            <span>Geotechnical Eng</span>
+                                            <span>Transportation</span>
+                                            <span>Construction Mgmt</span>
+                                        </div>
+                                    </div>
+                               
+                            
+                        
+ <!-- Major Card 4 -->
+  <div class="major-card">
+                                        <div class="major-header">
+                                            <div class="major-icon">📡</div>
+                                            <div>
+                                                <h3>Electronic Engineering</h3>
+                                                <span class="major-degree">B.E.(EC)</span>
+                                            </div>
+                                        </div>
+                                        <p class="major-desc">Electronic circuits, communication systems, embedded systems, and digital electronics design.</p>
+                                        <div class="major-details">
+                                            <div class="detail-row">
+                                                <strong>Duration:</strong>
+                                                <span>5 Years</span>
+                                            </div>
+                                             <div class="detail-row">
+                                                <strong>Min. Marks:</strong>
+                                                <span>343</span>
+                                            </div>
+                                            <div class="detail-row">
+                                                <strong>Prerequisites:</strong>
+                                                <span>Math, English, Physics, Chemistry</span>
+                                            </div>
+                                        </div>
+                                        <div class="major-subjects">
+                                            <span>Digital Electronics</span>
+                                            <span>Microprocessors</span>
+                                            <span>Communication Systems</span>
+                                            <span>Embedded Systems</span>
+                                        </div>
+                                    </div>
+                                    <!-- Major Card 5 -->
+                                    <div class="major-card">
+                                        <div class="major-header">
+                                            <div class="major-icon">💻</div>
+                                            <div>
+                                                <h3>Computer Science (CS)</h3>
+                                                <span class="major-degree">B.C.Sc / M.C.Sc</span>
+                                            </div>
+                                        </div>
+                                        <p class="major-desc">Core computer science principles, algorithms, software development, and system design.</p>
+                                        <div class="major-details">
+                                            <div class="detail-row">
+                                                <strong>Duration:</strong>
+                                                <span>4 Years (Bachelor)</span>
+                                            </div>
+                                            <div class="detail-row">
+                                                <strong>Min. Marks:</strong>
+                                                <span>329</span>
+                                            </div>
+                                            <div class="detail-row">
+                                                <strong>Prerequisites:</strong>
+                                                <span>Math, Physics, English</span>
+                                            </div>
+                                        </div>
+                                        <div class="major-subjects">
+                                            <span>Data Structures</span>
+                                            <span>Algorithms</span>
+                                            <span>Java/C++</span>
+                                            <span>Database</span>
+                                    </div>
+                                </div>
+                           
+                         
+                     
+                                    <!-- Major Card 6 -->
+                                    <div class="major-card">
+                                        <div class="major-header">
+                                            <div class="major-icon">🌐</div>
+                                            <div>
+                                                <h3>Computer Technology (CT)</h3>
+                                                <span class="major-degree">B.C.Tech</span>
+                                            </div>
+                                        </div>
+                                        <p class="major-desc">Focus on hardware, networking, system administration, and technical infrastructure.</p>
+                                        <div class="major-details">
+                                            <div class="detail-row">
+                                                <strong>Duration:</strong>
+                                                <span>4 Years (Bachelor)</span>
+                                            </div>
+                                            <div class="detail-row">
+                                                <strong>Min. Marks:</strong>
+                                                <span>329</span>
+                                            </div>
+                                            <div class="detail-row">
+                                                <strong>Prerequisites:</strong>
+                                                <span>Math, Physics, English</span>
+                                            </div>
+                                        </div>
+                                        <div class="major-subjects">
+                                            <span>Networking</span>
+                                            <span>Hardware</span>
+                                            <span>System Admin</span>
+                                            <span>Cloud Computing</span>
+                                        </div>
+                                    </div>
+                                    
+                          
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Projects Tab -->
+                        <div class="tab-panel" id="projects">
+                            <div class="content-card">
+                                <h2>University Projects & Achievements</h2>
+                                <p class="subtitle">Showcasing technical excellence and innovation</p>
+                                
+                                <div class="projects-timeline">
+                                    <div class="project-item">
+                                        <div class="project-year">2025</div>
+                                        <div class="project-content">
+                                            <div class="project-badge">Research</div>
+                                            <h3>Hydroelectric Power Plant Design</h3>
+                                            <p>Designed micro-hydro power system for Irrawaddy Region rural electrification.</p>
+                                            <div class="project-tags">
+                                                <span>Renewable Energy</span>
+                                                <span>Hydropower</span>
+                                                <span>Rural Development</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-item">
+                                        <div class="project-year">2024</div>
+                                        <div class="project-content">
+                                            <div class="project-badge award">Award</div>
+                                            <h3>Smart Irrigation System</h3>
+                                            <p>National award-winning automated irrigation system for Irrawaddy Region agriculture.</p>
+                                            <div class="project-tags">
+                                                <span>IoT</span>
+                                                <span>Agriculture Tech</span>
+                                                <span>Award Winner</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-item">
+                                        <div class="project-year">2024</div>
+                                        <div class="project-content">
+                                            <div class="project-badge">Infrastructure</div>
+                                            <h3>Earthquake-Resistant Building Design</h3>
+                                            <p>Developed seismic-resistant construction techniques for Myanmar regions.</p>
+                                            <div class="project-tags">
+                                                <span>Civil Engineering</span>
+                                                <span>Seismic Design</span>
+                                                <span>Safety</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Campus Life Tab -->
+                        <div class="tab-panel" id="campus">
+                            <div class="content-card">
+                                <h2>Campus Life at PU(Maubin)</h2>
+                                <p class="subtitle">Technical excellence meets vibrant student life</p>
+                                
+                                <div class="campus-features">
+                                    <div class="campus-card">
+                                        <div class="campus-img">
+                                            <img src="School Club logos.png" alt="Technical Clubs">
+                                        </div>
+                                        <h3>Technical Clubs</h3>
+                                        <p>Robotics club, civil engineering society, power systems workshop, innovation challenges.</p>
+                                    </div>
+
+                                    <div class="campus-card">
+                                        <div class="campus-img">
+                                            <img src="images/workshops.jpg" alt="Workshops">
+                                        </div>
+                                        <h3>Workshop Facilities</h3>
+                                        <p>State-of-the-art mechanical, electrical, and civil engineering workshops.</p>
+                                    </div>
+
+                                    <div class="campus-card">
+                                        <div class="campus-img">
+                                            <img src="images/events.jpg" alt="Technical Events">
+                                        </div>
+                                        <h3>Technical Events</h3>
+                                        <p>Engineering fest, bridge design competition, power plant model contest.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Career Paths Tab -->
+                        <div class="tab-panel" id="careers">
+                            <div class="content-card">
+                                <h2>Career Opportunities</h2>
+                                <p class="subtitle">Engineering careers with strong industry demand</p>
+                                
+                                <div class="career-paths">
+                                    <div class="career-card">
+                                        <div class="career-icon">🔧</div>
+                                        <h3>Mechanical Engineer</h3>
+                                        <p>Design and maintain machinery in manufacturing, automotive, and energy sectors.</p>
+                                        <span class="salary-range">Average: 450,000 - 1,800,000 MMK/month</span>
+                                    </div>
+
+                                    <div class="career-card">
+                                        <div class="career-icon">⚡</div>
+                                        <h3>Electrical Engineer</h3>
+                                        <p>Work on power systems, renewable energy, and electrical infrastructure projects.</p>
+                                        <span class="salary-range">Average: 500,000 - 2,200,000 MMK/month</span>
+                                    </div>
+
+                                    <div class="career-card">
+                                        <div class="career-icon">🏗️</div>
+                                        <h3>Civil Engineer</h3>
+                                        <p>Design roads, bridges, buildings, and water infrastructure projects.</p>
+                                        <span class="salary-range">Average: 400,000 - 1,900,000 MMK/month</span>
+                                    </div>
+
+                                    <div class="career-card">
+                                        <div class="career-icon">🏭</div>
+                                        <h3>Project Engineer</h3>
+                                        <p>Manage construction and engineering projects from planning to completion.</p>
+                                        <span class="salary-range">Average: 600,000 - 2,500,000 MMK/month</span>
+                                    </div>
+                                </div>
+
+                                <div class="employer-logos">
+                                    <h4>Our Graduates Work At:</h4>
+                                    <div class="logo-grid">
+                                        <div class="employer-logo">MEPE</div>
+                                        <div class="employer-logo">YESC</div>
+                                        <div class="employer-logo">Construction Firms</div>
+                                        <div class="employer-logo">Government Projects</div>
+                                        <div class="employer-logo">Power China</div>
+                                        <div class="employer-logo">Local Industries</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-profile">
+        <div class="container">
+            <h2>Ready to Start Your Journey at PU(Maubin)?</h2>
+            <p>Explore more universities or get in touch with admissions</p>
+            <div class="cta-buttons">
+                <a href="uni.html" class="btn-secondary">Explore More Universities</a>
+                <a href="error.html" class="btn-primary">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+  <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+
+      <div class="footer-section">
+        <h3>High Schooler’s Tool</h3>
+        <p>Empowering Myanmar students to make informed university choices.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="hst.html">Home</a></li>
+          <li><a href="uni.html">Universities</a></li>
+          <li><a href="career-journey.html">Career Journey</a></li>
+          <li><a href="study-mode.html">Study mode</a></li>
+          <li><a href="scholarships.html">Scholarships</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>High Schooler’s Tool</p>
+        <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+        <p>
+          Facebook:
+          <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+            High Schooler’s Tool ARP
+          </a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 High Schooler’s Tool. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="script.js"></script>
+    <script src="ucsy.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    // Navbar toggle
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    
+    if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+            hamburger.classList.toggle("active");
+        });
+        
+        // Close on link click
+        navLinks.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("active");
+                hamburger.classList.remove("active");
+            });
+        });
+    }
+    
+    // Tab functionality
+    document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+            document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+            
+            btn.classList.add("active");
+            document.getElementById(btn.dataset.tab).classList.add("active");
+        });
+    });
+});
+</script>
+</body>
+</html>
