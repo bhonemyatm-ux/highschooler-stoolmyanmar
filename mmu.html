@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>University Profile - High Schooler's Tool</title>
+
+  <link rel="stylesheet" href="hst.css" />
+  <link rel="stylesheet" href="upp.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h2>HST</h2>
+        <span>High Schooler's Tool</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="hst.html">Home</a></li>
+        <li><a href="uni.html" class="active">Universities</a></li>
+        <li><a href="career-journey.html">Career journey</a></li>
+        <li><a href="study-mode.html">Study mode</a></li>
+        <li><a href="scholarships.html">Scholarships</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="uni-hero">
+    <div class="hero-overlay"></div>
+    <!-- Replace image filenames with your assets -->
+    <div class="hero-bg" style="background-image: url('mmu.webp');"></div>
+
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> /
+        <a href="uni.html">Universities</a> /
+        <span>Myanmar Maritime University (MMU)</span>
+      </div>
+
+      <div class="uni-hero-content">
+        <div class="uni-logo">
+          <img src="mmulogo.png" alt="MMU Logo" />
+        </div>
+
+        <div class="uni-title">
+          <h1>Myanmar Maritime University - MMU</h1>
+          <p class="uni-subtitle">Myanmar’s premier maritime education university based near Thilawa port.</p>
+
+          <div class="uni-meta">
+            <span><i>📍</i> Thanlyin, Yangon Region (near Thilawa Port)</span>
+            <span><i>🏛️</i> Maritime & Naval Engineering</span>
+            <span><i>📅</i> Established 10 June 2002</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Stats Bar -->
+  <section class="quick-stats">
+    <div class="container">
+      <div class="stats-grid">
+
+        <div class="stat-item">
+          <div class="stat-icon">🎓</div>
+          <div class="stat-info">
+            <h3>Selective</h3>
+            <p>Admission (matriculation-based)</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">⚓</div>
+          <div class="stat-info">
+            <h3>Maritime</h3>
+            <p>Core specialization</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">🧭</div>
+          <div class="stat-info">
+            <h3>Thanlyin</h3>
+            <p>Purpose-built campus (since 2004)</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">🌍</div>
+          <div class="stat-info">
+            <h3>Global</h3>
+            <p>Shipping career pathway</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="profile-content">
+    <div class="container">
+      <div class="content-layout">
+
+        <!-- Sidebar -->
+        <aside class="profile-sidebar">
+
+          <div class="sidebar-card">
+            <h3>Quick Info</h3>
+            <div class="info-list">
+              <div class="info-item">
+                <strong>Type</strong>
+                <span>Government / Public</span>
+              </div>
+              <div class="info-item">
+                <strong>Location</strong>
+                <span>Thanlyin, Yangon Region</span>
+              </div>
+              <div class="info-item">
+                <strong>Language</strong>
+                <span>Myanmar (Burmese)</span>
+              </div>
+              <div class="info-item">
+                <strong>Known for</strong>
+                <span>Naval Architecture, Marine Engineering, Nautical Science</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>Entrance Requirements</h3>
+            <div class="requirement-box">
+              <div class="requirement-item">
+                <span class="req-label">Selection</span>
+                <span class="req-value">Matriculation marks</span>
+              </div>
+              <div class="requirement-item">
+                <span class="req-label">Medical</span>
+                <span class="req-value">Eyesight test required</span>
+              </div>
+              <div class="requirement-item">
+                <span class="req-label">Notes</span>
+                <span class="req-value">Highly competitive intake</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card contact-card">
+            <h3>Contact</h3>
+            <div class="contact-info">
+              <p><i>📍</i> Thanlyin, Yangon Region, Myanmar</p>
+              <p><i>🌐</i> mmu.edu.mm</p>
+              <p><i>✉️</i> (Check official site for updated email/phone)</p>
+            </div>
+            <button class="contact-btn">Get in Touch</button>
+          </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="profile-main">
+
+          <!-- Navigation Tabs -->
+          <div class="profile-tabs">
+            <button class="tab-btn active" data-tab="overview">Overview</button>
+            <button class="tab-btn" data-tab="majors">Majors</button>
+            <button class="tab-btn" data-tab="projects">Projects</button>
+            <button class="tab-btn" data-tab="campus">Campus Life</button>
+            <button class="tab-btn" data-tab="careers">Career Paths</button>
+          </div>
+
+          <!-- Tab Content -->
+          <div class="tab-content">
+
+            <!-- Overview Tab -->
+            <div class="tab-panel active" id="overview">
+              <div class="content-card">
+                <h2>About the University</h2>
+                <p>
+                  Myanmar Maritime University သည် မြန်မာနိုင်ငံ၏ ပင်လယ်ရေကြောင်းနှင့် သယ်ယူပို့ဆောင်ရေးကဏ္ဍ အတွက် ကျွမ်းကျင်သူများကို ပြုစုပျိုးထောင်ပေးနေသော အဆင့်မြင့်ပညာရေး တက္ကသိုလ်တစ်ခု ဖြစ်သည်။
+တက္ကသိုလ်တွင် Maritime Engineering, Naval Architecture, Marine Science, Port & Shipping Management စသည့် ပင်လယ်ရေကြောင်းဆိုင်ရာ ဘာသာရပ်များကို သင်ကြားပေးပြီး နိုင်ငံတကာ စံနှုန်းများနှင့် ကိုက်ညီသော ပညာရေးပတ်ဝန်းကျင်ကို ဖန်တီးထားသည်။
+သီအိုရီပညာနှင့် လက်တွေ့ကျွမ်းကျင်မှုတို့ကို ပေါင်းစပ်သင်ကြားပေးခြင်းအားဖြင့် ကျောင်းသားများကို ပင်လယ်ရေကြောင်းလုပ်ငန်းကဏ္ဍတွင် ယှဉ်ပြိုင်နိုင်စွမ်းရှိသော ပညာရှင်များအဖြစ် တည်ဆောက်ပေးလျက်ရှိသည်။
+
+</p><p>Vision (ရည်မှန်းချက်)</p>
+
+<p>နိုင်ငံတကာအဆင့်မီ ပင်လယ်ရေကြောင်းပညာရေးနှင့် သုတေသနအတွက် ဦးဆောင်တက္ကသိုလ်တစ်ခု ဖြစ်လာစေရန်။</p>
+
+<p>Mission (တာဝန်နှင့် ရည်ရွယ်ချက်များ)</p>
+
+<p>ပင်လယ်ရေကြောင်းနှင့် သယ်ယူပို့ဆောင်ရေးကဏ္ဍအတွက် အရည်အသွေးမြင့် ပညာရေး ပေးအပ်ရန်
+
+နည်းပညာပိုင်းဆိုင်ရာ ကျွမ်းကျင်မှုနှင့် လက်တွေ့လုပ်ငန်းအတွေ့အကြုံများ ဖွံ့ဖြိုးတိုးတက်စေရန်
+
+သုတေသနနှင့် ဆန်းသစ်တီထွင်မှုများမှတဆင့် Maritime Industry တိုးတက်ရေးတွင် ပံ့ပိုးကူညီရန်
+
+ပညာရှင်စိတ်ဓာတ်၊ ဦးဆောင်မှုစွမ်းရည်နှင့် လူမှုရေးတာဝန်ယူမှုရှိသော ဘွဲ့ရများ မွေးထုတ်ရန်
+
+နိုင်ငံတကာ အဖွဲ့အစည်းများနှင့် ပူးပေါင်းဆောင်ရွက်မှုများ ခိုင်မာစေရန်
+                </p>
+              </div>
+
+              <div class="content-card">
+                <h2>Why Choose MMU?</h2>
+                <div class="features-list">
+
+                  <div class="feature-item">
+                    <div class="feature-icon">⚓</div>
+                    <div>
+                      <h4>Maritime Specialization</h4>
+                      <p>Dedicated maritime and naval disciplines such as Nautical Science, Marine Engineering, and Naval Architecture.</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">📍</div>
+                    <div>
+                      <h4>Strategic Location</h4>
+                      <p>Purpose-built campus near Thilawa Port, supporting maritime training relevance and industry connection.</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">🎯</div>
+                    <div>
+                      <h4>Highly Selective</h4>
+                      <p>Admissions are based primarily on matriculation marks and include an eyesight exam.</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">🌍</div>
+                    <div>
+                      <h4>International Career Path</h4>
+                      <p>Many graduates aim for shipping and maritime careers, including opportunities with foreign firms.</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="content-card">
+                <h2>Campus Gallery</h2>
+                <div class="gallery-grid">
+                  <div class="gallery-item">
+                    <img src="mmu1.jpg" alt="MMU Campus" />
+                    <p>🏛️</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="mmu2.jpg" alt="Training Facilities" />
+                    <p>⚓</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="mmu3.jpg" alt="Library" />
+                    <p>📚</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="mmu4.jpg" alt="Student Activities" />
+                    <p>🎓</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="mmu5.jpg" alt="Workshop / Lab" />
+                    <p>🔧</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="mmu6.jpg" alt="Port / Maritime Context" />
+                    <p>🧭</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Majors Tab -->
+            <div class="tab-panel" id="majors">
+              <div class="content-card">
+                <h2>Available Programs</h2>
+                <p class="subtitle">Common MMU disciplines (exact offerings may change by intake)</p>
+
+                <div class="majors-list">
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">🛳️</div>
+                      <div>
+                        <h3>Naval Architecture</h3>
+                        <span class="major-degree">B.E. (Engineering)</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Ship design, marine structures, stability, and production planning.</p>
+                    <div class="major-subjects">
+                      <span>Ship Design</span>
+                      <span>Hydrostatics</span>
+                      <span>Marine Structures</span>
+                      <span>Stability</span>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">⚙️</div>
+                      <div>
+                        <h3>Marine Engineering</h3>
+                        <span class="major-degree">B.E. (Engineering)</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Marine engines, propulsion plants, maintenance, and shipboard systems.</p>
+                    <div class="major-subjects">
+                      <span>Thermodynamics</span>
+                      <span>Marine Machinery</span>
+                      <span>Propulsion</span>
+                      <span>Maintenance</span>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">🧭</div>
+                      <div>
+                        <h3>Nautical Science</h3>
+                        <span class="major-degree">B.Sc. / Professional maritime pathway</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Navigation, seamanship, cargo operations, and maritime safety.</p>
+                    <div class="major-subjects">
+                      <span>Navigation</span>
+                      <span>Seamanship</span>
+                      <span>Maritime Safety</span>
+                      <span>Cargo Handling</span>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">🏗️</div>
+                      <div>
+                        <h3>Port & Harbour Engineering</h3>
+                        <span class="major-degree">B.E. (Engineering)</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Port planning, coastal structures, and maritime infrastructure.</p>
+                    <div class="major-subjects">
+                      <span>Port Planning</span>
+                      <span>Coastal Structures</span>
+                      <span>Hydraulics</span>
+                      <span>Construction</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Projects Tab - same timeline format you showed -->
+            <div class="tab-panel" id="projects">
+              <div class="content-card">
+                <h2>MMU Research & Projects</h2>
+                <p class="subtitle">Maritime education initiatives (public info)</p>
+
+                <div class="projects-timeline">
+
+                  <div class="project-item">
+                    <div class="project-year">Ongoing</div>
+                    <div class="project-content">
+                      <div class="project-badge">Training</div>
+                      <h3>Maritime Professional Education (STCW-aligned)</h3>
+                      <p>
+                        MMU is widely described as delivering maritime education aligned with international standards used in the
+                        shipping industry, supporting careers in maritime engineering and navigation.
+                      </p>
+                      <div class="project-tags">
+                        <span>STCW</span>
+                        <span>Maritime</span>
+                        <span>Professional</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-item">
+                    <div class="project-year">Ongoing</div>
+                    <div class="project-content">
+                      <div class="project-badge">Academic</div>
+                      <h3>Naval Architecture & Marine Engineering Capstone Work</h3>
+                      <p>
+                        As a specialized engineering university, MMU programs commonly include design and engineering work in
+                        naval architecture and marine systems as part of advanced-year training (details vary by department and year).
+                      </p>
+                      <div class="project-tags">
+                        <span>Capstone</span>
+                        <span>Design</span>
+                        <span>Marine Systems</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-item">
+                    <div class="project-year">Check News</div>
+                    <div class="project-content">
+                      <div class="project-badge">Updates</div>
+                      <h3>University News & Activities</h3>
+                      <p>
+                        MMU publishes announcements and activities on its official website; use that section to add verified
+                        event/project titles for your page.
+                      </p>
+                      <div class="project-tags">
+                        <span>News</span>
+                        <span>Activities</span>
+                        <span>Official</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Campus Life Tab -->
+            <div class="tab-panel" id="campus">
+              <div class="content-card">
+                <h2>Campus Life at MMU</h2>
+                <p class="subtitle">Maritime-focused campus near Myanmar’s largest port area</p>
+
+                <div class="campus-features">
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#0b486b,#f56217);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                        ⚓
+                      </div>
+                    </div>
+                    <h3>Maritime Environment</h3>
+                    <p>Location in Thanlyin near Thilawa Port supports maritime relevance and practical context.</p>
+                  </div>
+
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#232526,#414345);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                        🧭
+                      </div>
+                    </div>
+                    <h3>Discipline & Safety Culture</h3>
+                    <p>Maritime pathways emphasize safety, standards, and professional readiness.</p>
+                  </div>
+
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#2193b0,#6dd5ed);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                        🔧
+                      </div>
+                    </div>
+                    <h3>Engineering Practice</h3>
+                    <p>Programs center on engineering and applied learning in marine systems and ship-related disciplines.</p>
+                  </div>
+                </div>
+
+                <div class="testimonial-section">
+                  <h3>Official Contact</h3>
+                  <div class="contact-grid">
+                    <div class="contact-card">
+                      <h4>🌐 Website</h4>
+                      <p><a href="http://www.mmu.edu.mm" target="_blank" rel="noopener">mmu.edu.mm</a></p>
+                    </div>
+                    <div class="contact-card">
+                      <h4>📍 Location</h4>
+                      <p>Thanlyin, Yangon Region (Myanmar)</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Career Paths Tab -->
+            <div class="tab-panel" id="careers">
+              <div class="content-card">
+                <h2>Career Paths - MMU Graduates</h2>
+                <p class="subtitle">Maritime engineering, navigation, ports, and shipping operations</p>
+
+                <div class="career-paths">
+                  <div class="career-card">
+                    <div class="career-icon">🛳️</div>
+                    <h3>Naval Architect</h3>
+                    <p>Ship design, shipyard planning, classification support, and marine structural work.</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">⚙️</div>
+                    <h3>Marine Engineer</h3>
+                    <p>Ship propulsion systems, maintenance, marine machinery operations, and engineering management.</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">🧭</div>
+                    <h3>Deck Officer / Navigation</h3>
+                    <p>Navigation, ship operations, cargo handling, and maritime safety management.</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">🏗️</div>
+                    <h3>Port & Harbour Engineer</h3>
+                    <p>Port infrastructure, coastal engineering projects, and marine construction.</p>
+                  </div>
+                </div>
+
+                <div class="employer-logos">
+                  <h4>Typical Destinations:</h4>
+                  <div class="logo-grid">
+                    <div class="employer-logo">Shipping Companies</div>
+                    <div class="employer-logo">Shipyards</div>
+                    <div class="employer-logo">Ports</div>
+                    <div class="employer-logo">Offshore / Marine Services</div>
+                    <div class="employer-logo">Government Maritime Sector</div>
+                    <div class="employer-logo">Further Study</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div><!-- /tab-content -->
+        </main>
+
+      </div><!-- /content-layout -->
+    </div><!-- /container -->
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-profile">
+    <div class="container">
+      <h2>Ready to Start Your Journey at MMU?</h2>
+      <p>Explore more universities or get in touch with admissions</p>
+      <div class="cta-buttons">
+        <a href="uni.html" class="btn-secondary">Explore More Universities</a>
+        <a href="error.html" class="btn-primary">Apply Now</a>
+      </div>
+    </div>
+  </section>
+
+ <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+
+      <div class="footer-section">
+        <h3>High Schooler’s Tool</h3>
+        <p>Empowering Myanmar students to make informed university choices.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="hst.html">Home</a></li>
+          <li><a href="uni.html">Universities</a></li>
+          <li><a href="career-journey.html">Career Journey</a></li>
+          <li><a href="study-mode.html">Study mode</a></li>
+          <li><a href="scholarships.html">Scholarships</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>High Schooler’s Tool</p>
+        <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+        <p>
+          Facebook:
+          <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+            High Schooler’s Tool ARP
+          </a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 High Schooler’s Tool. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+  <script src="script.js"></script>
+  <script src="upp.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Navbar toggle
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+          hamburger.classList.toggle("active");
+        });
+
+        // Close on link click
+        navLinks.querySelectorAll("a").forEach(link => {
+          link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            hamburger.classList.remove("active");
+          });
+        });
+      }
+
+      // Tab functionality
+      document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+          document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+
+          btn.classList.add("active");
+          document.getElementById(btn.dataset.tab).classList.add("active");
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

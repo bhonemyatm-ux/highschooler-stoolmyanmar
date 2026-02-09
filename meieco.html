@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>University Profile - High Schooler's Tool</title>
+  <link rel="stylesheet" href="hst.css" />
+  <link rel="stylesheet" href="upp.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h2>HST</h2>
+        <span>High Schooler's Tool</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="hst.html">Home</a></li>
+        <li><a href="uni.html" class="active">Universities</a></li>
+        <li><a href="career-journey.html">Career journey</a></li>
+        <li><a href="study-mode.html">Study mode</a></li>
+        <li><a href="scholarships.html">Scholarships</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="uni-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-bg" style="background-image: url('meieco.jpg');"></div>
+
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="hst.html">Home</a> /
+        <a href="uni.html">Universities</a> /
+        <span>Meiktila University of Economics</span>
+      </div>
+
+      <div class="uni-hero-content">
+        <div class="uni-logo">
+          <img src="meiecologo.jpg" alt="Meiktila University of Economics Logo" />
+        </div>
+
+        <div class="uni-title">
+          <h1>Meiktila University of Economics - MEUE</h1>
+          <p class="uni-subtitle">Public economics and business university in Meiktila, Mandalay Region.</p>
+
+          <div class="uni-meta">
+            <span><i>📍</i> Meiktila, Mandalay Region</span>
+            <span><i>🏛️</i> Economics & Business</span>
+            <span><i>🎓</i> Undergraduate & Graduate Programs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Stats Bar (keep verified only; set others to —) -->
+  <section class="quick-stats">
+    <div class="container">
+      <div class="stats-grid">
+
+        <div class="stat-item">
+          <div class="stat-icon">📍</div>
+          <div class="stat-info">
+            <h3>Meiktila</h3>
+            <p>City</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">📚</div>
+          <div class="stat-info">
+            <h3>3+</h3>
+            <p>Core Fields</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">🎓</div>
+          <div class="stat-info">
+            <h3>—</h3>
+            <p>Students</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">🏛️</div>
+          <div class="stat-info">
+            <h3>—</h3>
+            <p>Founded</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="profile-content">
+    <div class="container">
+      <div class="content-layout">
+
+        <!-- Sidebar -->
+        <aside class="profile-sidebar">
+
+          <div class="sidebar-card">
+            <h3>Quick Info</h3>
+            <div class="info-list">
+              <div class="info-item">
+                <strong>Type</strong>
+                <span>Public / Government</span>
+              </div>
+
+              <div class="info-item">
+                <strong>Location</strong>
+                <span>Meiktila, Mandalay Region</span>
+              </div>
+
+              <div class="info-item">
+                <strong>Main Areas</strong>
+                <span>Commerce, Statistics, Economics</span>
+              </div>
+
+              <div class="info-item">
+                <strong>Graduate Programs</strong>
+                <span>MBA, MPA, PhD (program availability may vary)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>Entrance Requirements</h3>
+            <div class="requirement-box">
+              <div class="requirement-item">
+                <span class="req-label">Minimum Marks</span>
+                <span class="req-value">Varies by year</span>
+              </div>
+
+              <div class="requirement-item">
+                <span class="req-label">Recommended Subjects</span>
+                <div class="subject-tags">
+                  <span class="subject-tag">Myanmar</span>
+                  <span class="subject-tag">English</span>
+                  <span class="subject-tag">Mathematics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card contact-card">
+            <h3>Contact</h3>
+            <div class="contact-info">
+              <!-- Replace with official site/email if you have them -->
+              <p><i>📍</i> Meiktila, Mandalay Region, Myanmar</p>
+              <p><i>🌐</i> (Add official website)</p>
+              <p><i>📧</i> (Add official email)</p>
+            </div>
+            <button class="contact-btn">Get in Touch</button>
+          </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="profile-main">
+
+          <!-- Navigation Tabs -->
+          <div class="profile-tabs">
+            <button class="tab-btn active" data-tab="overview">Overview</button>
+            <button class="tab-btn" data-tab="majors">Majors</button>
+            <button class="tab-btn" data-tab="projects">Projects</button>
+            <button class="tab-btn" data-tab="campus">Campus Life</button>
+            <button class="tab-btn" data-tab="careers">Career Paths</button>
+          </div>
+
+          <!-- Tab Content -->
+          <div class="tab-content">
+
+            <!-- Overview -->
+            <div class="tab-panel active" id="overview">
+              <div class="content-card">
+                <h2>About the University</h2>
+                <p>
+                  Meiktila University of Economics is located in Meiktila, Mandalay Region, and is one of Myanmar’s universities focused on economics and business.
+                  It offers undergraduate and graduate degrees and diplomas, mostly in commerce, statistics, and economics, and it also has graduate programs such as MBA, MPA and PhD programs.
+                </p>
+              </div>
+
+              <div class="content-card">
+                <h2>Why Choose MEUE?</h2>
+                <div class="features-list">
+
+                  <div class="feature-item">
+                    <div class="feature-icon">📊</div>
+                    <div>
+                      <h4>Economics & Business Pathway</h4>
+                      <p>Good choice if you want careers related to banking, accounting, statistics, management, and public administration.</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">🎓</div>
+                    <div>
+                      <h4>Multiple Levels</h4>
+                      <p>Offers undergraduate degrees and selected postgraduate programs (MBA/MPA/PhD listed).</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">📍</div>
+                    <div>
+                      <h4>Central Myanmar Location</h4>
+                      <p>Meiktila-based campus is convenient for students from Mandalay Region and nearby areas.</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="content-card">
+                <h2>Campus Gallery</h2>
+                <div class="gallery-grid">
+                  <div class="gallery-item"><img src="meue1.jpg" alt="Campus"><p>🏫</p></div>
+                  <div class="gallery-item"><img src="meue2.jpg" alt="Lecture hall"><p>📚</p></div>
+                  <div class="gallery-item"><img src="meue3.jpg" alt="Library"><p>📖</p></div>
+                  <div class="gallery-item"><img src="meue4.jpg" alt="Students"><p>🎓</p></div>
+                  <div class="gallery-item"><img src="meue5.jpg" alt="Event"><p>🏛️</p></div>
+                  <div class="gallery-item"><img src="meue6.jpg" alt="Campus life"><p>🤝</p></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Majors -->
+            <div class="tab-panel" id="majors">
+              <div class="content-card">
+                <h2>Available Programs</h2>
+                <p class="subtitle">Core study directions (high-level)</p>
+
+                <div class="majors-list">
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">🏦</div>
+                      <div>
+                        <h3>Commerce</h3>
+                        <span class="major-degree">Undergraduate / Graduate</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Business and commerce fundamentals (accounting/finance-related pathways).</p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Focus:</strong> <span>Business operations & finance basics</span></div>
+                      <div class="detail-row"><strong>Skills:</strong> <span>Accounting, reporting, business knowledge</span></div>
+                    </div>
+                    <div class="major-subjects">
+                      <span>Accounting</span><span>Finance</span><span>Business Law</span><span>Auditing</span>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">📊</div>
+                      <div>
+                        <h3>Statistics</h3>
+                        <span class="major-degree">Undergraduate / Graduate</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Statistics and data analysis foundations used in economics and business research.</p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Focus:</strong> <span>Quantitative analysis</span></div>
+                      <div class="detail-row"><strong>Skills:</strong> <span>Data, probability, inference</span></div>
+                    </div>
+                    <div class="major-subjects">
+                      <span>Probability</span><span>Sampling</span><span>Data Analysis</span><span>Econometrics</span>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">📈</div>
+                      <div>
+                        <h3>Economics</h3>
+                        <span class="major-degree">Undergraduate / Graduate</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Economics theory and applied economics for policy, business, and development.</p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Focus:</strong> <span>Economic thinking & research</span></div>
+                      <div class="detail-row"><strong>Skills:</strong> <span>Analysis, research methods, communication</span></div>
+                    </div>
+                    <div class="major-subjects">
+                      <span>Microeconomics</span><span>Macroeconomics</span><span>Econometrics</span><span>Economic Policy</span>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">📌</div>
+                      <div>
+                        <h3>Business Administration</h3>
+                        <span class="major-degree">MBA (listed)</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Management and business leadership pathway (MBA mentioned in available graduate programs).</p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Level:</strong> <span>Postgraduate</span></div>
+                      <div class="detail-row"><strong>Focus:</strong> <span>Management, strategy, leadership</span></div>
+                    </div>
+                    <div class="major-subjects">
+                      <span>Management</span><span>Marketing</span><span>HR</span><span>Operations</span>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">🏛️</div>
+                      <div>
+                        <h3>Public Administration</h3>
+                        <span class="major-degree">MPA (listed)</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Public sector administration and management pathway (MPA mentioned).</p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Level:</strong> <span>Postgraduate</span></div>
+                      <div class="detail-row"><strong>Focus:</strong> <span>Public policy & administration</span></div>
+                    </div>
+                    <div class="major-subjects">
+                      <span>Public Policy</span><span>Administration</span><span>Public Finance</span><span>Governance</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Projects -->
+            <div class="tab-panel" id="projects">
+              <div class="content-card">
+                <h2>Research & Projects</h2>
+                <p class="subtitle">Example themes (optional for your website)</p>
+
+                <div class="no-data-section">
+                  <div class="no-data-icon">🧠</div>
+                  <h3>Sample Research Areas</h3>
+                  <p>
+                    If you want, I can generate 15–20 realistic sample thesis/project titles for Economics/Commerce/Statistics/MBA/MPA
+                    that match Myanmar economics university style.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Campus -->
+            <div class="tab-panel" id="campus">
+              <div class="content-card">
+                <h2>Campus Life at MEUE</h2>
+                <p class="subtitle">Economics and business student environment in Meiktila</p>
+
+                <div class="campus-features">
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#1e3c72,#2a5298);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">🏫</div>
+                    </div>
+                    <h3>Learning Community</h3>
+                    <p>Focused on business and economics subjects with research and presentation skills.</p>
+                  </div>
+
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#667eea,#764ba2);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">📚</div>
+                    </div>
+                    <h3>Study Culture</h3>
+                    <p>Students typically work on assignments, case studies, statistics and research reports.</p>
+                  </div>
+
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#f093fb,#f5576c);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">🤝</div>
+                    </div>
+                    <h3>Activities</h3>
+                    <p>Campus activities vary by academic year and university announcements.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Careers -->
+            <div class="tab-panel" id="careers">
+              <div class="content-card">
+                <h2>Career Paths - MEUE Graduates</h2>
+                <p class="subtitle">Common directions (examples)</p>
+
+                <div class="career-paths">
+                  <div class="career-card">
+                    <div class="career-icon">🏦</div>
+                    <h3>Banking & Finance</h3>
+                    <p><strong>ဘဏ်/ဘဏ္ဍာရေး</strong><br>Banking, finance operations, credit support</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">🧾</div>
+                    <h3>Accounting & Audit</h3>
+                    <p><strong>စာရင်းကိုင်/စာရင်းစစ်</strong><br>Accounting, audit support, reporting</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">📊</div>
+                    <h3>Data & Statistics</h3>
+                    <p><strong>ဒေတာ/စာရင်းကိန်း</strong><br>Data analyst, statistician, research assistant</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">🏛️</div>
+                    <h3>Public Sector</h3>
+                    <p><strong>အစိုးရကဏ္ဍ</strong><br>Administration, planning, policy support</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">🏢</div>
+                    <h3>Business & Management</h3>
+                    <p><strong>စီမံခန့်ခွဲမှု</strong><br>Management, HR, operations, marketing</p>
+                  </div>
+                </div>
+
+                <div class="employer-logos">
+                  <h4>Possible Work Sectors:</h4>
+                  <div class="logo-grid">
+                    <div class="employer-logo">Banks</div>
+                    <div class="employer-logo">Companies</div>
+                    <div class="employer-logo">Accounting Firms</div>
+                    <div class="employer-logo">Government</div>
+                    <div class="employer-logo">NGOs/INGOs</div>
+                    <div class="employer-logo">Education & Research</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </main>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-profile">
+    <div class="container">
+      <h2>Ready to Start Your Journey at MEUE?</h2>
+      <p>Explore more universities or get in touch with admissions</p>
+      <div class="cta-buttons">
+        <a href="uni.html" class="btn-secondary">Explore More Universities</a>
+        <a href="error.html" class="btn-primary">Apply Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+
+        <div class="footer-section">
+          <h3>High Schooler’s Tool</h3>
+          <p>Empowering Myanmar students to make informed university choices.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="hst.html">Home</a></li>
+            <li><a href="uni.html">Universities</a></li>
+            <li><a href="career-journey.html">Career Journey</a></li>
+            <li><a href="study-mode.html">Study mode</a></li>
+            <li><a href="scholarships.html">Scholarships</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>High Schooler’s Tool</p>
+          <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+          <p>
+            Facebook:
+            <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+              High Schooler’s Tool ARP
+            </a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 High Schooler’s Tool. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="upp.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+          hamburger.classList.toggle("active");
+        });
+
+        navLinks.querySelectorAll("a").forEach(link => {
+          link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            hamburger.classList.remove("active");
+          });
+        });
+      }
+
+      document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+          document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+
+          btn.classList.add("active");
+          document.getElementById(btn.dataset.tab).classList.add("active");
+        });
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.onclick = function () {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      };
+    });
+  </script>
+
+</body>
+</html>

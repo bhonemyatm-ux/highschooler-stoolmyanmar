@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>University Profile - High Schooler's Tool</title>
+
+  <link rel="stylesheet" href="hst.css" />
+  <link rel="stylesheet" href="upp.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h2>HST</h2>
+        <span>High Schooler's Tool</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="hst.html">Home</a></li>
+        <li><a href="uni.html" class="active">Universities</a></li>
+        <li><a href="career-journey.html">Career journey</a></li>
+        <li><a href="study-mode.html">Study mode</a></li>
+        <li><a href="scholarships.html">Scholarships</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="uni-hero">
+    <div class="hero-overlay"></div>
+    <!-- Replace with your real image -->
+    <div class="hero-bg" style="background-image: url('miit.jpg');"></div>
+
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> /
+        <a href="uni.html">Universities</a> /
+        <span>Myanmar Institute of Information Technology (MIIT)</span>
+      </div>
+
+      <div class="uni-hero-content">
+        <div class="uni-logo">
+          <img src="LOGOMIIT.jpg" alt="MIIT Logo" />
+        </div>
+
+        <div class="uni-title">
+          <h1>Myanmar Institute of Information Technology - MIIT</h1>
+          <p class="uni-subtitle">A National Centre of Excellence in IT, founded through Myanmar–India collaboration.</p>
+
+          <div class="uni-meta">
+            <span><i>📍</i> Chanmyathazi Township, Mandalay</span>
+            <span><i>🏛️</i> Computer Science & Engineering, Electronics & Communication Engineering</span>
+            <span><i>📅</i> Established 2015 (MoU signed 28 May 2012)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Stats Bar -->
+  <section class="quick-stats">
+    <div class="container">
+      <div class="stats-grid">
+
+        <div class="stat-item">
+          <div class="stat-icon">🎓</div>
+          <div class="stat-info">
+            <h3>B.E.</h3>
+            <p>Undergraduate Degrees</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">💻</div>
+          <div class="stat-info">
+            <h3>CSE</h3>
+            <p>Computer Science & Engineering</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">📡</div>
+          <div class="stat-info">
+            <h3>ECE</h3>
+            <p>Electronics & Communication</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">🤝</div>
+          <div class="stat-info">
+            <h3>Myanmar–India</h3>
+            <p>Collaboration Project</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="profile-content">
+    <div class="container">
+      <div class="content-layout">
+
+        <!-- Sidebar -->
+        <aside class="profile-sidebar">
+
+          <div class="sidebar-card">
+            <h3>Quick Info</h3>
+            <div class="info-list">
+              <div class="info-item">
+                <strong>Type</strong>
+                <span>Public / National Centre of Excellence</span>
+              </div>
+              <div class="info-item">
+                <strong>Location</strong>
+                <span>Chanmyathazi Township, Mandalay</span>
+              </div>
+              <div class="info-item">
+                <strong>Established</strong>
+                <span>2015</span>
+              </div>
+              <div class="info-item">
+                <strong>Mentor Model</strong>
+                <span>IIIT-style model (India)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>Entrance Requirements</h3>
+            <div class="requirement-box">
+              <div class="requirement-item">
+                <span class="req-label">Admission</span>
+                <span class="req-value">Highly competitive (check official announcements)</span>
+              </div>
+              <div class="requirement-item">
+                <span class="req-label">Recommended</span>
+                <div class="subject-tags">
+                  <span class="subject-tag">Mathematics</span>
+                  <span class="subject-tag">Physics</span>
+                  <span class="subject-tag">English</span>
+                </div>
+              </div>
+              <div class="requirement-item">
+                <span class="req-label">Official Info</span>
+                <span class="req-value">miit.edu.mm / miitmdy.edu.mm</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card contact-card">
+            <h3>Contact</h3>
+            <div class="contact-info">
+              <p><i>📍</i> Mandalay, Myanmar</p>
+              <p><i>🌐</i> miit.edu.mm</p>
+              <p><i>🌐</i> miitmdy.edu.mm</p>
+            </div>
+            <button class="contact-btn">Get in Touch</button>
+          </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="profile-main">
+
+          <!-- Navigation Tabs (added extra tab: Exam Help) -->
+          <div class="profile-tabs">
+            <button class="tab-btn active" data-tab="overview">Overview</button>
+            <button class="tab-btn" data-tab="majors">Majors</button>
+            <button class="tab-btn" data-tab="projects">Projects</button>
+            <button class="tab-btn" data-tab="campus">Campus Life</button>
+            <button class="tab-btn" data-tab="careers">Career Paths</button>
+            <button class="tab-btn" data-tab="examhelp">Entrance Exam Help</button>
+          </div>
+
+          <!-- Tab Content -->
+          <div class="tab-content">
+
+            <!-- Overview Tab -->
+            <div class="tab-panel active" id="overview">
+              <div class="content-card">
+                <h2>About the University</h2>
+                <p>
+                  Myanmar Institute of Information Technology (MIIT) was created in 2015 as a National Centre of Excellence
+                  following a Myanmar–India Memorandum of Understanding signed on 28 May 2012, and is designed along the
+                  model of International Institutes of Information Technology (IIITs). The official MIIT “Origins” page also
+                  states MIIT started functioning under the Ministry of Education when MoST merged into MoE in 2016.
+                </p>
+              </div>
+
+              <div class="content-card">
+                <h2>Why Choose MIIT?</h2>
+                <div class="features-list">
+
+                  <div class="feature-item">
+                    <div class="feature-icon">🤝</div>
+                    <div>
+                      <h4>Myanmar–India Collaboration</h4>
+                      <p>Built through a bilateral project with academic/technology support from India and IIIT-style mentoring.</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">🎯</div>
+                    <div>
+                      <h4>National Centre of Excellence</h4>
+                      <p>Founded as a National Centre of Excellence to strengthen ICT education and capacity building in Myanmar.</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">💻</div>
+                    <div>
+                      <h4>Two Core B.E. Degrees</h4>
+                      <p>MIIT offers B.E. in Computer Science & Engineering (CSE) and Electronics & Communication Engineering (ECE).</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="content-card">
+                <h2>Campus Gallery ❤️</h2>
+                <div class="gallery-grid">
+                  <div class="gallery-item">
+                    <img src="miit1.jpg" alt="MIIT Campus" />
+                    <p>🏛️</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="miit2.jpg" alt="Computer Lab" />
+                    <p>💻</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="miit3.jpg" alt="Electronics Lab" />
+                    <p>📡</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="miit4.jpg" alt="Lecture Hall" />
+                    <p>🎓</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="miit5.jpg" alt="Student Life" />
+                    <p>🤝</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="miit6.jpg" alt="Project Showcase" />
+                    <p>🚀</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Majors Tab -->
+            <div class="tab-panel" id="majors">
+              <div class="content-card">
+                <h2>Available Programs</h2>
+                <p class="subtitle">Undergraduate B.E. programs (official)</p>
+
+                <div class="majors-list">
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">💻</div>
+                      <div>
+                        <h3>Computer Science & Engineering (CSE)</h3>
+                        <span class="major-degree">B.E. (Undergraduate)</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Computing foundations, programming, systems, and applied software engineering.</p>
+                    <div class="major-subjects">
+                      <span>Programming</span>
+                      <span>Data Structures</span>
+                      <span>Operating Systems</span>
+                      <span>Databases</span>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">📡</div>
+                      <div>
+                        <h3>Electronics & Communication Engineering (ECE)</h3>
+                        <span class="major-degree">B.E. (Undergraduate)</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Electronics, signals, communications, and embedded/IoT foundations.</p>
+                    <div class="major-subjects">
+                      <span>Circuits</span>
+                      <span>Signals</span>
+                      <span>Communication Systems</span>
+                      <span>Embedded Systems</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Projects Tab (timeline style; keep generic unless you have official named projects) -->
+            <div class="tab-panel" id="projects">
+              <div class="content-card">
+                <h2>MIIT Research & Projects</h2>
+                <p class="subtitle">Student/academic work (add official titles when published)</p>
+
+                <div class="projects-timeline">
+
+                  <div class="project-item">
+                    <div class="project-year">Ongoing</div>
+                    <div class="project-content">
+                      <div class="project-badge">Capstone</div>
+                      <h3>Final-Year Projects (CSE & ECE)</h3>
+                      <p>
+                        MIIT’s engineering degrees typically include capstone-style work in computing and electronics/communication;
+                        exact project titles vary by year and are usually shared through official announcements or showcases.
+                      </p>
+                      <div class="project-tags">
+                        <span>Capstone</span>
+                        <span>Engineering</span>
+                        <span>Innovation</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-item">
+                    <div class="project-year">Ongoing</div>
+                    <div class="project-content">
+                      <div class="project-badge">Skills</div>
+                      <h3>Industry-Ready Technical Training</h3>
+                      <p>
+                        MIIT was designed to build ICT capacity in Myanmar with an internationally comparable curriculum and
+                        structured faculty development support.
+                      </p>
+                      <div class="project-tags">
+                        <span>ICT</span>
+                        <span>Curriculum</span>
+                        <span>Capacity Building</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Campus Life Tab -->
+            <div class="tab-panel" id="campus">
+              <div class="content-card">
+                <h2>Campus Life at MIIT</h2>
+                <p class="subtitle">Technology-focused learning environment in Mandalay</p>
+
+                <div class="campus-features">
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#141e30,#243b55);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                        💻
+                      </div>
+                    </div>
+                    <h3>Labs & Practical Learning</h3>
+                    <p>Engineering education emphasizes lab work and hands-on practice in computing and electronics.</p>
+                  </div>
+
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                        📚
+                      </div>
+                    </div>
+                    <h3>Strong Academic Foundation</h3>
+                    <p>Expect mathematics, problem-solving, and rigorous technical coursework.</p>
+                  </div>
+
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#1d2b64,#f8cdda);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                        🤝
+                      </div>
+                    </div>
+                    <h3>Collaboration Culture</h3>
+                    <p>Team projects and mentoring are central to engineering training and student development.</p>
+                  </div>
+                </div>
+
+                <div class="testimonial-section">
+                  <h3>Official Links</h3>
+                  <div class="contact-grid">
+                    <div class="contact-card">
+                      <h4>🌐 MIIT Origins</h4>
+                      <p><a href="https://www.miit.edu.mm/origins" target="_blank" rel="noopener">miit.edu.mm/origins</a></p>
+                    </div>
+                    <div class="contact-card">
+                      <h4>🌐 MIIT (alt site)</h4>
+                      <p><a href="http://www.miitmdy.edu.mm" target="_blank" rel="noopener">miitmdy.edu.mm</a></p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Career Paths Tab -->
+            <div class="tab-panel" id="careers">
+              <div class="content-card">
+                <h2>Career Paths - MIIT Graduates</h2>
+                <p class="subtitle">Software, electronics, telecom, and graduate study</p>
+
+                <div class="career-paths">
+                  <div class="career-card">
+                    <div class="career-icon">💻</div>
+                    <h3>Software Engineer</h3>
+                    <p>Web/mobile development, backend systems, DevOps, and product engineering roles.</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">🔐</div>
+                    <h3>Cybersecurity / Network Engineer</h3>
+                    <p>Networking, security operations, system administration, and infrastructure engineering.</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">📡</div>
+                    <h3>Electronics / Telecom Engineer</h3>
+                    <p>Embedded systems, IoT, communication systems, RF, and telecom operations.</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">🎓</div>
+                    <h3>Research & Postgraduate Study</h3>
+                    <p>Graduate study in computing/electronics fields at MIIT or other universities.</p>
+                  </div>
+                </div>
+
+                <div class="employer-logos">
+                  <h4>Possible Destinations:</h4>
+                  <div class="logo-grid">
+                    <div class="employer-logo">Software Companies</div>
+                    <div class="employer-logo">Telecom Operators</div>
+                    <div class="employer-logo">Startups</div>
+                    <div class="employer-logo">FinTech</div>
+                    <div class="employer-logo">Govt Tech</div>
+                    <div class="employer-logo">Further Study</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- NEW TAB: Entrance Exam Help -->
+            <div class="tab-panel" id="examhelp">
+              <div class="content-card">
+                <h2>Entrance Exam Help</h2>
+                <p class="subtitle">How to prepare (student-friendly guide)</p>
+
+                <div class="projects-timeline">
+
+                  <div class="project-item">
+                    <div class="project-year">Step 1</div>
+                    <div class="project-content">
+                      <div class="project-badge">Plan</div>
+                      <h3>Check the official admission announcement</h3>
+                      <p>
+                        MIIT admissions can change by year; always verify the latest requirements, dates, and procedures on the
+                        official MIIT website/social channels before you start preparing.
+                      </p>
+                      <div class="project-tags">
+                        <span>Official</span>
+                        <span>Dates</span>
+                        <span>Requirements</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-item">
+                    <div class="project-year">Step 2</div>
+                    <div class="project-content">
+                      <div class="project-badge">Core</div>
+                      <h3>Master the fundamentals (Math + Physics + English)</h3>
+                      <p>
+                        MIIT engineering programs require strong foundations; focus on algebra, trigonometry, calculus basics,
+                        vectors, mechanics, electricity, and reading technical English.
+                      </p>
+                      <div class="project-tags">
+                        <span>Math</span>
+                        <span>Physics</span>
+                        <span>English</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-item">
+                    <div class="project-year">Step 3</div>
+                    <div class="project-content">
+                      <div class="project-badge">Practice</div>
+                      <h3>Do timed problem sets</h3>
+                      <p>
+                        Train speed and accuracy: set a timer, solve mixed problems, then review mistakes and write a short
+                        “error list” (formula error, concept error, careless error).
+                      </p>
+                      <div class="project-tags">
+                        <span>Timed</span>
+                        <span>Accuracy</span>
+                        <span>Review</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-item">
+                    <div class="project-year">Step 4</div>
+                    <div class="project-content">
+                      <div class="project-badge">Skills</div>
+                      <h3>Start light programming early</h3>
+                      <p>
+                        Learn basic programming logic (variables, loops, conditions, functions). Even 30 minutes/day helps,
+                        especially if you aim for CSE.
+                      </p>
+                      <div class="project-tags">
+                        <span>Logic</span>
+                        <span>Programming</span>
+                        <span>CSE Prep</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-item">
+                    <div class="project-year">Step 5</div>
+                    <div class="project-content">
+                      <div class="project-badge">Mindset</div>
+                      <h3>Study routine (simple 6-week plan)</h3>
+                      <p>
+                        Week 1–2: revise topics + formulas; Week 3–4: mixed practice + timed sets; Week 5: full mock tests;
+                        Week 6: weak areas + rest + exam-day preparation.
+                      </p>
+                      <div class="project-tags">
+                        <span>6 Weeks</span>
+                        <span>Mock Tests</span>
+                        <span>Weak Areas</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /tab-content -->
+        </main>
+
+      </div><!-- /content-layout -->
+    </div><!-- /container -->
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-profile">
+    <div class="container">
+      <h2>Ready to Start Your Journey at MIIT?</h2>
+      <p>Explore more universities or get in touch with admissions</p>
+      <div class="cta-buttons">
+        <a href="uni.html" class="btn-secondary">Explore More Universities</a>
+        <a href="error.html" class="btn-primary">Apply Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+
+      <div class="footer-section">
+        <h3>High Schooler’s Tool</h3>
+        <p>Empowering Myanmar students to make informed university choices.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="hst.html">Home</a></li>
+          <li><a href="uni.html">Universities</a></li>
+          <li><a href="career-journey.html">Career Journey</a></li>
+          <li><a href="study-mode.html">Study mode</a></li>
+          <li><a href="scholarships.html">Scholarships</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>High Schooler’s Tool</p>
+        <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+        <p>
+          Facebook:
+          <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+            High Schooler’s Tool ARP
+          </a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 High Schooler’s Tool. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+  <script src="upp.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Navbar toggle
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+          hamburger.classList.toggle("active");
+        });
+
+        navLinks.querySelectorAll("a").forEach(link => {
+          link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            hamburger.classList.remove("active");
+          });
+        });
+      }
+
+      // Tab functionality (works with the extra tab too)
+      document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+          document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+
+          btn.classList.add("active");
+          document.getElementById(btn.dataset.tab).classList.add("active");
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

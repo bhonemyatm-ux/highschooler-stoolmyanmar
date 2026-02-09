@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>University Profile - High Schooler's Tool</title>
+  <link rel="stylesheet" href="hst.css" />
+  <link rel="stylesheet" href="upp.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h2>HST</h2>
+        <span>High Schooler's Tool</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="hst.html">Home</a></li>
+        <li><a href="uni.html" class="active">Universities</a></li>
+        <li><a href="career-journey.html">Career journey</a></li>
+        <li><a href="study-mode.html">Study mode</a></li>
+        <li><a href="scholarships.html">Scholarships</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="uni-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-bg" style="background-image: url('moneco.webp');"></div>
+
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="hst.html">Home</a> /
+        <a href="uni.html">Universities</a> /
+        <span>Monywa University of Economics</span>
+      </div>
+
+      <div class="uni-hero-content">
+        <div class="uni-logo">
+          <img src="meulogo.jpg" alt="MUE Logo" />
+        </div>
+
+        <div class="uni-title">
+          <h1>Monywa University of Economics - MUE</h1>
+          <p class="uni-subtitle">Economics and business-focused public university in Monywa, Sagaing Region.</p>
+
+          <div class="uni-meta">
+            <span><i>📍</i> Monywa, Sagaing Region</span>
+            <span><i>🏛️</i> Economics & Business</span>
+            <span><i>📅</i> Established 1993 (renamed as MUE in 2014)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Stats Bar (keep verified or set to —) -->
+  <section class="quick-stats">
+    <div class="container">
+      <div class="stats-grid">
+
+        <div class="stat-item">
+          <div class="stat-icon">📅</div>
+          <div class="stat-info">
+            <h3>1993</h3>
+            <p>Established</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">🎓</div>
+          <div class="stat-info">
+            <h3>—</h3>
+            <p>Students</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">📚</div>
+          <div class="stat-info">
+            <h3>Multiple</h3>
+            <p>Degrees & Diplomas</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">🏫</div>
+          <div class="stat-info">
+            <h3>—</h3>
+            <p>Campuses</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="profile-content">
+    <div class="container">
+      <div class="content-layout">
+
+        <!-- Sidebar -->
+        <aside class="profile-sidebar">
+
+          <div class="sidebar-card">
+            <h3>Quick Info</h3>
+            <div class="info-list">
+              <div class="info-item">
+                <strong>Type</strong>
+                <span>Public / Government</span>
+              </div>
+
+              <div class="info-item">
+                <strong>Location</strong>
+                <span>Monywa, Sagaing Region</span>
+              </div>
+
+              <div class="info-item">
+                <strong>Focus Areas</strong>
+                <span>Economics, Commerce, Statistics, Business Administration</span>
+              </div>
+
+              <div class="info-item">
+                <strong>Language</strong>
+                <span>Myanmar (program-dependent)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>Entrance Requirements</h3>
+            <div class="requirement-box">
+              <div class="requirement-item">
+                <span class="req-label">Minimum Marks</span>
+                <span class="req-value">Varies by year</span>
+              </div>
+
+              <div class="requirement-item">
+                <span class="req-label">Recommended Subjects</span>
+                <div class="subject-tags">
+                  <span class="subject-tag">Myanmar</span>
+                  <span class="subject-tag">English</span>
+                  <span class="subject-tag">Mathematics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card contact-card">
+            <h3>Contact</h3>
+            <div class="contact-info">
+              <p><i>🌐</i> https://mue.edu.mm</p>
+              <p><i>📧</i> (Add official email)</p>
+              <p><i>📍</i> Monywa, Sagaing Region, Myanmar</p>
+            </div>
+            <button class="contact-btn">Get in Touch</button>
+          </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="profile-main">
+
+          <!-- Navigation Tabs -->
+          <div class="profile-tabs">
+            <button class="tab-btn active" data-tab="overview">Overview</button>
+            <button class="tab-btn" data-tab="majors">Majors</button>
+            <button class="tab-btn" data-tab="projects">Projects</button>
+            <button class="tab-btn" data-tab="campus">Campus Life</button>
+            <button class="tab-btn" data-tab="careers">Career Paths</button>
+          </div>
+
+          <!-- Tab Content -->
+          <div class="tab-content">
+
+            <!-- Overview Tab -->
+            <div class="tab-panel active" id="overview">
+              <div class="content-card">
+                <h2>About the University</h2>
+                <p>
+                  Monywa University of Economics was established in Monywa Township, Sagaing Region in 1993.
+                  It was later upgraded (institute stage) and renamed as Monywa University of Economics in 2014.
+                  The university focuses on economics and business-related education for Upper Myanmar.
+                </p>
+              </div>
+
+              <div class="content-card">
+                <h2>Why Choose MUE?</h2>
+                <div class="features-list">
+
+                  <div class="feature-item">
+                    <div class="feature-icon">📊</div>
+                    <div>
+                      <h4>Economics & Business Specialization</h4>
+                      <p>Offers degrees and diplomas in economics, commerce, statistics and business administration fields.</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">🎓</div>
+                    <div>
+                      <h4>Multiple Degree Levels</h4>
+                      <p>MUE lists undergraduate degrees and graduate programs including MBA/MPA and higher degrees (program availability can vary by intake).</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">📍</div>
+                    <div>
+                      <h4>Upper Myanmar Access</h4>
+                      <p>Located in Monywa, providing a pathway for students in Sagaing Region and nearby areas.</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="content-card">
+                <h2>Campus Gallery</h2>
+                <div class="gallery-grid">
+                  <div class="gallery-item"><img src="mue1.jpg" alt="Campus"><p>🏫</p></div>
+                  <div class="gallery-item"><img src="mue2.jpg" alt="Lecture hall"><p>📚</p></div>
+                  <div class="gallery-item"><img src="mue3.jpg" alt="Library"><p>📖</p></div>
+                  <div class="gallery-item"><img src="mue4.jpg" alt="Students"><p>🎓</p></div>
+                  <div class="gallery-item"><img src="mue5.jpg" alt="Event"><p>🏛️</p></div>
+                  <div class="gallery-item"><img src="mue6.jpg" alt="Campus life"><p>🤝</p></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Majors Tab -->
+            <div class="tab-panel" id="majors">
+              <div class="content-card">
+                <h2>Available Programs</h2>
+                <p class="subtitle">Degrees & diplomas listed by MUE (high-level view)</p>
+
+                <div class="majors-list">
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">📈</div>
+                      <div>
+                        <h3>Economics</h3>
+                        <span class="major-degree">B.Econ / M.Econ / PhD (listed)</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Economic theory, applied economics, policy, and research foundations.</p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Degree Path:</strong> <span>Undergraduate → Masters → Doctorate (listed)</span></div>
+                      <div class="detail-row"><strong>Skills:</strong> <span>Analysis, research, policy thinking</span></div>
+                    </div>
+                    <div class="major-subjects">
+                      <span>Microeconomics</span><span>Macroeconomics</span><span>Econometrics</span><span>Research Methods</span>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">📊</div>
+                      <div>
+                        <h3>Statistics (Economics)</h3>
+                        <span class="major-degree">B.Econ(Statistics) / M.Econ(Statistics) / PhD (listed)</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Data and statistics applied to economics, surveys, and quantitative research.</p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Degree Path:</strong> <span>Undergraduate → Masters → Doctorate (listed)</span></div>
+                      <div class="detail-row"><strong>Skills:</strong> <span>Data analysis, modelling, inference</span></div>
+                    </div>
+                    <div class="major-subjects">
+                      <span>Probability</span><span>Sampling</span><span>Data Analysis</span><span>Econometrics</span>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">🏦</div>
+                      <div>
+                        <h3>Commerce</h3>
+                        <span class="major-degree">B.Com / M.Com / PhD(Commerce) (listed)</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Commerce studies including business, accounting and finance foundations.</p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Degree Path:</strong> <span>Bachelor → Master → PhD (listed)</span></div>
+                      <div class="detail-row"><strong>Skills:</strong> <span>Business operations, finance basics</span></div>
+                    </div>
+                    <div class="major-subjects">
+                      <span>Accounting</span><span>Finance</span><span>Business Law</span><span>Auditing</span>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">🧾</div>
+                      <div>
+                        <h3>Accounting</h3>
+                        <span class="major-degree">B.Act / M.Act / PhD(Commerce) (listed)</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Accounting systems, reporting, auditing concepts and business finance.</p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Degree Path:</strong> <span>Bachelor → Master → PhD (listed)</span></div>
+                      <div class="detail-row"><strong>Skills:</strong> <span>Accounting, reporting, audit support</span></div>
+                    </div>
+                    <div class="major-subjects">
+                      <span>Financial Accounting</span><span>Cost Accounting</span><span>Auditing</span><span>Tax Basics</span>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">📌</div>
+                      <div>
+                        <h3>Business Administration</h3>
+                        <span class="major-degree">BBA / MBA / PhD(Commerce) (listed)</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Management, marketing, HR, and business strategy foundations.</p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Degree Path:</strong> <span>BBA → MBA → PhD (listed)</span></div>
+                      <div class="detail-row"><strong>Skills:</strong> <span>Leadership, operations, planning</span></div>
+                    </div>
+                    <div class="major-subjects">
+                      <span>Management</span><span>Marketing</span><span>HR</span><span>Operations</span>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">🏛️</div>
+                      <div>
+                        <h3>Public Administration</h3>
+                        <span class="major-degree">MPA (listed)</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Public management and administration concepts (program offered as a masters level).</p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Degree:</strong> <span>Master of Public Administration (MPA)</span></div>
+                      <div class="detail-row"><strong>Focus:</strong> <span>Public sector management</span></div>
+                    </div>
+                    <div class="major-subjects">
+                      <span>Public Policy</span><span>Administration</span><span>Public Finance</span><span>Governance</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Projects Tab -->
+            <div class="tab-panel" id="projects">
+              <div class="content-card">
+                <h2>Research & Projects</h2>
+                <p class="subtitle">Examples you can show on HST (optional)</p>
+
+                <div class="no-data-section">
+                  <div class="no-data-icon">🧠</div>
+                  <h3>Sample Thesis / Project Themes</h3>
+                  <p>
+                    I can generate realistic sample research titles for Economics / Commerce / Stats / Accounting / BBA that match Myanmar economics-university style,
+                    so your page looks complete without exposing private student data.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Campus Life Tab -->
+            <div class="tab-panel" id="campus">
+              <div class="content-card">
+                <h2>Campus Life at MUE</h2>
+                <p class="subtitle">Economics and business student environment in Monywa</p>
+
+                <div class="campus-features">
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#1e3c72,#2a5298);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                        🏫
+                      </div>
+                    </div>
+                    <h3>Economics University Community</h3>
+                    <p>Specialized learning environment focused on economics, commerce and business administration.</p>
+                  </div>
+
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#667eea,#764ba2);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                        📚
+                      </div>
+                    </div>
+                    <h3>Study & Skills</h3>
+                    <p>Coursework often includes research, statistics, business basics, and presentations.</p>
+                  </div>
+
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#f093fb,#f5576c);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                        🤝
+                      </div>
+                    </div>
+                    <h3>Activities</h3>
+                    <p>Activities and announcements are shared through the official MUE website.</p>
+                  </div>
+                </div>
+
+                <div class="testimonial-section">
+                  <h3>Official Website</h3>
+                  <div class="contact-grid">
+                    <div class="contact-card">
+                      <h4>🌐 Website</h4>
+                      <p><a href="https://mue.edu.mm" target="_blank">mue.edu.mm</a></p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Career Paths Tab -->
+            <div class="tab-panel" id="careers">
+              <div class="content-card">
+                <h2>Career Paths - MUE Graduates</h2>
+                <p class="subtitle">Common directions (examples)</p>
+
+                <div class="career-paths">
+                  <div class="career-card">
+                    <div class="career-icon">🏦</div>
+                    <h3>Banking & Finance</h3>
+                    <p><strong>ဘဏ်/ဘဏ္ဍာရေး</strong><br>Banking operations, finance support, risk support</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">🧾</div>
+                    <h3>Accounting & Audit</h3>
+                    <p><strong>စာရင်းကိုင်/စာရင်းစစ်</strong><br>Accounting, audit support, reporting</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">📊</div>
+                    <h3>Data & Statistics</h3>
+                    <p><strong>ဒေတာ/စာရင်းကိန်း</strong><br>Data analyst, statistician, research assistant</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">🏢</div>
+                    <h3>Business & Management</h3>
+                    <p><strong>စီမံခန့်ခွဲမှု</strong><br>Management, HR, marketing, operations</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">🏛️</div>
+                    <h3>Public Sector</h3>
+                    <p><strong>အစိုးရကဏ္ဍ</strong><br>Administration, planning, policy support</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">📚</div>
+                    <h3>Academia & Research</h3>
+                    <p><strong>သုတေသန</strong><br>Teaching, research, postgraduate study</p>
+                  </div>
+                </div>
+
+                <div class="employer-logos">
+                  <h4>Possible Work Sectors:</h4>
+                  <div class="logo-grid">
+                    <div class="employer-logo">Banks</div>
+                    <div class="employer-logo">Accounting Firms</div>
+                    <div class="employer-logo">Companies</div>
+                    <div class="employer-logo">Government</div>
+                    <div class="employer-logo">NGOs/INGOs</div>
+                    <div class="employer-logo">Research & Education</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </main>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-profile">
+    <div class="container">
+      <h2>Ready to Start Your Journey at MUE?</h2>
+      <p>Explore more universities or get in touch with admissions</p>
+      <div class="cta-buttons">
+        <a href="uni.html" class="btn-secondary">Explore More Universities</a>
+        <a href="error.html" class="btn-primary">Apply Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>High Schooler’s Tool</h3>
+          <p>Empowering Myanmar students to make informed university choices.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="hst.html">Home</a></li>
+            <li><a href="uni.html">Universities</a></li>
+            <li><a href="career-journey.html">Career Journey</a></li>
+            <li><a href="study-mode.html">Study mode</a></li>
+            <li><a href="scholarships.html">Scholarships</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>High Schooler’s Tool</p>
+          <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+          <p>
+            Facebook:
+            <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+              High Schooler’s Tool ARP
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 High Schooler’s Tool. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="upp.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Navbar toggle
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+          hamburger.classList.toggle("active");
+        });
+
+        // Close on link click
+        navLinks.querySelectorAll("a").forEach(link => {
+          link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            hamburger.classList.remove("active");
+          });
+        });
+      }
+
+      // Tabs
+      document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+          document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+
+          btn.classList.add("active");
+          document.getElementById(btn.dataset.tab).classList.add("active");
+        });
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.onclick = function () {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      };
+    });
+  </script>
+
+</body>
+</html>
