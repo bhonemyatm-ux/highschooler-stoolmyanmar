@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>University Profile - High Schooler's Tool</title>
+  <link rel="stylesheet" href="hst.css" />
+  <link rel="stylesheet" href="upp.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h2>HST</h2>
+        <span>High Schooler's Tool</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="hst.html">Home</a></li>
+        <li><a href="uni.html" class="active">Universities</a></li>
+        <li><a href="career-journey.html">Career journey</a></li>
+        <li><a href="study-mode.html">Study mode</a></li>
+        <li><a href="scholarships.html">Scholarships</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="uni-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-bg" style="background-image: url('suoe.jpg');"></div>
+
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="hst.html">Home</a> /
+        <a href="uni.html">Universities</a> /
+        <span>Sagaing University of Education (SUOE)</span>
+      </div>
+
+      <div class="uni-hero-content">
+        <div class="uni-logo">
+          <img src="suoelogo.png" alt="SUOE Logo" />
+        </div>
+
+        <div class="uni-title">
+          <h1>Sagaing University of Education - SUOE</h1>
+          <p class="uni-subtitle">Teacher education university offering B.Ed, M.Ed, MPhil, PhD and professional diploma programs.</p>
+
+          <div class="uni-meta">
+            <span><i>📍</i> Sagaing, Myanmar</span>
+            <span><i>🏛️</i> Education & Teacher Training</span>
+            <span><i>🎓</i> B.Ed / M.Ed / MPhil / PhD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Stats Bar -->
+  <section class="quick-stats">
+    <div class="container">
+      <div class="stats-grid">
+
+        <div class="stat-item">
+          <div class="stat-icon">🎓</div>
+          <div class="stat-info">
+            <h3>B.Ed</h3>
+            <p>Education</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">📚</div>
+          <div class="stat-info">
+            <h3>M.Ed</h3>
+            <p>Education</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">🎓</div>
+          <div class="stat-info">
+            <h3>MPhil</h3>
+            <p>Education</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">🎓</div>
+          <div class="stat-info">
+            <h3>PhD</h3>
+            <p>Education</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="profile-content">
+    <div class="container">
+      <div class="content-layout">
+
+        <!-- Sidebar -->
+        <aside class="profile-sidebar">
+
+          <div class="sidebar-card">
+            <h3>Quick Info</h3>
+            <div class="info-list">
+              <div class="info-item"><strong>Type</strong><span>Public / Government</span></div>
+              <div class="info-item"><strong>Focus</strong><span>Teacher education & pedagogy</span></div>
+              <div class="info-item"><strong>Programs</strong><span>B.Ed, M.Ed, MPhil, PhD, PGDMA (listed)</span></div>
+              <div class="info-item"><strong>Training</strong><span>Short-term pedagogical trainings for in-service educators (listed)</span></div>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>Entrance Requirements</h3>
+            <div class="requirement-box">
+              <div class="requirement-item">
+                <span class="req-label">Minimum Marks</span>
+                <span class="req-value">Varies by year</span>
+              </div>
+              <div class="requirement-item">
+                <span class="req-label">Recommended</span>
+                <div class="subject-tags">
+                  <span class="subject-tag">Myanmar</span>
+                  <span class="subject-tag">English</span>
+                  <span class="subject-tag">Mathematics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card contact-card">
+            <h3>Contact</h3>
+            <div class="contact-info">
+              <p><i>🌐</i> (Add official website)</p>
+              <p><i>📧</i> (Add official email)</p>
+              <p><i>📍</i> Sagaing, Myanmar</p>
+            </div>
+            <button class="contact-btn">Get in Touch</button>
+          </div>
+
+        </aside>
+
+        <!-- Main -->
+        <main class="profile-main">
+
+          <div class="profile-tabs">
+            <button class="tab-btn active" data-tab="overview">Overview</button>
+            <button class="tab-btn" data-tab="majors">Majors</button>
+            <button class="tab-btn" data-tab="projects">Projects</button>
+            <button class="tab-btn" data-tab="campus">Campus Life</button>
+            <button class="tab-btn" data-tab="careers">Career Paths</button>
+          </div>
+
+          <div class="tab-content">
+
+            <!-- Overview -->
+            <div class="tab-panel active" id="overview">
+              <div class="content-card">
+                <h2>About the University</h2>
+                <p>
+                  Sagaing University of Education is described online as a teacher education institution offering Bachelor of Education and higher degrees.
+                  The “Sagaing Institute of Education” page lists programs including B.Ed, M.Ed, MPhil, PhD and Post Graduate Diploma in Multimedia Arts (PGDMA).
+                </p>
+              </div>
+
+              <div class="content-card">
+                <h2>Why Choose SUOE?</h2>
+                <div class="features-list">
+
+                  <div class="feature-item">
+                    <div class="feature-icon">👩‍🏫</div>
+                    <div>
+                      <h4>Teacher Education Pathway</h4>
+                      <p>Offers education degrees for prospective primary and secondary school teachers.</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">🎓</div>
+                    <div>
+                      <h4>Postgraduate Opportunities</h4>
+                      <p>Listed higher degrees include M.Ed, MPhil and PhD programs in education.</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">🧩</div>
+                    <div>
+                      <h4>Professional Trainings</h4>
+                      <p>Senior lecturers are described as providing short-term pedagogical trainings to in-service educators.</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="content-card">
+                <h2>Campus Gallery</h2>
+                <div class="gallery-grid">
+                  <div class="gallery-item"><img src="suoe1.jpg" alt="Campus"><p>🏫</p></div>
+                  <div class="gallery-item"><img src="suoe2.jpg" alt="Lecture hall"><p>📚</p></div>
+                  <div class="gallery-item"><img src="suoe3.jpg" alt="Library"><p>📖</p></div>
+                  <div class="gallery-item"><img src="suoe4.jpg" alt="Teacher training"><p>👩‍🏫</p></div>
+                  <div class="gallery-item"><img src="suoe5.jpg" alt="Event"><p>🏛️</p></div>
+                  <div class="gallery-item"><img src="suoe6.jpg" alt="Campus life"><p>🤝</p></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Majors -->
+            <div class="tab-panel" id="majors">
+              <div class="content-card">
+                <h2>Available Programs</h2>
+                <p class="subtitle">Listed degree programs (high-level)</p>
+
+                <div class="majors-list">
+
+                  <div class="major-card">
+                    <div class="major-header"><div class="major-icon">🎓</div><div><h3>B.Ed</h3><span class="major-degree">Bachelor of Education</span></div></div>
+                    <p class="major-desc">Pre-service teacher education pathway.</p>
+                    <div class="major-details"><div class="detail-row"><strong>Level:</strong><span>Undergraduate</span></div></div>
+                    <div class="major-subjects"><span>Pedagogy</span><span>Methodology</span><span>Psychology</span><span>Practice</span></div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header"><div class="major-icon">📚</div><div><h3>M.Ed</h3><span class="major-degree">Master of Education</span></div></div>
+                    <p class="major-desc">Advanced education studies and research skills.</p>
+                    <div class="major-details"><div class="detail-row"><strong>Level:</strong><span>Postgraduate</span></div></div>
+                    <div class="major-subjects"><span>Research</span><span>Curriculum</span><span>Assessment</span><span>Administration</span></div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header"><div class="major-icon">🎓</div><div><h3>MPhil</h3><span class="major-degree">Education</span></div></div>
+                    <p class="major-desc">Research-focused pathway before/alongside doctoral study.</p>
+                    <div class="major-details"><div class="detail-row"><strong>Level:</strong><span>Postgraduate</span></div></div>
+                    <div class="major-subjects"><span>Research Methods</span><span>Seminar</span><span>Thesis</span><span>Education Studies</span></div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header"><div class="major-icon">🎓</div><div><h3>PhD</h3><span class="major-degree">Education</span></div></div>
+                    <p class="major-desc">Doctoral research and dissertation in education.</p>
+                    <div class="major-details"><div class="detail-row"><strong>Level:</strong><span>Doctoral</span></div></div>
+                    <div class="major-subjects"><span>Advanced Research</span><span>Dissertation</span><span>Statistics</span><span>Education Policy</span></div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header"><div class="major-icon">🎨</div><div><h3>PGDMA</h3><span class="major-degree">Postgraduate Diploma (listed)</span></div></div>
+                    <p class="major-desc">Professional diploma program listed for multimedia arts.</p>
+                    <div class="major-details"><div class="detail-row"><strong>Level:</strong><span>Postgraduate diploma</span></div></div>
+                    <div class="major-subjects"><span>Media</span><span>Design</span><span>Education Media</span><span>Projects</span></div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Projects -->
+            <div class="tab-panel" id="projects">
+              <div class="content-card">
+                <h2>Research & Projects</h2>
+                <p class="subtitle">Optional examples for your site</p>
+                <div class="no-data-section">
+                  <div class="no-data-icon">🧠</div>
+                  <h3>Sample Topics</h3>
+                  <p>If you want, I can generate sample thesis titles for Education leadership, assessment, curriculum, classroom research, and EdTech.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Campus -->
+            <div class="tab-panel" id="campus">
+              <div class="content-card">
+                <h2>Campus Life at SUOE</h2>
+                <p class="subtitle">Education-focused learning environment</p>
+
+                <div class="campus-features">
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#1e3c72,#2a5298);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">🏫</div>
+                    </div>
+                    <h3>Teacher Training</h3>
+                    <p>Focus on pedagogy and training for future educators.</p>
+                  </div>
+
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#667eea,#764ba2);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">📚</div>
+                    </div>
+                    <h3>Research Culture</h3>
+                    <p>Listed higher degrees support research and academic development in education.</p>
+                  </div>
+
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#f093fb,#f5576c);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">🤝</div>
+                    </div>
+                    <h3>Professional Network</h3>
+                    <p>Described as supporting in-service educator trainings across institutions.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Careers -->
+            <div class="tab-panel" id="careers">
+              <div class="content-card">
+                <h2>Career Paths - SUOE Graduates</h2>
+                <p class="subtitle">Common directions (examples)</p>
+
+                <div class="career-paths">
+                  <div class="career-card"><div class="career-icon">👩‍🏫</div><h3>School Teacher</h3><p><strong>ဆရာ/ဆရာမ</strong><br>Primary/secondary teaching</p></div>
+                  <div class="career-card"><div class="career-icon">🏫</div><h3>Teacher Trainer</h3><p><strong>သင်တန်းပို့ချသူ</strong><br>Pedagogy and training roles</p></div>
+                  <div class="career-card"><div class="career-icon">🧠</div><h3>Education Research</h3><p><strong>သုတေသန</strong><br>Curriculum, assessment, EdTech</p></div>
+                  <div class="career-card"><div class="career-icon">🏛️</div><h3>Education Administration</h3><p><strong>စီမံခန့်ခွဲမှု</strong><br>Planning, supervision, leadership</p></div>
+                  <div class="career-card"><div class="career-icon">🎨</div><h3>Education Media</h3><p><strong>မီဒီယာ/မလ်တီမီဒီယာ</strong><br>Media content for education (PGDMA track)</p></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </main>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-profile">
+    <div class="container">
+      <h2>Ready to Start Your Journey at SUOE?</h2>
+      <p>Explore more universities or get in touch with admissions</p>
+      <div class="cta-buttons">
+        <a href="uni.html" class="btn-secondary">Explore More Universities</a>
+        <a href="error.html" class="btn-primary">Apply Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>High Schooler’s Tool</h3>
+          <p>Empowering Myanmar students to make informed university choices.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="hst.html">Home</a></li>
+            <li><a href="uni.html">Universities</a></li>
+            <li><a href="career-journey.html">Career Journey</a></li>
+            <li><a href="study-mode.html">Study mode</a></li>
+            <li><a href="scholarships.html">Scholarships</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>High Schooler’s Tool</p>
+          <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+          <p>
+            Facebook:
+            <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+              High Schooler’s Tool ARP
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 High Schooler’s Tool. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="upp.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+      if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+          hamburger.classList.toggle("active");
+        });
+        navLinks.querySelectorAll("a").forEach(link => {
+          link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            hamburger.classList.remove("active");
+          });
+        });
+      }
+      document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+          document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+          btn.classList.add("active");
+          document.getElementById(btn.dataset.tab).classList.add("active");
+        });
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+      hamburger.onclick = function () {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      };
+    });
+  </script>
+
+</body>
+</html>

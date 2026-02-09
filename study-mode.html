@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Mode - Pomodoro Timer | High Schooler's Tool</title>
+  <link rel="stylesheet" href="hst.css" />
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+
+    :root{
+      --primary-color:#6366f1;
+      --secondary-color:#8b5cf6;
+      --accent-color:#ec4899;
+      --success-color:#10b981;
+      --warning-color:#f59e0b;
+
+      --bg-primary:#f8fafc;
+      --bg-secondary:#ffffff;
+      --bg-card:#ffffff;
+      --text-primary:#1e293b;
+      --text-secondary:#64748b;
+      --border-color:#e2e8f0;
+      --shadow:0 10px 40px rgba(0,0,0,0.08);
+      --shadow-lg:0 20px 60px rgba(0,0,0,0.12);
+    }
+
+    body.theme-ocean{--primary-color:#0ea5e9;--secondary-color:#06b6d4;}
+    body.theme-forest{--primary-color:#10b981;--secondary-color:#059669;}
+    body.theme-sunset{--primary-color:#f59e0b;--secondary-color:#f97316;}
+    body.theme-cherry{--primary-color:#ec4899;--secondary-color:#db2777;}
+    body.theme-purple{--primary-color:#8b5cf6;--secondary-color:#7c3aed;}
+
+    body{
+      font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+      background:var(--bg-primary);
+      color:var(--text-primary);
+      min-height:100vh;
+      transition:all .3s ease;
+    }
+
+    body.dark-mode{
+      --bg-primary:#0f172a;
+      --bg-secondary:#1e293b;
+      --bg-card:#1e293b;
+      --text-primary:#f1f5f9;
+      --text-secondary:#94a3b8;
+      --border-color:#334155;
+      --shadow:0 10px 40px rgba(0,0,0,0.3);
+      --shadow-lg:0 20px 60px rgba(0,0,0,0.4);
+    }
+
+    /* Break suggestions */
+    .break-suggestions{
+      margin-top:2rem;
+      padding:2rem;
+      background:linear-gradient(135deg,var(--success-color),#059669);
+      border-radius:20px;
+      color:white;
+      text-align:center;
+      animation:slideDown .5s ease;
+    }
+    .break-header h3{font-size:1.8rem;margin-bottom:.5rem;}
+    .break-header p{opacity:.9;margin-bottom:1.5rem;}
+    .break-activity{
+      background:rgba(255,255,255,.2);
+      padding:1.5rem;
+      border-radius:16px;
+      margin-bottom:1.5rem;
+      backdrop-filter:blur(10px);
+    }
+    .activity-icon{font-size:3rem;margin-bottom:1rem;}
+    .activity-content h4{font-size:1.4rem;margin-bottom:.5rem;}
+    .activity-content p{font-size:1.1rem;line-height:1.6;}
+    .btn-new-activity{
+      background:rgba(255,255,255,.3);
+      color:white;
+      border:2px solid white;
+      padding:.75rem 2rem;
+      border-radius:12px;
+      cursor:pointer;
+      font-weight:600;
+      font-size:1rem;
+      transition:all .3s ease;
+    }
+    .btn-new-activity:hover{background:white;color:var(--success-color);transform:scale(1.05);}
+    @keyframes slideDown{from{opacity:0;transform:translateY(-20px);}to{opacity:1;transform:translateY(0);} }
+
+    /* Study nav */
+    .study-nav{
+      background:var(--bg-secondary);
+      border-bottom:1px solid var(--border-color);
+      padding:1rem 0;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      box-shadow:var(--shadow);
+    }
+    .study-nav .container{
+      max-width:1400px;margin:0 auto;padding:0 2rem;
+      display:flex;justify-content:space-between;align-items:center;
+    }
+    .nav-brand{
+      display:flex;align-items:center;gap:.75rem;
+      font-size:1.5rem;font-weight:700;color:var(--text-primary);
+      text-decoration:none;
+    }
+    .nav-brand .brand-icon{font-size:2rem;}
+    .nav-actions{display:flex;gap:1rem;align-items:center;}
+    .theme-toggle,.theme-picker-btn,.music-toggle{
+      background:var(--bg-primary);
+      border:2px solid var(--border-color);
+      color:var(--text-primary);
+      width:50px;height:50px;border-radius:50%;
+      cursor:pointer;display:flex;align-items:center;justify-content:center;
+      font-size:1.5rem;transition:all .3s ease;
+    }
+    .theme-toggle:hover,.theme-picker-btn:hover,.music-toggle:hover{transform:scale(1.1);border-color:var(--primary-color);}
+    .btn-back{
+      background:var(--primary-color);color:white;
+      padding:.75rem 1.5rem;border-radius:12px;text-decoration:none;
+      font-weight:600;transition:all .3s ease;border:none;cursor:pointer;
+    }
+    .btn-back:hover{background:var(--secondary-color);transform:translateY(-2px);}
+
+    /* Layout */
+    .study-container{
+      max-width:1400px;margin:0 auto;padding:2rem;
+      display:grid;grid-template-columns:1fr 350px;gap:2rem;
+    }
+
+    /* Timer section */
+    .timer-section{
+      background:var(--bg-card);
+      border-radius:24px;
+      padding:3rem;
+      box-shadow:var(--shadow-lg);
+      border:1px solid var(--border-color);
+    }
+    .timer-header{text-align:center;margin-bottom:2rem;}
+    .timer-header h1{
+      font-size:2.5rem;margin-bottom:.5rem;
+      background:linear-gradient(135deg,var(--primary-color),var(--secondary-color));
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+    }
+    .timer-header p{color:var(--text-secondary);font-size:1.1rem;}
+
+    .mode-selector{display:flex;justify-content:center;gap:1rem;margin-bottom:2rem;}
+    .mode-btn{
+      padding:1rem 1.5rem;border:2px solid var(--border-color);
+      background:transparent;color:var(--text-primary);
+      border-radius:12px;cursor:pointer;font-weight:600;font-size:.95rem;
+      transition:all .3s ease;
+    }
+    .mode-btn:hover{border-color:var(--primary-color);transform:translateY(-2px);}
+    .mode-btn.active{background:var(--primary-color);color:white;border-color:var(--primary-color);}
+
+    .timer-display{text-align:center;margin-bottom:2rem;}
+    .timer-circle{
+      width:280px;height:280px;margin:0 auto 2rem;position:relative;
+      display:flex;align-items:center;justify-content:center;
+    }
+    .timer-progress{position:absolute;width:100%;height:100%;transform:rotate(-90deg);}
+    .timer-progress-bg{fill:none;stroke:var(--border-color);stroke-width:8;}
+    .timer-progress-bar{fill:none;stroke:url(#gradient);stroke-width:8;stroke-linecap:round;transition:stroke-dashoffset 1s linear;}
+    .timer-time{font-size:3.5rem;font-weight:700;color:var(--text-primary);font-variant-numeric:tabular-nums;}
+
+    .timer-controls{
+      display:flex;justify-content:center;gap:1rem;margin-bottom:2rem;
+      flex-wrap:wrap;
+    }
+    .timer-btn{
+      padding:1rem 2.5rem;border:none;border-radius:16px;
+      font-size:1.1rem;font-weight:600;cursor:pointer;
+      transition:all .3s ease;display:flex;align-items:center;justify-content:center;gap:.5rem;
+    }
+    .btn-primary{background:linear-gradient(135deg,var(--primary-color),var(--secondary-color));color:white;}
+    .btn-primary:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(99,102,241,.3);}
+    .btn-secondary{background:var(--bg-primary);color:var(--text-primary);border:2px solid var(--border-color);}
+    .btn-secondary:hover{border-color:var(--primary-color);transform:translateY(-2px);}
+
+    .session-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem;}
+    .stat-card{background:var(--bg-primary);padding:1.25rem;border-radius:16px;text-align:center;border:1px solid var(--border-color);}
+    .stat-icon{font-size:1.75rem;margin-bottom:.5rem;}
+    .stat-value{font-size:1.75rem;font-weight:700;color:var(--primary-color);margin-bottom:.25rem;}
+    .stat-label{color:var(--text-secondary);font-size:.85rem;}
+
+    /* Sidebar */
+    .sidebar{display:flex;flex-direction:column;gap:2rem;}
+    .todo-section,.music-section{
+      background:var(--bg-card);border-radius:24px;padding:2rem;
+      box-shadow:var(--shadow-lg);border:1px solid var(--border-color);
+    }
+
+    .todo-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;}
+    .todo-header h2{font-size:1.5rem;color:var(--text-primary);display:flex;align-items:center;gap:.5rem;}
+    .task-counter{background:var(--primary-color);color:white;padding:.25rem .75rem;border-radius:20px;font-size:.85rem;font-weight:600;}
+    .todo-input-group{display:flex;gap:.5rem;margin-bottom:1.5rem;}
+    .todo-input{
+      flex:1;padding:.875rem;border:2px solid var(--border-color);border-radius:12px;
+      background:var(--bg-primary);color:var(--text-primary);font-size:.95rem;transition:all .3s ease;
+    }
+    .todo-input:focus{outline:none;border-color:var(--primary-color);}
+    .todo-add-btn{
+      background:var(--primary-color);color:white;border:none;
+      padding:.875rem 1.5rem;border-radius:12px;cursor:pointer;
+      font-weight:600;font-size:1.25rem;transition:all .3s ease;
+    }
+    .todo-add-btn:hover{background:var(--secondary-color);transform:scale(1.05);}
+    .todo-list{display:flex;flex-direction:column;gap:.75rem;max-height:400px;overflow-y:auto;}
+    .todo-item{
+      background:var(--bg-primary);padding:1rem;border-radius:12px;
+      display:flex;align-items:center;gap:.75rem;border:1px solid var(--border-color);
+      transition:all .3s ease;
+    }
+    .todo-item:hover{border-color:var(--primary-color);transform:translateX(5px);}
+    .todo-item.completed{opacity:.6;}
+    .todo-item.completed .todo-text{text-decoration:line-through;}
+    .todo-checkbox{width:22px;height:22px;cursor:pointer;accent-color:var(--primary-color);}
+    .todo-text{flex:1;color:var(--text-primary);font-size:.95rem;}
+    .todo-pomodoro{background:var(--primary-color);color:white;padding:.25rem .5rem;border-radius:8px;font-size:.75rem;font-weight:600;}
+    .todo-delete{
+      background:none;border:none;color:var(--text-secondary);
+      cursor:pointer;font-size:1.25rem;padding:.25rem .5rem;border-radius:8px;transition:all .3s ease;
+    }
+    .todo-delete:hover{background:#ef4444;color:white;}
+    .todo-empty{text-align:center;padding:2rem;color:var(--text-secondary);}
+
+    .music-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;}
+    .music-header h2{font-size:1.5rem;color:var(--text-primary);display:flex;align-items:center;gap:.5rem;}
+    .music-status{font-size:.85rem;color:var(--text-secondary);}
+    .music-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;}
+    .music-btn{
+      background:var(--bg-primary);border:2px solid var(--border-color);
+      padding:1rem;border-radius:12px;cursor:pointer;transition:all .3s ease;
+      display:flex;flex-direction:column;align-items:center;gap:.5rem;color:var(--text-primary);
+    }
+    .music-btn:hover{border-color:var(--primary-color);transform:translateY(-3px);}
+    .music-btn.active{background:var(--primary-color);color:white;border-color:var(--primary-color);}
+    .music-icon{font-size:2rem;}
+    .music-name{font-size:.85rem;font-weight:600;}
+    .volume-control{margin-top:1.5rem;}
+    .volume-label{display:flex;justify-content:space-between;margin-bottom:.5rem;font-size:.9rem;color:var(--text-secondary);}
+    .volume-slider{width:100%;height:6px;border-radius:5px;background:var(--border-color);outline:none;-webkit-appearance:none;}
+    .volume-slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:18px;height:18px;border-radius:50%;background:var(--primary-color);cursor:pointer;}
+    .volume-slider::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--primary-color);cursor:pointer;border:none;}
+
+    /* Floating buttons */
+    .floating-buttons{position:fixed;bottom:2rem;right:2rem;display:flex;flex-direction:column;gap:1rem;z-index:100;}
+    .floating-btn{width:60px;height:60px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:var(--shadow-lg);transition:all .3s ease;}
+    .floating-btn:hover{transform:scale(1.1);}
+    .btn-methods{background:linear-gradient(135deg,var(--primary-color),var(--secondary-color));color:white;}
+    .btn-motivation{background:linear-gradient(135deg,var(--accent-color),var(--warning-color));color:white;}
+
+    /* Modal */
+    .modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.6);backdrop-filter:blur(8px);z-index:2000;align-items:center;justify-content:center;padding:2rem;}
+    .modal.active{display:flex;}
+    .modal-content{background:var(--bg-card);border-radius:24px;max-width:600px;width:100%;max-height:80vh;overflow-y:auto;box-shadow:var(--shadow-lg);border:1px solid var(--border-color);}
+    .modal-header{padding:2rem;border-bottom:1px solid var(--border-color);display:flex;justify-content:space-between;align-items:center;}
+    .modal-header h2{font-size:1.8rem;color:var(--text-primary);}
+    .modal-close{background:none;border:none;font-size:2rem;cursor:pointer;color:var(--text-secondary);width:40px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:all .3s ease;}
+    .modal-close:hover{background:var(--bg-primary);color:var(--text-primary);}
+    .modal-body{padding:2rem;}
+    .method-card{background:var(--bg-primary);padding:1.5rem;border-radius:16px;margin-bottom:1.5rem;border:1px solid var(--border-color);}
+    .method-card h3{color:var(--primary-color);margin-bottom:.75rem;display:flex;align-items:center;gap:.5rem;}
+    .method-card p{color:var(--text-secondary);line-height:1.6;margin-bottom:.75rem;}
+    .method-card ul{color:var(--text-secondary);padding-left:1.5rem;line-height:1.8;}
+    .quote-card{background:linear-gradient(135deg,var(--primary-color),var(--secondary-color));color:white;padding:2rem;border-radius:16px;margin-bottom:1.5rem;text-align:center;}
+    .quote-text{font-size:1.3rem;font-style:italic;margin-bottom:1rem;line-height:1.6;}
+    .quote-author{font-size:1rem;opacity:.9;}
+    .btn-new-quote{background:rgba(255,255,255,.2);color:white;border:2px solid white;padding:.75rem 2rem;border-radius:12px;cursor:pointer;font-weight:600;margin-top:1rem;transition:all .3s ease;}
+    .btn-new-quote:hover{background:white;color:var(--primary-color);}
+
+    .theme-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;}
+    .theme-option{padding:1.5rem;border-radius:16px;cursor:pointer;text-align:center;border:3px solid transparent;transition:all .3s ease;}
+    .theme-option:hover{transform:translateY(-5px);}
+    .theme-option.active{border-color:white;box-shadow:0 0 20px rgba(255,255,255,.3);}
+    .theme-default{background:linear-gradient(135deg,#6366f1,#8b5cf6);color:white;}
+    .theme-ocean-opt{background:linear-gradient(135deg,#0ea5e9,#06b6d4);color:white;}
+    .theme-forest-opt{background:linear-gradient(135deg,#10b981,#059669);color:white;}
+    .theme-sunset-opt{background:linear-gradient(135deg,#f59e0b,#f97316);color:white;}
+    .theme-cherry-opt{background:linear-gradient(135deg,#ec4899,#db2777);color:white;}
+    .theme-purple-opt{background:linear-gradient(135deg,#8b5cf6,#7c3aed);color:white;}
+    .theme-name{font-size:1.1rem;font-weight:600;margin-top:.5rem;}
+
+    /* Responsive */
+    @media (max-width:1024px){
+      .study-container{grid-template-columns:1fr;}
+      .sidebar{grid-template-columns:1fr 1fr;display:grid;}
+    }
+    @media (max-width:768px){
+      .study-container{padding:1.5rem 1rem;}
+      .timer-section{padding:2rem 1.5rem;}
+      .timer-circle{width:240px;height:240px;}
+      .timer-time{font-size:3rem;}
+      .timer-controls{flex-direction:column;}
+      .timer-btn{width:100%;}
+      .mode-selector{flex-direction:column;}
+      .mode-btn{width:100%;}
+      .session-stats{grid-template-columns:1fr;}
+      .sidebar{grid-template-columns:1fr;}
+      .floating-buttons{bottom:1rem;right:1rem;}
+      .floating-btn{width:50px;height:50px;font-size:1.2rem;}
+      .nav-actions{gap:.5rem;}
+      .theme-toggle,.theme-picker-btn,.music-toggle{width:40px;height:40px;font-size:1.2rem;}
+      .btn-back{padding:.5rem 1rem;font-size:.9rem;}
+    }
+
+    /* Timer pulse */
+    @keyframes pulse{0%,100%{transform:scale(1);}50%{transform:scale(1.05);} }
+    .timer-circle.active{animation:pulse 2s infinite;}
+
+    /* ===== Focus Display (flip clock + rotate hint) ===== */
+    .focus-display{
+      position:fixed;inset:0;background:#000;color:#fff;
+      display:none;z-index:9999;align-items:center;justify-content:center;
+      flex-direction:column;gap:1rem;padding:2rem;
+    }
+    .focus-display.active{display:flex;}
+
+    .focus-exit{
+      position:fixed;top:14px;right:14px;
+      background:#fff;color:#000;border:0;border-radius:12px;
+      padding:10px 14px;font-weight:800;cursor:pointer;
+    }
+
+    .rotate-hint{
+      display:none;
+      margin-top:54px; /* leave space below exit button area */
+      margin-bottom:0.25rem;
+      padding:10px 14px;
+      border-radius:12px;
+      background:rgba(255,255,255,0.12);
+      border:1px solid rgba(255,255,255,0.18);
+      color:#fff;
+      font-weight:800;
+      letter-spacing:0.02em;
+      text-align:center;
+      max-width:520px;
+    }
+
+    /* Show hint in portrait (CSS-based fallback that works widely). */
+    @media (orientation: portrait){
+      .focus-display.active .rotate-hint{display:block;}
+    }
+
+    .focus-sub{
+      opacity:.85;
+      font-size:clamp(14px,3.5vw,22px);
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+
+    .flip-clock{
+      display:grid;
+      grid-auto-flow:column;
+      align-items:center;
+      gap:clamp(10px,2vw,18px);
+    }
+
+    .flip-card{
+      position:relative;
+      width:clamp(120px,22vw,260px);
+      height:clamp(170px,26vw,320px);
+      background:#0b0b0b;
+      border-radius:clamp(16px,2.2vw,26px);
+      box-shadow:0 30px 80px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.06);
+      overflow:hidden;
+    }
+
+    .flip-digit{
+      position:absolute;inset:0;
+      display:grid;place-items:center;
+      font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Arial,sans-serif;
+      font-weight:800;
+      font-size:clamp(96px,16vw,220px);
+      line-height:1;
+      color:#d7d7d7;
+      text-shadow:0 2px 0 rgba(0,0,0,.6);
+    }
+
+    .flip-line{
+      position:absolute;left:0;right:0;top:50%;
+      height:2px;transform:translateY(-1px);
+      background:rgba(0,0,0,.65);
+      box-shadow:0 1px 0 rgba(255,255,255,.06);
+    }
+
+    .flip-card::before,.flip-card::after{
+      content:"";position:absolute;left:0;right:0;height:50%;pointer-events:none;
+    }
+    .flip-card::before{top:0;background:linear-gradient(to bottom, rgba(255,255,255,.06), rgba(255,255,255,0));}
+    .flip-card::after{bottom:0;background:linear-gradient(to top, rgba(0,0,0,.35), rgba(0,0,0,0));}
+
+    .flip-colon{
+      font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Arial,sans-serif;
+      font-weight:800;
+      font-size:clamp(60px,8vw,120px);
+      line-height:1;
+      color:#cfcfcf;
+      opacity:.9;
+      margin:0 clamp(-6px,-0.8vw,-2px);
+    }
+
+    @media (max-height:430px){
+      .flip-card{width:clamp(100px,18vw,200px);height:clamp(130px,22vw,240px);}
+      .rotate-hint{margin-top:46px;}
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Site navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h2>HST</h2>
+        <span>High Schooler's Tool</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="hst.html">Home</a></li>
+        <li><a href="uni.html">Universities</a></li>
+        <li><a href="career-journey.html">Career journey</a></li>
+        <li><a href="study-mode.html" class="active">Study mode</a></li>
+        <li><a href="scholarships.html">Scholarships</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- Study navbar -->
+  <nav class="study-nav">
+    <div class="container">
+      <a href="hst.html" class="nav-brand">
+        <span class="brand-icon">📚</span>
+        <span>HST Study Mode</span>
+      </a>
+      <div class="nav-actions">
+        <button class="music-toggle" id="musicToggleNav" title="Toggle Music">🎵</button>
+        <button class="theme-picker-btn" id="themePickerBtn" title="Choose Theme">🎨</button>
+        <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">🌙</button>
+        <a href="hst.html" class="btn-back">← Back</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="study-container">
+    <div class="timer-section">
+      <div class="timer-header">
+        <h1>🍅 Pomodoro Timer</h1>
+        <p>Stay focused, take breaks, achieve your goals</p>
+
+        <div class="break-suggestions" id="breakSuggestions" style="display:none;">
+          <div class="break-header">
+            <h3>☕ Break Time!</h3>
+            <p>Here's what you can do during your break:</p>
+          </div>
+          <div class="break-activity" id="breakActivity">
+            <div class="activity-icon">💧</div>
+            <div class="activity-content">
+              <h4>စာလုပ်ရတာ မောနေမှာပေါ့ရေသောက်ပါအုံး။</h4>
+              <p>Stay hydrated! Drink a glass of water to refresh your mind and body.</p>
+            </div>
+          </div>
+          <button class="btn-new-activity" onclick="getNewActivity()">🔄 Different Activity</button>
+        </div>
+      </div>
+
+      <div class="mode-selector">
+        <button class="mode-btn active" data-mode="focus" data-time="25">🎯 Focus (25 min)</button>
+        <button class="mode-btn" data-mode="short" data-time="5">☕ Short Break (5 min)</button>
+        <button class="mode-btn" data-mode="long" data-time="15">🌟 Long Break (15 min)</button>
+      </div>
+
+      <div class="timer-display">
+        <div class="timer-circle" id="timerCircle">
+          <svg class="timer-progress" width="280" height="280">
+            <defs>
+              <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <circle class="timer-progress-bg" cx="140" cy="140" r="130"></circle>
+            <circle class="timer-progress-bar" cx="140" cy="140" r="130"
+              id="progressBar" stroke-dasharray="816.8" stroke-dashoffset="0"></circle>
+          </svg>
+          <div class="timer-time" id="timerDisplay">25:00</div>
+        </div>
+      </div>
+
+      <div class="timer-controls">
+        <button class="timer-btn btn-primary" id="startBtn">▶️ Start</button>
+        <button class="timer-btn btn-secondary" id="resetBtn">🔄 Reset</button>
+        <button class="timer-btn btn-secondary" id="focusDisplayBtn" type="button">🕒 Focus Display</button>
+      </div>
+
+      <div class="session-stats">
+        <div class="stat-card">
+          <div class="stat-icon">🍅</div>
+          <div class="stat-value" id="sessionsCompleted">0</div>
+          <div class="stat-label">Sessions</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">⏱️</div>
+          <div class="stat-value" id="totalMinutes">0</div>
+          <div class="stat-label">Minutes</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🔥</div>
+          <div class="stat-value" id="currentStreak">0</div>
+          <div class="stat-label">Day Streak</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="todo-section">
+        <div class="todo-header">
+          <h2>✅ Tasks <span class="task-counter" id="taskCounter">0</span></h2>
+        </div>
+
+        <div class="todo-input-group">
+          <input type="text" class="todo-input" id="todoInput" placeholder="What needs to be done?">
+          <button class="todo-add-btn" id="todoAddBtn">+</button>
+        </div>
+
+        <div class="todo-list" id="todoList">
+          <div class="todo-empty">📝 No tasks yet. Add one to get started!</div>
+        </div>
+      </div>
+
+      <div class="music-section">
+        <div class="music-header">
+          <h2>🎵 Focus Music</h2>
+          <span class="music-status" id="musicStatus">Stopped</span>
+        </div>
+
+        <div class="music-grid">
+          <button class="music-btn" data-sound="lofi"><div class="music-icon">🎼</div><div class="music-name">Lo-fi Beats</div></button>
+          <button class="music-btn" data-sound="rain"><div class="music-icon">🌧️</div><div class="music-name">Rain Sounds</div></button>
+          <button class="music-btn" data-sound="cafe"><div class="music-icon">☕</div><div class="music-name">Coffee Shop</div></button>
+          <button class="music-btn" data-sound="nature"><div class="music-icon">🌲</div><div class="music-name">Nature</div></button>
+          <button class="music-btn" data-sound="ocean"><div class="music-icon">🌊</div><div class="music-name">Ocean Waves</div></button>
+          <button class="music-btn" data-sound="fire"><div class="music-icon">🔥</div><div class="music-name">Fireplace</div></button>
+        </div>
+
+        <div class="volume-control">
+          <div class="volume-label">
+            <span>🔊 Volume</span>
+            <span id="volumeValue">50%</span>
+          </div>
+          <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="50">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="floating-buttons">
+    <button class="floating-btn btn-methods" id="methodsBtn" title="Study Methods">📖</button>
+    <button class="floating-btn btn-motivation" id="motivationBtn" title="Get Motivated">💪</button>
+  </div>
+
+  <!-- Study Methods Modal -->
+  <div class="modal" id="methodsModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>📖 Study Methods</h2>
+        <button class="modal-close" onclick="closeModal('methodsModal')">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="method-card">
+          <h3>🍅 Pomodoro Technique</h3>
+          <p>The method you're using right now! Work in focused 25-minute intervals followed by short breaks.</p>
+          <ul>
+            <li>Choose a task to work on</li>
+            <li>Set timer for 25 minutes (1 Pomodoro)</li>
+            <li>Work with full focus until timer rings</li>
+            <li>Take a 5-minute break</li>
+            <li>After 4 Pomodoros, take a 15-30 minute break</li>
+          </ul>
+        </div>
+
+        <div class="method-card">
+          <h3>📝 Active Recall</h3>
+          <p>Test yourself actively instead of passively re-reading notes. This strengthens memory significantly.</p>
+          <ul>
+            <li>Close your books and notes</li>
+            <li>Write down everything you remember about the topic</li>
+            <li>Check what you missed or got wrong</li>
+            <li>Focus on the gaps in your knowledge</li>
+            <li>Repeat the process regularly</li>
+          </ul>
+        </div>
+
+        <div class="method-card">
+          <h3>📅 Spaced Repetition</h3>
+          <p>Review information at increasing intervals to move it into long-term memory.</p>
+          <ul>
+            <li>Day 1: Learn new material</li>
+            <li>Day 2: Review</li>
+            <li>Day 4: Review again</li>
+            <li>Day 7: Review again</li>
+            <li>Day 14, 30, 60: Continue reviewing</li>
+          </ul>
+        </div>
+
+        <div class="method-card">
+          <h3>🎯 Feynman Technique</h3>
+          <p>Explain concepts in simple terms as if teaching someone else. Perfect for understanding complex topics.</p>
+          <ul>
+            <li>Choose a concept you want to learn</li>
+            <li>Explain it in simple language (pretend teaching a child)</li>
+            <li>Identify gaps in your explanation</li>
+            <li>Go back to source material to fill gaps</li>
+            <li>Simplify and use analogies</li>
+          </ul>
+        </div>
+
+        <div class="method-card">
+          <h3>🗺️ Mind Mapping</h3>
+          <p>Create visual diagrams connecting ideas and concepts for better understanding and memory.</p>
+          <ul>
+            <li>Start with main topic in the center</li>
+            <li>Branch out with subtopics</li>
+            <li>Use colors and images for memory</li>
+            <li>Connect related concepts</li>
+            <li>Review and expand your map</li>
+          </ul>
+        </div>
+
+        <div class="method-card">
+          <h3>📖 SQ3R Method</h3>
+          <p>Structured reading approach: Survey, Question, Read, Recite, Review</p>
+          <ul>
+            <li><strong>Survey:</strong> Skim the chapter for overview</li>
+            <li><strong>Question:</strong> Turn headings into questions</li>
+            <li><strong>Read:</strong> Read actively to answer questions</li>
+            <li><strong>Recite:</strong> Summarize in your own words</li>
+            <li><strong>Review:</strong> Go over material regularly</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Motivation Modal -->
+  <div class="modal" id="motivationModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>💪 Get Motivated</h2>
+        <button class="modal-close" onclick="closeModal('motivationModal')">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="quote-card" id="quoteCard">
+          <div class="quote-text" id="quoteText">"Education is the most powerful weapon which you can use to change the world."</div>
+          <div class="quote-author" id="quoteAuthor">— Nelson Mandela</div>
+          <button class="btn-new-quote" onclick="getNewQuote()">✨ New Quote</button>
+        </div>
+
+        <div class="method-card">
+          <h3>🎯 Remember Your Why</h3>
+          <p>As a Myanmar student, you're not just studying for yourself. You're building a better future for your family, your community, and your country. Every hour of focused study is an investment in Myanmar's tomorrow.</p>
+        </div>
+
+        <div class="method-card">
+          <h3>💪 Small Steps, Big Dreams</h3>
+          <p>Every 25-minute Pomodoro session is progress. Every practice problem solved is growth. Don't worry about perfection—focus on consistent improvement. You've got this!</p>
+        </div>
+
+        <div class="method-card">
+          <h3>🔥 Tips to Stay Motivated</h3>
+          <ul>
+            <li>Set specific, achievable daily goals</li>
+            <li>Celebrate small wins</li>
+            <li>Study with friends</li>
+            <li>Visualize your success</li>
+            <li>Take care of yourself</li>
+            <li>Remember: Bad days happen—tomorrow is a fresh start</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Theme Picker Modal -->
+  <div class="modal" id="themePickerModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>🎨 Choose Your Theme</h2>
+        <button class="modal-close" onclick="closeModal('themePickerModal')">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="theme-grid">
+          <div class="theme-option theme-default active" data-theme="default"><div class="music-icon">💜</div><div class="theme-name">Default Blue</div></div>
+          <div class="theme-option theme-ocean-opt" data-theme="ocean"><div class="music-icon">🌊</div><div class="theme-name">Ocean Blue</div></div>
+          <div class="theme-option theme-forest-opt" data-theme="forest"><div class="music-icon">🌲</div><div class="theme-name">Forest Green</div></div>
+          <div class="theme-option theme-sunset-opt" data-theme="sunset"><div class="music-icon">🌅</div><div class="theme-name">Sunset Orange</div></div>
+          <div class="theme-option theme-cherry-opt" data-theme="cherry"><div class="music-icon">🌸</div><div class="theme-name">Cherry Blossom</div></div>
+          <div class="theme-option theme-purple-opt" data-theme="purple"><div class="music-icon">🔮</div><div class="theme-name">Purple Dream</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <audio id="audioPlayer" loop></audio>
+
+  <!-- Focus Display overlay -->
+  <div class="focus-display" id="focusDisplay" aria-hidden="true">
+    <button class="focus-exit" id="focusExitBtn" type="button">Exit</button>
+
+    <div class="rotate-hint" id="rotateHint">
+      Rotate your phone to landscape for best view.
+    </div>
+
+    <div class="flip-clock" id="focusClock" aria-label="Timer">
+      <div class="flip-card"><span class="flip-digit" data-digit>2</span><span class="flip-line"></span></div>
+      <div class="flip-card"><span class="flip-digit" data-digit>5</span><span class="flip-line"></span></div>
+
+      <div class="flip-colon" aria-hidden="true">:</div>
+
+      <div class="flip-card"><span class="flip-digit" data-digit>0</span><span class="flip-line"></span></div>
+      <div class="flip-card"><span class="flip-digit" data-digit>0</span><span class="flip-line"></span></div>
+    </div>
+
+    <div class="focus-sub" id="focusSub">Focus</div>
+  </div>
+
+  <script src="study-mode.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+      if (!hamburger || !navLinks) return;
+
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('active');
+      });
+
+      navLinks.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+          hamburger.classList.remove('active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
