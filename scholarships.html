@@ -1,824 +1,838 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scholarships for Myanmar Students - High Schooler's Tool</title>
-    <link rel="stylesheet" href="hst.css">
-    <link rel="stylesheet" href="scholarships.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scholarships for Myanmar Students - High Schooler's Tool</title>
+
+  <link rel="stylesheet" href="hst.css" />
+  <link rel="stylesheet" href="scholarships.css" />
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <h2>HST</h2>
-                <span>High Schooler's Tool</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="hst.html">Home</a></li>
-                <li><a href="uni.html">Universities</a></li>
-                <li><a href="regions.html">Regions</a></li>
-                <li><a href="scholarships.html" class="active">Scholarships</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h2>HST</h2>
+        <span>High Schooler's Tool</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="hst.html">Home</a></li>
+        <li><a href="uni.html">Universities</a></li>
+        <li><a href="career-journey.html">Career journey</a></li>
+        <li><a href="study-mode.html">Study mode</a></li>
+        <li><a href="scholarships.html" class="active">Scholarships</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Search -->
+  <section class="scholarships-hero">
+    <div class="hero-gradient"></div>
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-badge">💰 Fund Your Education</span>
+        <h1 class="hero-title">Discover Scholarships for Myanmar Students</h1>
+        <p class="hero-subtitle">
+          Find and apply for scholarships to study locally or abroad - from government programs to international opportunities
+        </p>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+          <div class="search-box">
+            <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <input
+              type="text"
+              id="scholarshipSearch"
+              placeholder="Search scholarships by name, country, or field of study..."
+            />
+          </div>
         </div>
-    </nav>
 
-    <!-- Hero Section with Search -->
-    <section class="scholarships-hero">
-        <div class="hero-gradient"></div>
-        <div class="container">
-            <div class="hero-content">
-                <span class="hero-badge">💰 Fund Your Education</span>
-                <h1 class="hero-title">Discover Scholarships for Myanmar Students</h1>
-                <p class="hero-subtitle">Find and apply for scholarships to study locally or abroad - from government programs to international opportunities</p>
-                
-                <!-- Search Bar -->
-                <div class="search-container">
-                    <div class="search-box">
-                        <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                        <input type="text" id="scholarshipSearch" placeholder="Search scholarships by name, country, or field of study..." />
-                    </div>
-                </div>
-
-                <!-- Quick Stats -->
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-number" id="totalScholarships">0</span>
-                        <span class="stat-label">Scholarships Available</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">15+</span>
-                        <span class="stat-label">Countries</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">€50M+</span>
-                        <span class="stat-label">Total Funding</span>
-                    </div>
-                </div>
-            </div>
+        <!-- Quick Stats -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" id="totalScholarships">0</span>
+            <span class="stat-label">Scholarships Available</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Countries</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">€50M+</span>
+            <span class="stat-label">Total Funding</span>
+          </div>
         </div>
-        
-        <!-- Floating Shapes -->
-        <div class="floating-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
+      </div>
+    </div>
+
+    <!-- Floating Shapes -->
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+  </section>
+
+  <!-- Filter Section -->
+  <section class="filter-section">
+    <div class="container">
+      <div class="filter-card">
+        <div class="filter-header">
+          <h3>🔍 Filter Scholarships</h3>
+          <button class="reset-filters-btn" id="resetFilters">Reset All</button>
         </div>
-    </section>
 
-    <!-- Filter Section -->
-    <section class="filter-section">
-        <div class="container">
-            <div class="filter-card">
-                <div class="filter-header">
-                    <h3>🔍 Filter Scholarships</h3>
-                    <button class="reset-filters-btn" id="resetFilters">Reset All</button>
-                </div>
-                
-                <div class="filters-grid">
-                    <!-- Country Filter - FIXED: Added missing countries -->
-                    <div class="filter-group">
-                        <label class="filter-label">
-                            <span class="label-icon">🌍</span>
-                            <span>Country/Region</span>
-                        </label>
-                        <select id="countryFilter" class="filter-select">
-                            <option value="">All Countries</option>
-                            <option value="germany">🇩🇪 Germany</option>
-                            <option value="japan">🇯🇵 Japan</option>
-                            <option value="uk">🇬🇧 United Kingdom</option>
-                            <option value="australia">🇦🇺 Australia</option>
-                            <option value="usa">🇺🇸 United States</option>
-                            <option value="singapore">🇸🇬 Singapore</option>
-                            <option value="china">🇨🇳 China</option>
-                            <option value="korea">🇰🇷 South Korea</option>
-                            <option value="india">🇮🇳 India</option>
-                            <option value="thailand">🇹🇭 Thailand</option>
-                            <option value="vietnam">🇻🇳 Vietnam</option>
-                            <option value="philippines">🇵🇭 Philippines</option>
-                            <option value="canada">🇨🇦 Canada</option>
-                            <option value="myanmar">🇲🇲 Myanmar (Local)</option>
-                            <option value="asean">🌏 ASEAN/Multiple Countries</option>
-                        </select>
-                    </div>
+        <div class="filters-grid">
+          <!-- Country Filter -->
+          <div class="filter-group">
+            <label class="filter-label">
+              <span class="label-icon">🌍</span>
+              <span>Country/Region</span>
+            </label>
+            <select id="countryFilter" class="filter-select">
+              <option value="">All Countries</option>
+              <option value="germany">🇩🇪 Germany</option>
+              <option value="japan">🇯🇵 Japan</option>
+              <option value="uk">🇬🇧 United Kingdom</option>
+              <option value="australia">🇦🇺 Australia</option>
+              <option value="usa">🇺🇸 United States</option>
+              <option value="singapore">🇸🇬 Singapore</option>
+              <option value="china">🇨🇳 China</option>
+              <option value="korea">🇰🇷 South Korea</option>
+              <option value="india">🇮🇳 India</option>
+              <option value="thailand">🇹🇭 Thailand</option>
+              <option value="vietnam">🇻🇳 Vietnam</option>
+              <option value="philippines">🇵🇭 Philippines</option>
+              <option value="canada">🇨🇦 Canada</option>
+              <option value="myanmar">🇲🇲 Myanmar (Local)</option>
+              <option value="asean">🌏 ASEAN/Multiple Countries</option>
+            </select>
+          </div>
 
-                    <!-- Degree Level Filter -->
-                    <div class="filter-group">
-                        <label class="filter-label">
-                            <span class="label-icon">🎓</span>
-                            <span>Degree Level</span>
-                        </label>
-                        <select id="degreeFilter" class="filter-select">
-                            <option value="">All Levels</option>
-                            <option value="secondary">Secondary School</option>
-                            <option value="pre-university">Pre-University</option>
-                            <option value="bachelor">Bachelor's Degree</option>
-                            <option value="master">Master's Degree</option>
-                            <option value="phd">PhD/Doctoral</option>
-                            <option value="postdoc">Postdoctoral</option>
-                        </select>
-                    </div>
+          <!-- Degree Level Filter -->
+          <div class="filter-group">
+            <label class="filter-label">
+              <span class="label-icon">🎓</span>
+              <span>Degree Level</span>
+            </label>
+            <select id="degreeFilter" class="filter-select">
+              <option value="">All Levels</option>
+              <option value="secondary">Secondary School</option>
+              <option value="pre-university">Pre-University</option>
+              <option value="bachelor">Bachelor's Degree</option>
+              <option value="master">Master's Degree</option>
+              <option value="phd">PhD/Doctoral</option>
+              <option value="postdoc">Postdoctoral</option>
+            </select>
+          </div>
 
-                    <!-- Category Filter -->
-                    <div class="filter-group">
-                        <label class="filter-label">
-                            <span class="label-icon">🏆</span>
-                            <span>Category</span>
-                        </label>
-                        <select id="categoryFilter" class="filter-select">
-                            <option value="">All Categories</option>
-                            <option value="government">Government</option>
-                            <option value="university">University</option>
-                            <option value="private">Private/Organization</option>
-                            <option value="regional">Regional</option>
-                        </select>
-                    </div>
+          <!-- Category Filter -->
+          <div class="filter-group">
+            <label class="filter-label">
+              <span class="label-icon">🏆</span>
+              <span>Category</span>
+            </label>
+            <select id="categoryFilter" class="filter-select">
+              <option value="">All Categories</option>
+              <option value="government">Government</option>
+              <option value="university">University</option>
+              <option value="private">Private/Organization</option>
+              <option value="regional">Regional</option>
+            </select>
+          </div>
 
-                    <!-- Deadline Filter -->
-                    <div class="filter-group">
-                        <label class="filter-label">
-                            <span class="label-icon">⏰</span>
-                            <span>Deadline Status</span>
-                        </label>
-                        <select id="deadlineFilter" class="filter-select">
-                            <option value="">All Deadlines</option>
-                            <option value="open">Open Now</option>
-                            <option value="closing-soon">Closing Soon (30 days)</option>
-                            <option value="upcoming">Upcoming</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
+          <!-- Deadline Filter -->
+          <div class="filter-group">
+            <label class="filter-label">
+              <span class="label-icon">⏰</span>
+              <span>Deadline Status</span>
+            </label>
+            <select id="deadlineFilter" class="filter-select">
+              <option value="">All Deadlines</option>
+              <option value="open">Open Now</option>
+              <option value="closing-soon">Closing Soon (30 days)</option>
+              <option value="upcoming">Upcoming</option>
+            </select>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Results Section -->
-    <section class="results-section">
-        <div class="container">
-            <div class="results-header">
-                <h2>
-                    <span id="resultsCount">0</span> Scholarships Found
-                </h2>
-                <div class="sort-options">
-                    <label>Sort by:</label>
-                    <select id="sortBy" class="sort-select">
-                        <option value="deadline">Deadline (Soonest First)</option>
-                        <option value="amount">Funding Amount (Highest First)</option>
-                        <option value="name">Name (A-Z)</option>
-                    </select>
-                </div>
-            </div>
-
-            <!-- Scholarships List -->
-            <div id="scholarshipsList" class="scholarships-list">
-                <!-- Cards will appear here -->
-            </div>
-
-            <!-- No Results Message -->
-            <div id="noResults" class="no-results" style="display: none;">
-                <div class="no-results-icon">🔍</div>
-                <h3>No Scholarships Found</h3>
-                <p>Try adjusting your filters or search terms</p>
-                <button class="reset-btn" onclick="window.resetAllFilters()">Reset Filters</button>
-            </div>
+  <!-- Results Section -->
+  <section class="results-section">
+    <div class="container">
+      <div class="results-header">
+        <h2><span id="resultsCount">0</span> Scholarships Found</h2>
+        <div class="sort-options">
+          <label>Sort by:</label>
+          <select id="sortBy" class="sort-select">
+            <option value="deadline">Deadline (Soonest First)</option>
+            <option value="amount">Funding Amount (Highest First)</option>
+            <option value="name">Name (A-Z)</option>
+          </select>
         </div>
-    </section>
+      </div>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Need Help Finding the Right Scholarship?</h2>
-                <p>Check out our comprehensive guide on how to find and apply for scholarships successfully</p>
-                <a href="scholarship-guide.html" class="cta-button">
-                    <span>Read Scholarship Guide</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"/>
-                    </svg>
-                </a>
-            </div>
+      <!-- Scholarships List -->
+      <div id="scholarshipsList" class="scholarships-list"></div>
+
+      <!-- No Results Message -->
+      <div id="noResults" class="no-results" style="display:none;">
+        <div class="no-results-icon">🔍</div>
+        <h3>No Scholarships Found</h3>
+        <p>Try adjusting your filters or search terms</p>
+        <button class="reset-btn" onclick="window.resetAllFilters()">Reset Filters</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Need Help Finding the Right Scholarship?</h2>
+        <p>Check out our comprehensive guide on how to find and apply for scholarships successfully</p>
+        <a href="scholarship-guide.html" class="cta-button">
+          <span>Read Scholarship Guide</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>High Schooler's Tool</h3>
+          <p>Empowering Myanmar students to make informed university and scholarship choices</p>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>High Schooler's Tool</h3>
-                    <p>Empowering Myanmar students to make informed university and scholarship choices</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="uni.html">Universities</a></li>
-                        <li><a href="scholarships.html">Scholarships</a></li>
-                        <li><a href="regions.html">Regions</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>University of Computer Studies, Taunggyi</p>
-                    <p>Email: info@hst.edu.mm</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 High Schooler's Tool. All rights reserved.</p>
-            </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="uni.html">Universities</a></li>
+            <li><a href="scholarships.html">Scholarships</a></li>
+            <li><a href="regions.html">Regions</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
         </div>
-    </footer>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>University of Computer Studies, Taunggyi</p>
+          <p>Email: info@hst.edu.mm</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 High Schooler's Tool. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
-    <!-- EMBEDDED JAVASCRIPT -->
-    <script>
-    // SCHOLARSHIPS DATA - FIXED: Removed duplicate SEARCA entry
-    const scholarshipsData = [
-        {
-            id: "daad",
-            name: "DAAD Scholarship Programme",
-            organization: "German Academic Exchange Service",
-            country: "germany",
-            flag: "🇩🇪",
-            image: "germany.jpg",
-            amount: "€1,200 - €2,000",
-            amountValue: 2000,
-            period: "per month",
-            description: "Study in Germany or ASEAN countries with full funding covering tuition, living expenses, travel, and insurance for Master's, PhD, and Postdoctoral programs.",
-            category: "government",
-            degreeLevel: ["master", "phd", "postdoc"],
-            deadline: "2026-03-31",
-            link: "s.html",
-            highlights: [
-                "Full tuition coverage",
-                "Monthly stipend €1,200-€2,760",
-                "Health insurance included",
-                "Flight tickets provided"
-            ],
-            tags: ["International", "Full Funding", "Europe", "Research"]
-        },
-        {
-    id: "gks",
-    name: "GKS (Global Korea Scholarship)",
-    organization: "Korean Government",
-    country: "south korea",
-    flag: "🇰🇷",
-    image: "korea.jpg",
-    amount: "₩900,000-1,133,330",
-    amountValue: 1000,
-    period: "per month",
-    description: "Korean government scholarship for undergraduate and graduate studies in South Korea, including Korean language training, tuition waiver, and monthly living allowance.",
-    category: "government",
-    degreeLevel: ["bachelor", "master", "phd"],
-    deadline: "2026-02-28",
-    link: "gks.html",
-    highlights: [
+  <!-- EMBEDDED JAVASCRIPT -->
+  <script>
+  // SCHOLARSHIPS DATA
+  const scholarshipsData = [
+    {
+      id: "daad",
+      name: "DAAD Scholarship Programme",
+      organization: "German Academic Exchange Service",
+      country: "germany",
+      flag: "🇩🇪",
+      image: "germany.jpg",
+      amount: "€1,200 - €2,000",
+      amountValue: 2000,
+      period: "per month",
+      description: "Study in Germany or ASEAN countries with full funding covering tuition, living expenses, travel, and insurance for Master's, PhD, and Postdoctoral programs.",
+      category: "government",
+      degreeLevel: ["master", "phd", "postdoc"],
+      deadline: "2026-03-31",
+      link: "s.html",
+      highlights: [
+        "Full tuition coverage",
+        "Monthly stipend €1,200-€2,760",
+        "Health insurance included",
+        "Flight tickets provided"
+      ],
+      tags: ["International", "Full Funding", "Europe", "Research"]
+    },
+    {
+      id: "gks",
+      name: "GKS (Global Korea Scholarship)",
+      organization: "Korean Government",
+      country: "korea",
+      flag: "🇰🇷",
+      image: "korea.jpg",
+      amount: "₩900,000-1,133,330",
+      amountValue: 1000,
+      period: "per month",
+      description: "Korean government scholarship for undergraduate and graduate studies in South Korea, including Korean language training, tuition waiver, and monthly living allowance.",
+      category: "government",
+      degreeLevel: ["bachelor", "master", "phd"],
+      deadline: "2026-02-28",
+      link: "gks.html",
+      highlights: [
         "Korean language training (1 year)",
         "Tuition coverage up to ₩5,000,000",
         "Monthly stipend ₩900,000-1,133,330",
         "Round-trip airfare included",
         "Health insurance coverage"
-    ],
-    tags: ["International", "South Korea", "Full Funding", "Language", "TOPIK Bonus"]
-},
-
-        {
-            id: "chevening",
-            name: "Chevening Scholarship",
-            organization: "UK Government",
-            country: "uk",
-            flag: "🇬🇧",
-            image: "uk.jpg",
-            amount: "Full Funding",
-            amountValue: 30000,
-            period: "for 1 year",
-            description: "UK government's prestigious scholarship for outstanding emerging leaders to pursue one-year master's degrees at any UK university with full financial support.",
-            category: "government",
-            degreeLevel: ["master"],
-            deadline: "2026-11-03",
-            link: "chevening.html",
-            highlights: [
-                "Any UK university",
-                "Full tuition + living costs",
-                "Return flights",
-                "Leadership development"
-            ],
-            tags: ["International", "Leadership", "Full Funding", "UK"]
-        },
-        {
-            id: "mext",
-            name: "MEXT Scholarship",
-            organization: "Japanese Government",
-            country: "japan",
-            flag: "🇯🇵",
-            image: "japan.jpg",
-            amount: "¥144,000",
-            amountValue: 1200,
-            period: "per month",
-            description: "Japanese government scholarship for undergraduate and graduate studies in Japan, including language training, tuition waiver, and generous monthly stipend.",
-            category: "government",
-            degreeLevel: ["bachelor", "master", "phd"],
-            deadline: "2026-06-15",
-            link: "mext (2).html",
-            highlights: [
-                "Japanese language training",
-                "Zero tuition fees",
-                "Monthly allowance ¥144,000",
-                "Round-trip airfare"
-            ],
-            tags: ["International", "Japan", "Full Funding", "Language"]
-        },
-        {
-            id: "asean-singapore",
-            name: "ASEAN Scholarship Singapore",
-            organization: "Ministry of Education, Singapore",
-            country: "singapore",
-            flag: "🇸🇬",
-            image: "study2.jpg",
-            amount: "Full Funding",
-            amountValue: 25000,
-            period: "for 4-6 years",
-            description: "Singapore government scholarship for ASEAN nationals including Myanmar to study from Secondary 3 to Pre-University, leading to GCE A-Level at top Singapore schools.",
-            category: "government",
-            degreeLevel: ["secondary", "pre-university"],
-            deadline: "2026-05-30",
-            link: "asean.html",
-            highlights: [
-                "Full tuition + school fees",
-                "Annual living allowance",
-                "Hostel accommodation",
-                "Return airfare Myanmar-Singapore",
-                "Settling-in allowance",
-                "Medical benefits & insurance"
-            ],
-            tags: ["ASEAN", "Singapore", "Full Funding", "Secondary Education"]
-        },
-        {
-    id: "canada-asean",
-    name: "Canada-ASEAN SEED Scholarship",
-    organization: "Canadian Government",
-    country: "canada",
-    flag: "🇨🇦",
-    image: "canada.jpg",
-    amount: "CAD $10,200",
-    amountValue: 850,
-    period: "for exchange program",
-    description: "Canadian government scholarship for ASEAN students including Myanmar for short-term exchange programs at Canadian post-secondary institutions, focused on poverty reduction and sustainable development.",
-    category: "government",
-    degreeLevel: ["bachelor", "master"],
-    deadline: "2026-03-31",
-    link: "canada-seed.html",
-    highlights: [
+      ],
+      tags: ["International", "South Korea", "Full Funding", "Language", "TOPIK Bonus"]
+    },
+    {
+      id: "chevening",
+      name: "Chevening Scholarship",
+      organization: "UK Government",
+      country: "uk",
+      flag: "🇬🇧",
+      image: "uk.jpg",
+      amount: "Full Funding",
+      amountValue: 30000,
+      period: "for 1 year",
+      description: "UK government's prestigious scholarship for outstanding emerging leaders to pursue one-year master's degrees at any UK university with full financial support.",
+      category: "government",
+      degreeLevel: ["master"],
+      deadline: "2026-11-03",
+      link: "chevening.html",
+      highlights: [
+        "Any UK university",
+        "Full tuition + living costs",
+        "Return flights",
+        "Leadership development"
+      ],
+      tags: ["International", "Leadership", "Full Funding", "UK"]
+    },
+    {
+      id: "mext",
+      name: "MEXT Scholarship",
+      organization: "Japanese Government",
+      country: "japan",
+      flag: "🇯🇵",
+      image: "japan.jpg",
+      amount: "¥144,000",
+      amountValue: 1200,
+      period: "per month",
+      description: "Japanese government scholarship for undergraduate and graduate studies in Japan, including language training, tuition waiver, and generous monthly stipend.",
+      category: "government",
+      degreeLevel: ["bachelor", "master", "phd"],
+      deadline: "2026-06-15",
+      link: "mext (2).html",
+      highlights: [
+        "Japanese language training",
+        "Zero tuition fees",
+        "Monthly allowance ¥144,000",
+        "Round-trip airfare"
+      ],
+      tags: ["International", "Japan", "Full Funding", "Language"]
+    },
+    {
+      id: "asean-singapore",
+      name: "ASEAN Scholarship Singapore",
+      organization: "Ministry of Education, Singapore",
+      country: "singapore",
+      flag: "🇸🇬",
+      image: "study2.jpg",
+      amount: "Full Funding",
+      amountValue: 25000,
+      period: "for 4-6 years",
+      description: "Singapore government scholarship for ASEAN nationals including Myanmar to study from Secondary 3 to Pre-University, leading to GCE A-Level at top Singapore schools.",
+      category: "government",
+      degreeLevel: ["secondary", "pre-university"],
+      deadline: "2026-05-30",
+      link: "asean.html",
+      highlights: [
+        "Full tuition + school fees",
+        "Annual living allowance",
+        "Hostel accommodation",
+        "Return airfare Myanmar-Singapore",
+        "Settling-in allowance",
+        "Medical benefits & insurance"
+      ],
+      tags: ["ASEAN", "Singapore", "Full Funding", "Secondary Education"]
+    },
+    {
+      id: "canada-asean",
+      name: "Canada-ASEAN SEED Scholarship",
+      organization: "Canadian Government",
+      country: "canada",
+      flag: "🇨🇦",
+      image: "canada.jpg",
+      amount: "CAD $10,200",
+      amountValue: 850,
+      period: "for exchange program",
+      description: "Canadian government scholarship for ASEAN students including Myanmar for short-term exchange programs at Canadian post-secondary institutions, focused on poverty reduction and sustainable development.",
+      category: "government",
+      degreeLevel: ["bachelor", "master"],
+      deadline: "2026-03-31",
+      link: "canada-seed.html",
+      highlights: [
         "Full scholarship CAD $10,200",
         "Exchange at Canadian universities",
         "Focus on development goals",
         "ASEAN priority countries",
         "Poverty reduction focus"
-    ],
-    tags: ["International", "Canada", "Full Funding", "ASEAN", "Development", "Exchange"]
-},
+      ],
+      tags: ["International", "Canada", "Full Funding", "ASEAN", "Development", "Exchange"]
+    },
+    {
+      id: "asean-ntu-nus",
+      name: "ASEAN Undergraduate Scholarship (NTU/NUS)",
+      organization: "NTU & NUS Singapore",
+      country: "singapore",
+      flag: "🇸🇬",
+      image: "nus.jpg",
+      amount: "Full Funding",
+      amountValue: 30000,
+      period: "for 4 years",
+      description: "Full scholarship for Myanmar students to pursue Bachelor's degree at Nanyang Technological University (NTU) or National University of Singapore (NUS).",
+      category: "university",
+      degreeLevel: ["bachelor"],
+      deadline: "2026-01-04",
+      link: "asean-undergrad.html",
+      highlights: [
+        "Full tuition fees covered",
+        "Living allowance SGD 6,200/year",
+        "Accommodation allowance",
+        "Return airfare",
+        "Computer allowance SGD 1,750"
+      ],
+      tags: ["ASEAN", "Singapore", "Full Funding", "Undergraduate", "Top Universities"]
+    },
+    {
+      id: "ait-thailand",
+      name: "AIT Scholarships",
+      organization: "Asian Institute of Technology",
+      country: "thailand",
+      flag: "🇹🇭",
+      image: "ait.jpg",
+      amount: "$1,000 - Full Funding",
+      amountValue: 18000,
+      period: "for program duration",
+      description: "Academic scholarships for Myanmar students pursuing Master's or Doctoral degrees at AIT Thailand. Multiple scholarship types available including Royal Thai Government and AIT Fellowships.",
+      category: "university",
+      degreeLevel: ["master", "phd"],
+      deadline: "2025-12-20",
+      link: "ait.html",
+      highlights: [
+        "Tuition fee waiver",
+        "Monthly stipend $1,000-$1,500",
+        "No bond requirement",
+        "English-taught programs",
+        "Multiple intakes per year"
+      ],
+      tags: ["Thailand", "Engineering", "No Bond", "Partial/Full Funding"]
+    },
+    {
+      id: "iccr-india",
+      name: "ICCR Scholarship",
+      organization: "Indian Council for Cultural Relations",
+      country: "india",
+      flag: "🇮🇳",
+      image: "india.jpg",
+      amount: "INR 18,000/month",
+      amountValue: 220,
+      period: "per month",
+      description: "Indian government offers 39 annual scholarships for Myanmar students for undergraduate, postgraduate, and PhD studies in India across various subjects including engineering, agriculture, and Buddhist studies.",
+      category: "government",
+      degreeLevel: ["bachelor", "master", "phd"],
+      deadline: "2026-05-15",
+      link: "iccr.html",
+      highlights: [
+        "39 scholarships annually",
+        "Tuition fee waiver",
+        "Monthly stipend INR 18,000",
+        "Free accommodation",
+        "Popular: B.Tech, MBA, Agriculture, Buddhist Studies"
+      ],
+      tags: ["India", "Government", "39 Slots", "Buddhist Studies"]
+    },
+    {
+      id: "csc-china",
+      name: "Chinese Government Scholarship (CSC)",
+      organization: "China Scholarship Council",
+      country: "china",
+      flag: "🇨🇳",
+      image: "china.jpg",
+      amount: "CNY 3,000 - 3,500",
+      amountValue: 450,
+      period: "per month",
+      description: "Comprehensive scholarship from Chinese government for Myanmar students to pursue Bachelor's, Master's, or PhD at over 300 Chinese universities with full financial support.",
+      category: "government",
+      degreeLevel: ["bachelor", "master", "phd"],
+      deadline: "2026-04-30",
+      link: "csc.html",
+      highlights: [
+        "300+ universities available",
+        "Full tuition waiver",
+        "Free accommodation or housing allowance",
+        "Monthly stipend CNY 3,000-3,500",
+        "Medical insurance included",
+        "Chinese language training"
+      ],
+      tags: ["China", "Government", "Full Funding", "300+ Universities"]
+    },
+    {
+      id: "searca-philippines",
+      name: "SEARCA Graduate Scholarship",
+      organization: "Southeast Asian Regional Center for Graduate Study",
+      country: "philippines",
+      flag: "🇵🇭",
+      image: "regional.jpg",
+      amount: "Full Funding",
+      amountValue: 800,
+      period: "for 2 years",
+      description: "SEARCA offers MS and PhD scholarships for Myanmar students in agriculture, forestry, fisheries, environmental science, and related fields at partner universities in Southeast Asia.",
+      category: "regional",
+      degreeLevel: ["master", "phd"],
+      deadline: "2026-01-31",
+      link: "searca.html",
+      highlights: [
+        "Agriculture & environmental focus",
+        "Full tuition coverage",
+        "Monthly stipend PHP 30,000",
+        "Book allowance",
+        "Thesis/dissertation grant",
+        "Round-trip airfare"
+      ],
+      tags: ["ASEAN", "Agriculture", "Environment", "Full Funding"]
+    },
+    {
+      id: "childs-dream",
+      name: "Child's Dream University Scholarship",
+      organization: "Child's Dream Foundation",
+      country: "myanmar",
+      flag: "🇲🇲",
+      image: "thai.jpg",
+      amount: "Varies",
+      amountValue: 200,
+      period: "for program duration",
+      description: "Supports academically strong Myanmar students from disadvantaged backgrounds to pursue tertiary education in Myanmar or Thailand. Focus on creating future leaders for community development.",
+      category: "private",
+      degreeLevel: ["bachelor"],
+      deadline: "2026-03-31",
+      link: "childsdream.html",
+      highlights: [
+        "For disadvantaged backgrounds",
+        "Study in Myanmar or Thailand",
+        "4-year program support",
+        "Tuition + living expenses",
+        "Career mentorship included"
+      ],
+      tags: ["Local", "Myanmar", "Need-Based", "Leadership"]
+    },
+    {
+      id: "isow-canada",
+      name: "ISOW Scholarship at Wilfrid Laurier University",
+      organization: "International Student Outreach at Wilfrid Laurier",
+      country: "canada",
+      flag: "🇨🇦",
+      image: "study.jpg",
+      amount: "Full Funding",
+      amountValue: 40000,
+      period: "for program duration",
+      description: "ISOW partners with Prospect Burma to provide full scholarships for Myanmar students to pursue undergraduate degrees at Wilfrid Laurier University in Canada, covering tuition, living expenses, and settlement support.",
+      category: "university",
+      degreeLevel: ["bachelor"],
+      deadline: "2026-02-28",
+      link: "scholarship-isow-canada.html",
+      highlights: [
+        "Study at Wilfrid Laurier University",
+        "Full tuition waiver",
+        "Living expenses covered",
+        "Settlement support",
+        "Partnership with Prospect Burma",
+        "4-year program"
+      ],
+      tags: ["Canada", "Full Funding", "Undergraduate", "Prospect Burma Partner"]
+    },
+    {
+      id: "prospect-burma",
+      name: "Prospect Burma Higher Education Scholarship",
+      organization: "Prospect Burma",
+      country: "asean",
+      flag: "🌏",
+      image: "pb.jpg",
+      amount: "Full Support",
+      amountValue: 15000,
+      period: "for program duration",
+      description: "Supporting young Myanmar people from disadvantaged backgrounds to attend universities abroad in 19 countries. Covers travel, visas, health insurance, accommodation, living expenses, and tuition fees with university partnerships for fee waivers.",
+      category: "private",
+      degreeLevel: ["bachelor", "master", "phd"],
+      deadline: "Rolling",
+      link: "prospectburma.html",
+      highlights: [
+        "1,500+ scholars supported since 1990s",
+        "Study in 19 countries worldwide",
+        "50-100 scholarships annually",
+        "9 fee waiver university partnerships",
+        "49% awarded to female students",
+        "95% return to Myanmar within 5 years",
+        "Holistic support: mentoring & pastoral care",
+        "134 subjects across 8 fields"
+      ],
+      tags: ["International", "Full Funding", "Disadvantaged Youth", "Multiple Countries", "Mentorship"]
+    },
+    {
+      id: "hcmc-open-bright",
+      name: "Open Bright Scholarship - HCMC OU",
+      organization: "Ho Chi Minh City Open University",
+      country: "vietnam",
+      flag: "🇻🇳",
+      image: "vn.jpg",
+      amount: "Full Tuition + VND 4,500,000",
+      amountValue: 180,
+      period: "per month + 4 years tuition",
+      description: "Full scholarship for international students aged 18-40 from Myanmar to study Bachelor's programs at HCMC Open University, Vietnam. Includes full tuition for 4 years, monthly living expenses, and Vietnamese language training.",
+      category: "university",
+      degreeLevel: ["bachelor"],
+      deadline: "2026-03-31",
+      link: "openbright.html",
+      highlights: [
+        "Full 4-year tuition waiver",
+        "Living allowance VND 4,500,000/month (≈$180)",
+        "1 year Vietnamese language training",
+        "IELTS 5.5 for English programs",
+        "Vietnamese B2 for Vietnamese programs",
+        "3-month Vietnamese foundation course",
+        "Letter of recommendation required",
+        "Priority for community service record"
+      ],
+      tags: ["Vietnam", "Full Funding", "Language Training", "ASEAN", "Living Allowance"]
+    },
+    {
+      id: "hcmc-fellowship-phd",
+      name: "Fellowship Scholarship - HCMC OU (PhD)",
+      organization: "Ho Chi Minh City Open University",
+      country: "vietnam",
+      flag: "🇻🇳",
+      image: "vn2.jpg",
+      amount: "Full Tuition + VND 10,000,000",
+      amountValue: 400,
+      period: "per month",
+      description: "Full-ride doctoral scholarship for Myanmar PhD students at HCMC Open University with teaching or research assistant positions. Includes full tuition waiver and generous monthly living expenses throughout PhD program.",
+      category: "university",
+      degreeLevel: ["phd"],
+      deadline: "Rolling",
+      link: "fellowship-phd.html",
+      highlights: [
+        "Full PhD tuition waiver",
+        "Living expenses VND 10,000,000/month (≈$400)",
+        "Teaching assistant (8 classes/year) OR",
+        "Research assistant in English",
+        "Face-to-face interview required",
+        "Full-ride for entire PhD duration",
+        "32,000+ students at HCMCOU",
+        "1,000+ master's degrees granted"
+      ],
+      tags: ["Vietnam", "PhD", "Full Funding", "Teaching/Research Assistant", "Doctoral"]
+    }
+  ];
 
-        {
-            id: "asean-ntu-nus",
-            name: "ASEAN Undergraduate Scholarship (NTU/NUS)",
-            organization: "NTU & NUS Singapore",
-            country: "singapore",
-            flag: "🇸🇬",
-            image: "nus.jpg",
-            amount: "Full Funding",
-            amountValue: 30000,
-            period: "for 4 years",
-            description: "Full scholarship for Myanmar students to pursue Bachelor's degree at Nanyang Technological University (NTU) or National University of Singapore (NUS).",
-            category: "university",
-            degreeLevel: ["bachelor"],
-            deadline: "2026-01-04",
-            link: "asean-undergrad.html",
-            highlights: [
-                "Full tuition fees covered",
-                "Living allowance SGD 6,200/year",
-                "Accommodation allowance",
-                "Return airfare",
-                "Computer allowance SGD 1,750"
-            ],
-            tags: ["ASEAN", "Singapore", "Full Funding", "Undergraduate", "Top Universities"]
-        },
-        {
-            id: "ait-thailand",
-            name: "AIT Scholarships",
-            organization: "Asian Institute of Technology",
-            country: "thailand",
-            flag: "🇹🇭",
-            image: "ait.jpg",
-            amount: "$1,000 - Full Funding",
-            amountValue: 18000,
-            period: "for program duration",
-            description: "Academic scholarships for Myanmar students pursuing Master's or Doctoral degrees at AIT Thailand. Multiple scholarship types available including Royal Thai Government and AIT Fellowships.",
-            category: "university",
-            degreeLevel: ["master", "phd"],
-            deadline: "2025-12-20",
-            link: "ait.html",
-            highlights: [
-                "Tuition fee waiver",
-                "Monthly stipend $1,000-$1,500",
-                "No bond requirement",
-                "English-taught programs",
-                "Multiple intakes per year"
-            ],
-            tags: ["Thailand", "Engineering", "No Bond", "Partial/Full Funding"]
-        },
-        {
-            id: "iccr-india",
-            name: "ICCR Scholarship",
-            organization: "Indian Council for Cultural Relations",
-            country: "india",
-            flag: "🇮🇳",
-            image: "india.jpg",
-            amount: "INR 18,000/month",
-            amountValue: 220,
-            period: "per month",
-            description: "Indian government offers 39 annual scholarships for Myanmar students for undergraduate, postgraduate, and PhD studies in India across various subjects including engineering, agriculture, and Buddhist studies.",
-            category: "government",
-            degreeLevel: ["bachelor", "master", "phd"],
-            deadline: "2026-05-15",
-            link: "iccr.html",
-            highlights: [
-                "39 scholarships annually",
-                "Tuition fee waiver",
-                "Monthly stipend INR 18,000",
-                "Free accommodation",
-                "Popular: B.Tech, MBA, Agriculture, Buddhist Studies"
-            ],
-            tags: ["India", "Government", "39 Slots", "Buddhist Studies"]
-        },
-        {
-            id: "csc-china",
-            name: "Chinese Government Scholarship (CSC)",
-            organization: "China Scholarship Council",
-            country: "china",
-            flag: "🇨🇳",
-            image: "china.jpg",
-            amount: "CNY 3,000 - 3,500",
-            amountValue: 450,
-            period: "per month",
-            description: "Comprehensive scholarship from Chinese government for Myanmar students to pursue Bachelor's, Master's, or PhD at over 300 Chinese universities with full financial support.",
-            category: "government",
-            degreeLevel: ["bachelor", "master", "phd"],
-            deadline: "2026-04-30",
-            link: "csc.html",
-            highlights: [
-                "300+ universities available",
-                "Full tuition waiver",
-                "Free accommodation or housing allowance",
-                "Monthly stipend CNY 3,000-3,500",
-                "Medical insurance included",
-                "Chinese language training"
-            ],
-            tags: ["China", "Government", "Full Funding", "300+ Universities"]
-        },
-        {
-            id: "searca-philippines",
-            name: "SEARCA Graduate Scholarship",
-            organization: "Southeast Asian Regional Center for Graduate Study",
-            country: "philippines",
-            flag: "🇵🇭",
-            image: "regional.jpg",
-            amount: "Full Funding",
-            amountValue: 800,
-            period: "for 2 years",
-            description: "SEARCA offers MS and PhD scholarships for Myanmar students in agriculture, forestry, fisheries, environmental science, and related fields at partner universities in Southeast Asia.",
-            category: "regional",
-            degreeLevel: ["master", "phd"],
-            deadline: "2026-01-31",
-            link: "searca.html",
-            highlights: [
-                "Agriculture & environmental focus",
-                "Full tuition coverage",
-                "Monthly stipend PHP 30,000",
-                "Book allowance",
-                "Thesis/dissertation grant",
-                "Round-trip airfare"
-            ],
-            tags: ["ASEAN", "Agriculture", "Environment", "Full Funding"]
-        },
-        {
-            id: "childs-dream",
-            name: "Child's Dream University Scholarship",
-            organization: "Child's Dream Foundation",
-            country: "myanmar",
-            flag: "🇲🇲",
-            image: "thai.jpg",
-            amount: "Varies",
-            amountValue: 200,
-            period: "for program duration",
-            description: "Supports academically strong Myanmar students from disadvantaged backgrounds to pursue tertiary education in Myanmar or Thailand. Focus on creating future leaders for community development.",
-            category: "private",
-            degreeLevel: ["bachelor"],
-            deadline: "2026-03-31",
-            link: "childsdream.html",
-            highlights: [
-                "For disadvantaged backgrounds",
-                "Study in Myanmar or Thailand",
-                "4-year program support",
-                "Tuition + living expenses",
-                "Career mentorship included"
-            ],
-            tags: ["Local", "Myanmar", "Need-Based", "Leadership"]
-        },
-        {
-            id: "isow-canada",
-            name: "ISOW Scholarship at Wilfrid Laurier University",
-            organization: "International Student Outreach at Wilfrid Laurier",
-            country: "canada",
-            flag: "🇨🇦",
-            image: "study.jpg",
-            amount: "Full Funding",
-            amountValue: 40000,
-            period: "for program duration",
-            description: "ISOW partners with Prospect Burma to provide full scholarships for Myanmar students to pursue undergraduate degrees at Wilfrid Laurier University in Canada, covering tuition, living expenses, and settlement support.",
-            category: "university",
-            degreeLevel: ["bachelor"],
-            deadline: "2026-02-28",
-            link: "scholarship-isow-canada.html",
-            highlights: [
-                "Study at Wilfrid Laurier University",
-                "Full tuition waiver",
-                "Living expenses covered",
-                "Settlement support",
-                "Partnership with Prospect Burma",
-                "4-year program"
-            ],
-            tags: ["Canada", "Full Funding", "Undergraduate", "Prospect Burma Partner"]
-        },
-        {
-            id: "prospect-burma",
-            name: "Prospect Burma Higher Education Scholarship",
-            organization: "Prospect Burma",
-            country: "thailand",
-            flag: "🌏",
-            image: "pb.jpg",
-            amount: "Full Support",
-            amountValue: 15000,
-            period: "for program duration",
-            description: "Supporting young Myanmar people from disadvantaged backgrounds to attend universities abroad in 19 countries. Covers travel, visas, health insurance, accommodation, living expenses, and tuition fees with university partnerships for fee waivers.",
-            category: "private",
-            degreeLevel: ["bachelor", "master", "phd"],
-            deadline: "Rolling (check portal)",
-            link: "prospectburma.html",
-            highlights: [
-                "1,500+ scholars supported since 1990s",
-                "Study in 19 countries worldwide",
-                "50-100 scholarships annually",
-                "9 fee waiver university partnerships",
-                "49% awarded to female students",
-                "95% return to Myanmar within 5 years",
-                "Holistic support: mentoring & pastoral care",
-                "134 subjects across 8 fields"
-            ],
-            tags: ["International", "Full Funding", "Disadvantaged Youth", "Multiple Countries", "Mentorship"]
-        },
-        {
-            id: "hcmc-open-bright",
-            name: "Open Bright Scholarship - HCMC OU",
-            organization: "Ho Chi Minh City Open University",
-            country: "vietnam",
-            flag: "🇻🇳",
-            image: "vn.jpg",
-            amount: "Full Tuition + VND 4,500,000",
-            amountValue: 180,
-            period: "per month + 4 years tuition",
-            description: "Full scholarship for international students aged 18-40 from Myanmar to study Bachelor's programs at HCMC Open University, Vietnam. Includes full tuition for 4 years, monthly living expenses, and Vietnamese language training.",
-            category: "university",
-            degreeLevel: ["bachelor"],
-            deadline: "2026-03-31",
-            link: "openbright.html",
-            highlights: [
-                "Full 4-year tuition waiver",
-                "Living allowance VND 4,500,000/month (≈$180)",
-                "1 year Vietnamese language training",
-                "IELTS 5.5 for English programs",
-                "Vietnamese B2 for Vietnamese programs",
-                "3-month Vietnamese foundation course",
-                "Letter of recommendation required",
-                "Priority for community service record"
-            ],
-            tags: ["Vietnam", "Full Funding", "Language Training", "ASEAN", "Living Allowance"]
-        },
-        {
-            id: "hcmc-fellowship-phd",
-            name: "Fellowship Scholarship - HCMC OU (PhD)",
-            organization: "Ho Chi Minh City Open University",
-            country: "vietnam",
-            flag: "🇻🇳",
-            image: "vn2.jpg",
-            amount: "Full Tuition + VND 10,000,000",
-            amountValue: 400,
-            period: "per month",
-            description: "Full-ride doctoral scholarship for Myanmar PhD students at HCMC Open University with teaching or research assistant positions. Includes full tuition waiver and generous monthly living expenses throughout PhD program.",
-            category: "university",
-            degreeLevel: ["phd"],
-            deadline: "Rolling",
-            link: "fellowship-phd.html",
-            highlights: [
-                "Full PhD tuition waiver",
-                "Living expenses VND 10,000,000/month (≈$400)",
-                "Teaching assistant (8 classes/year) OR",
-                "Research assistant in English",
-                "Face-to-face interview required",
-                "Full-ride for entire PhD duration",
-                "32,000+ students at HCMCOU",
-                "1,000+ master's degrees granted"
-            ],
-            tags: ["Vietnam", "PhD", "Full Funding", "Teaching/Research Assistant", "Doctoral"]
-        }
-    ];
+  let filteredScholarships = [];
 
-    // JAVASCRIPT LOGIC
-    let filteredScholarships = [];
+  document.addEventListener('DOMContentLoaded', () => {
+    filteredScholarships = [...scholarshipsData];
+    displayScholarships(filteredScholarships);
+    updateStats();
+    setupEventListeners();
+  });
 
-    document.addEventListener('DOMContentLoaded', function() {
-        console.log('✅ Page loaded!');
-        console.log('✅ Scholarships:', scholarshipsData.length);
-        
-        filteredScholarships = [...scholarshipsData];
-        displayScholarships(filteredScholarships);
-        updateStats();
-        setupEventListeners();
+  function displayScholarships(list) {
+    const container = document.getElementById('scholarshipsList');
+    const noResults = document.getElementById('noResults');
+
+    if (!list.length) {
+      container.innerHTML = '';
+      noResults.style.display = 'block';
+      return;
+    }
+
+    noResults.style.display = 'none';
+    container.innerHTML = list.map(createScholarshipCard).join('');
+  }
+
+  function createScholarshipCard(s) {
+    const daysLeft = calculateDaysLeft(s.deadline);
+    const urgencyClass = daysLeft <= 30 ? 'closing-soon' : '';
+
+    return `
+      <div class="scholarship-card-horizontal">
+        <div class="card-image">
+          <img src="${s.image}" alt="${s.name}">
+          <div class="card-flag">${s.flag}</div>
+          <div class="countdown-badge ${urgencyClass}">${daysLeft === null ? 'Rolling' : daysLeft + ' days left'}</div>
+        </div>
+
+        <div class="card-main-content">
+          <div class="card-header-info">
+            <span class="card-category ${s.category}">${s.category}</span>
+            <h3 class="card-title">${s.name}</h3>
+            <p class="card-organization">${s.organization}</p>
+          </div>
+
+          <p class="card-description">${s.description}</p>
+
+          <div class="card-highlights">
+            ${s.highlights.map(h => `<span class="highlight-tag">${h}</span>`).join('')}
+          </div>
+
+          <div class="card-tags">
+            ${s.tags.map(t => `<span class="tag">${t}</span>`).join('')}
+          </div>
+        </div>
+
+        <div class="card-sidebar">
+          <div class="card-amount-section">
+            <div class="amount-label">Funding Amount</div>
+            <div class="amount-value">${s.amount}</div>
+            <div class="amount-period">${s.period}</div>
+          </div>
+
+          <div class="card-deadline-section">
+            <div class="deadline-label">Application Deadline</div>
+            <div class="deadline-date">${formatDate(s.deadline)}</div>
+            <div class="deadline-days-left ${urgencyClass}">
+              ⏰ ${daysLeft === null ? 'Rolling admission' : daysLeft + ' days remaining'}
+            </div>
+          </div>
+
+          <a href="${s.link}" class="view-details-btn">
+            <span>View Details</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    `;
+  }
+
+  function calculateDaysLeft(deadline) {
+    if (typeof deadline === 'string' && deadline.toLowerCase().includes('rolling')) {
+      return null;
+    }
+    const today = new Date();
+    const d = new Date(deadline);
+    const diff = d - today;
+    const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
+    return days > 0 ? days : 0;
+  }
+
+  function formatDate(deadline) {
+    if (typeof deadline === 'string' && deadline.toLowerCase().includes('rolling')) {
+      return 'Rolling Admission';
+    }
+    const d = new Date(deadline);
+    return d.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+  }
+
+  function updateStats() {
+    const resultsCount = document.getElementById('resultsCount');
+    const totalCount = document.getElementById('totalScholarships');
+    if (resultsCount) resultsCount.textContent = filteredScholarships.length;
+    if (totalCount) totalCount.textContent = scholarshipsData.length;
+  }
+
+  function setupEventListeners() {
+    const searchInput = document.getElementById('scholarshipSearch');
+    const resetBtn = document.getElementById('resetFilters');
+    const countryFilter = document.getElementById('countryFilter');
+    const degreeFilter = document.getElementById('degreeFilter');
+    const categoryFilter = document.getElementById('categoryFilter');
+    const deadlineFilter = document.getElementById('deadlineFilter');
+    const sortBy = document.getElementById('sortBy');
+
+    if (searchInput) searchInput.addEventListener('input', filterScholarships);
+    if (resetBtn) resetBtn.addEventListener('click', resetAllFilters);
+    if (countryFilter) countryFilter.addEventListener('change', filterScholarships);
+    if (degreeFilter) degreeFilter.addEventListener('change', filterScholarships);
+    if (categoryFilter) categoryFilter.addEventListener('change', filterScholarships);
+    if (deadlineFilter) deadlineFilter.addEventListener('change', filterScholarships);
+    if (sortBy) sortBy.addEventListener('change', sortScholarships);
+  }
+
+  function filterScholarships() {
+    const searchTerm = document.getElementById('scholarshipSearch').value.toLowerCase();
+    const countryValue = document.getElementById('countryFilter').value;
+    const degreeValue = document.getElementById('degreeFilter').value;
+    const categoryValue = document.getElementById('categoryFilter').value;
+
+    filteredScholarships = scholarshipsData.filter(s => {
+      const matchesSearch =
+        !searchTerm ||
+        s.name.toLowerCase().includes(searchTerm) ||
+        s.organization.toLowerCase().includes(searchTerm) ||
+        s.description.toLowerCase().includes(searchTerm) ||
+        s.tags.some(tag => tag.toLowerCase().includes(searchTerm));
+
+      const matchesCountry = !countryValue || s.country === countryValue;
+      const matchesDegree = !degreeValue || s.degreeLevel.includes(degreeValue);
+      const matchesCategory = !categoryValue || s.category === categoryValue;
+
+      return matchesSearch && matchesCountry && matchesDegree && matchesCategory;
     });
 
-    function displayScholarships(scholarships) {
-        const container = document.getElementById('scholarshipsList');
-        const noResults = document.getElementById('noResults');
-        
-        if (scholarships.length === 0) {
-            container.innerHTML = '';
-            noResults.style.display = 'block';
-            return;
-        }
-        
-        noResults.style.display = 'none';
-        container.innerHTML = scholarships.map(s => createScholarshipCard(s)).join('');
+    sortScholarships(false);
+    displayScholarships(filteredScholarships);
+    updateStats();
+  }
+
+  function sortScholarships(shouldRender = true) {
+    const sortValue = document.getElementById('sortBy').value;
+
+    if (sortValue === 'deadline') {
+      filteredScholarships.sort((a, b) => {
+        const aRolling = typeof a.deadline === 'string' && a.deadline.toLowerCase().includes('rolling');
+        const bRolling = typeof b.deadline === 'string' && b.deadline.toLowerCase().includes('rolling');
+        if (aRolling && !bRolling) return 1;
+        if (!aRolling && bRolling) return -1;
+        if (aRolling && bRolling) return 0;
+        return new Date(a.deadline) - new Date(b.deadline);
+      });
+    } else if (sortValue === 'amount') {
+      filteredScholarships.sort((a, b) => b.amountValue - a.amountValue);
+    } else if (sortValue === 'name') {
+      filteredScholarships.sort((a, b) => a.name.localeCompare(b.name));
     }
 
-    function createScholarshipCard(scholarship) {
-        const daysLeft = calculateDaysLeft(scholarship.deadline);
-        const urgencyClass = daysLeft <= 30 ? 'closing-soon' : '';
-        
-        return `
-            <div class="scholarship-card-horizontal">
-                <div class="card-image">
-                    <img src="${scholarship.image}" alt="${scholarship.name}">
-                    <div class="card-flag">${scholarship.flag}</div>
-                    <div class="countdown-badge ${urgencyClass}">${daysLeft} days left</div>
-                </div>
-                
-                <div class="card-main-content">
-                    <div class="card-header-info">
-                        <span class="card-category ${scholarship.category}">${scholarship.category}</span>
-                        <h3 class="card-title">${scholarship.name}</h3>
-                        <p class="card-organization">${scholarship.organization}</p>
-                    </div>
-                    
-                    <p class="card-description">${scholarship.description}</p>
-                    
-                    <div class="card-highlights">
-                        ${scholarship.highlights.map(h => `<span class="highlight-tag">${h}</span>`).join('')}
-                    </div>
-                    
-                    <div class="card-tags">
-                        ${scholarship.tags.map(t => `<span class="tag">${t}</span>`).join('')}
-                    </div>
-                </div>
-                
-                <div class="card-sidebar">
-                    <div class="card-amount-section">
-                        <div class="amount-label">Funding Amount</div>
-                        <div class="amount-value">${scholarship.amount}</div>
-                        <div class="amount-period">${scholarship.period}</div>
-                    </div>
-                    
-                    <div class="card-deadline-section">
-                        <div class="deadline-label">Application Deadline</div>
-                        <div class="deadline-date">${formatDate(scholarship.deadline)}</div>
-                        <div class="deadline-days-left ${urgencyClass}">⏰ ${daysLeft} days remaining</div>
-                    </div>
-                    
-                    <a href="${scholarship.link}" class="view-details-btn">
-                        <span>View Details</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        `;
+    if (shouldRender) {
+      displayScholarships(filteredScholarships);
     }
+  }
 
-    function calculateDaysLeft(deadlineDate) {
-        if (deadlineDate.toLowerCase().includes('rolling')) return 365;
-        const today = new Date();
-        const deadline = new Date(deadlineDate);
-        const timeDiff = deadline - today;
-        const daysLeft = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
-        return daysLeft > 0 ? daysLeft : 0;
-    }
+  function resetAllFilters() {
+    document.getElementById('scholarshipSearch').value = '';
+    document.getElementById('countryFilter').value = '';
+    document.getElementById('degreeFilter').value = '';
+    document.getElementById('categoryFilter').value = '';
+    document.getElementById('deadlineFilter').value = '';
+    document.getElementById('sortBy').value = 'deadline';
 
-    function formatDate(dateString) {
-        if (dateString.toLowerCase().includes('rolling')) return 'Rolling Admission';
-        const date = new Date(dateString);
-        return date.toLocaleDateString('en-US', { 
-            year: 'numeric', 
-            month: 'long', 
-            day: 'numeric' 
-        });
-    }
+    filteredScholarships = [...scholarshipsData];
+    sortScholarships(false);
+    displayScholarships(filteredScholarships);
+    updateStats();
+  }
 
-    function updateStats() {
-        const resultsCount = document.getElementById('resultsCount');
-        const totalCount = document.getElementById('totalScholarships');
-        
-        if (resultsCount) resultsCount.textContent = filteredScholarships.length;
-        if (totalCount) totalCount.textContent = scholarshipsData.length;
-    }
-
-    function setupEventListeners() {
-        const searchInput = document.getElementById('scholarshipSearch');
-        const resetBtn = document.getElementById('resetFilters');
-        const countryFilter = document.getElementById('countryFilter');
-        const degreeFilter = document.getElementById('degreeFilter');
-        const categoryFilter = document.getElementById('categoryFilter');
-        const deadlineFilter = document.getElementById('deadlineFilter');
-        const sortBy = document.getElementById('sortBy');
-        
-        if (searchInput) searchInput.addEventListener('input', filterScholarships);
-        if (resetBtn) resetBtn.addEventListener('click', resetAllFilters);
-        if (countryFilter) countryFilter.addEventListener('change', filterScholarships);
-        if (degreeFilter) degreeFilter.addEventListener('change', filterScholarships);
-        if (categoryFilter) categoryFilter.addEventListener('change', filterScholarships);
-        if (deadlineFilter) deadlineFilter.addEventListener('change', filterScholarships);
-        if (sortBy) sortBy.addEventListener('change', sortScholarships);
-    }
-
-    function filterScholarships() {
-        const searchTerm = document.getElementById('scholarshipSearch').value.toLowerCase();
-        const countryValue = document.getElementById('countryFilter').value;
-        const degreeValue = document.getElementById('degreeFilter').value;
-        const categoryValue = document.getElementById('categoryFilter').value;
-        
-        filteredScholarships = scholarshipsData.filter(scholarship => {
-            const matchesSearch = !searchTerm || 
-                scholarship.name.toLowerCase().includes(searchTerm) ||
-                scholarship.organization.toLowerCase().includes(searchTerm) ||
-                scholarship.description.toLowerCase().includes(searchTerm) ||
-                scholarship.tags.some(tag => tag.toLowerCase().includes(searchTerm));
-            
-            const matchesCountry = !countryValue || scholarship.country === countryValue;
-            const matchesDegree = !degreeValue || scholarship.degreeLevel.includes(degreeValue);
-            const matchesCategory = !categoryValue || scholarship.category === categoryValue;
-            
-            return matchesSearch && matchesCountry && matchesDegree && matchesCategory;
-        });
-        
-        displayScholarships(filteredScholarships);
-        updateStats();
-    }
-
-    function sortScholarships() {
-        const sortValue = document.getElementById('sortBy').value;
-        
-        if (sortValue === 'deadline') {
-            filteredScholarships.sort((a, b) => new Date(a.deadline) - new Date(b.deadline));
-        } else if (sortValue === 'amount') {
-            filteredScholarships.sort((a, b) => b.amountValue - a.amountValue);
-        } else if (sortValue === 'name') {
-            filteredScholarships.sort((a, b) => a.name.localeCompare(b.name));
-        }
-        
-        displayScholarships(filteredScholarships);
-    }
-
-    function resetAllFilters() {
-        document.getElementById('scholarshipSearch').value = '';
-        document.getElementById('countryFilter').value = '';
-        document.getElementById('degreeFilter').value = '';
-        document.getElementById('categoryFilter').value = '';
-        document.getElementById('deadlineFilter').value = '';
-        document.getElementById('sortBy').value = 'deadline';
-        
-        filteredScholarships = [...scholarshipsData];
-        displayScholarships(filteredScholarships);
-        updateStats();
-    }
-
-    window.resetAllFilters = resetAllFilters;
-    </script>
-    
+  window.resetAllFilters = resetAllFilters;
+  </script>
 </body>
 </html>
+
