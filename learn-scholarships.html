@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn About Scholarships | High Schooler's Tool</title>
+    <link rel="stylesheet" href="hst.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #6366f1;
+            --secondary-color: #8b5cf6;
+            --accent-color: #ec4899;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+
+            --bg-primary: #f8fafc;
+            --bg-secondary: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 10px 40px rgba(0,0,0,0.08);
+            --shadow-lg: 0 20px 60px rgba(0,0,0,0.12);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        .learn-nav {
+            background: white;
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+
+        .learn-nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .nav-actions {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .lang-toggle {
+            background: var(--bg-primary);
+            border: 2px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .lang-toggle:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .btn-home {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-home:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        .hero-section p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .hero-emoji {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            animation: bounce 2s infinite;
+        }
+
+        /* Main Container */
+        .learn-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        /* Language Content */
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        /* Section Styles */
+        .content-section {
+            background: white;
+            border-radius: 24px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-color);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        .section-icon {
+            font-size: 3rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .section-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .section-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .section-content ul, .section-content ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-content li {
+            margin-bottom: 1rem;
+        }
+
+        .section-content strong {
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+            border-left: 5px solid var(--primary-color);
+            padding: 2rem;
+            border-radius: 16px;
+            margin: 2rem 0;
+        }
+
+        .highlight-box h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        /* Success Box */
+        .success-box {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.1));
+            border-left: 5px solid var(--success-color);
+            padding: 2rem;
+            border-radius: 16px;
+            margin: 2rem 0;
+        }
+
+        .success-box h3 {
+            color: var(--success-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        /* Warning Box */
+        .warning-box {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(217, 119, 6, 0.1));
+            border-left: 5px solid var(--warning-color);
+            padding: 2rem;
+            border-radius: 16px;
+            margin: 2rem 0;
+        }
+
+        .warning-box h3 {
+            color: var(--warning-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        /* Info Cards Grid */
+        .info-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .info-card {
+            background: var(--bg-primary);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 2px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .info-card:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .info-card-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .info-card-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+
+        .info-card-text {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 3rem;
+            border-radius: 24px;
+            text-align: center;
+            color: white;
+            margin-top: 3rem;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-btn {
+            background: white;
+            color: var(--primary-color);
+            padding: 1.25rem 2.5rem;
+            border-radius: 16px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .cta-btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+        }
+
+        .cta-btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Myanmar Font Support */
+        .mm-font {
+            font-family: 'Pyidaungsu', 'Myanmar3', 'Yunghkio', sans-serif;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+
+            .hero-section p {
+                font-size: 1.1rem;
+            }
+
+            .content-section {
+                padding: 2rem 1.5rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .info-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .cta-btn {
+                width: 100%;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h2>HST</h2>
+                <span>High Schooler's Tool</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="hst.html">Home</a></li>
+                <li><a href="uni.html">Universities</a></li>
+                 <li><a href="career-journey.html"class="active">Career journey</a></li>
+                <li><a href="study-mode.html">Study mode</a></li>
+                <li><a href="scholarships.html" >Scholarships</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <!-- Navigation -->
+    <nav class="learn-nav">
+        <div class="container">
+            <a href="hst.html" class="nav-brand">
+                <span>🎓</span>
+                <span>HST - Learn About Scholarships</span>
+            </a>
+            <div class="nav-actions">
+               
+                </button>
+                <a href="hst.html" class="btn-home">← Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-emoji">🌟</div>
+        <h1 id="heroTitle">Your Scholarship Journey Starts Here</h1>
+        <p id="heroSubtitle">We know starting can be confusing. Don't worry - we're here to help you understand everything about scholarships step by step! 💪</p>
+    </div>
+
+    <!-- Main Container -->
+    <div class="learn-container">
+        <!-- English Content -->
+        <div class="lang-content active" id="englishContent">
+            <!-- Section 1: What is a Scholarship? -->
+            <div class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">❓</div>
+                    <h2 class="section-title">What is a Scholarship?</h2>
+                </div>
+                <div class="section-content">
+                    <p><strong>A scholarship is FREE MONEY for your education.</strong> You don't have to pay it back - ever! It's a gift from governments, universities, or organizations to help talented students like you study.</p>
+
+                    <div class="highlight-box">
+                        <h3>💡 Think of it like this:</h3>
+                        <p>Imagine someone says: <em>"I see you're smart and hardworking. I want to pay for your university education - tuition, books, living expenses - everything! You just focus on studying!"</em></p>
+                        <p>That's exactly what a scholarship is! 🎉</p>
+                    </div>
+
+                    <p><strong>What does a scholarship typically cover?</strong></p>
+                    <ul>
+                        <li>✅ <strong>Tuition fees</strong> - The cost of your classes and courses</li>
+                        <li>✅ <strong>Living expenses</strong> - Money for rent, food, and daily needs</li>
+                        <li>✅ <strong>Flight tickets</strong> - Round trip to your study destination</li>
+                        <li>✅ <strong>Books and supplies</strong> - Textbooks and study materials</li>
+                        <li>✅ <strong>Health insurance</strong> - Medical coverage during your studies</li>
+                        <li>✅ <strong>Monthly allowance</strong> - Extra pocket money</li>
+                    </ul>
+
+                    <div class="success-box">
+                        <h3>🎯 Real Example:</h3>
+                        <p><strong>ASEAN Scholarship in Singapore:</strong></p>
+                        <p>• Covers 100% tuition (worth ~$30,000/year)<br>
+                        • Monthly allowance: SGD 500 (~350,000 MMK)<br>
+                        • Accommodation provided<br>
+                        • Return flight tickets<br>
+                        • <strong>Total value: ~50 million MMK for 4 years!</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: Why Scholarships Exist -->
+            <div class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">🌍</div>
+                    <h2 class="section-title">Why Do Countries Give Scholarships?</h2>
+                </div>
+                <div class="section-content">
+                    <p>You might wonder: <em>"Why would other countries want to pay for MY education?"</em> Great question!</p>
+
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="info-card-icon">🤝</div>
+                            <div class="info-card-title">Building Friendships</div>
+                            <div class="info-card-text">Countries want to build strong relationships with Myanmar. When you study there, you become a bridge between two nations!</div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-card-icon">🌟</div>
+                            <div class="info-card-title">Attracting Talent</div>
+                            <div class="info-card-text">Universities want the brightest students worldwide. Your unique perspective and hard work enrich their campus!</div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-card-icon">💼</div>
+                            <div class="info-card-title">Future Leaders</div>
+                            <div class="info-card-text">They invest in you today because they know you'll become a leader who makes positive change tomorrow!</div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-card-icon">🌏</div>
+                            <div class="info-card-title">Regional Development</div>
+                            <div class="info-card-text">ASEAN and Asian countries support each other's growth through education and knowledge sharing!</div>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h3>🇲🇲 For Myanmar Students Specifically:</h3>
+                        <p>Many countries recognize Myanmar's potential and want to help develop our nation's future leaders. They know that when you return with world-class education, you'll contribute to Myanmar's development in medicine, technology, business, and more!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: Types of Scholarships -->
+            <div class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">📚</div>
+                    <h2 class="section-title">Types of Scholarships Available</h2>
+                </div>
+                <div class="section-content">
+                    <p><strong>There are MANY different types of scholarships. Here are the main ones:</strong></p>
+
+                    <h3 style="margin-top: 2rem; margin-bottom: 1rem;">1️⃣ Government Scholarships</h3>
+                    <p>Funded by foreign governments to bring international students to their country.</p>
+                    <ul>
+                        <li><strong>Examples:</strong> ASEAN Scholarship (Singapore), Chevening (UK), DAAD (Germany), MEXT (Japan)</li>
+                        <li><strong>Coverage:</strong> Usually full scholarship (everything paid)</li>
+                        <li><strong>Competition:</strong> Moderate to high</li>
+                    </ul>
+
+                    <h3 style="margin-top: 2rem; margin-bottom: 1rem;">2️⃣ University Scholarships</h3>
+                    <p>Offered directly by universities to attract talented students.</p>
+                    <ul>
+                        <li><strong>Examples:</strong> NUS Global Merit Scholarship, NTU Scholarship, Harvard Scholarship</li>
+                        <li><strong>Coverage:</strong> Varies (partial to full)</li>
+                        <li><strong>Competition:</strong> High for top universities</li>
+                    </ul>
+
+                    <h3 style="margin-top: 2rem; margin-bottom: 1rem;">3️⃣ Organization/Foundation Scholarships</h3>
+                    <p>From non-profits, companies, or charitable foundations.</p>
+                    <ul>
+                        <li><strong>Examples:</strong> Fulbright (USA), MasterCard Foundation, ADB-Japan Scholarship</li>
+                        <li><strong>Coverage:</strong> Usually full or substantial</li>
+                        <li><strong>Competition:</strong> Varies</li>
+                    </ul>
+
+                    <h3 style="margin-top: 2rem; margin-bottom: 1rem;">4️⃣ Regional Scholarships</h3>
+                    <p>Specifically for ASEAN or Asian students.</p>
+                    <ul>
+                        <li><strong>Examples:</strong> ASEAN Scholarship, Thai Government Scholarship</li>
+                        <li><strong>Coverage:</strong> Full scholarship</li>
+                        <li><strong>Advantage:</strong> Closer to Myanmar, easier cultural adjustment</li>
+                    </ul>
+
+                    <div class="success-box">
+                        <h3>✨ Good News!</h3>
+                        <p>You can apply to MULTIPLE scholarships at the same time! There's no limit. Many successful students apply to 10-15 scholarships to increase their chances! 🎯</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 4: Who Can Apply? -->
+            <div class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">🙋</div>
+                    <h2 class="section-title">Can I Really Apply?</h2>
+                </div>
+                <div class="section-content">
+                    <p><strong>YES! If you're reading this, you can apply!</strong> Let's address common doubts Myanmar students have:</p>
+
+                    <div class="warning-box">
+                        <h3>❌ Common Myths (NOT TRUE!):</h3>
+                        <ul>
+                            <li><strong>"My English isn't perfect"</strong> → Many scholarships offer language courses! IELTS 6.0-6.5 is often enough.</li>
+                            <li><strong>"My grades aren't straight As"</strong> → Many scholarships accept good grades (70%+). Leadership and character matter too!</li>
+                            <li><strong>"I'm from a small town, not Yangon"</strong> → Doesn't matter! Students from Taunggyi, Mawlamyine, Myitkyina have won scholarships!</li>
+                            <li><strong>"My family can't afford application fees"</strong> → Many scholarships have NO application fees!</li>
+                            <li><strong>"I don't know anyone who got scholarship"</strong> → You'll be the first! Someone has to start! 💪</li>
+                        </ul>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h3>✅ Typical Requirements:</h3>
+                        <ul>
+                            <li>🎓 <strong>Education:</strong> Completed or completing Grade 12 / high school</li>
+                            <li>📊 <strong>Grades:</strong> Generally 70%+ (some require higher for competitive programs)</li>
+                            <li>🗣️ <strong>English:</strong> IELTS 6.0-7.0 (varies by scholarship)</li>
+                            <li>📝 <strong>Essays:</strong> Personal statement, motivation letter (we'll help you!)</li>
+                            <li>👨‍🏫 <strong>Recommendations:</strong> 2-3 letters from teachers</li>
+                            <li>🎯 <strong>Character:</strong> Leadership, community service, extracurriculars</li>
+                            <li>🇲🇲 <strong>Citizenship:</strong> Myanmar citizenship (yes, that's YOU!)</li>
+                        </ul>
+                    </div>
+
+                    <div class="success-box">
+                        <h3>💪 You ARE Qualified If:</h3>
+                        <p>✅ You're hardworking and willing to learn<br>
+                        ✅ You have dreams and goals for your future<br>
+                        ✅ You want to make Myanmar proud<br>
+                        ✅ You're ready to step out of your comfort zone<br>
+                        ✅ You believe in yourself (we believe in you too!)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 5: How to Apply -->
+            <div class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">📝</div>
+                    <h2 class="section-title">How Do I Apply?</h2>
+                </div>
+                <div class="section-content">
+                    <p><strong>Don't worry - we'll guide you through every step!</strong> Here's the typical process:</p>
+
+                    <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary-color);">Step 1: Research & Choose Scholarships (1-2 months)</h3>
+                    <ul>
+                        <li>📚 Browse our scholarship database on this website</li>
+                        <li>🎯 Identify 10-15 scholarships that match your interests and qualifications</li>
+                        <li>📅 Note all deadlines in a calendar</li>
+                        <li>📋 Read requirements carefully for each scholarship</li>
+                    </ul>
+
+                    <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary-color);">Step 2: Prepare Documents (2-3 months)</h3>
+                    <ul>
+                        <li>📄 Get your academic transcripts (certified copies)</li>
+                        <li>🎓 Prepare certificates of achievements, awards</li>
+                        <li>📸 Take passport photos</li>
+                        <li>🗣️ Register for IELTS/TOEFL exam</li>
+                        <li>👨‍🏫 Ask teachers for recommendation letters (at least 1 month before deadline!)</li>
+                        <li>📝 Start writing your personal statement/essay</li>
+                    </ul>
+
+                    <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary-color);">Step 3: Write Your Essays (1-2 months)</h3>
+                    <ul>
+                        <li>✍️ Write about YOUR unique story (not someone else's)</li>
+                        <li>🎯 Explain your goals and how the scholarship helps</li>
+                        <li>🇲🇲 Connect your education to Myanmar's future</li>
+                        <li>👨‍🏫 Ask teachers or mentors to review</li>
+                        <li>🔄 Revise, revise, revise! (3-5 drafts is normal)</li>
+                    </ul>
+
+                    <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary-color);">Step 4: Submit Applications</h3>
+                    <ul>
+                        <li>📧 Most scholarships accept online applications</li>
+                        <li>✅ Double-check EVERYTHING before submitting</li>
+                        <li>📅 Submit at least 1 week before deadline (don't wait until last day!)</li>
+                        <li>📸 Save screenshots/confirmation emails</li>
+                    </ul>
+
+                    <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--primary-color);">Step 5: Wait for Results (2-6 months)</h3>
+                    <ul>
+                        <li>📧 Check email regularly (including spam folder!)</li>
+                        <li>🎤 Prepare for possible interviews (practice common questions)</li>
+                        <li>🙏 Stay patient - selection takes time</li>
+                        <li>💪 Continue with your studies and other applications</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <h3>⏰ Timeline Example (for scholarship deadline in January):</h3>
+                        <p><strong>July-August:</strong> Research scholarships, choose targets<br>
+                        <strong>September:</strong> Take IELTS exam, request recommendation letters<br>
+                        <strong>October-November:</strong> Write essays, gather documents<br>
+                        <strong>December:</strong> Final reviews, submit applications<br>
+                        <strong>January:</strong> Deadline passes, wait for results<br>
+                        <strong>March-June:</strong> Results announced!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 6: Common Concerns -->
+            <div class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">💭</div>
+                    <h2 class="section-title">Your Questions Answered</h2>
+                </div>
+                <div class="section-content">
+                    <h3 style="color: var(--primary-color);">❓ "What if I get rejected?"</h3>
+                    <p><strong>That's okay!</strong> Even successful students face rejections. Apply to 10-15 scholarships. If one says no, nine others might say YES! Don't give up after one rejection. 💪</p>
+
+                    <h3 style="color: var(--primary-color); margin-top: 2rem;">❓ "Is it safe to study abroad?"</h3>
+                    <p><strong>Yes!</strong> Thousands of Myanmar students study abroad safely. Universities provide support, and you'll join Myanmar student communities wherever you go. You're never alone!</p>
+
+                    <h3 style="color: var(--primary-color); margin-top: 2rem;">❓ "What about my family? Will I miss them?"</h3>
+                    <p><strong>Of course you will!</strong> But remember: It's temporary (2-4 years), and you can video call them anytime! Plus, you're studying for a better future for your ENTIRE family. That's worth it! ❤️</p>
+
+                    <h3 style="color: var(--primary-color); margin-top: 2rem;">❓ "Can I come back to Myanmar after?"</h3>
+                    <p><strong>Absolutely!</strong> Many scholarships encourage you to return and contribute to Myanmar's development. Plus, you'll have international experience to bring home!</p>
+
+                    <h3 style="color: var(--primary-color); margin-top: 2rem;">❓ "What if I don't speak English well?"</h3>
+                    <p><strong>Start improving NOW!</strong> You have time before applications. Watch English movies, practice daily, take online courses. Many students improve from IELTS 5.0 to 7.0 in 3-6 months with dedicated practice! 📚</p>
+
+                    <h3 style="color: var(--primary-color); margin-top: 2rem;">❓ "Is this too good to be true?"</h3>
+                    <p><strong>No, it's REAL!</strong> Thousands of Myanmar students have received scholarships. Check our success stories. This is YOUR opportunity too! 🌟</p>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="cta-section">
+                <h2>🚀 Ready to Start Your Journey?</h2>
+                <p>You've learned the basics. Now let's find the perfect scholarship for YOU!</p>
+                <div class="cta-buttons">
+                    <a href="hst.html#scholarships" class="cta-btn">
+                        🎓 Browse Scholarships
+                    </a>
+                    <a href="career-journey.html" class="cta-btn cta-btn-secondary">
+                        🎯 Plan Your Career Path
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Myanmar Content -->
+        <div class="lang-content mm-font" id="myanmarContent">
+            <!-- Myanmar language content will be here -->
+            <!-- This will be the same structure but in Burmese -->
+        </div>
+    </div>
+   <div class="container">
+    <div class="footer-content">
+
+       <footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+
+      <div class="footer-section">
+        <h3>High Schooler’s Tool</h3>
+        <p>Empowering Myanmar students to make informed university choices.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="hst.html">Home</a></li>
+          <li><a href="uni.html">Universities</a></li>
+          <li><a href="career-journey.html">Career Journey</a></li>
+          <li><a href="study-mode.html">Study mode</a></li>
+          <li><a href="scholarships.html">Scholarships</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>High Schooler’s Tool</p>
+        <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+        <p>
+          Facebook:
+          <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+            High Schooler’s Tool ARP
+          </a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 High Schooler’s Tool. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+    

@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Profile - High Schooler's Tool</title>
+    <link rel="stylesheet" href="hst.css">
+    <link rel="stylesheet" href="upp.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h2>HST</h2>
+                <span>High Schooler's Tool</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="hst.html">Home</a></li>
+                <li><a href="uni.html" class="active">Universities</a></li>
+                 <li><a href="career-journey.html">Career journey</a></li>
+                <li><a href="study-mode.html">Study mode</a></li>
+                <li><a href="scholarships.html">Scholarships</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="uni-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-bg" style="background-image: url('maeus.jpg');"></div>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="hst.css">Home</a> / 
+                <a href="uni.html">Universities</a> / 
+                <span>University of Computer Studies, Taunggyi</span>
+            </div>
+            <div class="uni-hero-content">
+                <div class="uni-logo">
+                    <img src="maeulogo.jpg" alt="MAEU Logo">
+                </div>
+                <div class="uni-title">
+                    <h1>Myanmar Aerospace Engineering University - MAEU</h1>
+                    <p class="uni-subtitle">Myanmar's only dedicated aerospace engineering institution.</p>
+                    <div class="uni-meta">
+                        <span><i>📍</i> Meiktila, Mandalay Region</span>
+                        <span><i>🏛️</i> Aerospace Engineering</span>
+                        <span><i>📅</i> Founded 2002</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats Bar -->
+    <section class="quick-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">🎓</div>
+                    <div class="stat-info">
+                        <h3>500+</h3>
+                        <p>Students</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">📚</div>
+                    <div class="stat-info">
+                        <h3>6+</h3>
+                        <p>Programs</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">👨‍🏫</div>
+                    <div class="stat-info">
+                        <h3>120+</h3>
+                        <p>Faculty</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-info">
+                        <h3>15+</h3>
+                        <p>Projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="profile-content">
+        <div class="container">
+            <div class="content-layout">
+                
+                <!-- Sidebar -->
+                <aside class="profile-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Quick Info</h3>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <strong>Type</strong>
+                                <span>Government</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Location</strong>
+                                <span>Meiktila, Mandalay</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Campus Size</strong>
+                                <span>215 Acres</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Language</strong>
+                                <span>Myanmar</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Entrance Requirements</h3>
+                        <div class="requirement-box">
+                            <div class="requirement-item">
+                                <span class="req-label">Minimum Marks</span>
+                                <span class="req-value">400+</span>
+                            </div>
+                            <div class="requirement-item">
+                                <span class="req-label">Required Subjects</span>
+                                <div class="subject-tags">
+                                    <span class="subject-tag">Mathematics</span>
+                                    <span class="subject-tag">Physics</span>
+                                    <span class="subject-tag">English</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card contact-card">
+                        <h3>Contact</h3>
+                        <div class="contact-info">
+                             <p><i>📍</i> Meiktila, Mandalay Division</p>
+        <p><i>🌐</i> maeu.edu.mm</p>
+        <p><i>📧</i> info@maeu.edu.mm</p></div>
+                        <button class="contact-btn">Get in Touch</button>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="profile-main">
+                    
+                    <!-- Navigation Tabs -->
+                    <div class="profile-tabs">
+                        <button class="tab-btn active" data-tab="overview">Overview</button>
+                        <button class="tab-btn" data-tab="majors">Majors</button>
+                        <button class="tab-btn" data-tab="projects">Projects</button>
+                        <button class="tab-btn" data-tab="campus">Campus Life</button>
+                        <button class="tab-btn" data-tab="careers">Career Paths</button>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content">
+                        
+                        <!-- Overview Tab -->
+                        <div class="tab-panel active" id="overview">
+                            <div class="content-card">
+                                <h2>About the University</h2>
+                                <p>မြန်မာနိုင်ငံ လေကြောင်းနှင့်အာကာသပညာတက္ကသိုလ် (Myanmar Aerospace Engineering University – MAEU)
+                                     သည် မန္တလေးတိုင်းဒေသကြီး၊ မိတ္ထီလာမြို့တွင် တည်ရှိသော လေကြောင်းနှင့် အာကာသအင်ဂျင်နီယာဘာသာရပ် အထူးပြု အစိုးရပိုင် တက္ကသိုလ်တစ်ခုဖြစ်ပြီး ၂၀၀၂ ခုနှစ် ဖေဖော်ဝါရီ ၁၅ ရက်နေ့တွင် State Peace and Development Council Law No.2/2002 အရ တည်ထောင်ခဲ့သည်.
+                                      MAEU တွင် လေကြောင်းအင်ဂျင်နီယာအထူးပြု ဘာသာရပ်များအဖြစ် Propulsion and Flight Vehicles, Avionics, Electrical Systems and Instrumentation, Fuel and Propellant Engineering နှင့် Space Systems Engineering တို့ကို ၆ နှစ်ကြာ BE ဒီဂရီအဖြစ် 
+                                      သင်ကြားပေးပြီး Airport Management အတွက် တစ်နှစ်တာ post‑graduate diploma လည်း ပေးအပ်သည်. တက္ကသိုလ်၏ Vision သည် အရည်အသွေးမြင့် လေကြောင်း/အာကာသ လူစွမ်းအားအင်အားများ ထုတ်ပေးခြင်းနှင့် အာကာသဆိုင်ရာ သုတေသနများကို ဆက်လက်ဆောင်ရွက်ခြင်းမှတစ်ဆင့်
+                                       နိုင်ငံတကာအသိအမှတ်ပြု တက္ကသိုလ်တစ်ခု ဖြစ်လာရန် ဖြစ်ပြီး Mission တွင် Washington Accord နှင့် Quality Management System တို့အပေါ်အခြေခံသည့် နိုင်ငံတကာအတည်ပြု အင်ဂျင်နီယာပညာရေး ဖော်ဆောင်ရေး၊ ICAO/EASA အသိအမှတ်ပြု Aviation Maintenance Training Organization တည်ထောင်ရေးနှင့် 
+                                       ပြည်တွင်း/ပြည်ပ လေကြောင်းအဖွဲ့အစည်းများနှင့် ပူးပေါင်းဆောင်ရွက်ရေးတို့ကို အဓိကထားထားသည်။</p>
+                                
+                            </div>
+
+                            <div class="content-card">
+    <h2>Why Choose MAEU?</h2>
+    <div class="features-list">
+        <!-- Feature 1: Specialized Focus -->
+        <div class="feature-item">
+            <div class="feature-icon">✈️</div>
+            <div>
+                <h4>Aerospace Specialization</h4>
+                <p>Myanmar's <strong>only dedicated aerospace engineering university</strong> - no other university offers these specialized programs</p>
+            </div>
+        </div>
+
+        <!-- Feature 2: Strategic Location -->
+        <div class="feature-item">
+            <div class="feature-icon">🏭</div>
+            <div>
+                <h4>Meiktila Air Force Base</h4>
+                <p>Located next to <strong>Myanmar Air Force Ground Training Base</strong> - direct industry connection and practical exposure</p>
+            </div>
+        </div>
+
+        <!-- Feature 3: Large Campus -->
+        <div class="feature-item">
+            <div class="feature-icon">🌳</div>
+            <div>
+                <h4>45.5 Hectare Campus</h4>
+                <p>Extensive facilities on <strong>45.5 hectares</strong> along Yangon-Mandalay highway with specialized aerospace infrastructure</p>
+            </div>
+        </div>
+
+        <!-- Feature 4: Elite Programs -->
+        <div class="feature-item">
+            <div class="feature-icon">🎓</div>
+            <div>
+                <h4>6-Year BE Programs</h4>
+                <p><strong>Bachelor of Engineering</strong> in Propulsion, Avionics, Space Systems - comprehensive 6-year engineering education</p>
+            </div>
+        </div>
+
+        <!-- Feature 5: UAV Research -->
+        <div class="feature-item">
+            <div class="feature-icon">🚁</div>
+            <div>
+                <h4>UAV Research Department</h4>
+                <p>Dedicated <strong>Unmanned Aerial Vehicle research</strong> department focusing on drone technology development</p>
+            </div>
+        </div>
+
+        <!-- Feature 6: Defense Career Path -->
+        <div class="feature-item">
+            <div class="feature-icon">🛡️</div>
+            <div>
+                <h4>Defense Industry Pipeline</h4>
+                <p>Primary pathway to <strong>Myanmar Air Force, defense research, and aviation careers</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+                            <div class="content-card">
+                                <h2>Campus Gallery</h2>
+                                <div class="gallery-grid">
+                                    <div class="gallery-item">
+                                        <img src="maeu.jpg" alt="Computer Lab">
+                                        <p>✈️</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="maeu1.jpg" alt="Library">
+                                        <p>✈️</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="maeu2.jpg" alt="Main Hall">
+                                        <p>✈️</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="maeu3.jpg" alt="Campus Ground">
+                                        <p>✈️</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="maeu4.jpg" alt="Campus Ground">
+                                        <p>✈️</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="maeu5.jpg" alt="Campus Ground">
+                                        <p>✈️</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Majors Tab -->
+                        <div class="tab-panel" id="majors">
+                            <div class="content-card">
+                                <h2>Available Programs</h2>
+                                <p class="subtitle">Choose from our comprehensive technology programs</p>
+                                
+                                <div class="majors-list">
+                            <!-- MAEU Major Card 1 -->
+<div class="major-card">
+  <div class="major-header">
+    <div class="major-icon">✈️</div>
+    <div>
+      <h3>Propulsion and Flight Vehicles (PFV)</h3>
+      <span class="major-degree">B.E. (6-year Bachelor program)</span>
+    </div>
+  </div>
+
+  <p class="major-desc">
+    Focus on aircraft propulsion, flight vehicle design, aerodynamics, and structures.
+  </p>
+
+  <div class="major-details">
+    <div class="detail-row">
+      <strong>Duration:</strong>
+      <span>6 Years (Bachelor/BE)</span>
+    </div>
+    <div class="detail-row">
+      <strong>Min. Marks:</strong>
+      <span>High marks in matriculation exam (cutoff varies by intake)</span>
+    </div>
+    <div class="detail-row">
+      <strong>Prerequisites:</strong>
+      <span>Matriculation exam (high marks)</span>
+    </div>
+  </div>
+
+  <div class="major-subjects">
+    <span>Aircraft Propulsion System</span>
+    <span>Fluid Mechanics</span>
+    <span>Aerodynamics</span>
+    <span>Aircraft Structure</span>
+  </div>
+</div>
+
+<!-- MAEU Major Card 2 -->
+<div class="major-card">
+  <div class="major-header">
+    <div class="major-icon">📡</div>
+    <div>
+      <h3>Avionics (AV)</h3>
+      <span class="major-degree">B.E. (6-year Bachelor program)</span>
+    </div>
+  </div>
+
+  <p class="major-desc">
+    Focus on aircraft electronics, communication, navigation, and control systems.
+  </p>
+
+  <div class="major-details">
+    <div class="detail-row">
+      <strong>Duration:</strong>
+      <span>6 Years (Bachelor/BE)</span>
+    </div>
+    <div class="detail-row">
+      <strong>Min. Marks:</strong>
+      <span>High marks in matriculation exam (cutoff varies by intake)</span>
+    </div>
+    <div class="detail-row">
+      <strong>Prerequisites:</strong>
+      <span>Matriculation exam (high marks)</span>
+    </div>
+  </div>
+
+  <div class="major-subjects">
+    <span>Applied Electronic Engineering</span>
+    <span>Modern Control Systems</span>
+    <span>Electronic Communication Systems</span>
+    <span>Navigation Systems</span>
+  </div>
+</div>
+
+<!-- MAEU Major Card 3 -->
+<div class="major-card">
+  <div class="major-header">
+    <div class="major-icon">🧭</div>
+    <div>
+      <h3>Electrical Systems and Instrumentation (EI)</h3>
+      <span class="major-degree">B.E. (6-year Bachelor program)</span>
+    </div>
+  </div>
+
+  <p class="major-desc">
+    Focus on aircraft electrical power, sensors, measurement systems, and instrumentation design.
+  </p>
+
+  <div class="major-details">
+    <div class="detail-row">
+      <strong>Duration:</strong>
+      <span>6 Years (Bachelor/BE)</span>
+    </div>
+    <div class="detail-row">
+      <strong>Min. Marks:</strong>
+      <span>High marks in matriculation exam (cutoff varies by intake)</span>
+    </div>
+    <div class="detail-row">
+      <strong>Prerequisites:</strong>
+      <span>Matriculation exam (high marks)</span>
+    </div>
+  </div>
+
+  <div class="major-subjects">
+    <span>Analysis & Design of Measuring Devices</span>
+    <span>Electro Mechanics</span>
+    <span>Transducer</span>
+    <span>Aircraft Instrument</span>
+  </div>
+</div>
+
+<!-- MAEU Major Card 4 -->
+<div class="major-card">
+  <div class="major-header">
+    <div class="major-icon">⛽</div>
+    <div>
+      <h3>Fuel and Propellant Engineering (FPE / FP)</h3>
+      <span class="major-degree">B.E. (6-year Bachelor program)</span>
+    </div>
+  </div>
+
+  <p class="major-desc">
+    Focus on aerospace fuels, propellant technology, testing/quality control, and related chemical engineering topics.
+  </p>
+
+  <div class="major-details">
+    <div class="detail-row">
+      <strong>Duration:</strong>
+      <span>6 Years (Bachelor/BE)</span>
+    </div>
+    <div class="detail-row">
+      <strong>Min. Marks:</strong>
+      <span>High marks in matriculation exam (cutoff varies by intake)</span>
+    </div>
+    <div class="detail-row">
+      <strong>Prerequisites:</strong>
+      <span>Matriculation exam (high marks)</span>
+    </div>
+  </div>
+
+  <div class="major-subjects">
+    <span>Organic Chemistry</span>
+    <span>Elements of Rocketry</span>
+    <span>Aircraft Fuel Systems</span>
+    <span>Explosives & Propellant Technology</span>
+  </div>
+</div>
+
+<!-- MAEU Major Card 5 -->
+<div class="major-card">
+  <div class="major-header">
+    <div class="major-icon">🛰️</div>
+    <div>
+      <h3>Space Systems Engineering (SSE / SS)</h3>
+      <span class="major-degree">B.E. (6-year Bachelor program)</span>
+    </div>
+  </div>
+
+  <p class="major-desc">
+    Focus on satellite/spacecraft systems, orbital mechanics, and space applications such as remote sensing and communications.
+  </p>
+
+  <div class="major-details">
+    <div class="detail-row">
+      <strong>Duration:</strong>
+      <span>6 Years (Bachelor/BE)</span>
+    </div>
+    <div class="detail-row">
+      <strong>Min. Marks:</strong>
+      <span>High marks in matriculation exam (cutoff varies by intake)</span>
+    </div>
+    <div class="detail-row">
+      <strong>Prerequisites:</strong>
+      <span>Matriculation exam (high marks)</span>
+    </div>
+  </div>
+
+  <div class="major-subjects">
+    <span>Orbital Mechanics & Dynamics</span>
+    <span>Space Mission Analysis</span>
+    <span>Remote Sensing & GIS Application</span>
+    <span>Satellite Communication & Navigation</span>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Projects Tab - MAEU Official Status -->
+<div class="tab-panel" id="projects">
+    <div class="content-card">
+        <h2>Research & Projects</h2>
+        <p class="subtitle">University Research Activities</p>
+        
+        <div class="no-data-section">
+            <div class="no-data-icon">🚀</div>
+            <h3>Data Not Publicly Available</h3>
+            <p><strong>Official Status:</strong> MAEU has a dedicated <strong>UAV Research Department</strong> (Unmanned Aerial Vehicle Research) but specific student projects and achievements are not publicly documented online.</p>
+            
+            <div class="known-facts">
+                <h4>✅ Verified Information:</h4>
+                <ul>
+                    <li>Department of UAV Research established</li>
+                    <li>Focus on aerospace technology development</li>
+                    <li>Collaboration with Myanmar Air Force (Meiktila base)</li>
+                    <li>45.5 hectare campus with research facilities</li>
+                </ul>
+            </div>
+            
+            <div class="contact-research">
+                <p><strong>For project details:</strong> Contact MAEU directly at <a href="mailto:info@maeu.edu.mm">info@maeu.edu.mm</a> or visit <a href="https://maeu.edu.mm" target="_blank">maeu.edu.mm</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                        <!-- Campus Life Tab - MAEU Official Data -->
+<div class="tab-panel" id="campus">
+    <div class="content-card">
+        <h2>Campus Life at MAEU Meiktila</h2>
+        <p class="subtitle">Specialized aerospace engineering campus</p>
+        
+        <div class="campus-features">
+            <div class="campus-card">
+                <div class="campus-img">
+                    <div style="width:100%;height:200px;background:linear-gradient(135deg,#1e3c72,#2a5298);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">🏛️</div>
+                </div>
+                <h3>45.5 Hectare Campus</h3>
+                <p>Located next to Myanmar Air Force Ground Training Base on Yangon-Mandalay highway. Specialized aerospace facilities.</p>
+            </div>
+
+            <div class="campus-card">
+                <div class="campus-img">
+                    <div style="width:100%;height:200px;background:linear-gradient(135deg,#667eea,#764ba2);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">✈️</div>
+                </div>
+                <h3>Military-Affiliated</h3>
+                <p>Strong connection with Myanmar Air Force. Strategic location in Meiktila aviation hub.</p>
+            </div>
+
+            <div class="campus-card">
+                <div class="campus-img">
+                    <div style="width:100%;height:200px;background:linear-gradient(135deg,#f093fb,#f5576c);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">🎓</div>
+                </div>
+                <h3>Elite Student Body</h3>
+                <p>279 students (2005 data). Highly selective admission for top aerospace engineering candidates.</p>
+            </div>
+        </div>
+
+        <div class="testimonial-section">
+            <h3>Official Contact</h3>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h4>📍 Location</h4>
+                    <p>Mandalay Road, Meiktila<br>Mandalay Division, Myanmar</p>
+                </div>
+                <div class="contact-card">
+                    <h4>🌐 Website</h4>
+                    <p><a href="https://maeu.edu.mm" target="_blank">maeu.edu.mm</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        <!-- Career Paths Tab - MAEU Official Programs -->
+<div class="tab-panel" id="careers">
+    <div class="content-card">
+        <h2>Career Paths - MAEU Graduates</h2>
+        <p class="subtitle">Official 6-Year BE Programs</p>
+        
+        <div class="career-paths">
+            <div class="career-card">
+                <div class="career-icon">🚀</div>
+                <h3>Propulsion & Flight Vehicles</h3>
+                <p><strong>စက်နှင့်ပျံသန်းယာဉ်</strong><br>Bachelor of Engineering (6 years)</p>
+            </div>
+
+            <div class="career-card">
+                <div class="career-icon">⚡</div>
+                <h3>Avionics</h3>
+                <p><strong>လေကြောင်း အီလက်ထရောနစ် စနစ်</strong><br>Aircraft electronics & control systems</p>
+            </div>
+
+            <div class="career-card">
+                <div class="career-icon">📡</div>
+                <h3>Electrical Systems</h3>
+                <p><strong>လျှပ်စစ်နှင့်တိုင်းတာပစ္စည်း</strong><br>Instrumentation engineering</p>
+            </div>
+
+            <div class="career-card">
+                <div class="career-icon">⛽</div>
+                <h3>Fuel & Propellant Engineering</h3>
+                <p><strong>လောင်စာနှင့်တွန်းကန်ပစ္စည်း</strong><br>Rocket fuel technology</p>
+            </div>
+
+            <div class="career-card">
+                <div class="career-icon">🛰️</div>
+                <h3>Space Systems Engineering</h3>
+                <p><strong>အာကာသစနစ် အင်ဂျင်နီယာ</strong><br>Satellite & spacecraft engineering</p>
+            </div>
+
+            <div class="career-card">
+                <div class="career-icon">🏢</div>
+                <h3>Airport Management</h3>
+                <p><strong>Dip.A.M.</strong><br>Post-graduate diploma (1 year)</p>
+            </div>
+        </div>
+
+        <div class="employer-logos">
+            <h4>Primary Career Destinations:</h4>
+            <div class="logo-grid">
+                <div class="employer-logo">Myanmar Air Force</div>
+                <div class="employer-logo">Aerospace Industry</div>
+                <div class="employer-logo">Defense Research</div>
+                <div class="employer-logo">Government Aviation</div>
+                <div class="employer-logo">UAV Development</div>
+                <div class="employer-logo">Airport Operations</div>
+            </div>
+        
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-profile">
+        <div class="container">
+            <h2>Ready to Start Your Journey at MAEU?</h2>
+            <p>Explore more universities or get in touch with admissions</p>
+            <div class="cta-buttons">
+                <a href="uni.html" class="btn-secondary">Explore More Universities</a>
+                <a href="error.html" class="btn-primary">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+
+      <div class="footer-section">
+        <h3>High Schooler’s Tool</h3>
+        <p>Empowering Myanmar students to make informed university choices.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="hst.html">Home</a></li>
+          <li><a href="uni.html">Universities</a></li>
+          <li><a href="career-journey.html">Career Journey</a></li>
+          <li><a href="study-mode.html">Study mode</a></li>
+          <li><a href="scholarships.html">Scholarships</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>High Schooler’s Tool</p>
+        <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+        <p>
+          Facebook:
+          <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+            High Schooler’s Tool ARP
+          </a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 High Schooler’s Tool. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+    <script src="script.js"></script>
+    <script src="upp.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    // Navbar toggle
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    
+    if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+            hamburger.classList.toggle("active");
+        });
+        
+        // Close on link click
+        navLinks.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("active");
+                hamburger.classList.remove("active");
+            });
+        });
+    }
+    
+    // Tab functionality
+    document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+            document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+            
+            btn.classList.add("active");
+            document.getElementById(btn.dataset.tab).classList.add("active");
+        });
+    });
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    
+    hamburger.onclick = function() {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("active");
+    }
+});
+</script>
+
+
+</body>
+</html>
