@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NMDC - High Schooler's Tool</title>
+  <link rel="stylesheet" href="hst.css" />
+  <link rel="stylesheet" href="upp.css" />
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h2>HST</h2>
+        <span>High Schooler's Tool</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="hst.html">Home</a></li>
+        <li><a href="uni.html" class="active">Universities</a></li>
+        <li><a href="career-journey.html">Career journey</a></li>
+        <li><a href="study-mode.html">Study mode</a></li>
+        <li><a href="scholarships.html">Scholarships</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="uni-hero">
+    <div class="hero-overlay"></div>
+    <!-- Replace with your own images -->
+    <div class="hero-bg" style="background-image: url('nmdc.jpg');"></div>
+
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="hst.html">Home</a> /
+        <a href="uni.html">Universities</a> /
+        <span>National Management Degree College (NMDC)</span>
+      </div>
+
+      <div class="uni-hero-content">
+        <div class="uni-logo">
+          <img src="nmdclogo.jpg" alt="NMDC Logo" />
+        </div>
+
+        <div class="uni-title">
+          <h1>National Management Degree College (NMDC)</h1>
+          <p class="uni-subtitle">
+            Management-focused degree programs in Yangon (Botahtaung Township).
+          </p>
+          <div class="uni-meta">
+            <span><i>📍</i> Merchant Road, Botahtaung Township, Yangon</span>
+            <span><i>🏛️</i> Management / Arts / Tourism / Journalism</span>
+            <span><i>📅</i> Established 2004 (promoted to Degree College in 2016)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Stats Bar -->
+  <section class="quick-stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-icon">🎓</div>
+          <div class="stat-info">
+            <h3>—</h3>
+            <p>Students (Not publicly listed)</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">📚</div>
+          <div class="stat-info">
+            <h3>5+</h3>
+            <p>Degree Programs</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">👨‍🏫</div>
+          <div class="stat-info">
+            <h3>—</h3>
+            <p>Departments (Not publicly listed)</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">🏆</div>
+          <div class="stat-info">
+            <h3>—</h3>
+            <p>Activities (See campus tab)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="profile-content">
+    <div class="container">
+      <div class="content-layout">
+
+        <!-- Sidebar -->
+        <aside class="profile-sidebar">
+
+          <div class="sidebar-card">
+            <h3>Quick Info</h3>
+            <div class="info-list">
+              <div class="info-item">
+                <strong>Type</strong>
+                <span>Degree College</span>
+              </div>
+              <div class="info-item">
+                <strong>Address</strong>
+                <span>No.(273/279), Merchant Road, Botahtaung Township, Yangon</span>
+              </div>
+              <div class="info-item">
+                <strong>Website</strong>
+                <span>nmdc.edu.mm</span>
+              </div>
+              <div class="info-item">
+                <strong>Established</strong>
+                <span>2004 (as National Management College), 2016 (as NMDC)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>Entrance Requirements</h3>
+            <div class="requirement-box">
+              <div class="requirement-item">
+                <span class="req-label">Minimum Marks</span>
+                <span class="req-value">Not stated on profile page</span>
+              </div>
+              <div class="requirement-item">
+                <span class="req-label">How to apply</span>
+                <div class="subject-tags">
+                  <span class="subject-tag">Online admission available</span>
+                  <span class="subject-tag">Check NMDC intake notices</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card contact-card">
+            <h3>Contact</h3>
+            <div class="contact-info">
+              <p><i>📍</i> No.(273/279), Merchant Road, Botahtaung Township, Yangon</p>
+              <p><i>🌐</i> <a href="https://www.nmdc.edu.mm" target="_blank" rel="noopener noreferrer">nmdc.edu.mm</a></p>
+              <p><i>📧</i> <a href="mailto:info@nmdc.edu.mm">info@nmdc.edu.mm</a></p>
+              <p><i>☎️</i> 01 8292 566</p>
+            </div>
+            <button class="contact-btn">Get in Touch</button>
+          </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="profile-main">
+
+          <!-- Navigation Tabs -->
+          <div class="profile-tabs">
+            <button class="tab-btn active" data-tab="overview">Overview</button>
+            <button class="tab-btn" data-tab="majors">Majors</button>
+            <button class="tab-btn" data-tab="projects">Activities</button>
+            <button class="tab-btn" data-tab="campus">Campus Life</button>
+            <button class="tab-btn" data-tab="careers">Career Paths</button>
+          </div>
+
+          <!-- Tab Content -->
+          <div class="tab-content">
+
+            <!-- Overview Tab -->
+            <div class="tab-panel active" id="overview">
+              <div class="content-card">
+                <h2>About NMDC</h2>
+                <p>
+                  National Management Degree College (NMDC) is a management-focused college in Yangon.
+                  It was established as National Management College (NMC) in 2004 and later promoted as
+                  National Management Degree College (NMDC) in 2016.
+                </p>
+                <p>
+                  NMDC lists bachelor programs in Business Management, English for Professional Purposes,
+                  Journalism, and Tourism & Hospitality Management, and it also lists BEF (Economics & Finance)
+                  in its admissions/program selections.
+                </p>
+              </div>
+
+              <div class="content-card">
+                <h2>Why Choose NMDC?</h2>
+                <div class="features-list">
+                  <div class="feature-item">
+                    <div class="feature-icon">🏙️</div>
+                    <div>
+                      <h4>Central Yangon location</h4>
+                      <p>Based on Merchant Road in Botahtaung Township—easy access from many parts of Yangon.</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">📈</div>
+                    <div>
+                      <h4>Career-focused degrees</h4>
+                      <p>Programs align with common career paths in business, media, tourism, and professional English.</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">📝</div>
+                    <div>
+                      <h4>Online admission</h4>
+                      <p>NMDC provides an online admission form for multiple programs (BBM, BA(EPP), BA(Journalism), BTHM, BEF).</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content-card">
+                <h2>Campus Gallery</h2>
+                <div class="gallery-grid">
+                  <div class="gallery-item">
+                    <img src="nmdc-1.jpg" alt="NMDC Campus" />
+                    <p>🏛️</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="nmdc-2.jpg" alt="NMDC Classroom" />
+                    <p>📚</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="nmdc-3.jpg" alt="NMDC Student Life" />
+                    <p>🎓</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="nmdc-4.jpg" alt="NMDC Activities" />
+                    <p>🏆</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Majors Tab -->
+            <div class="tab-panel" id="majors">
+              <div class="content-card">
+                <h2>Available Programs</h2>
+                <p class="subtitle">Degree programs listed on NMDC pages and admissions.</p>
+
+                <div class="majors-list">
+
+                  <!-- Major 1 -->
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">💼</div>
+                      <div>
+                        <h3>Bachelor of Business Management (BBM)</h3>
+                        <span class="major-degree">Bachelor’s Degree</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">
+                      Business and management studies for students aiming for roles in business operations, management, and related fields.
+                    </p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Duration:</strong> <span>Not listed on profile page</span></div>
+                      <div class="detail-row"><strong>Entry:</strong> <span>Check intake notices / online admission</span></div>
+                      <div class="detail-row"><strong>Notes:</strong> <span>Offered by NMDC</span></div>
+                    </div>
+                    <div class="major-subjects">
+                      <span>Management</span>
+                      <span>Business</span>
+                      <span>Communication</span>
+                    </div>
+                  </div>
+
+                  <!-- Major 2 -->
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">🗣️</div>
+                      <div>
+                        <h3>BA (English for Professional Purposes) — BA (EPP)</h3>
+                        <span class="major-degree">Bachelor of Arts</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">
+                      Professional English skills for business and workplace communication.
+                    </p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Duration:</strong> <span>Not listed on profile page</span></div>
+                      <div class="detail-row"><strong>Entry:</strong> <span>Check online admission / intake notices</span></div>
+                      <div class="detail-row"><strong>Notes:</strong> <span>Offered by NMDC</span></div>
+                    </div>
+                    <div class="major-subjects">
+                      <span>Professional English</span>
+                      <span>Business Communication</span>
+                      <span>Presentation Skills</span>
+                    </div>
+                  </div>
+
+                  <!-- Major 3 -->
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">📰</div>
+                      <div>
+                        <h3>BA (Journalism)</h3>
+                        <span class="major-degree">Bachelor of Arts</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">
+                      Journalism and media-related studies for students interested in reporting, writing, and media work.
+                    </p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Duration:</strong> <span>Not listed on profile page</span></div>
+                      <div class="detail-row"><strong>Entry:</strong> <span>Check online admission / intake notices</span></div>
+                      <div class="detail-row"><strong>Notes:</strong> <span>Offered by NMDC</span></div>
+                    </div>
+                    <div class="major-subjects">
+                      <span>Media Writing</span>
+                      <span>Communication</span>
+                      <span>Reporting</span>
+                    </div>
+                  </div>
+
+                  <!-- Major 4 -->
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">🏨</div>
+                      <div>
+                        <h3>Bachelor of Tourism & Hospitality Management (BTHM)</h3>
+                        <span class="major-degree">Bachelor’s Degree</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">
+                      Tourism and hospitality studies for careers in hotels, travel services, and related industries.
+                    </p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Duration:</strong> <span>Not listed on profile page</span></div>
+                      <div class="detail-row"><strong>Entry:</strong> <span>Check online admission / intake notices</span></div>
+                      <div class="detail-row"><strong>Notes:</strong> <span>Department of Tourism launched in 2012 (per NMDC profile timeline)</span></div>
+                    </div>
+                    <div class="major-subjects">
+                      <span>Hospitality</span>
+                      <span>Tourism</span>
+                      <span>Service Management</span>
+                    </div>
+                  </div>
+
+                  <!-- Major 5 -->
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">💹</div>
+                      <div>
+                        <h3>Bachelor of Economics & Finance (BEF)</h3>
+                        <span class="major-degree">Bachelor’s Degree</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">
+                      Economics and finance-focused degree (listed in NMDC admissions/program selections).
+                    </p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Duration:</strong> <span>Not publicly listed on the profile page</span></div>
+                      <div class="detail-row"><strong>Entry:</strong> <span>Available in online admission selections</span></div>
+                      <div class="detail-row"><strong>Notes:</strong> <span>Confirm curriculum with NMDC</span></div>
+                    </div>
+                    <div class="major-subjects">
+                      <span>Economics</span>
+                      <span>Finance</span>
+                      <span>Business Environment</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Activities Tab -->
+            <div class="tab-panel" id="projects">
+              <div class="content-card">
+                <h2>Activities</h2>
+                <p class="subtitle">Official pages list activities by year (details vary by availability).</p>
+
+                <div class="no-data-section">
+                  <div class="no-data-icon">🏆</div>
+                  <h3>Activities vary by year</h3>
+                  <p>
+                    If you want, I can also create a separate “Activities” section that links to NMDC’s activity pages
+                    (2021/2022 etc.) using your card style.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Campus Life Tab -->
+            <div class="tab-panel" id="campus">
+              <div class="content-card">
+                <h2>Campus Life</h2>
+                <p class="subtitle">City-campus learning in central Yangon.</p>
+
+                <div class="campus-features">
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#232526,#414345);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">🏙️</div>
+                    </div>
+                    <h3>Yangon location</h3>
+                    <p>Located on Merchant Road, Botahtaung Township (good for commuting and internships).</p>
+                  </div>
+
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#1f4037,#99f2c8);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">📚</div>
+                    </div>
+                    <h3>Academic departments</h3>
+                    <p>Programs include business, professional English, journalism, tourism/hospitality, and economics/finance.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Career Paths Tab -->
+            <div class="tab-panel" id="careers">
+              <div class="content-card">
+                <h2>Career Paths</h2>
+                <p class="subtitle">Examples of common paths based on NMDC majors.</p>
+
+                <div class="career-paths">
+                  <div class="career-card">
+                    <div class="career-icon">💼</div>
+                    <h3>Business & Management</h3>
+                    <p>Management trainee, admin, HR support, operations, sales, entrepreneurship.</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">🗣️</div>
+                    <h3>Professional English</h3>
+                    <p>Business communication roles, office communication, content/support roles needing strong English.</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">📰</div>
+                    <h3>Journalism & Media</h3>
+                    <p>Reporter, editor assistant, content writer, media production support.</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">🏨</div>
+                    <h3>Tourism & Hospitality</h3>
+                    <p>Hotel operations, front office, travel services, tour operations, customer experience.</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">💹</div>
+                    <h3>Economics & Finance</h3>
+                    <p>Finance assistant, banking support, accounting support, analytics assistant roles.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </main>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-profile">
+    <div class="container">
+      <h2>Ready to apply to NMDC?</h2>
+      <p>You can apply online or contact NMDC for official intake details.</p>
+      <div class="cta-buttons">
+        <a href="uni.html" class="btn-secondary">Explore More Universities</a>
+        <a href="https://nmdc.edu.mm/online_admission" class="btn-primary" target="_blank" rel="noopener noreferrer">Apply (Online)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+
+        <div class="footer-section">
+          <h3>High Schooler’s Tool</h3>
+          <p>Empowering Myanmar students to make informed university choices.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="hst.html">Home</a></li>
+            <li><a href="uni.html">Universities</a></li>
+            <li><a href="career-journey.html">Career Journey</a></li>
+            <li><a href="study-mode.html">Study mode</a></li>
+            <li><a href="scholarships.html">Scholarships</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>High Schooler’s Tool</p>
+          <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+          <p>
+            Facebook:
+            <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+              High Schooler’s Tool ARP
+            </a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 High Schooler’s Tool. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="upp.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Navbar toggle
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+          hamburger.classList.toggle("active");
+        });
+
+        // Close on link click
+        navLinks.querySelectorAll("a").forEach(link => {
+          link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            hamburger.classList.remove("active");
+          });
+        });
+      }
+
+      // Tab functionality
+      document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+          document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+
+          btn.classList.add("active");
+          document.getElementById(btn.dataset.tab).classList.add("active");
+        });
+      });
+    });
+  </script>
+</body>
+</html>

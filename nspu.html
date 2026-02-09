@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Profile - High Schooler's Tool</title>
+
+    <!-- Keep your existing shared styles -->
+    <link rel="stylesheet" href="hst.css" />
+    <link rel="stylesheet" href="upp.css" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h2>HST</h2>
+                <span>High Schooler's Tool</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="hst.html">Home</a></li>
+                <li><a href="uni.html" class="active">Universities</a></li>
+                <li><a href="career-journey.html">Career journey</a></li>
+                <li><a href="study-mode.html">Study mode</a></li>
+                <li><a href="scholarships.html">Scholarships</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="uni-hero">
+        <div class="hero-overlay"></div>
+        <!-- Replace these image filenames with your actual assets -->
+        <div class="hero-bg" style="background-image: url('nspu.jpg');"></div>
+
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> /
+                <a href="uni.html">Universities</a> /
+                <span>Naypyitaw State Polytechnic University (NSPU)</span>
+            </div>
+
+            <div class="uni-hero-content">
+                <div class="uni-logo">
+                    <img src="pulo.jpg" alt="NSPU Logo" />
+                </div>
+
+                <div class="uni-title">
+                    <h1>Naypyitaw State Polytechnic University - NSPU</h1>
+                    <p class="uni-subtitle">
+                        A computer and technology university in Nay Pyi Taw focused on engineering and computing.
+                    </p>
+
+                    <div class="uni-meta">
+                        <span><i>📍</i> Pobba Thiri Township, Nay Pyi Taw</span>
+                        <span><i>🏛️</i> Engineering & Computing</span>
+                        <span><i>📅</i> Founded 2022 (upgraded/expanded as NSPU in 2024)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats Bar -->
+    <section class="quick-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">🎓</div>
+                    <div class="stat-info">
+                        <h3>390</h3>
+                        <p>Annual Intake (Engg + Computing)</p>
+                    </div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-icon">🏗️</div>
+                    <div class="stat-info">
+                        <h3>7</h3>
+                        <p>Engineering Majors</p>
+                    </div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-icon">💻</div>
+                    <div class="stat-info">
+                        <h3>4</h3>
+                        <p>Computer Majors</p>
+                    </div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-icon">🏛️</div>
+                    <div class="stat-info">
+                        <h3>68 Acres</h3>
+                        <p>Campus Area</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="profile-content">
+        <div class="container">
+            <div class="content-layout">
+
+                <!-- Sidebar -->
+                <aside class="profile-sidebar">
+
+                    <div class="sidebar-card">
+                        <h3>Quick Info</h3>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <strong>Type</strong>
+                                <span>Public (under MoST / DAST)</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Location</strong>
+                                <span>Mingalar Dipa Quarter, Pobba Thiri, Nay Pyi Taw</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Campus Size</strong>
+                                <span>68 acres</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Focus</strong>
+                                <span>Engineering, Computer Science & Technology</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Entrance Requirements</h3>
+                        <div class="requirement-box">
+                            <div class="requirement-item">
+                                <span class="req-label">Admission Style</span>
+                                <span class="req-value">Highly competitive</span>
+                            </div>
+
+                            <div class="requirement-item">
+                                <span class="req-label">Selection</span>
+                                <span class="req-value">Based on matriculation marks</span>
+                            </div>
+
+                            <div class="requirement-item">
+                                <span class="req-label">Notes</span>
+                                <span class="req-value">Major placement depends on marks</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card contact-card">
+                        <h3>Contact</h3>
+                        <div class="contact-info">
+                            <p><i>📍</i> Junction of Yaza Thingaha Rd & Thiri Mandaing Rd, Pobba Thiri, Nay Pyi Taw</p>
+                            <p><i>🌐</i> nspu.edu.mm</p>
+                            <p><i>📧</i> admin@nspu.edu.mm</p>
+                        </div>
+                        <button class="contact-btn">Get in Touch</button>
+                    </div>
+
+                </aside>
+
+                <!-- Main Content -->
+                <main class="profile-main">
+
+                    <!-- Navigation Tabs -->
+                    <div class="profile-tabs">
+                        <button class="tab-btn active" data-tab="overview">Overview</button>
+                        <button class="tab-btn" data-tab="majors">Majors</button>
+                        <button class="tab-btn" data-tab="projects">Projects</button>
+                        <button class="tab-btn" data-tab="campus">Campus Life</button>
+                        <button class="tab-btn" data-tab="careers">Career Paths</button>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content">
+
+                        <!-- Overview Tab -->
+                        <div class="tab-panel active" id="overview">
+                            <div class="content-card">
+                                <h2>About the University</h2>
+                                <p>
+                                    Naypyitaw State Polytechnic University (NSPU) is a computer and technology university in Nay Pyi Taw.
+                                    It was inaugurated as Naypyitaw Technological University in 2022, and later relocated/expanded and upgraded to NSPU in 2024.
+                                    The university includes 16 academic departments (engineering, computing, and supporting departments) and is designed to combine theory with practical learning.
+                                </p>
+                                <p>Naypyitaw State Polytechnic University သည် နည်းပညာနှင့် အသက်မွေးဝမ်းကျောင်းအခြေပြုပညာရေးကို အဓိကထား ပို့ချလေ့လာပေးသော အဆင့်မြင့်ပညာရေး အဖွဲ့အစည်းတစ်ခု ဖြစ်သည်။
+စက်မှုနည်းပညာ၊ အင်ဂျင်နီယာပညာ၊ အိုင်တီနှင့် လုပ်ငန်းဆိုင်ရာ နည်းပညာကျွမ်းကျင်မှုများကို သင်ကြားပေးပြီး လက်တွေ့အသုံးချနိုင်စွမ်းရှိသော ဘွဲ့ရများကို ပြုစုပျိုးထောင်ပေးလျက်ရှိသည်။
+သီအိုရီပညာနှင့် လက်တွေ့လေ့ကျင့်မှုများကို ပေါင်းစပ်သင်ကြားပေးခြင်းအားဖြင့် စက်မှုလုပ်ငန်းများ၊ နည်းပညာကဏ္ဍများနှင့် အလုပ်ဈေးကွက်လိုအပ်ချက်များနှင့် ကိုက်ညီသော လူ့စွမ်းအားအရင်းအမြစ်များ ဖန်တီးပေးရန် ရည်ရွယ်ထားသည်။</p>
+                            </div>
+
+                            <div class="content-card">
+                                <h2>Why Choose NSPU?</h2>
+                                <div class="features-list">
+
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🏛️</div>
+                                        <div>
+                                            <h4>Polytechnic Model</h4>
+                                            <p>
+                                                Programs are planned to link classroom learning with hands-on practice and real-world challenges.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🎯</div>
+                                        <div>
+                                            <h4>Selective Admission</h4>
+                                            <p>
+                                                NSPU is known for admitting students with high matriculation marks, and majors are assigned based on results.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🏗️</div>
+                                        <div>
+                                            <h4>Engineering + Computing</h4>
+                                            <p>
+                                                NSPU includes multiple engineering majors and computer-related majors supported by additional departments.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="feature-item">
+                                        <div class="feature-icon">📍</div>
+                                        <div>
+                                            <h4>Nay Pyi Taw Location</h4>
+                                            <p>
+                                                Located in Pobba Thiri Township, Nay Pyi Taw Council Area.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="content-card">
+                                <h2>Campus Gallery</h2>
+                                <div class="gallery-grid">
+                                    <!-- Replace with your real images -->
+                                    <div class="gallery-item">
+                                        <img src="nspu1.jpg" alt="NSPU Campus" />
+                                        <p>🏛️</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="nspu2.jpg" alt="Lecture Hall" />
+                                        <p>🎓</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="nspu3.jpg" alt="Lab / Workshop" />
+                                        <p>🔧</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="nspu4.jpg" alt="Library" />
+                                        <p>📚</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="nspu5.jpg" alt="Student Activities" />
+                                        <p>🤝</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="nspu6.jpg" alt="Project Showcase" />
+                                        <p>🚀</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Majors Tab -->
+                        <div class="tab-panel" id="majors">
+                            <div class="content-card">
+                                <h2>Available Programs</h2>
+                                <p class="subtitle">Engineering and computing-focused departments (major placement depends on matriculation marks)</p>
+
+                                <div class="majors-list">
+                                    <!-- Engineering -->
+                                    <div class="major-card">
+                                        <div class="major-header">
+                                            <div class="major-icon">🏗️</div>
+                                            <div>
+                                                <h3>Engineering Majors</h3>
+                                                <span class="major-degree">Planned: 7 engineering degrees</span>
+                                            </div>
+                                        </div>
+
+                                        <p class="major-desc">
+                                            NSPU includes seven engineering majoring departments; exact named majors may vary by academic year and intake.
+                                        </p>
+
+                                        <div class="major-details">
+                                            <div class="detail-row">
+                                                <strong>Admission:</strong>
+                                                <span>Highly competitive; based on matriculation marks</span>
+                                            </div>
+                                            <div class="detail-row">
+                                                <strong>Annual intake:</strong>
+                                                <span>270 (Engineering)</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="major-subjects">
+                                            <span>Mathematics</span>
+                                            <span>Physics</span>
+                                            <span>Engineering Fundamentals</span>
+                                            <span>Workshops / Practical Labs</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Computing -->
+                                    <div class="major-card">
+                                        <div class="major-header">
+                                            <div class="major-icon">💻</div>
+                                            <div>
+                                                <h3>Computer Majors</h3>
+                                                <span class="major-degree">Planned: 2 computer science degrees; 4 computer majoring departments</span>
+                                            </div>
+                                        </div>
+
+                                        <p class="major-desc">
+                                            Computing programs focus on modern ICT skills and applied computer science, with major assignment linked to matriculation marks.
+                                        </p>
+
+                                        <div class="major-details">
+                                            <div class="detail-row">
+                                                <strong>Annual intake:</strong>
+                                                <span>120 (Computer/Computing)</span>
+                                            </div>
+                                            <div class="detail-row">
+                                                <strong>Learning style:</strong>
+                                                <span>Theory + practice oriented</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="major-subjects">
+                                            <span>Programming</span>
+                                            <span>Databases</span>
+                                            <span>Networking</span>
+                                            <span>Software Engineering</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                       <!-- Projects Tab - NSPU Real Data -->
+<div class="tab-panel" id="projects">
+  <div class="content-card">
+    <h2>NSPU Research & Projects</h2>
+    <p class="subtitle">Student project showcases and applied technology activities</p>
+
+    <div class="projects-timeline">
+
+      <!-- REAL Project 1: Engineering & ICT Project Show (event) -->
+      <div class="project-item">
+        <div class="project-year">2025</div>
+        <div class="project-content">
+          <div class="project-badge">Project Show</div>
+          <h3>Engineering & ICT Project Show (2024–2025)</h3>
+          <p>
+            NSPU held the “(2024–2025) Academic Year Engineering and ICT Project Show, 2025” on 12.9.2025 at the NSPU
+            multi-purpose hall, where first-, second-, and third-year (undergraduate) students from the Engineering and
+            Computer faculties presented their projects; the post confirms projects were displayed, but the page text does
+            not list each project title publicly.
+          </p>
+          <div class="project-tags">
+            <span>Engineering</span>
+            <span>ICT</span>
+            <span>Student Projects</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- REAL Project 2: Pre-event preparation + project count -->
+      <div class="project-item">
+        <div class="project-year">2025</div>
+        <div class="project-content">
+          <div class="project-badge">Showcase Prep</div>
+          <h3>Project Show Preparation (59 project teams)</h3>
+          <p>
+            Before the Project Show, NSPU documented preparations by multidisciplinary first-, second-, and third-year
+            Engineering & Computer students, noting a total of 59 project groups being prepared for display.
+          </p>
+          <div class="project-tags">
+            <span>59 Teams</span>
+            <span>Engineering</span>
+            <span>Computer</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- REAL Project 3: Skills/technology training (related practical initiative) -->
+      <div class="project-item">
+        <div class="project-year">2025</div>
+        <div class="project-content">
+          <div class="project-badge">Training</div>
+          <h3>Python for Data Science & Machine Learning (Hybrid Training)</h3>
+          <p>
+            NSPU opened a “Python for Data Science and Machine Learning” hybrid training program running from 27.10.2025
+            to 14.11.2025, with participants joining online and face-to-face.
+          </p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Data Science</span>
+            <span>Machine Learning</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+                        <!-- Campus Life Tab -->
+                        <div class="tab-panel" id="campus">
+                            <div class="content-card">
+                                <h2>Campus Life at NSPU</h2>
+                                <p class="subtitle">A modern polytechnic-style learning environment in Nay Pyi Taw</p>
+
+                                <div class="campus-features">
+                                    <div class="campus-card">
+                                        <div class="campus-img">
+                                            <div style="width:100%;height:200px;background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                                                🏛️
+                                            </div>
+                                        </div>
+                                        <h3>68-Acre Campus</h3>
+                                        <p>
+                                            NSPU’s campus area is reported as 68 acres in Pobba Thiri Township.
+                                        </p>
+                                    </div>
+
+                                    <div class="campus-card">
+                                        <div class="campus-img">
+                                            <div style="width:100%;height:200px;background:linear-gradient(135deg,#1d2b64,#f8cdda);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                                                🔧
+                                            </div>
+                                        </div>
+                                        <h3>Workshops & Practical Rooms</h3>
+                                        <p>
+                                            The polytechnic approach emphasizes practical learning spaces alongside lecture halls.
+                                        </p>
+                                    </div>
+
+                                    <div class="campus-card">
+                                        <div class="campus-img">
+                                            <div style="width:100%;height:200px;background:linear-gradient(135deg,#2b5876,#4e4376);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                                                🤝
+                                            </div>
+                                        </div>
+                                        <h3>Industry & Community Engagement</h3>
+                                        <p>
+                                            NSPU’s mission highlights meaningful engagement and skill development aligned with real-world needs.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-section">
+                                    <h3>Official Contact</h3>
+                                    <div class="contact-grid">
+                                        <div class="contact-card">
+                                            <h4>📍 Location</h4>
+                                            <p>
+                                                Mingalar Dipa Quarter, Pobba Thiri Township<br />
+                                                Nay Pyi Taw Council Area, Myanmar
+                                            </p>
+                                        </div>
+                                        <div class="contact-card">
+                                            <h4>🌐 Website</h4>
+                                            <p><a href="https://www.nspu.edu.mm" target="_blank" rel="noopener">nspu.edu.mm</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Career Paths Tab -->
+                        <div class="tab-panel" id="careers">
+                            <div class="content-card">
+                                <h2>Career Paths - NSPU Graduates</h2>
+                                <p class="subtitle">Engineering and computing careers with practical preparation</p>
+
+                                <div class="career-paths">
+                                    <div class="career-card">
+                                        <div class="career-icon">🏗️</div>
+                                        <h3>Engineering</h3>
+                                        <p>
+                                            Engineering graduates are prepared for technical roles across infrastructure, industry, and technology sectors.
+                                        </p>
+                                    </div>
+
+                                    <div class="career-card">
+                                        <div class="career-icon">💻</div>
+                                        <h3>Software & IT</h3>
+                                        <p>
+                                            Computer majors can pursue software development, IT operations, and applied computing roles.
+                                        </p>
+                                    </div>
+
+                                    <div class="career-card">
+                                        <div class="career-icon">🔬</div>
+                                        <h3>Research & Innovation</h3>
+                                        <p>
+                                            NSPU emphasizes research, innovation, ethics, and leadership as part of its educational goals.
+                                        </p>
+                                    </div>
+
+                                    <div class="career-card">
+                                        <div class="career-icon">🏢</div>
+                                        <h3>Government & Private Sector</h3>
+                                        <p>
+                                            Graduates may work in government projects, private companies, or further studies, depending on specialization.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="employer-logos">
+                                    <h4>Possible Destinations:</h4>
+                                    <div class="logo-grid">
+                                        <div class="employer-logo">Engineering Firms</div>
+                                        <div class="employer-logo">IT Companies</div>
+                                        <div class="employer-logo">Government Tech</div>
+                                        <div class="employer-logo">Startups</div>
+                                        <div class="employer-logo">Research Labs</div>
+                                        <div class="employer-logo">Further Study</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- /tab-content -->
+                </main>
+
+            </div><!-- /content-layout -->
+        </div><!-- /container -->
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-profile">
+        <div class="container">
+            <h2>Ready to Start Your Journey at NSPU?</h2>
+            <p>Explore more universities or get in touch with admissions</p>
+            <div class="cta-buttons">
+                <a href="uni.html" class="btn-secondary">Explore More Universities</a>
+                <a href="error.html" class="btn-primary">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+  <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+
+      <div class="footer-section">
+        <h3>High Schooler’s Tool</h3>
+        <p>Empowering Myanmar students to make informed university choices.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="hst.html">Home</a></li>
+          <li><a href="uni.html">Universities</a></li>
+          <li><a href="career-journey.html">Career Journey</a></li>
+          <li><a href="study-mode.html">Study mode</a></li>
+          <li><a href="scholarships.html">Scholarships</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>High Schooler’s Tool</p>
+        <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+        <p>
+          Facebook:
+          <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+            High Schooler’s Tool ARP
+          </a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 High Schooler’s Tool. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+    <!-- Your existing JS -->
+    <script src="script.js"></script>
+    <script src="upp.js"></script>
+
+    <!-- Keep one DOMContentLoaded block (avoid duplicates) -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Navbar toggle
+            const hamburger = document.querySelector(".hamburger");
+            const navLinks = document.querySelector(".nav-links");
+
+            if (hamburger && navLinks) {
+                hamburger.addEventListener("click", () => {
+                    navLinks.classList.toggle("active");
+                    hamburger.classList.toggle("active");
+                });
+
+                // Close on link click
+                navLinks.querySelectorAll("a").forEach(link => {
+                    link.addEventListener("click", () => {
+                        navLinks.classList.remove("active");
+                        hamburger.classList.remove("active");
+                    });
+                });
+            }
+
+            // Tab functionality
+            document.querySelectorAll(".tab-btn").forEach(btn => {
+                btn.addEventListener("click", () => {
+                    document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+                    document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+
+                    btn.classList.add("active");
+                    document.getElementById(btn.dataset.tab).classList.add("active");
+                });
+            });
+        });
+    </script>
+</body>
+</html>
