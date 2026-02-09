@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feature Coming Soon - High Schooler's Tool</title>
+  <link rel="stylesheet" href="hst.css">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .error-container{
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .error-content{
+      background: rgba(255,255,255,0.92);
+      border: 1px solid rgba(15, 23, 42, 0.10);
+      border-radius: 22px;
+      padding: 3rem 2.2rem;
+      max-width: 680px;
+      width: 100%;
+      box-shadow: 0 25px 70px rgba(0,0,0,0.28);
+      text-align: center;
+      animation: fadeInUp 0.8s ease-out;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .error-icon{
+      font-size: 4rem;
+      margin-bottom: 0.75rem;
+      animation: bounce 2s ease-in-out infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50%      { transform: translateY(-10px); }
+    }
+
+    h1{
+      color: #0f172a;
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+      font-weight: 800;
+      letter-spacing: -0.2px;
+    }
+
+    .status-badge{
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #ff9800;
+      color: white;
+      padding: 0.55rem 1.1rem;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin: 0.25rem 0 1.25rem;
+      box-shadow: 0 12px 26px rgba(255, 152, 0, 0.28);
+    }
+
+    .error-message{
+      color: #475569;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 1.4rem;
+    }
+
+    /* Plug animation */
+    .plug-container{
+      position: relative;
+      height: 200px;
+      margin: 1.75rem 0 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 60px;
+    }
+
+    .plug{ width: 80px; height: 100px; position: relative; }
+    .plug-left{ animation: slideLeft 2s ease-in-out infinite; }
+    .plug-right{ animation: slideRight 2s ease-in-out infinite; }
+
+    @keyframes slideLeft {
+      0%, 100% { transform: translateX(0); }
+      50%      { transform: translateX(-15px); }
+    }
+    @keyframes slideRight {
+      0%, 100% { transform: translateX(0); }
+      50%      { transform: translateX(15px); }
+    }
+
+    .plug-body{
+      width: 60px;
+      height: 70px;
+      background: #667eea;
+      border-radius: 12px;
+      position: relative;
+      margin: 0 auto;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+    }
+    .plug-right .plug-body{ background: #764ba2; }
+
+    .plug-prongs{
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      padding: 0 10px;
+    }
+    .plug-left .plug-prongs{ bottom: -20px; }
+    .plug-right .plug-prongs{ top: -20px; }
+
+    .prong{
+      width: 8px;
+      height: 25px;
+      background: #475569;
+      border-radius: 2px;
+    }
+
+    .cable{
+      position: absolute;
+      width: 4px;
+      height: 40px;
+      background: #475569;
+    }
+    .plug-left .cable{
+      top: -40px; left: 50%;
+      transform: translateX(-50%);
+    }
+    .plug-right .cable{
+      bottom: -40px; left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .sparks{
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2rem;
+      animation: sparkle 2s ease-in-out infinite;
+    }
+    @keyframes sparkle {
+      0%, 100% { opacity: 0; transform: translate(-50%, -50%) scale(0.85); }
+      50%      { opacity: 1; transform: translate(-50%, -50%) scale(1.2); }
+    }
+
+    .reason-box{
+      background: #f8fafc;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      border-left: 5px solid #667eea;
+      padding: 1.25rem 1.25rem;
+      margin: 1.4rem 0;
+      text-align: left;
+      border-radius: 12px;
+    }
+
+    .reason-box h3{
+      color: #4f46e5;
+      font-size: 1.1rem;
+      margin-bottom: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .reason-box ul{ list-style: none; padding: 0; }
+    .reason-box li{
+      color: #334155;
+      padding: 0.45rem 0;
+      display: flex;
+      align-items: start;
+      gap: 0.55rem;
+    }
+    .reason-box li::before{
+      content: "⚙️";
+      flex-shrink: 0;
+    }
+
+    .timeline{
+      background: rgba(227, 242, 253, 0.9);
+      border: 1px solid rgba(25, 118, 210, 0.15);
+      padding: 1rem 1.2rem;
+      border-radius: 12px;
+      margin: 1.25rem 0;
+      text-align: left;
+    }
+    .timeline p{
+      color: #1565c0;
+      font-weight: 800;
+      margin-bottom: 0.35rem;
+    }
+    .timeline span{
+      color: #334155;
+      font-size: 0.98rem;
+    }
+
+    /* Buttons */
+    .action-buttons{
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1.6rem;
+    }
+
+    .btn{
+      padding: 0.9rem 1.4rem;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 800;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+      user-select: none;
+    }
+
+    .btn-primary{
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      border: none;
+      box-shadow: 0 14px 28px rgba(102, 126, 234, 0.28);
+    }
+    .btn-primary:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 18px 36px rgba(102, 126, 234, 0.36);
+    }
+
+    .btn-ghost{
+      background: rgba(255,255,255,0.65);
+      color: #4f46e5;
+      border: 1px solid rgba(79, 70, 229, 0.25);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .btn-ghost:hover{
+      transform: translateY(-2px);
+      border-color: rgba(79, 70, 229, 0.45);
+      box-shadow: 0 14px 28px rgba(2, 6, 23, 0.10);
+    }
+
+    .btn-cancel{
+      background: rgba(15, 23, 42, 0.06);
+      color: #0f172a;
+      border: 1px solid rgba(15, 23, 42, 0.12);
+    }
+    .btn-cancel:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 14px 28px rgba(2, 6, 23, 0.10);
+    }
+
+    /* Disclaimer + contact */
+    .fine-print{
+      margin-top: 1.4rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid rgba(15, 23, 42, 0.10);
+      color: #64748b;
+      font-size: 0.92rem;
+      text-align: left;
+      line-height: 1.6;
+    }
+    .fine-print a{
+      color: #4f46e5;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .fine-print a:hover{ text-decoration: underline; }
+
+    @media (max-width: 768px){
+      .error-content{ padding: 2rem 1.25rem; }
+      h1{ font-size: 1.55rem; }
+      .plug-container{ gap: 40px; height: 150px; }
+      .plug{ width: 60px; height: 80px; }
+      .plug-body{ width: 50px; height: 60px; }
+      .btn{ width: 100%; }
+      .action-buttons{ flex-direction: column; }
+      .fine-print{ text-align: center; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h2>HST</h2>
+        <span>High Schooler's Tool</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="hst.html">Home</a></li>
+        <li><a href="uni.html">Universities</a></li>
+        <li><a href="career-journey.html">Career journey</a></li>
+        <li><a href="study-mode.html">Study mode</a></li>
+        <li><a href="scholarships.html">Scholarships</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="hamburger" aria-label="Menu" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="error-container">
+    <div class="error-content">
+      <div class="error-icon">🔌</div>
+
+      <div class="plug-container" aria-hidden="true">
+        <div class="plug plug-left">
+          <div class="cable"></div>
+          <div class="plug-body">
+            <div class="plug-prongs">
+              <div class="prong"></div>
+              <div class="prong"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sparks">✨</div>
+
+        <div class="plug plug-right">
+          <div class="plug-body">
+            <div class="plug-prongs">
+              <div class="prong"></div>
+              <div class="prong"></div>
+            </div>
+          </div>
+          <div class="cable"></div>
+        </div>
+      </div>
+
+      <h1>Direct Application Feature Coming Soon!</h1>
+      <span class="status-badge">🚧 Under Development</span>
+
+      <p class="error-message">
+        We’re working hard to connect you directly with universities. This feature isn’t available yet.
+      </p>
+
+      <div class="timeline">
+        <p>📅 Expected Launch Timeline</p>
+        <span>We’re aiming to launch this feature in <strong>2027</strong>. Stay tuned for updates!</span>
+      </div>
+
+      <div class="reason-box">
+        <h3>🔧 What We’re Working On</h3>
+        <ul>
+          <li>Negotiating partnerships with Myanmar universities</li>
+          <li>Building secure application submission systems</li>
+          <li>Establishing direct communication with admission offices</li>
+          <li>Creating verified document upload infrastructure</li>
+          <li>Testing end‑to‑end application workflows</li>
+        </ul>
+      </div>
+
+      <div class="reason-box">
+        <h3>💡 What You Can Do Now</h3>
+        <ul>
+          <li>Explore university profiles and requirements on HST</li>
+          <li>Contact universities directly using info on their pages</li>
+          <li>Save your favorite universities for later</li>
+          <li>Prepare documents based on admission requirements</li>
+        </ul>
+      </div>
+
+      <div class="action-buttons">
+        <a href="uni.html" class="btn btn-primary">Browse Universities</a>
+        <a href="hst.html" class="btn btn-ghost">Back to Home</a>
+        <button type="button" id="cancelBtn" class="btn btn-cancel">Cancel (Go Back)</button>
+      </div>
+
+      <div class="fine-print">
+        <p>
+          Disclaimer: Images shown on the HST website may come from public sources on the internet and are not owned by High Schooler’s Tool.
+        </p>
+        <p style="margin-top: 8px;">
+          Questions? Email <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer (keep your normal footer if you want; this one is minimal and matches the page) -->
+  <footer class="footer" style="background: rgba(0,0,0,0.18); color: white;">
+    <div class="container">
+      <div class="footer-bottom">
+        <p style="color: rgba(255,255,255,0.8);">&copy; 2026 High Schooler's Tool. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+          hamburger.classList.toggle("active");
+        });
+      }
+
+      const cancelBtn = document.getElementById("cancelBtn");
+      if (cancelBtn) {
+        cancelBtn.addEventListener("click", () => {
+          history.back();
+        });
+      }
+    });
+  </script>
+</body>
+</html>

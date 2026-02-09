@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Profile - High Schooler's Tool</title>
+    <link rel="stylesheet" href="hst.css">
+    <link rel="stylesheet" href="upp.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h2>HST</h2>
+                <span>High Schooler's Tool</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="hst.html">Home</a></li>
+                <li><a href="uni.html" class="active">Universities</a></li>
+                 <li><a href="career-journey.html">Career journey</a></li>
+                <li><a href="study-mode.html">Study mode</a></li>
+                <li><a href="scholarships.html">Scholarships</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+   <!-- Hero Banner -->
+<section class="uni-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-bg" style="background-image: url('dsta.jpg');"></div>
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> / 
+            <a href="uni.html">Academies</a> / 
+            <span>Defence Services Technological Academy (DSTA)</span>
+        </div>
+        <div class="uni-hero-content">
+            <div class="uni-logo">
+                <img src="dstalogo.jpg" alt="DSTA Logo">
+            </div>
+            <div class="uni-title">
+                <h1>Defence Services Technological Academy (DSTA)</h1>
+                <p class="uni-subtitle">Premier Technological University of Myanmar Armed Forces</p>
+                <div class="uni-meta">
+                    <span><i>📍</i> Pyin Oo Lwin, Mandalay Region</span>
+                    <span><i>🏛️</i> Technological Military Academy</span>
+                    <span><i>📅</i> Established 1 February 1993</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="quick-stats">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-icon">🎓</div>
+                <div class="stat-info">
+                    <h3>27th</h3>
+                    <p>Intake Graduates (2025)</p>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">📚</div>
+                <div class="stat-info">
+                    <h3>Engineering</h3>
+                    <p>Bachelor Degrees Offered</p>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">👨‍🏫</div>
+                <div class="stat-info">
+                    <h3>Selective</h3>
+                    <p>Admission for Male Cadets Only</p>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">🏆</div>
+                <div class="stat-info">
+                    <h3>26+</h3>
+                    <p>Intakes Completed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Main Content -->
+    <section class="profile-content">
+        <div class="container">
+            <div class="content-layout">
+                
+                <aside class="profile-sidebar">
+    <div class="sidebar-card">
+        <h3>Quick Info</h3>
+        <div class="info-list">
+            <div class="info-item">
+                <strong>Type</strong>
+                <span>Government / Military</span>
+            </div>
+            <div class="info-item">
+                <strong>Location</strong>
+                <span>Pyin Oo Lwin, Mandalay Region</span>
+            </div>
+            <div class="info-item">
+                <strong>Campus Size</strong>
+                <span>Data not publicly available</span>
+            </div>
+            <div class="info-item">
+                <strong>Language</strong>
+                <span>Myanmar, English</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar-card">
+        <h3>Entrance Requirements</h3>
+        <div class="requirement-box">
+            <div class="requirement-item">
+                <span class="req-label">Minimum Marks</span>
+                <span class="req-value">Data not publicly available</span>
+            </div>
+            <div class="requirement-item">
+                <span class="req-label">Required Subjects</span>
+                <div class="subject-tags">
+                    <span class="subject-tag">Mathematics</span>
+                    <span class="subject-tag">Physics</span>
+                    <span class="subject-tag">English</span>
+                    <span class="subject-tag">Physical Fitness</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar-card contact-card">
+        <h3>Contact</h3>
+        <div class="contact-info">
+            <p><i>📞</i> Data not publicly available</p>
+            <p><i>📧</i> Data not publicly available</p>
+            <p><i>🌐</i> Data not publicly available</p>
+        </div>
+        <button class="contact-btn">Get in Touch</button>
+    </div>
+</aside>
+
+                <!-- Main Content -->
+                <main class="profile-main">
+                    
+                    <!-- Navigation Tabs -->
+                    <div class="profile-tabs">
+                        <button class="tab-btn active" data-tab="overview">Overview</button>
+                        <button class="tab-btn" data-tab="majors">Majors</button>
+                        <button class="tab-btn" data-tab="projects">Projects</button>
+                        <button class="tab-btn" data-tab="campus">Campus Life</button>
+                        <button class="tab-btn" data-tab="careers">Career Paths</button>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content">
+                        
+                        <!-- Overview Tab -->
+                       <div class="tab-panel active" id="overview">
+    <div class="content-card">
+        <h2>About the Academy</h2>
+        <p>The Defense Services Academy (DSA), established in 1954 in Pyin Oo Lwin, is Myanmar’s premier military academy. It trains future officers for the Army, Navy, and Air Force. The academy offers bachelor’s degree programs in liberal arts, physical sciences, and computer science. Graduates are commissioned into the Myanmar Armed Forces.</p>
+        <p>Since its founding, DSA has produced over 33,000 graduates, many of whom serve in leadership roles across the military. The academy emphasizes discipline, leadership, and academic excellence, preparing cadets to become “The Triumphant Elites of the Future.”</p>
+    </div>
+
+   <div class="content-card">
+    <h2>Why Choose DSA?</h2>
+    <div class="features-list">
+        <div class="feature-item">
+            <div class="feature-icon">🪖</div>
+            <div>
+                <h4>Premier Military Academy</h4>
+                <p>Myanmar's top institution for officer training since 1954</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <div class="feature-icon">🎓</div>
+            <div>
+                <h4>Academic Excellence</h4>
+                <p>Bachelor's degrees in liberal arts, sciences, and computer science</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <div class="feature-icon">👨‍🎓</div>
+            <div>
+                <h4>Leadership Development</h4>
+                <p>33,000+ graduates serving in senior military positions</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <div class="feature-icon">⚔️</div>
+            <div>
+                <h4>Tri-Service Training</h4>
+                <p>Prepares cadets for Army, Navy, and Air Force commissions</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+                            <div class="content-card">
+                                <h2>Campus Gallery</h2>
+                                <div class="gallery-grid">
+                                    <div class="gallery-item">
+                                        <img src="dsa1.jpg" alt="Computer Lab">
+                                        <p>🛡</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="dsa2.jpg" alt="Library">
+                                        <p>🛡</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="dsa3.jpg" alt="Main Hall">
+                                        <p>🛡</p>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Majors Tab - DSA Real Data Only -->
+<div class="tab-panel" id="majors">
+    <div class="content-card">
+        <h2>Academic Programs</h2>
+        <p class="subtitle">Bachelor's degree programs offered to officer cadets</p>
+        
+        <div class="majors-list">
+            <!-- Major Card 1 -->
+            <div class="major-card">
+                <div class="major-header">
+                    <div class="major-icon">📚</div>
+                    <div>
+                        <h3>Liberal Arts</h3>
+                        <span class="major-degree">Bachelor's Degree</span>
+                    </div>
+                </div>
+                <p class="major-desc">Comprehensive education including Myanmar, English, mathematics, political science, international relations, and general law - required for all cadets.</p>
+                <div class="major-details">
+                    <div class="detail-row">
+                        <strong>Duration:</strong>
+                        <span>3-4 Years</span>
+                    </div>
+                    <div class="detail-row">
+                        <strong>Min. Marks:</strong>
+                        <span>Not publicly specified</span>
+                    </div>
+                    <div class="detail-row">
+                        <strong>Prerequisites:</strong>
+                        <span>Physical fitness + selection process</span>
+                    </div>
+                </div>
+                <div class="major-subjects">
+                    <span>Myanmar</span>
+                    <span>English</span>
+                    <span>Political Science</span>
+                    <span>International Relations</span>
+                </div>
+            </div>
+
+            <!-- Major Card 2 -->
+            <div class="major-card">
+                <div class="major-header">
+                    <div class="major-icon">🔬</div>
+                    <div>
+                        <h3>Combined Physical Sciences</h3>
+                        <span class="major-degree">Bachelor's Degree</span>
+                    </div>
+                </div>
+                <p class="major-desc">Science foundation with specializations in physics, chemistry, mathematics, and geology for technical military roles.</p>
+                <div class="major-details">
+                    <div class="detail-row">
+                        <strong>Duration:</strong>
+                        <span>3-4 Years</span>
+                    </div>
+                    <div class="detail-row">
+                        <strong>Min. Marks:</strong>
+                        <span>Not publicly specified</span>
+                    </div>
+                    <div class="detail-row">
+                        <strong>Prerequisites:</strong>
+                        <span>Physical fitness + selection process</span>
+                    </div>
+                </div>
+                <div class="major-subjects">
+                    <span>Physics</span>
+                    <span>Chemistry</span>
+                    <span>Mathematics</span>
+                    <span>Geology</span>
+                </div>
+            </div>
+
+            <!-- Major Card 3 -->
+            <div class="major-card">
+                <div class="major-header">
+                    <div class="major-icon">💻</div>
+                    <div>
+                        <h3>Computer Science</h3>
+                        <span class="major-degree">Bachelor's Degree</span>
+                    </div>
+                </div>
+                <p class="major-desc">Modern computing education through dedicated Computer Science and Computer Technology departments.</p>
+                <div class="major-details">
+                    <div class="detail-row">
+                        <strong>Duration:</strong>
+                        <span>3-4 Years</span>
+                    </div>
+                    <div class="detail-row">
+                        <strong>Min. Marks:</strong>
+                        <span>Not publicly specified</span>
+                    </div>
+                    <div class="detail-row">
+                        <strong>Prerequisites:</strong>
+                        <span>Physical fitness + selection process</span>
+                    </div>
+                </div>
+                <div class="major-subjects">
+                    <span>Programming</span>
+                    <span>Electronics</span>
+                    <span>Computer Technology</span>
+                    <span>Mathematics</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                      <!-- Projects Tab - DSA Real Data -->
+<div class="tab-panel" id="projects">
+    <div class="content-card">
+        <h2>DSA Research & Conferences</h2>
+        <p class="subtitle">Defense technology and academic initiatives</p>
+        
+        <div class="projects-timeline">
+            <!-- REAL Project 1: International Conference -->
+            <div class="project-item">
+                <div class="project-year">Annual</div>
+                <div class="project-content">
+                    <div class="project-badge">Conference</div>
+                    <h3>Conference on Science and Technology Development</h3>
+                    <p>DSA hosts annual international conference showcasing defense technology research and scientific advancements.</p>
+                    <div class="project-tags">
+                        <span>Science</span>
+                        <span>Technology</span>
+                        <span>Conference</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- REAL Project 2: Extreme Medicine Research -->
+            <div class="project-item">
+                <div class="project-year">2025</div>
+                <div class="project-content">
+                    <div class="project-badge">International</div>
+                    <h3>Extreme Medicine Research Lab</h3>
+                    <p>Joint laboratory with Tomsk State University (Russia) for extreme medicine research including medical robotics and implants.</p>
+                    <div class="project-tags">
+                        <span>Medicine</span>
+                        <span>International</span>
+                        <span>UAV Research</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Classified Research -->
+            <div class="project-item">
+                <div class="project-year">Ongoing</div>
+                <div class="project-content">
+                    <div class="project-badge classified">Classified</div>
+                    <h3>Military Technology R&D</h3>
+                    <p>Defense systems development and strategic military research projects (details not publicly available).</p>
+                    <div class="project-tags">
+                        <span>Classified</span>
+                        <span>Defense</span>
+                        <span>R&D</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            
+            
+<!-- Campus Life Tab - DSA -->
+<div class="tab-panel" id="campus">
+    <div class="content-card">
+        <h2>Cadet Life at DSA</h2>
+        <p class="subtitle">Military academy in scenic Pyin Oo Lwin
+        
+        </p>
+        
+        <div class="campus-features">
+            <div class="campus-card">
+                <div class="campus-img">
+                    <img src=".png" alt="Cadet Training">
+                </div>
+                <h3>Cadet Training</h3>
+                <p>Daily parades, physical fitness, military drills, leadership training.</p>
+            </div>
+
+            <div class="campus-card">
+                <div class="campus-img">
+                    <img src="images/facilities.jpg" alt="Academic Wing">
+                </div>
+                <h3>Academic Facilities</h3>
+                <p>Academic wing, training wing, lecture halls, science laboratories.</p>
+            </div>
+
+            <div class="campus-card">
+                <div class="campus-img">
+                    <img src="images/events.jpg" alt="Passing Out Parade">
+                </div>
+                <h3>Military Ceremonies</h3>
+                <p>Passing out parades, commissioning ceremonies, sports competitions.</p>
+            </div>
+        </div>
+
+        <div class="testimonial-section">
+            <h3>Cadet Voices</h3>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>""</p>
+                    <div class="testimonial-author">
+                        <strong></strong>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>""</p>
+                    <div class="testimonial-author">
+                        <strong></strong>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+                      <!-- Career Paths Tab - DSA -->
+<div class="tab-panel" id="careers">
+    <div class="content-card">
+        <h2>Career Opportunities</h2>
+        <p class="subtitle">Commissioned officer career paths</p>
+        
+        <div class="career-paths">
+            <div class="career-card">
+                <div class="career-icon">🪖</div>
+                <h3>Army Officer</h3>
+                <p>Commissioned as Lieutenant in Myanmar Army with command responsibilities.</p>
+                <span class="salary-range">Military officer pay scale</span>
+            </div>
+
+            <div class="career-card">
+                <div class="career-icon">⚓</div>
+                <h3>Navy Officer</h3>
+                <p>Commissioned as Lieutenant in Myanmar Navy serving on warships and naval bases.</p>
+                <span class="salary-range">Military officer pay scale</span>
+            </div>
+
+            <div class="career-card">
+                <div class="career-icon">✈️</div>
+                <h3>Air Force Officer</h3>
+                <p>Commissioned as Lieutenant in Myanmar Air Force with aviation and technical roles.</p>
+                <span class="salary-range">Military officer pay scale</span>
+            </div>
+
+            <div class="career-card">
+                <div class="career-icon">🎖️</div>
+                <h3>Senior Command</h3>
+                <p>Progression to Major, Lt Colonel, Colonel, and General officer ranks through service.</p>
+                <span class="salary-range">Rank-based military pay</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+    <!-- CTA Section - DSA -->
+<section class="cta-profile">
+    <div class="container">
+        <h2>Ready to Become a DSA Cadet?</h2>
+        <p>Start your journey to become a commissioned officer</p>
+        <div class="cta-buttons">
+            <a href="uni.html" class="btn-secondary">Explore More Academies</a>
+            <a href="#" class="btn-primary">Selection Process</a>
+        </div>
+    </div>
+</section>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>High Schooler's Tool</h3>
+                    <p>Empowering Myanmar students to make informed university choices</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                         <li><a href="hst.html">Home</a></li>
+                        <li><a href="uni.html">Universities</a></li>
+                        <li><a href="career-journey.html">Career Journey</a></li>
+                        <li><a href="study-mode.html">Study mode</a></li>
+                        <li><a href="scholarships.html">Scholarships</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>University of Computer Studies, Taunggyi</p>
+                    <p>Email: highschoolertoolmm@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 High Schooler's Tool. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="upp.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    // Navbar toggle
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    
+    if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+            hamburger.classList.toggle("active");
+        });
+        
+        // Close on link click
+        navLinks.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("active");
+                hamburger.classList.remove("active");
+            });
+        });
+    }
+    
+    // Tab functionality
+    document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+            document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+            
+            btn.classList.add("active");
+            document.getElementById(btn.dataset.tab).classList.add("active");
+        });
+    });
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    
+    hamburger.onclick = function() {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("active");
+    }
+});
+</script>
+
+
+</body>
+</html>

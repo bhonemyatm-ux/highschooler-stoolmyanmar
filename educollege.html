@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[College Name] - High Schooler's Tool</title>
+    <link rel="stylesheet" href="hst.css">
+    <link rel="stylesheet" href="upp.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h2>HST</h2>
+                <span>High Schooler's Tool</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="hst.html">Home</a></li>
+                <li><a href="uni.html" class="active">Universities</a></li>
+                <li><a href="career-journey.html">Career journey</a></li>
+                <li><a href="study-mode.html">Study mode</a></li>
+                <li><a href="scholarships.html">Scholarships</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="uni-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-bg" style="background-image: url('education-college-default.jpg');"></div>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / 
+                <a href="uni.html">Universities</a> / 
+                <span>[College Name]</span>
+            </div>
+            <div class="uni-hero-content">
+                <div class="uni-logo">
+                    <img src="education-college-logo.png" alt="[College Name] Logo">
+                </div>
+                <div class="uni-title">
+                    <h1>[College Name]</h1>
+                    <p class="uni-subtitle">Teacher Training Institution</p>
+                    <div class="uni-meta">
+                        <span><i>📍</i> [City], [State/Region]</span>
+                        <span><i>🏛️</i> Education College</span>
+                        <span><i>📅</i> Ministry of Education</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats Bar -->
+    <section class="quick-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">🎓</div>
+                    <div class="stat-info">
+                        <h3>B.Ed</h3>
+                        <p>Bachelor Programs</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">📚</div>
+                    <div class="stat-info">
+                        <h3>DTEd</h3>
+                        <p>Diploma Programs</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">👨‍🏫</div>
+                    <div class="stat-info">
+                        <h3>Teacher</h3>
+                        <p>Training Focus</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-info">
+                        <h3>MoE</h3>
+                        <p>Accredited</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="profile-content">
+        <div class="container">
+            <div class="content-layout">
+                
+                <!-- Sidebar -->
+                <aside class="profile-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Quick Info</h3>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <strong>Type</strong>
+                                <span>Education College</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Location</strong>
+                                <span>[City], [State/Region]</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Ministry</strong>
+                                <span>Ministry of Education</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Focus</strong>
+                                <span>Teacher Training</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Programs Offered</h3>
+                        <div class="requirement-box">
+                            <div class="requirement-item">
+                                <span class="req-label">Main Programs</span>
+                                <div class="subject-tags">
+                                    <span class="subject-tag">B.Ed</span>
+                                    <span class="subject-tag">BA.Ed</span>
+                                    <span class="subject-tag">BSc.Ed</span>
+                                    <span class="subject-tag">DTEd</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card contact-card">
+                        <h3>Contact</h3>
+                        <div class="contact-info">
+                            <p><i>📞</i> Contact via Ministry of Education</p>
+                            <p><i>📧</i> info@moe.gov.mm</p>
+                            <p><i>🌐</i> moe.gov.mm</p>
+                        </div>
+                        <button class="contact-btn">Get in Touch</button>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="profile-main">
+                    
+                    <!-- Navigation Tabs -->
+                    <div class="profile-tabs">
+                        <button class="tab-btn active" data-tab="overview">Overview</button>
+                        <button class="tab-btn" data-tab="programs">Programs</button>
+                        <button class="tab-btn" data-tab="admission">Admission</button>
+                        <button class="tab-btn" data-tab="careers">Career Paths</button>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content">
+                        
+                        <!-- Overview Tab -->
+                        <div class="tab-panel active" id="overview">
+                            <div class="content-card">
+                                <h2>About the College</h2>
+                                <p>[College Name in Burmese] သည် ပညာရေးဝန်ကြီးဌာန လက်အောက်ရှိ ဆရာ/ဆရာမ လေ့ကျင့်ရေး ကောလိပ်တစ်ခုဖြစ်ပြီး [State/Region Name] တွင် တည်ရှိပါသည်။ ဤကောလိပ်သည် မူလတန်းနှင့် အလယ်တန်း ကျောင်းများအတွက် အရည်အချင်းပြည့်မီသော ဆရာ/ဆရာမများ မွေးထုတ်ပေးရန် တာဝန်ယူဆောင်ရွက်လျက်ရှိပါသည်။</p>
+                                <p>This education college is operated under the Ministry of Education and provides teacher training programs including Bachelor of Education (B.Ed) and Diploma in Teacher Education (DTEd).</p>
+                            </div>
+
+                            <div class="content-card">
+                                <h2>Why Choose This College?</h2>
+                                <div class="features-list">
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🎓</div>
+                                        <div>
+                                            <h4>MoE Accredited Programs</h4>
+                                            <p>Fully recognized teacher training programs by Ministry of Education</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">👨‍🏫</div>
+                                        <div>
+                                            <h4>Teacher Career Path</h4>
+                                            <p>Direct pathway to becoming a certified teacher in Myanmar</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">📍</div>
+                                        <div>
+                                            <h4>Regional Access</h4>
+                                            <p>Serves students in [Region/State] area</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">💼</div>
+                                        <div>
+                                            <h4>Government Employment</h4>
+                                            <p>Graduates can join government schools as certified teachers</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Limited Data Notice -->
+                            <div class="content-card" style="background: #fff3cd; border-left: 4px solid #ffc107;">
+                                <h3 style="color: #856404; margin-bottom: 1rem;">📋 Limited Public Information</h3>
+                                <p style="color: #856404; margin-bottom: 0.5rem;">Detailed information about education colleges is not widely published online. The information presented here is based on general education college programs in Myanmar.</p>
+                                <p style="color: #856404; margin: 0;"><strong>For specific details:</strong> Please contact the college directly or visit the Ministry of Education office.</p>
+                            </div>
+                        </div>
+
+                        <!-- Programs Tab -->
+                        <div class="tab-panel" id="programs">
+                            <div class="content-card">
+                                <h2>Teacher Training Programs</h2>
+                                <p class="subtitle">Standard education programs offered by Myanmar education colleges</p>
+                                
+                                <div class="majors-list">
+                                    <!-- Program 1 -->
+                                    <div class="major-card">
+                                        <div class="major-header">
+                                            <div class="major-icon">🎓</div>
+                                            <div>
+                                                <h3>Bachelor of Education (B.Ed)</h3>
+                                                <span class="major-degree">4-Year Program</span>
+                                            </div>
+                                        </div>
+                                        <p class="major-desc">Comprehensive teacher training program preparing graduates to teach at primary and secondary schools.</p>
+                                        <div class="major-details">
+                                            <div class="detail-row">
+                                                <strong>Duration:</strong>
+                                                <span>4 Years</span>
+                                            </div>
+                                            <div class="detail-row">
+                                                <strong>Focus:</strong>
+                                                <span>Primary & Secondary Teaching</span>
+                                            </div>
+                                        </div>
+                                        <div class="major-subjects">
+                                            <span>Pedagogy</span>
+                                            <span>Child Psychology</span>
+                                            <span>Subject Methods</span>
+                                            <span>Teaching Practice</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Program 2 -->
+                                    <div class="major-card">
+                                        <div class="major-header">
+                                            <div class="major-icon">📜</div>
+                                            <div>
+                                                <h3>Diploma in Teacher Education (DTEd)</h3>
+                                                <span class="major-degree">2-3 Year Program</span>
+                                            </div>
+                                        </div>
+                                        <p class="major-desc">Diploma program for primary school teacher training with focus on basic education methods.</p>
+                                        <div class="major-details">
+                                            <div class="detail-row">
+                                                <strong>Duration:</strong>
+                                                <span>2-3 Years</span>
+                                            </div>
+                                            <div class="detail-row">
+                                                <strong>Focus:</strong>
+                                                <span>Primary School Teaching</span>
+                                            </div>
+                                        </div>
+                                        <div class="major-subjects">
+                                            <span>Basic Pedagogy</span>
+                                            <span>Classroom Management</span>
+                                            <span>Primary Subjects</span>
+                                            <span>Practical Training</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Admission Tab -->
+                        <div class="tab-panel" id="admission">
+                            <div class="content-card">
+                                <h2>Admission Process</h2>
+                                <p class="subtitle">General admission requirements for education colleges in Myanmar</p>
+                                
+                                <div class="reason-box">
+                                    <h3>📝 Basic Requirements</h3>
+                                    <ul>
+                                        <li>Pass Myanmar Matriculation Examination</li>
+                                        <li>Meet minimum mark requirements (typically 300-350 marks)</li>
+                                        <li>Myanmar citizenship</li>
+                                        <li>Good health and physical fitness</li>
+                                        <li>Interest in teaching profession</li>
+                                    </ul>
+                                </div>
+
+                                <div class="reason-box">
+                                    <h3>📅 Application Timeline</h3>
+                                    <ul>
+                                        <li>Applications typically open after Matriculation results</li>
+                                        <li>Check with Ministry of Education for exact dates</li>
+                                        <li>Admissions coordinated through MoE SMS system</li>
+                                    </ul>
+                                </div>
+
+                                <div class="reason-box" style="background: #e3f2fd; border-color: #2196f3;">
+                                    <h3 style="color: #1976d2;">💡 How to Apply</h3>
+                                    <ul>
+                                        <li>Register through Ministry of Education SMS application system</li>
+                                        <li>Select education colleges in your preferred region</li>
+                                        <li>Submit required documents to assigned college</li>
+                                        <li>Wait for admission confirmation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Careers Tab -->
+                        <div class="tab-panel" id="careers">
+                            <div class="content-card">
+                                <h2>Career Opportunities</h2>
+                                <p class="subtitle">Teaching careers after education college graduation</p>
+                                
+                                <div class="career-paths">
+                                    <div class="career-card">
+                                        <div class="career-icon">👨‍🏫</div>
+                                        <h3>Primary School Teacher</h3>
+                                        <p>Teach students from Grade 1-4 in government or private primary schools.</p>
+                                        <span class="salary-range">Avg: 200,000 - 400,000 MMK/month</span>
+                                    </div>
+
+                                    <div class="career-card">
+                                        <div class="career-icon">📚</div>
+                                        <h3>Middle School Teacher</h3>
+                                        <p>Teach specific subjects to Grade 5-9 students in government schools.</p>
+                                        <span class="salary-range">Avg: 250,000 - 500,000 MMK/month</span>
+                                    </div>
+
+                                    <div class="career-card">
+                                        <div class="career-icon">🏫</div>
+                                        <h3>High School Teacher</h3>
+                                        <p>With additional qualifications, teach Grade 10-11 students.</p>
+                                        <span class="salary-range">Avg: 300,000 - 600,000 MMK/month</span>
+                                    </div>
+
+                                    <div class="career-card">
+                                        <div class="career-icon">📖</div>
+                                        <h3>Private School Teacher</h3>
+                                        <p>Work at private schools and international schools with competitive salaries.</p>
+                                        <span class="salary-range">Avg: 300,000 - 800,000 MMK/month</span>
+                                    </div>
+
+                                    <div class="career-card">
+                                        <div class="career-icon">👔</div>
+                                        <h3>Education Officer</h3>
+                                        <p>Administrative roles in Ministry of Education or township education offices.</p>
+                                        <span class="salary-range">Government scale</span>
+                                    </div>
+
+                                    <div class="career-card">
+                                        <div class="career-icon">🎓</div>
+                                        <h3>Further Studies</h3>
+                                        <p>Pursue M.Ed at Yangon or Sagaing University of Education.</p>
+                                        <span class="salary-range">Academic advancement</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-profile">
+        <div class="container">
+            <h2>Interested in Teacher Training?</h2>
+            <p>Explore more education institutions or contact the Ministry of Education</p>
+            <div class="cta-buttons">
+                <a href="uni.html" class="btn-secondary">Browse All Universities</a>
+                <a href="error.html" class="btn-primary">Apply Through MoE</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>High Schooler's Tool</h3>
+                    <p>Empowering Myanmar students to make informed university choices</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="hst.html">Home</a></li>
+                        <li><a href="uni.html">Universities</a></li>
+                        <li><a href="career-journey.html">Career Journey</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>University of Computer Studies, Taunggyi</p>
+                    <p>Email: highschoolertoolmm@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 High Schooler's Tool. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="upp.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    
+    if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+            hamburger.classList.toggle("active");
+        });
+        
+        navLinks.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("active");
+                hamburger.classList.remove("active");
+            });
+        });
+    }
+    
+    document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+            document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+            
+            btn.classList.add("active");
+            document.getElementById(btn.dataset.tab).classList.add("active");
+        });
+    });
+});
+</script>
+</body>
+</html>

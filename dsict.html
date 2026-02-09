@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>University Profile - High Schooler's Tool</title>
+
+  <link rel="stylesheet" href="hst.css" />
+  <link rel="stylesheet" href="upp.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h2>HST</h2>
+        <span>High Schooler's Tool</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="hst.html">Home</a></li>
+        <li><a href="uni.html" class="active">Universities</a></li>
+        <li><a href="career-journey.html">Career journey</a></li>
+        <li><a href="study-mode.html">Study mode</a></li>
+        <li><a href="scholarships.html">Scholarships</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="uni-hero">
+    <div class="hero-overlay"></div>
+    <!-- Replace with your real image -->
+    <div class="hero-bg" style="background-image: url('dsinps.jpg');"></div>
+
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> /
+        <a href="uni.html">Universities</a> /
+        <span>Defence Services Nursing & Paramedical Academy</span>
+      </div>
+
+      <div class="uni-hero-content">
+        <div class="uni-logo">
+          <img src="dsinpslogo.jpg" alt="DSINPS / MINP Logo" />
+        </div>
+
+        <div class="uni-title">
+          <h1>Defence Services Nursing & Paramedical Academy</h1>
+          <p class="uni-subtitle">A Myanmar military-run institute for nursing and paramedical science education.</p>
+
+          <div class="uni-meta">
+            <span><i>📍</i> Mingaladon, Yangon</span>
+            <span><i>🏛️</i> Nursing, Pharmacy, Paramedical Science</span>
+            <span><i>📅</i> Established 2000 (academy programs expanded in 2002)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Stats Bar -->
+  <section class="quick-stats">
+    <div class="container">
+      <div class="stats-grid">
+
+        <div class="stat-item">
+          <div class="stat-icon">👩‍⚕️</div>
+          <div class="stat-info">
+            <h3>Nursing</h3>
+            <p>Bachelor + postgraduate (reported)</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">💊</div>
+          <div class="stat-info">
+            <h3>Pharmacy</h3>
+            <p>Bachelor program (reported)</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">🚑</div>
+          <div class="stat-info">
+            <h3>Paramedical</h3>
+            <p>Bachelor program (reported)</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">🏛️</div>
+          <div class="stat-info">
+            <h3>Military-run</h3>
+            <p>Defence Services institute</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="profile-content">
+    <div class="container">
+      <div class="content-layout">
+
+        <!-- Sidebar -->
+        <aside class="profile-sidebar">
+
+          <div class="sidebar-card">
+            <h3>Quick Info</h3>
+            <div class="info-list">
+              <div class="info-item">
+                <strong>Type</strong>
+                <span>Military-run higher education institute</span>
+              </div>
+              <div class="info-item">
+                <strong>Location</strong>
+                <span>Mingaladon, Yangon</span>
+              </div>
+              <div class="info-item">
+                <strong>Also known as</strong>
+                <span>Defence Services Institute of Nursing and Paramedical Science (DSINPS)</span>
+              </div>
+              <div class="info-item">
+                <strong>Focus</strong>
+                <span>Nursing, Paramedical Science, Pharmacy</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>Entrance Requirements</h3>
+            <div class="requirement-box">
+              <div class="requirement-item">
+                <span class="req-label">Selection</span>
+                <span class="req-value">Competitive; set by Defence Services intake (varies by year)</span>
+              </div>
+              <div class="requirement-item">
+                <span class="req-label">Typical checks</span>
+                <span class="req-value">Medical/fitness + interviews (commonly required in military academies)</span>
+              </div>
+              <div class="requirement-item">
+                <span class="req-label">Best action</span>
+                <span class="req-value">Follow official Defence Services announcements for the current intake</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card contact-card">
+            <h3>Contact</h3>
+            <div class="contact-info">
+              <p><i>📍</i> Mingaladon, Yangon, Myanmar</p>
+              <p><i>🗞️</i> Watch official Defence Services news/announcements</p>
+            </div>
+            <button class="contact-btn">Get in Touch</button>
+          </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="profile-main">
+
+          <!-- Navigation Tabs -->
+          <div class="profile-tabs">
+            <button class="tab-btn active" data-tab="overview">Overview</button>
+            <button class="tab-btn" data-tab="majors">Majors</button>
+            <button class="tab-btn" data-tab="projects">Projects</button>
+            <button class="tab-btn" data-tab="campus">Campus Life</button>
+            <button class="tab-btn" data-tab="careers">Career Paths</button>
+          </div>
+
+          <!-- Tab Content -->
+          <div class="tab-content">
+
+            <!-- Overview Tab -->
+            <div class="tab-panel active" id="overview">
+              <div class="content-card">
+                <h2>About the Academy</h2>
+                <p>
+                  The Defence Services Institute of Nursing and Paramedical Science (also described as the Defence Services Nursing and
+                  Paramedical Academy) is located in Mingaladon, Yangon, and is one of Myanmar’s military-run institutes of higher learning.
+                  It was founded in 2000 as the Defence Services Institute of Nursing and expanded in 2002 to add paramedical science and
+                  pharmacy degree programs.
+                </p>
+              </div>
+
+              <div class="content-card">
+                <h2>Why Choose This Academy?</h2>
+                <div class="features-list">
+
+                  <div class="feature-item">
+                    <div class="feature-icon">👩‍⚕️</div>
+                    <div>
+                      <h4>Nursing + Paramedical Focus</h4>
+                      <p>Specialized training pathways for nursing and allied health professions.</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">🏛️</div>
+                    <div>
+                      <h4>Military-Run Institute</h4>
+                      <p>Structured discipline and a defined career pipeline within Defence Services healthcare roles.</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">💊</div>
+                    <div>
+                      <h4>Multiple Degree Paths</h4>
+                      <p>Public sources report programs in Nursing (including postgraduate), Pharmacy, and Paramedical Science.</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="content-card">
+                <h2>Campus Gallery</h2>
+                <div class="gallery-grid">
+                  <div class="gallery-item">
+                    <img src="dsinps1.jpg" alt="Campus" />
+                    <p>🏛️</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="dsinps2.jpg" alt="Nursing Training" />
+                    <p>👩‍⚕️</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="dsinps3.jpg" alt="Paramedical Skills" />
+                    <p>🚑</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="dsinps4.jpg" alt="Lab / Pharmacy" />
+                    <p>💊</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="dsinps5.jpg" alt="Ceremony / Parade" />
+                    <p>🎓</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="dsinps6.jpg" alt="Student Life" />
+                    <p>🤝</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Majors Tab -->
+            <div class="tab-panel" id="majors">
+              <div class="content-card">
+                <h2>Available Programs</h2>
+                <p class="subtitle">Programs reported in public sources</p>
+
+                <div class="majors-list">
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">👩‍⚕️</div>
+                      <div>
+                        <h3>Nursing</h3>
+                        <span class="major-degree">Bachelor + Master + PhD (reported)</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">
+                      Public sources report bachelor’s, master’s, and PhD degree programs in Nursing.
+                    </p>
+                    <div class="major-subjects">
+                      <span>Fundamentals of Nursing</span>
+                      <span>Clinical Practice</span>
+                      <span>Public Health</span>
+                      <span>Leadership</span>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">💊</div>
+                      <div>
+                        <h3>Pharmacy</h3>
+                        <span class="major-degree">Bachelor (reported)</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">
+                      Public sources report a bachelor degree program in Pharmacy.
+                    </p>
+                    <div class="major-subjects">
+                      <span>Pharmacology</span>
+                      <span>Medicinal Chemistry</span>
+                      <span>Pharmaceutics</span>
+                      <span>Dispensing</span>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">🚑</div>
+                      <div>
+                        <h3>Paramedical Science</h3>
+                        <span class="major-degree">Bachelor (reported)</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">
+                      Public sources report a bachelor degree program in Paramedical Science.
+                    </p>
+                    <div class="major-subjects">
+                      <span>Emergency Care</span>
+                      <span>Diagnostics</span>
+                      <span>Patient Safety</span>
+                      <span>Clinical Skills</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Projects Tab - timeline style -->
+            <div class="tab-panel" id="projects">
+              <div class="content-card">
+                <h2>Research & Activities</h2>
+                <p class="subtitle">Publicly visible activities and outcomes</p>
+
+                <div class="projects-timeline">
+
+                  <div class="project-item">
+                    <div class="project-year">2025</div>
+                    <div class="project-content">
+                      <div class="project-badge">Graduation</div>
+                      <h3>Graduation / Passing-out Intakes</h3>
+                      <p>
+                        Defence services news outlets have published updates about passing-out parades and graduation events
+                        for nursing and paramedical intakes.
+                      </p>
+                      <div class="project-tags">
+                        <span>Passing-out</span>
+                        <span>Nursing</span>
+                        <span>Paramedical</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-item">
+                    <div class="project-year">Ongoing</div>
+                    <div class="project-content">
+                      <div class="project-badge">Academic</div>
+                      <h3>Health Education & Training</h3>
+                      <p>
+                        The academy’s reported degree programs indicate ongoing academic and professional training in nursing,
+                        pharmacy, and paramedical fields.
+                      </p>
+                      <div class="project-tags">
+                        <span>Training</span>
+                        <span>Healthcare</span>
+                        <span>Education</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-item">
+                    <div class="project-year">Not Public</div>
+                    <div class="project-content">
+                      <div class="project-badge classified">Limited Info</div>
+                      <h3>Internal Research / Service Work</h3>
+                      <p>
+                        Detailed internal projects may not be publicly documented online; rely on official announcements or direct contact
+                        for verified project titles.
+                      </p>
+                      <div class="project-tags">
+                        <span>Not Public</span>
+                        <span>Military</span>
+                        <span>Healthcare</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Campus Life Tab -->
+            <div class="tab-panel" id="campus">
+              <div class="content-card">
+                <h2>Campus Life</h2>
+                <p class="subtitle">Structured academy environment</p>
+
+                <div class="campus-features">
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#232526,#414345);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                        🏛️
+                      </div>
+                    </div>
+                    <h3>Academy Discipline</h3>
+                    <p>Military-run institutions often follow structured routines and strict codes of conduct.</p>
+                  </div>
+
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#1f4037,#99f2c8);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                        👩‍⚕️
+                      </div>
+                    </div>
+                    <h3>Clinical Skills Training</h3>
+                    <p>Programs emphasize clinical skills, patient care, and readiness for health service roles.</p>
+                  </div>
+
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#000428,#004e92);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                        🚑
+                      </div>
+                    </div>
+                    <h3>Teamwork Culture</h3>
+                    <p>Healthcare training highlights teamwork and real-world emergency/clinical scenarios.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Career Paths Tab -->
+            <div class="tab-panel" id="careers">
+              <div class="content-card">
+                <h2>Career Paths</h2>
+                <p class="subtitle">Healthcare roles in nursing and allied health</p>
+
+                <div class="career-paths">
+                  <div class="career-card">
+                    <div class="career-icon">👩‍⚕️</div>
+                    <h3>Nurse</h3>
+                    <p>Clinical nursing roles across medical units and health services (military/civil pathways vary).</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">💊</div>
+                    <h3>Pharmacist</h3>
+                    <p>Hospital/clinic pharmacy, dispensing, pharmaceutical management, and health logistics roles.</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">🚑</div>
+                    <h3>Paramedic / Allied Health</h3>
+                    <p>Emergency care support, diagnostic support, and clinical assistance roles.</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">🎓</div>
+                    <h3>Instructor / Research</h3>
+                    <p>Postgraduate pathways (reported in nursing) support teaching and research careers.</p>
+                  </div>
+                </div>
+
+                <div class="employer-logos">
+                  <h4>Possible Destinations:</h4>
+                  <div class="logo-grid">
+                    <div class="employer-logo">Defence Services Health</div>
+                    <div class="employer-logo">Military Hospitals</div>
+                    <div class="employer-logo">Public Health</div>
+                    <div class="employer-logo">Clinics</div>
+                    <div class="employer-logo">Pharmacy Units</div>
+                    <div class="employer-logo">Further Study</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div><!-- /tab-content -->
+        </main>
+
+      </div><!-- /content-layout -->
+    </div><!-- /container -->
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-profile">
+    <div class="container">
+      <h2>Interested in Nursing or Paramedical Studies?</h2>
+      <p>Explore more universities or check official intake announcements</p>
+      <div class="cta-buttons">
+        <a href="uni.html" class="btn-secondary">Explore More Universities</a>
+        <a href="error.html" class="btn-primary">Apply Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>High Schooler's Tool</h3>
+          <p>Empowering Myanmar students to make informed university choices</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="hst.html">Home</a></li>
+            <li><a href="uni.html">Universities</a></li>
+            <li><a href="career-journey.html">Career Journey</a></li>
+            <li><a href="study-mode.html">Study mode</a></li>
+            <li><a href="scholarships.html">Scholarships</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>Defence Services Nursing & Paramedical Academy (DSINPS)</p>
+          <p>Location: Mingaladon, Yangon</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 High Schooler's Tool. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="upp.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Navbar toggle
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+          hamburger.classList.toggle("active");
+        });
+
+        navLinks.querySelectorAll("a").forEach(link => {
+          link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            hamburger.classList.remove("active");
+          });
+        });
+      }
+
+      // Tab functionality
+      document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+          document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+
+          btn.classList.add("active");
+          document.getElementById(btn.dataset.tab).classList.add("active");
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
