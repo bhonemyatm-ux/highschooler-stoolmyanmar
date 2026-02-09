@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Profile - High Schooler's Tool</title>
+  <link rel="stylesheet" href="hst.css">
+  <link rel="stylesheet" href="upp.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h2>HST</h2>
+        <span>High Schooler's Tool</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="hst.html">Home</a></li>
+        <li><a href="uni.html" class="active">Universities</a></li>
+        <li><a href="career-journey.html">Career journey</a></li>
+        <li><a href="study-mode.html">Study mode</a></li>
+        <li><a href="scholarships.html">Scholarships</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="uni-hero">
+    <div class="hero-overlay"></div>
+    <!-- Replace with your own images -->
+    <div class="hero-bg" style="background-image: url('TUTgi.jpg');"></div>
+
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="hst.html">Home</a> /
+        <a href="uni.html">Universities</a> /
+        <span>Technological University (Taunggyi)</span>
+      </div>
+
+      <div class="uni-hero-content">
+        <div class="uni-logo">
+          <img src="Tu Taunggyi logo.jpg" alt="TU (Taunggyi) Logo">
+        </div>
+
+        <div class="uni-title">
+          <h1>Technological University (Taunggyi) - TU Taunggyi</h1>
+          <p class="uni-subtitle">Public technological university in Ayetharyar Township, Taunggyi District, Shan State.</p>
+
+          <div class="uni-meta">
+            <span><i>📍</i> Ayetharyar Township, Taunggyi, Shan State</span>
+            <span><i>🏛️</i> Engineering & Technology</span>
+            <span><i>📅</i> GTI (1992) → TC (1997) → TU (2007)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Stats Bar -->
+  <section class="quick-stats">
+    <div class="container">
+      <div class="stats-grid">
+
+        <div class="stat-item">
+          <div class="stat-icon">🎓</div>
+          <div class="stat-info">
+            <h3>500+</h3>
+            <p>Graduates / year (avg.)</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">📚</div>
+          <div class="stat-info">
+            <h3>7</h3>
+            <p>Major Fields</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">🏫</div>
+          <div class="stat-info">
+            <h3>84.482</h3>
+            <p>Acres (Campus)</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">📅</div>
+          <div class="stat-info">
+            <h3>1992</h3>
+            <p>Established (GTI)</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="profile-content">
+    <div class="container">
+      <div class="content-layout">
+
+        <!-- Sidebar -->
+        <aside class="profile-sidebar">
+
+          <div class="sidebar-card">
+            <h3>Quick Info</h3>
+            <div class="info-list">
+              <div class="info-item">
+                <strong>Type</strong>
+                <span>Public / Government</span>
+              </div>
+
+              <div class="info-item">
+                <strong>Location</strong>
+                <span>Ayetharyar Township, Taunggyi</span>
+              </div>
+
+              <div class="info-item">
+                <strong>Campus Size</strong>
+                <span>84.482 acres</span>
+              </div>
+
+              <div class="info-item">
+                <strong>Language</strong>
+                <span>Myanmar</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>Entrance Requirements</h3>
+            <div class="requirement-box">
+              <div class="requirement-item">
+                <span class="req-label">Minimum Marks</span>
+                <span class="req-value">Varies by year</span>
+              </div>
+
+              <div class="requirement-item">
+                <span class="req-label">Recommended Subjects</span>
+                <div class="subject-tags">
+                  <span class="subject-tag">Mathematics</span>
+                  <span class="subject-tag">Physics</span>
+                  <span class="subject-tag">Chemistry</span>
+                  <span class="subject-tag">English</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card contact-card">
+            <h3>Contact</h3>
+            <div class="contact-info">
+              <p><i>📍</i> Ayetharyar Township, Taunggyi District, Shan State</p>
+              <p><i>🌐</i> https://www.tutaunggyi.edu.mm</p>
+              <p><i>📧</i> (Add official email)</p>
+            </div>
+            <button class="contact-btn">Get in Touch</button>
+          </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="profile-main">
+
+          <!-- Navigation Tabs -->
+          <div class="profile-tabs">
+            <button class="tab-btn active" data-tab="overview">Overview</button>
+            <button class="tab-btn" data-tab="majors">Majors</button>
+            <button class="tab-btn" data-tab="projects">Projects</button>
+            <button class="tab-btn" data-tab="campus">Campus Life</button>
+            <button class="tab-btn" data-tab="careers">Career Paths</button>
+          </div>
+
+          <!-- Tab Content -->
+          <div class="tab-content">
+
+            <!-- Overview Tab -->
+            <div class="tab-panel active" id="overview">
+              <div class="content-card">
+                <h2>About the University</h2>
+                <p>
+                  နည်းပညာတက္ကသိုလ်(တောင်ကြီး) သည် မြန်မာနိုင်ငံ၊ ရှမ်းပြည်နယ်တောင်ပိုင်း၊ တောင်ကြီးခရိုင်၊ အေးသာယာမြို့ တွင် တည်ရှိသည်။ ၁၉၉၂ ခုနှစ်တွင် အစိုးရနည်းပညာသိပ္ပံအဖြစ် စတင်ဖွင့်လှစ်ခဲ့ပြီး ၁၉၉၇ ခုနှစ်တွင် အစိုးရနည်းပညာကောလိပ်အဖြစ်သို့ တိုးမြှင့်ခဲ့သည်။ ၂၀၀၇ ခုနှစ်တွင် တက္ကသိုလ်အဖြစ် အဆင့်မြှင့်တင်ခဲ့ပြီး နည်းပညာတက္ကသိုလ် (တောင်ကြီး) အမည် ခေါ်တွင်စေခဲ့သည်။
+                </p>
+              </div>
+
+              <div class="content-card">
+                <h2>Why Choose TU Taunggyi?</h2>
+                <div class="features-list">
+
+                  <div class="feature-item">
+                    <div class="feature-icon">🎓</div>
+                    <div>
+                      <h4>Wide Major Choices</h4>
+                      <p>Major fields include Civil, Electronics & Communication, Electrical Power, Mechanical, Mining, Biotechnology, and Information Technology.</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">🏫</div>
+                    <div>
+                      <h4>Large Campus</h4>
+                      <p>An 84.482-acre campus with space for departments, labs, and student activities.</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">🧭</div>
+                    <div>
+                      <h4>Strong Regional Role</h4>
+                      <p>One of the key government technology universities serving Shan State’s engineering education needs.</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="content-card">
+                <h2>Campus Gallery</h2>
+                <div class="gallery-grid">
+                  <div class="gallery-item"><img src="tutaunggyi1.jpg" alt="Campus"><p>🏫</p></div>
+                  <div class="gallery-item"><img src="tutaunggyi2.jpg" alt="Library"><p>📖</p></div>
+                  <div class="gallery-item"><img src="tutaunggyi3.jpg" alt="Lab"><p>🔬</p></div>
+                  <div class="gallery-item"><img src="tutaunggyi4.jpg" alt="Workshop"><p>🧰</p></div>
+                  <div class="gallery-item"><img src="tutaunggyi5.jpg" alt="Main hall"><p>🏛️</p></div>
+                  <div class="gallery-item"><img src="tutaunggyi6.jpg" alt="Students"><p>🎓</p></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Majors Tab -->
+            <div class="tab-panel" id="majors">
+              <div class="content-card">
+                <h2>Available Programs</h2>
+                <p class="subtitle">BE programs listed by TU Taunggyi and common departments</p>
+
+                <div class="majors-list">
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">🏗️</div>
+                      <div>
+                        <h3>Civil Engineering</h3>
+                        <span class="major-degree">B.E. / M.E. (listed)</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Structures, construction, surveying, transportation and infrastructure.</p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Duration:</strong> <span>6 years (B.E.)</span></div>
+                      <div class="detail-row"><strong>Prerequisites:</strong> <span>Matriculation exam (science)</span></div>
+                    </div>
+                    <div class="major-subjects">
+                      <span>Surveying</span><span>Structures</span><span>Concrete</span><span>Geotechnical</span>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">📡</div>
+                      <div>
+                        <h3>Electronics (EC)</h3>
+                        <span class="major-degree">B.E. / M.E. (listed)</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Electronics, communication and embedded systems foundations.</p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Duration:</strong> <span>6 years (B.E.)</span></div>
+                      <div class="detail-row"><strong>Prerequisites:</strong> <span>Matriculation exam (science)</span></div>
+                    </div>
+                    <div class="major-subjects">
+                      <span>Digital Electronics</span><span>Signals</span><span>Communication</span><span>Microcontrollers</span>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">⚡</div>
+                      <div>
+                        <h3>Electrical Power (EP)</h3>
+                        <span class="major-degree">B.E. / M.E. (listed)</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Power systems, machines, protection and control fundamentals.</p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Duration:</strong> <span>6 years (B.E.)</span></div>
+                      <div class="detail-row"><strong>Prerequisites:</strong> <span>Matriculation exam (science)</span></div>
+                    </div>
+                    <div class="major-subjects">
+                      <span>Machines</span><span>Power Systems</span><span>Protection</span><span>Control</span>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">⚙️</div>
+                      <div>
+                        <h3>Mechanical Engineering</h3>
+                        <span class="major-degree">B.E. / M.E. (listed)</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Manufacturing, design, thermodynamics and mechanical systems.</p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Duration:</strong> <span>6 years (B.E.)</span></div>
+                      <div class="detail-row"><strong>Prerequisites:</strong> <span>Matriculation exam (science)</span></div>
+                    </div>
+                    <div class="major-subjects">
+                      <span>Thermodynamics</span><span>Fluids</span><span>Machine Design</span><span>Manufacturing</span>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">💻</div>
+                      <div>
+                        <h3>Information Technology (IT)</h3>
+                        <span class="major-degree">B.E. (listed)</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Software, networks, databases and computing foundations.</p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Duration:</strong> <span>6 years (B.E.)</span></div>
+                      <div class="detail-row"><strong>Prerequisites:</strong> <span>Matriculation exam (science)</span></div>
+                    </div>
+                    <div class="major-subjects">
+                      <span>Programming</span><span>Database</span><span>Networking</span><span>Web</span>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">⛏️</div>
+                      <div>
+                        <h3>Mining Engineering</h3>
+                        <span class="major-degree">B.E. (listed)</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Mining methods, geology basics, and mine operation fundamentals.</p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Duration:</strong> <span>6 years (B.E.)</span></div>
+                      <div class="detail-row"><strong>Prerequisites:</strong> <span>Matriculation exam (science)</span></div>
+                    </div>
+                    <div class="major-subjects">
+                      <span>Mining Methods</span><span>Geology</span><span>Safety</span><span>Mine Planning</span>
+                    </div>
+                  </div>
+
+                  
+
+            <!-- Projects Tab -->
+            <div class="tab-panel" id="projects">
+              <div class="content-card">
+                <h2>Research & Projects</h2>
+                <p class="subtitle">Project topics vary by department</p>
+
+                <div class="no-data-section">
+                  <div class="no-data-icon">🧪</div>
+                  <h3>Example Project Ideas (Optional)</h3>
+                  <p>
+                    If you want, I can generate department-wise project examples (Civil/EC/EP/Mech/IT/Mining/Biotech)
+                    and you can show them as “Sample Final-Year Projects”.
+                  </p>
+
+                  <div class="known-facts">
+                    <h4>✅ Verified Programs (from official list):</h4>
+                    <ul>
+                      <li>BE: Civil, Electronics, Electrical Power, Mechanical, IT, Mining</li>
+                      <li>ME: Civil, Electronics, Electrical Power, Mechanical, IT</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Campus Life Tab -->
+            <div class="tab-panel" id="campus">
+              <div class="content-card">
+                <h2>Campus Life at TU Taunggyi</h2>
+                <p class="subtitle">Large campus and multi-major student community</p>
+
+                <div class="campus-features">
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#1e3c72,#2a5298);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">🏛️</div>
+                    </div>
+                    <h3>84.482-Acre Campus</h3>
+                    <p>University campus reported as 84.482 acres in Ayetharyar Township.</p>
+                  </div>
+
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#667eea,#764ba2);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">🔬</div>
+                    </div>
+                    <h3>Labs & Workshops</h3>
+                    <p>Engineering learning typically includes lab sessions and hands-on training.</p>
+                  </div>
+
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#f093fb,#f5576c);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">🎓</div>
+                    </div>
+                    <h3>Student Activities</h3>
+                    <p>The university website posts student and major activities during academic years.</p>
+                  </div>
+                </div>
+
+                <div class="testimonial-section">
+                  <h3>Official Contact</h3>
+                  <div class="contact-grid">
+                    <div class="contact-card">
+                      <h4>🌐 Website</h4>
+                      <p><a href="https://www.tutaunggyi.edu.mm" target="_blank">tutaunggyi.edu.mm</a></p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Career Paths Tab -->
+            <div class="tab-panel" id="careers">
+              <div class="content-card">
+                <h2>Career Paths - TU Taunggyi Graduates</h2>
+                <p class="subtitle">Examples based on majors</p>
+
+                <div class="career-paths">
+                  <div class="career-card">
+                    <div class="career-icon">🏗️</div>
+                    <h3>Civil Engineering</h3>
+                    <p><strong>ဆောက်လုပ်ရေး</strong><br>Site engineer, QS, surveying, infrastructure</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">📡</div>
+                    <h3>Electronics</h3>
+                    <p><strong>အီလက်ထရောနစ်</strong><br>Electronics, telecom, embedded systems</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">⚡</div>
+                    <h3>Electrical Power</h3>
+                    <p><strong>လျှပ်စစ်ဓာတ်အား</strong><br>Power distribution, industrial electrical, maintenance</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">⚙️</div>
+                    <h3>Mechanical</h3>
+                    <p><strong>စက်မှု</strong><br>Manufacturing, maintenance, mechanical design</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">💻</div>
+                    <h3>Information Technology</h3>
+                    <p><strong>IT</strong><br>Software, web, networking, systems support</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">⛏️</div>
+                    <h3>Mining</h3>
+                    <p><strong>သတ္တုတွင်း</strong><br>Mine planning, safety, operations</p>
+                  </div>
+
+                 
+                <div class="employer-logos">
+                  <h4>Possible Work Sectors:</h4>
+                  <div class="logo-grid">
+                    <div class="employer-logo">Construction</div>
+                    <div class="employer-logo">Power & Utilities</div>
+                    <div class="employer-logo">Telecommunications</div>
+                    <div class="employer-logo">Manufacturing</div>
+                    <div class="employer-logo">Mining Industry</div>
+                    <div class="employer-logo">Software/IT Services</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </main>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-profile">
+    <div class="container">
+      <h2>Ready to Start Your Journey at TU Taunggyi?</h2>
+      <p>Explore more universities or get in touch with admissions</p>
+      <div class="cta-buttons">
+        <a href="uni.html" class="btn-secondary">Explore More Universities</a>
+        <a href="error.html" class="btn-primary">Apply Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+
+        <div class="footer-section">
+          <h3>High Schooler’s Tool</h3>
+          <p>Empowering Myanmar students to make informed university choices.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="hst.html">Home</a></li>
+            <li><a href="uni.html">Universities</a></li>
+            <li><a href="career-journey.html">Career Journey</a></li>
+            <li><a href="study-mode.html">Study mode</a></li>
+            <li><a href="scholarships.html">Scholarships</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>High Schooler’s Tool</p>
+          <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+          <p>
+            Facebook:
+            <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+              High Schooler’s Tool ARP
+            </a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 High Schooler’s Tool. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="upp.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+          hamburger.classList.toggle("active");
+        });
+
+        navLinks.querySelectorAll("a").forEach(link => {
+          link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            hamburger.classList.remove("active");
+          });
+        });
+      }
+
+      document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+          document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+
+          btn.classList.add("active");
+          document.getElementById(btn.dataset.tab).classList.add("active");
+        });
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.onclick = function() {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      }
+    });
+  </script>
+
+</body>
+</html>

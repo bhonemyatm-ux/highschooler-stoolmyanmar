@@ -1,0 +1,409 @@
+<!-- University of Medicine 1, Yangon -->
+<div class="university-card" data-region="yangon" data-major="medicine" data-type="medical">
+    <div class="uni-image">
+        <img src="UM1Campus.jpg" alt="University of Medicine 1, Yangon">
+        <div class="uni-badge">Medicine</div>
+    </div>
+    <div class="uni-content">
+        <h3>University of Medicine 1, Yangon</h3>
+        <div class="uni-location">
+            <span>📍</span> Lanmadaw, Yangon
+        </div>
+        <div class="uni-majors">
+            <span class="major-tag">MBBS</span>
+            <span class="major-tag">Postgraduate</span>
+            <span class="major-tag">+20 more</span>
+        </div>
+        <div class="uni-stats">
+            <div class="stat">
+                <strong>Min. Marks</strong>
+                <p>450+</p>
+            </div>
+            <div class="stat">
+                <strong>Programs</strong>
+                <p>25+</p>
+            </div>
+            <div class="stat">
+                <strong>Projects</strong>
+                <p>30+</p>
+            </div>
+        </div>
+        <a href="upp.html?id=um1" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- University of Medicine 2, Yangon -->
+<div class="university-card" data-region="yangon" data-major="medicine" data-type="medical">
+    <div class="uni-image">
+        <img src="UM2campus.jpg" alt="University of Medicine 2, Yangon">
+        <div class="uni-badge">Medicine</div>
+    </div>
+    <div class="uni-content">
+        <h3>University of Medicine 2, Yangon</h3>
+        <div class="uni-location">
+            <span>📍</span> North Okkalapa, Yangon
+        </div>
+        <div class="uni-majors">
+            <span class="major-tag">MBBS</span>
+            <span class="major-tag">Specialties</span>
+            <span class="major-tag">+18 more</span>
+        </div>
+        <div class="uni-stats">
+            <div class="stat">
+                <strong>Min. Marks</strong>
+                <p>470++</p>
+            </div>
+            <div class="stat">
+                <strong>Programs</strong>
+                <p>22</p>
+            </div>
+            <div class="stat">
+                <strong>Projects</strong>
+                <p>25+</p>
+            </div>
+        </div>
+        <a href="upp.html?id=um2" class="view-btn">View Details</a>
+    </div>
+</div>
+
+
+
+<!-- University of Medicine, Magway -->
+<div class="university-card" data-region="magway" data-major="medicine" data-type="medical">
+    <div class="uni-image">
+        <img src="UMမကွေးcampus.jpg" alt="University of Medicine, Magway">
+        <div class="uni-badge">Medicine</div>
+    </div>
+    <div class="uni-content">
+        <h3>University of Medicine, Magway</h3>
+        <div class="uni-location">
+            <span>📍</span> Magway
+        </div>
+        <div class="uni-majors">
+            <span class="major-tag">MBBS</span>
+            <span class="major-tag">Clinical</span>
+            <span class="major-tag">+10 more</span>
+        </div>
+        <div class="uni-stats">
+            <div class="stat">
+                <strong>Min. Marks</strong>
+                <p>470+</p>
+            </div>
+            <div class="stat">
+                <strong>Programs</strong>
+                <p>15</p>
+            </div>
+            <div class="stat">
+                <strong>Projects</strong>
+                <p>15+</p>
+            </div>
+        </div>
+        <a href="upp.html?id=ummagway" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- University of Medicine, Taunggyi -->
+<div class="university-card" data-region="shan" data-major="medicine" data-type="medical">
+    <div class="uni-image">
+        <img src="UMTGIcampus.jpg" alt="University of Medicine, Taunggyi">
+        <div class="uni-badge">Medicine</div>
+    </div>
+    <div class="uni-content">
+        <h3>University of Medicine, Taunggyi</h3>
+        <div class="uni-location">
+            <span>📍</span> Taunggyi
+        </div>
+        <div class="uni-majors">
+            <span class="major-tag">MBBS</span>
+            <span class="major-tag">Community</span>
+            <span class="major-tag">+8 more</span>
+        </div>
+        <div class="uni-stats">
+            <div class="stat">
+                <strong>Min. Marks</strong>
+                <p>470+</p>
+            </div>
+            <div class="stat">
+                <strong>Programs</strong>
+                <p>12</p>
+            </div>
+            <div class="stat">
+                <strong>Projects</strong>
+                <p>10+</p>
+            </div>
+        </div>
+        <a href="upp.html?id=umtaunggyi" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- University of Dental Medicine, Yangon -->
+<div class="university-card" data-region="yangon" data-major="medicine" data-type="medical">
+    <div class="uni-image">
+        <img src="Dental Yanagon.jpg" alt="University of Dental Medicine, Yangon">
+        <div class="uni-badge">Dentistry</div>
+    </div>
+    <div class="uni-content">
+        <h3>University of Dental Medicine, Yangon</h3>
+        <div class="uni-location">
+            <span>📍</span> Than Thu Mar Road, Thingangyun
+        </div>
+        <div class="uni-majors">
+            <span class="major-tag">B.D.S</span>
+            <span class="major-tag">Oral Surgery</span>
+            <span class="major-tag">+10 more</span>
+        </div>
+        <div class="uni-stats">
+            <div class="stat">
+                <strong>Min. Marks</strong>
+                <p>460+</p>
+            </div>
+            <div class="stat">
+                <strong>Programs</strong>
+                <p>15</p>
+            </div>
+            <div class="stat">
+                <strong>Projects</strong>
+                <p>8+</p>
+            </div>
+        </div>
+        <a href="upp.html?id=udmyangon" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- University of Pharmacy , Yangon -->
+<div class="university-card" data-region="yangon" data-major="medicine" data-type="medical">
+    <div class="uni-image">
+        <img src="Pharmacy yangon.jpg" alt="University of Pharmacy, Yangon">
+        <div class="uni-badge">Pharmacy</div>
+    </div>
+    <div class="uni-content">
+        <h3>University of Pharmacy, Yangon</h3>
+        <div class="uni-location">
+            <span>📍</span> Waizayandara Road, Yangon
+        </div>
+        <div class="uni-majors">
+            <span class="major-tag">B.Pharm</span>
+            <span class="major-tag">Clinical Pharmacy</span>
+            <span class="major-tag">+5 more</span>
+        </div>
+        <div class="uni-stats">
+            <div class="stat">
+                <strong>Min. Marks</strong>
+                <p>450+</p>
+            </div>
+            <div class="stat">
+                <strong>Programs</strong>
+                <p>8</p>
+            </div>
+            <div class="stat">
+                <strong>Projects</strong>
+                <p>5+</p>
+            </div>
+        </div>
+        <a href="upp.html?id=uopyangon" class="view-btn">View Details</a>
+    </div>
+</div>
+<!-- University of Medical Technology, Yangon (UMTY) -->
+<div class="university-card" data-region="yangon" data-major="medicine" data-type="medical">
+    <div class="uni-image">
+        <img src="UM techyangon.png" alt="University of Medical Technology, Yangon">
+        <div class="uni-badge">Medical Tech</div>
+    </div>
+    <div class="uni-content">
+        <h3>University of Medical Technology, Yangon</h3>
+        <div class="uni-location">
+            <span>📍</span> Insein, Yangon
+        </div>
+        <div class="uni-majors">
+            <span class="major-tag">B.Med.Tech</span>
+            <span class="major-tag">Lab Tech</span>
+            <span class="major-tag">+6 more</span>
+        </div>
+        <div class="uni-stats">
+            <div class="stat">
+                <strong>Min. Marks</strong>
+                <p>460+</p>
+            </div>
+            <div class="stat">
+                <strong>Programs</strong>
+                <p>10</p>
+            </div>
+            <div class="stat">
+                <strong>Projects</strong>
+                <p>7+</p>
+            </div>
+        </div>
+        <a href="upp.html?id=umtyangon" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- University of Nursing, Yangon (UONYGN)-->
+<div class="university-card" data-region="yangon" data-major="medicine" data-type="medical">
+    <div class="uni-image">
+        <img src="NursingYangon.jpg" alt="University of Nursing, Yangon">
+        <div class="uni-badge">Nursing</div>
+    </div>
+    <div class="uni-content">
+        <h3>University of Nursing, Yangon</h3>
+        <div class="uni-location">
+            <span>📍</span> Lanmadaw, Yangon
+        </div>
+        <div class="uni-majors">
+            <span class="major-tag">B.N.Sc</span>
+            <span class="major-tag">Adult Health</span>
+            <span class="major-tag">+4 more</span>
+        </div>
+        <div class="uni-stats">
+            <div class="stat">
+                <strong>Min. Marks</strong>
+                <p>450+</p>
+            </div>
+            <div class="stat">
+                <strong>Programs</strong>
+                <p>6</p>
+            </div>
+            <div class="stat">
+                <strong>Projects</strong>
+                <p>4+</p>
+            </div>
+        </div>
+        <a href="upp.html?id=uonyangon" class="view-btn">View Details</a>
+    </div>
+</div>  
+
+<!-- University of Dental Medicine Mandalay-->
+<div class="university-card" data-region="mandalay" data-major="medicine" data-type="medical">
+    <div class="uni-image">
+        <img src="Dental Man.jpg" alt="University of Dental Medicine Mandalay">
+        <div class="uni-badge">Dental</div>
+    </div>
+    <div class="uni-content">
+        <h3>University of Dental Medicine, Mandalay</h3>
+        <div class="uni-location"><span>📍</span> Amarapura, Mandalay</div>
+        <div class="uni-majors">
+            <span class="major-tag">B.D.S.</span>
+            <span class="major-tag">Oral Medicine</span>
+            <span class="major-tag">+4 more</span>
+        </div>
+        <div class="uni-stats">
+            <div class="stat"><strong>Min. Marks</strong><p>460+</p></div>
+            <div class="stat"><strong>Programs</strong><p>6</p></div>
+            <div class="stat"><strong>Duration</strong><p>6 Yrs</p></div>
+        </div>
+        <a href="details.html?id=udmm" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- University of Pharmacy Mandalay -->   
+<div class="university-card" data-region="mandalay" data-major="medicine" data-type="medical">
+    <div class="uni-image">
+        <img src="Pharmacy Man logo.jpg" alt="University of Pharmacy Mandalay">
+        <div class="uni-badge">Pharmacy</div>
+    </div>
+    <div class="uni-content">
+        <h3>University of Pharmacy, Mandalay</h3>
+        <div class="uni-location"><span>📍</span> Pyin Sar, Pyin Oo Lwin</div>
+        <div class="uni-majors">
+            <span class="major-tag">B.Pharm</span>
+            <span class="major-tag">Pharmaceutics</span>
+            <span class="major-tag">+4 more</span>
+        </div>
+        <div class="uni-stats">
+            <div class="stat"><strong>Min. Marks</strong><p>450+</p></div>
+            <div class="stat"><strong>Programs</strong><p>6</p></div>
+            <div class="stat"><strong>Duration</strong><p>4 Yrs</p></div>
+        </div>
+        <a href="details.html?id=uopm" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- University of Medical Technology Mandalay -->  
+
+<div class="university-card" data-region="mandalay" data-major="medicine" data-type="medical">
+    <div class="uni-image">
+        <img src="umtechcampus.jpg" alt="University of Medical Technology Mandalay">
+        <div class="uni-badge">Med Tech</div>
+    </div>
+    <div class="uni-content">
+        <h3>University of Medical Tech, Mandalay</h3>
+        <div class="uni-location"><span>📍</span> Patheingyi, Mandalay</div>
+        <div class="uni-majors">
+            <span class="major-tag">B.Med.Tech</span>
+            <span class="major-tag">Medical Imaging</span>
+            <span class="major-tag">+5 more</span>
+        </div>
+        <div class="uni-stats">
+            <div class="stat"><strong>Min. Marks</strong><p>460+</p></div>
+            <div class="stat"><strong>Programs</strong><p>7</p></div>
+            <div class="stat"><strong>Duration</strong><p>4 Yrs</p></div>
+        </div>
+        <a href="details.html?id=umtm" class="view-btn">View Details</a>
+    </div>
+</div>
+<!-- University of Nursing, Mandalay-->   
+<div class="university-card" data-region="mandalay" data-major="medicine" data-type="medical">
+    <div class="uni-image">
+        <img src="ဆေး Nursing Mandalay.html" alt="University of Nursing Mandalay">
+        <div class="uni-badge">Nursing</div>
+    </div>
+    <div class="uni-content">
+        <h3>University of Nursing, Mandalay</h3>
+        <div class="uni-location"><span>📍</span> 32nd Street, Mandalay</div>
+        <div class="uni-majors">
+            <span class="major-tag">B.N.Sc</span>
+            <span class="major-tag">Critical Care</span>
+        </div>
+        <div class="uni-stats">
+            <div class="stat"><strong>Min. Marks</strong><p>450+</p></div>
+            <div class="stat"><strong>Programs</strong><p>4</p></div>
+            <div class="stat"><strong>Duration</strong><p>4 Yrs</p></div>
+        </div>
+        <a href="details.html?id=unm" class="view-btn">View Details</a>
+    </div>
+</div>
+
+
+<!-- University of Community Health Magway -->   
+<div class="university-card" data-region="magway" data-major="medicine" data-type="medical">
+    <div class="uni-image">
+        <img src="ဆေး University of Community Health, Magway logo.jpg" alt="University of Community Health Magway">
+        <div class="uni-badge">Comm. Health</div>
+    </div>
+    <div class="uni-content">
+        <h3>University of Community Health</h3>
+        <div class="uni-location"><span>📍</span> Magway City</div>
+        <div class="uni-majors">
+            <span class="major-tag">B.Comm.H</span>
+            <span class="major-tag">Public Health</span>
+        </div>
+        <div class="uni-stats">
+            <div class="stat"><strong>Min. Marks</strong><p>440+</p></div>
+            <div class="stat"><strong>Programs</strong><p>3</p></div>
+            <div class="stat"><strong>Duration</strong><p>4 Yrs</p></div>
+        </div>
+        <a href="details.html?id=uchm" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Naypyitaw State Academy Medical Faculty -->
+ <div class="university-card" data-region="naypyitaw" data-major="medicine" data-type="medical">
+    <div class="uni-image">
+        <img src="NSA.jpg" alt="Naypyitaw State Academy Medical Faculty">
+        <div class="uni-badge">Medicine</div>
+    </div>
+    <div class="uni-content">
+        <h3>Naypyitaw State Academy (Medical Faculty)</h3>
+        <div class="uni-location"><span>📍</span> Zeyarthiri Township, Naypyitaw</div>
+        <div class="uni-majors">
+            <span class="major-tag">M.B.,B.S.</span>
+            <span class="major-tag">Medical Science</span>
+            <span class="major-tag">Healthcare Admin</span>
+        </div>
+        <div class="uni-stats">
+            <div class="stat"><strong>Min. Marks</strong><p>460+</p></div>
+            <div class="stat"><strong>Programs</strong><p>5+</p></div>
+            <div class="stat"><strong>Duration</strong><p>6 Yrs</p></div>
+        </div>
+        <a href="details.html?id=nsa-med" class="view-btn">View Details</a>
+    </div>
+</div>

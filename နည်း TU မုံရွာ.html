@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Profile - High Schooler's Tool</title>
+  <link rel="stylesheet" href="hst.css">
+  <link rel="stylesheet" href="upp.css">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h2>HST</h2>
+        <span>High Schooler's Tool</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="hst.html">Home</a></li>
+        <li><a href="uni.html" class="active">Universities</a></li>
+        <li><a href="creer-journey.html">Career Journey</a></li>
+        <li><a href="study-mode.html">Study mode</a></li>
+        <li><a href="Scholarships.html">Scholarships</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="uni-hero">
+    <div class="hero-overlay"></div>
+
+    <!-- SAME IMAGE NAME you provided: "Tu monya.jpg" (fixed CSS escaping only) -->
+    <div class="hero-bg" style="background-image: url('Tu monya.jpg');"></div>
+
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="hst.html">Home</a> /
+        <a href="uni.html">Universities</a> /
+        <span>Technological University (Monywa)</span>
+      </div>
+
+      <div class="uni-hero-content">
+        <div class="uni-logo">
+          <img src="Tu monya logo.jpg" alt="TU-Monywa Logo">
+        </div>
+
+        <div class="uni-title">
+          <h1>Technological University, Monywa (TU-Monywa)</h1>
+          <p class="uni-subtitle">Driving Technical Innovation in Sagaing Region</p>
+          <div class="uni-meta">
+            <span><i>📍</i> Monywa, Sagaing Region</span>
+            <span><i>🏛️</i> Engineering University</span>
+            <span><i>📅</i> Established 1982</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quick-stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-icon">⚙️</div>
+          <div class="stat-info">
+            <h3>TU-MON</h3>
+            <p>Est. 1982</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">🎓</div>
+          <div class="stat-info">
+            <h3>5</h3>
+            <p>Year B.E. Program</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">📜</div>
+          <div class="stat-info">
+            <h3>B.E.</h3>
+            <p>Civil • EC • EP • Mech • IT</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="profile-content">
+    <div class="container">
+      <div class="content-layout">
+
+        <aside class="profile-sidebar">
+          <div class="sidebar-card">
+            <h3>Quick Info</h3>
+            <div class="info-list">
+              <div class="info-item"><strong>Type</strong><span>Public Government</span></div>
+              <div class="info-item"><strong>Location</strong><span>Monywa–Pathein Road (area)</span></div>
+              <div class="info-item"><strong>Language</strong><span>English (Academic)</span></div>
+              <div class="info-item"><strong>Affiliation</strong><span>Ministry of Science and Technology</span></div>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>Entrance Requirements</h3>
+            <div class="requirement-box">
+              <div class="requirement-item">
+                <span class="req-label">Admission</span>
+                <span class="req-value">Aggregate Matriculation Marks</span>
+              </div>
+              <div class="requirement-item">
+                <span class="req-label">Key Subjects</span>
+                <div class="subject-tags">
+                  <span class="subject-tag">Mathematics</span>
+                  <span class="subject-tag">Physics</span>
+                  <span class="subject-tag">Chemistry</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card contact-card">
+            <h3>Contact Details</h3>
+            <div class="contact-info">
+              <p><i>📞</i> +95 71 26231</p>
+              <p><i>📧</i> office@tu-monywa.edu.mm</p>
+              <p><i>🌐</i> www.tumonywa.edu.mm</p>
+            </div>
+            <a class="contact-btn" href="http://www.tumonywa.edu.mm" target="_blank" rel="noopener">Official Website</a>
+          </div>
+        </aside>
+
+        <main class="profile-main">
+          <div class="profile-tabs">
+            <button class="tab-btn active" data-tab="overview">Overview</button>
+            <button class="tab-btn" data-tab="majors">Majors</button>
+            <button class="tab-btn" data-tab="projects">Research</button>
+            <button class="tab-btn" data-tab="campus">Campus Life</button>
+            <button class="tab-btn" data-tab="careers">Career Paths</button>
+          </div>
+
+          <div class="tab-content">
+            <div class="tab-panel active" id="overview">
+              <div class="content-card">
+                <h2>About TU-Monywa</h2>
+                <p>
+                  TU (Monywa) was established in 1982 and was upgraded to Technological University status in 2007. [web:344]
+                </p>
+              </div>
+
+              <div class="content-card">
+                <h2>Why TU-Monywa?</h2>
+                <div class="features-list">
+                  <div class="feature-item">
+                    <div class="feature-icon">🏭</div>
+                    <div>
+                      <h4>Industrial connectivity</h4>
+                      <p>Monywa is a major urban/industrial area in Sagaing Region, supporting practical exposure for engineering students.</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">🎓</div>
+                    <div>
+                      <h4>Official B.E. programs</h4>
+                      <p>B.E. programs listed include Civil, EC, EP, Mechanical, and IT (6-year). [web:344]</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-panel" id="majors">
+              <div class="content-card">
+                <h2>Engineering Majors</h2>
+                <p class="subtitle">B.E. programs listed for TU‑Monywa.</p>
+
+                <div class="majors-list">
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">🌉</div>
+                      <div><h3>Civil Engineering</h3><span class="major-degree">B.E. (Civil)</span></div>
+                    </div>
+                    <p class="major-desc">B.E. Civil Engineering. [web:344]</p>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">📡</div>
+                      <div><h3>Electronics & Communication (EC)</h3><span class="major-degree">B.E. (EC)</span></div>
+                    </div>
+                    <p class="major-desc">B.E. (EC). [web:344]</p>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">⚡</div>
+                      <div><h3>Electrical Power (EP)</h3><span class="major-degree">B.E. (EP)</span></div>
+                    </div>
+                    <p class="major-desc">B.E. Electrical Power Engineering. [web:344]</p>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">⚙️</div>
+                      <div><h3>Mechanical Engineering</h3><span class="major-degree">B.E. (Mech)</span></div>
+                    </div>
+                    <p class="major-desc">B.E. Mechanical Engineering. [web:344]</p>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">💻</div>
+                      <div><h3>Information Technology (IT)</h3><span class="major-degree">B.E. (IT)</span></div>
+                    </div>
+                    <p class="major-desc">B.E. (IT). [web:344]</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-panel" id="projects">
+              <div class="content-card">
+                <h2>Research</h2>
+                <div class="no-data-section">
+                  <div class="no-data-icon">📚</div>
+                  <h3>Data Not Publicly Available</h3>
+                  <p>Add verified research labs, papers, and competitions when you have official details.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-panel" id="campus">
+              <div class="content-card">
+                <h2>Campus Life</h2>
+                <div class="campus-features">
+                  <div class="campus-card">
+                    <img src="images/monywa_lab.jpg" alt="Monywa Lab">
+                    <h3>Practical Workshops</h3>
+                    <p>Labs and workshops support hands-on learning.</p>
+                  </div>
+                  <div class="campus-card">
+                    <img src="images/monywa_activity.jpg" alt="Monywa Activity">
+                    <h3>Student Societies</h3>
+                    <p>Student activities vary by academic year; add verified events here.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-panel" id="careers">
+              <div class="content-card">
+                <h2>Career Opportunities</h2>
+                <div class="career-paths">
+                  <div class="career-card">
+                    <div class="career-icon">⚙️</div>
+                    <h3>Mechanical / Operations Engineer</h3>
+                    <p>Industrial maintenance, production systems, and plant operations.</p>
+                  </div>
+                  <div class="career-card">
+                    <div class="career-icon">⚡</div>
+                    <h3>Electrical Power Engineer</h3>
+                    <p>Power distribution, industrial electrical systems, and maintenance roles.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </main>
+      </div>
+    </div>
+  </section>
+ <!-- CTA Section -->
+  <section class="cta-profile">
+    <div class="container">
+      <h2>Ready to Explore TU Monywa?</h2>
+      <p>Explore more universities or get in touch with admissions</p>
+      <div class="cta-buttons">
+        <a href="uni.html" class="btn-secondary">Explore More Universities</a>
+        <a href="error.html" class="btn-primary">Apply Now</a>
+      </div>
+    </div>
+  </section>
+  <!-- Footer (MAEU-style) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>High Schooler’s Tool</h3>
+          <p>Empowering Myanmar students to make informed university choices.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="hst.html">Home</a></li>
+            <li><a href="uni.html">Universities</a></li>
+            <li><a href="career-journey.html">Career Journey</a></li>
+            <li><a href="study-mode.html">Study mode</a></li>
+            <li><a href="scholarships.html">Scholarships</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+          <p>
+            Facebook:
+            <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+              High Schooler’s Tool ARP
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 High Schooler’s Tool. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="upp.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+          hamburger.classList.toggle("active");
+        });
+
+        navLinks.querySelectorAll("a").forEach(link => {
+          link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            hamburger.classList.remove("active");
+          });
+        });
+      }
+
+      document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+          document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+
+          btn.classList.add("active");
+          const panel = document.getElementById(btn.dataset.tab);
+          if (panel) panel.classList.add("active");
+        });
+      });
+    });
+  </script>
+</body>
+</html>
