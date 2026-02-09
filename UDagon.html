@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Profile - High Schooler's Tool</title>
+    <link rel="stylesheet" href="hst.css">
+    <link rel="stylesheet" href="upp.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h2>HST</h2>
+                <span>High Schooler's Tool</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="hst.html">Home</a></li>
+                <li><a href="uni.html" class="active">Universities</a></li>
+                <li><a href="career-journey.html">Career journey</a></li>
+                <li><a href="study-mode.html">Study mode</a></li>
+                <li><a href="scholarships.html">Scholarships</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+
+   <!-- Hero Banner -->
+<section class="uni-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-bg" style="background-image: url('dagon-campus.jpg');"></div>
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> / 
+            <a href="uni.html">Universities</a> / 
+            <span>Dagon University</span>
+        </div>
+        <div class="uni-hero-content">
+            <div class="uni-logo">
+                <img src="dagon-logo.jpg" alt="Dagon University Logo">
+            </div>
+            <div class="uni-title">
+                <h1>Dagon University</h1>
+                <p class="uni-subtitle">Formerly Yangon Distance Education University</p>
+                <div class="uni-meta">
+                    <span><i>📍</i> North Dagon, Yangon Region</span> <!-- North Dagon, Yangon [web:61] -->
+                    <span><i>🏛️</i> Arts & Science University</span> <!-- Arts & Science University [web:61][web:59] -->
+                    <span><i>📅</i> Established 1993</span> <!-- Established 1993 [web:66][web:61] -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="quick-stats">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-icon">🎓</div>
+                <div class="stat-info">
+                    <h3>10,000+</h3>
+                    <p>Student Enrollment</p> <!-- 10,000+ enrollment [web:70] -->
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">📚</div>
+                <div class="stat-info">
+                    <h3>BA, BSc, LLB</h3>
+                    <p>Undergraduate Degrees</p> <!-- BA/BSc/LLB degrees [web:60] -->
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">👨‍🏫</div>
+                <div class="stat-info">
+                    <h3>Merit-based</h3>
+                    <p>Admission Process</p> <!-- Merit-based admission [web:67] -->
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">🏆</div>
+                <div class="stat-info">
+                    <h3>30+</h3>
+                    <p>Academic Departments</p> <!-- Multiple departments [web:59] -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Main Content -->
+<section class="profile-content">
+    <div class="container">
+        <div class="content-layout">
+            
+            <aside class="profile-sidebar">
+    <div class="sidebar-card">
+        <h3>Quick Info</h3>
+        <div class="info-list">
+            <div class="info-item">
+                <strong>Type</strong>
+                <span>Public University</span> <!-- Government university [web:61] -->
+            </div>
+            <div class="info-item">
+                <strong>Location</strong>
+                <span>North Dagon, Yangon (20 km north of city center)</span> <!-- 20km north of Yangon center [web:61] -->
+            </div>
+            <div class="info-item">
+                <strong>Campus Capacity</strong>
+                <span>60,000 students</span> <!-- Capacity for 60,000 [web:68] -->
+            </div>
+            <div class="info-item">
+                <strong>Language</strong>
+                <span>Myanmar, English</span> <!-- Myanmar & English [web:68] -->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sidebar-card">
+        <h3>Entrance Requirements</h3>
+        <div class="requirement-box">
+            <div class="requirement-item">
+                <span class="req-label">Minimum Marks</span>
+                <span class="req-value">Matriculation score meeting cut-off</span> <!-- Matriculation marks based [web:67] -->
+            </div>
+            <div class="requirement-item">
+                <span class="req-label">Required Subjects</span>
+                <div class="subject-tags">
+                    <span class="subject-tag">Myanmar</span>
+                    <span class="subject-tag">English</span>
+                    <span class="subject-tag">Mathematics</span>
+                    <span class="subject-tag">Physics</span>
+                    <span class="subject-tag">Chemistry</span>
+                    <span class="subject-tag">Biology</span> <!-- Standard matric subjects [web:67] -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sidebar-card contact-card">
+        <h3>Contact</h3>
+        <div class="contact-info">
+            <p><i>📞</i> Data not publicly available</p>
+            <p><i>📧</i> Data not publicly available</p>
+            <p><i>🌐</i> dagonuniversity.edu.mm</p> <!-- Official website [web:61] -->
+        </div>
+        <button class="contact-btn">Get in Touch</button>
+    </div>
+</aside>
+
+
+<!-- Main Content -->
+<main class="profile-main">
+    
+    <!-- Navigation Tabs -->
+    <div class="profile-tabs">
+        <button class="tab-btn active" data-tab="overview">Overview</button>
+        <button class="tab-btn" data-tab="majors">Majors</button>
+        <button class="tab-btn" data-tab="projects">Projects</button>
+        <button class="tab-btn" data-tab="campus">Campus Life</button>
+        <button class="tab-btn" data-tab="careers">Career Paths</button>
+    </div>
+
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+        
+        <!-- Overview Tab -->
+       <div class="tab-panel active" id="overview">
+<div class="content-card">
+    <h2>About the University</h2>
+    <p>ဒဂုံတက္ကသိုလ် (DU) သည် ပညာရေးဝန်ကြီးဌာန အောက်ပါကျင့်သုံး တက္ကသိုလ်ဖြစ်ပြီး ၁၉၉၃ ခုနှစ်တွင် ထူထောင်ခဲ့သည်။[web:61][web:66] ယခုအချိန်တွင် ကျောင်းသား ၆၀,၀၀၀ နေရာရှိစွမ်းရည်ရှိပြီး အနုပညာ၊ သိပ္ပံနှင့် ဥပဒေဘွဲ့ဘူတာများကို ပေးဆောင်နေသည်။[web:60][web:68]</p>
+    <p>ရန်ကုန်မြို့လယ်မှ မြောက်ဖက် ၂၀ ကီလိုမီတာ အကွာတွင် တည်ရှိပြီး ပညာရေးဝန်ကြီးဌာန အောက်ပါ အနုပညာ နှင့် သိပ္ပံတက္ကသိုလ်ဖြစ်သည်။[web:61] ကျောင်းသားများအား သုတေသန၊ လက်တွေ့လုပ်ငန်းများနှင့် လူမှုရေးလုပ်ငန်းများဖြင့် ဖွံ့ဖြိုးစေရန် ကြိုးပမ်းလုပ်ဆောင်နေသည်။[web:68]</p>
+</div>
+
+
+<div class="content-card">
+<h2>Why Choose Dagon University?</h2>
+<div class="features-list">
+    <div class="feature-item">
+        <div class="feature-icon">🏛️</div>
+        <div>
+            <h4>Large Student Capacity</h4>
+            <p>Capacity for 60,000 students as a major distance education university.[web:68]</p>
+        </div>
+    </div>
+    <div class="feature-item">
+        <div class="feature-icon">🎓</div>
+        <div>
+            <h4>Diverse Degree Programs</h4>
+            <p>BA, BSc, LLB, honours degrees, and master's programmes.[web:60]</p>
+        </div>
+    </div>
+    <div class="feature-item">
+        <div class="feature-icon">🔬</div>
+        <div>
+            <h4>Modern Facilities</h4>
+            <p>Equipped labs, library, 24/7 internet access and multimedia rooms.[web:68]</p>
+        </div>
+    </div>
+    <div class="feature-item">
+        <div class="feature-icon">🎯</div>
+        <div>
+            <h4>Comprehensive Development</h4>
+            <p>Focus on academics, skills training, and social engagement.[web:65][web:68]</p>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+                            <div class="content-card">
+                                <h2>Campus Gallery</h2>
+                                <div class="gallery-grid">
+                                    <div class="gallery-item">
+                                        <img src="dagon-main.jpg" alt="Dagon University Main Building">
+                                        <p>🏛️</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="dagon-lab.jpg" alt="Laboratory">
+                                        <p>🔬</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="dagon-library.jpg" alt="Library">
+                                        <p>📚</p>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Majors Tab -->
+<div class="tab-panel" id="majors">
+    <div class="content-card">
+        <h2>Academic Programs</h2>
+        <p class="subtitle">Undergraduate and postgraduate degrees in arts, sciences and law</p>
+        
+        <div class="majors-list">
+            <!-- Major Card 1 -->
+            <div class="major-card">
+                <div class="major-header">
+                    <div class="major-icon">📚</div>
+                    <div>
+                        <h3>Bachelor of Arts (BA)</h3>
+                        <span class="major-degree">Arts Programmes</span>
+                    </div>
+                </div>
+                <p class="major-desc">Arts degrees in History, Philosophy, Psychology, International Relations, Sociology and more. Honours degrees (BA Hons) also available.[web:60]</p>
+                <div class="major-details">
+                    <div class="detail-row">
+                        <strong>Duration:</strong>
+                        <span>3-5 Years (for Honours)</span>
+                    </div>
+                    <div class="detail-row">
+                        <strong>Min. Marks:</strong>
+                        <span>Matriculation aggregate for arts stream</span>
+                    </div>
+                    <div class="detail-row">
+                        <strong>Prerequisites:</strong>
+                        <span>Arts subject combination</span>
+                    </div>
+                </div>
+                <div class="major-subjects">
+                    <span>History</span>
+                    <span>Philosophy</span>
+                    <span>Psychology</span>
+                    <span>International Relations</span>
+                </div>
+            </div>
+
+
+            <!-- Major Card 2 -->
+            <div class="major-card">
+                <div class="major-header">
+                    <div class="major-icon">🔬</div>
+                    <div>
+                        <h3>Bachelor of Science (BSc)</h3>
+                        <span class="major-degree">Science Programmes</span>
+                    </div>
+                </div>
+                <p class="major-desc">Science degrees in Chemistry, Physics, Mathematics, Biology, Zoology, Industrial Chemistry and more. Honours degrees also available.[web:60]</p>
+                <div class="major-details">
+                    <div class="detail-row">
+                        <strong>Duration:</strong>
+                        <span>3-5 Years</span>
+                    </div>
+                    <div class="detail-row">
+                        <strong>Min. Marks:</strong>
+                        <span>Science stream matriculation scores</span>
+                    </div>
+                    <div class="detail-row">
+                        <strong>Prerequisites:</strong>
+                        <span>Science subject combination</span>
+                    </div>
+                </div>
+                <div class="major-subjects">
+                    <span>Chemistry</span>
+                    <span>Physics</span>
+                    <span>Biology</span>
+                    <span>Industrial Chemistry</span>
+                </div>
+            </div>
+
+
+            <!-- Major Card 3 -->
+            <div class="major-card">
+                <div class="major-header">
+                    <div class="major-icon">⚖️</div>
+                    <div>
+                        <h3>Bachelor of Laws (LLB)</h3>
+                        <span class="major-degree">Law Programme</span>
+                    </div>
+                </div>
+                <p class="major-desc">Law degree offered by the Department of Law, preparing graduates for legal practice and public service.[web:60]</p>
+                <div class="major-details">
+                    <div class="detail-row">
+                        <strong>Duration:</strong>
+                        <span>5 Years</span>
+                    </div>
+                    <div class="detail-row">
+                        <strong>Min. Marks:</strong>
+                        <span>Law stream matriculation cut-off</span>
+                    </div>
+                    <div class="detail-row">
+                        <strong>Prerequisites:</strong>
+                        <span>Strong Myanmar & English language skills</span>
+                    </div>
+                </div>
+                <div class="major-subjects">
+                    <span>Legal Theory</span>
+                    <span>Criminal Law</span>
+                    <span>Civil Law</span>
+                    <span>International Law</span>
+                </div>
+            </div>
+
+
+            <!-- Major Card 4 -->
+            <div class="major-card">
+                <div class="major-header">
+                    <div class="major-icon">🎓</div>
+                    <div>
+                        <h3>Master's Degrees (MA/MSc)</h3>
+                        <span class="major-degree">Postgraduate Programmes</span>
+                    </div>
+                </div>
+                <p class="major-desc">Master's degrees and research master's (M.Res) offered to graduates. Two-year programmes including research thesis.[web:60]</p>
+                <div class="major-details">
+                    <div class="detail-row">
+                        <strong>Duration:</strong>
+                        <span>2 Years (4 Semesters)</span>
+                    </div>
+                    <div class="detail-row">
+                        <strong>Min. Marks:</strong>
+                        <span>GPA ≥ 4 in each subject</span>
+                    </div>
+                    <div class="detail-row">
+                        <strong>Prerequisites:</strong>
+                        <span>Honours or qualifying exam pass</span>
+                    </div>
+                </div>
+                <div class="major-subjects">
+                    <span>History</span>
+                    <span>Chemistry</span>
+                    <span>Biology</span>
+                    <span>Law</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                     <!-- Projects Tab -->
+<div class="tab-panel" id="projects">
+    <div class="content-card">
+        <h2>Research & Initiatives</h2>
+        <p class="subtitle">Academic development and campus activities</p>
+        
+        <div class="projects-timeline">
+            <div class="project-item">
+                <div class="project-year">Ongoing</div>
+                <div class="project-content">
+                    <div class="project-badge">Research</div>
+                    <h3>Research & Laboratory Facilities</h3>
+                    <p>Well-equipped labs, multimedia rooms, language labs, and e-journal access for research activities.[web:68]</p>
+                    <div class="project-tags">
+                        <span>Research</span>
+                        <span>Laboratories</span>
+                        <span>e-journal</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project-item">
+                <div class="project-year">2013</div>
+                <div class="project-content">
+                    <div class="project-badge">Service</div>
+                    <h3>Student Service Centre</h3>
+                    <p>Established in June 2013 to address student needs and provide support services.[web:68]</p>
+                    <div class="project-tags">
+                        <span>Student Services</span>
+                        <span>Support</span>
+                        <span>Communication</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project-item">
+                <div class="project-year">Annual</div>
+                <div class="project-content">
+                    <div class="project-badge">Activities</div>
+                    <h3>Sports & Cultural Events</h3>
+                    <p>Volleyball, football, art competitions, fresher welcome ceremonies and cultural activities.[web:65]</p>
+                    <div class="project-tags">
+                        <span>Sports</span>
+                        <span>Culture</span>
+                        <span>Students</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project-item">
+                <div class="project-year">Ongoing</div>
+                <div class="project-content">
+                    <div class="project-badge">Social</div>
+                    <h3>Staff Training & Social Programs</h3>
+                    <p>Climate change awareness, drug prevention, traffic safety seminars, and community service initiatives.[web:68]</p>
+                    <div class="project-tags">
+                        <span>Social</span>
+                        <span>Training</span>
+                        <span>Community</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            
+<!-- Campus Life Tab -->
+<div class="tab-panel" id="campus">
+    <div class="content-card">
+        <h2>Student Life at Dagon University</h2>
+        <p class="subtitle">Distance education campus life experience</p>
+        
+        <div class="campus-features">
+            <div class="campus-card">
+                <div class="campus-img">
+                    <img src="dagon-sports.jpg" alt="Sports Facilities">
+                </div>
+                <h3>Sports & Culture</h3>
+                <p>Volleyball, football, art competitions, fresher welcome ceremonies and cultural activities throughout the year.[web:65]</p>
+            </div>
+
+
+            <div class="campus-card">
+                <div class="campus-img">
+                    <img src="dagon-library.jpg" alt="Library">
+                </div>
+                <h3>Library & Study Spaces</h3>
+                <p>Modern library with 24/7 internet access, multimedia rooms, language labs and e-journal resources.[web:68]</p>
+            </div>
+
+
+            <div class="campus-card">
+                <div class="campus-img">
+                    <img src="dagon-event.jpg" alt="Campus Events">
+                </div>
+                <h3>Student Organizations</h3>
+                <p>Student service centre, social activities, community engagement and various student clubs.[web:68]</p>
+            </div>
+        </div>
+
+
+        <div class="testimonial-section">
+            <h3>Student Voices</h3>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"Dagon University offers diverse academic programs and practical learning opportunities for students across Myanmar."[web:65]</p>
+                    <div class="testimonial-author">
+                        <strong>Dagon University Student</strong>
+                        <span>Arts Faculty</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The campus provides modern facilities and a supportive environment for both undergraduate and postgraduate studies."[web:68]</p>
+                    <div class="testimonial-author">
+                        <strong>Graduate Student</strong>
+                        <span>Science Faculty</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                      <!-- Career Paths Tab -->
+<div class="tab-panel" id="careers">
+    <div class="content-card">
+        <h2>Career Opportunities</h2>
+        <p class="subtitle">Pathways after graduating from Dagon University</p>
+        
+        <div class="career-paths">
+            <div class="career-card">
+                <div class="career-icon">🏢</div>
+                <h3>Government & Public Service</h3>
+                <p>Graduates work in government ministries, education, civil service and public administration roles.[web:64][web:65]</p>
+                <span class="salary-range">Civil service pay scales</span>
+            </div>
+
+
+            <div class="career-card">
+                <div class="career-icon">💼</div>
+                <h3>Private Sector & NGOs</h3>
+                <p>Career opportunities in business, NGOs, international organizations and private companies.[web:65]</p>
+                <span class="salary-range">Industry dependent</span>
+            </div>
+
+
+            <div class="career-card">
+                <div class="career-icon">🎓</div>
+                <h3>Academic & Research</h3>
+                <p>Master's and doctoral graduates can pursue lecturing, research and academic positions.[web:60]</p>
+                <span class="salary-range">Academic pay scales</span>
+            </div>
+
+
+            <div class="career-card">
+                <div class="career-icon">⚖️</div>
+                <h3>Legal Professionals</h3>
+                <p>LLB graduates work as legal officers, advocates or continue advanced legal studies.[web:60]</p>
+                <span class="salary-range">Experience based</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</section>
+
+
+    <!-- CTA Section -->
+<section class="cta-profile">
+    <div class="container">
+        <h2>Ready to Study at Dagon University?</h2>
+        <p>Start your academic journey at one of Yangon's leading universities</p>
+        <div class="cta-buttons">
+            <a href="uni.html" class="btn-secondary">Explore More Universities</a>
+            <a href="#" class="btn-primary">Admission Information</a>
+        </div>
+    </div>
+</section>
+
+
+    </section>
+
+
+
+   <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+
+      <div class="footer-section">
+        <h3>High Schooler’s Tool</h3>
+        <p>Empowering Myanmar students to make informed university choices.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="hst.html">Home</a></li>
+          <li><a href="uni.html">Universities</a></li>
+          <li><a href="career-journey.html">Career Journey</a></li>
+          <li><a href="study-mode.html">Study mode</a></li>
+          <li><a href="scholarships.html">Scholarships</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>High Schooler’s Tool</p>
+        <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+        <p>
+          Facebook:
+          <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+            High Schooler’s Tool ARP
+          </a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 High Schooler’s Tool. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+    <script src="script.js"></script>
+    <script src="upp.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    // Navbar toggle
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    
+    if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+            hamburger.classList.toggle("active");
+        });
+        
+        // Close on link click
+        navLinks.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("active");
+                hamburger.classList.remove("active");
+            });
+        });
+    }
+    
+    // Tab functionality
+    document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+            document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+            
+            btn.classList.add("active");
+            document.getElementById(btn.dataset.tab).classList.add("active");
+        });
+    });
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    
+    hamburger.onclick = function() {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("active");
+    }
+});
+</script>
+
+
+
+</body>
+</html>

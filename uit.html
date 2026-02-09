@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Profile - High Schooler's Tool</title>
+    <link rel="stylesheet" href="hst.css">
+    <link rel="stylesheet" href="ucsy.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h2>HST</h2>
+                <span>High Schooler's Tool</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="hst.html">Home</a></li>
+                <li><a href="uni.html" class="active">Universities</a></li>
+                <li><a href="creer-journey.html">Career Journey</a></li>
+                <li><a href="study-mode.html">Study mode</a></li>
+                <li><a href="Scholarships.html">Scholarships</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="uni-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-bg" style="background-image: url('uit3.jpg');"></div>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="hst.html">Home</a> / 
+                <a href="universities.html">Universities</a> / 
+                <span>University of Information Technology</span>
+            </div>
+            <div class="uni-hero-content">
+                <div class="uni-logo">
+                    <img src="uit.png" alt="UCST Logo">
+                </div>
+                <div class="uni-title">
+                    <h1>University of Information Technology</h1>
+                    <p class="uni-subtitle">Leading Technology Education in Yangon Region</p>
+                    <div class="uni-meta">
+                        <span><i>📍</i> Yangon</span>
+                        <span><i>🏛️</i> Technology University</span>
+                        <span><i>📅</i> Founded 1971</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats Bar -->
+    <section class="quick-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">🎓</div>
+                    <div class="stat-info">
+                        <h3>1000+</h3>
+                        <p>Students</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">📚</div>
+                    <div class="stat-info">
+                        <h3>10+</h3>
+                        <p>Programs</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">👨‍🏫</div>
+                    <div class="stat-info">
+                        <h3>9+</h3>
+                        <p>Faculty</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-info">
+                        <h3>-</h3>
+                        <p>Projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="profile-content">
+        <div class="container">
+            <div class="content-layout">
+                
+                <!-- Sidebar -->
+                <aside class="profile-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Quick Info</h3>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <strong>Type</strong>
+                                <span>Government</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Location</strong>
+                                <span>Hlaing, Yangon Region</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Campus Size</strong>
+                                <span>Not Available</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Language</strong>
+                                <span>Myanmar, English</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Entrance Requirements</h3>
+                        <div class="requirement-box">
+                            <div class="requirement-item">
+                                <span class="req-label">Minimum Marks</span>
+                                <span class="req-value">475</span>
+                            </div>
+                            <div class="requirement-item">
+                                <span class="req-label">Required Subjects</span>
+                                <div class="subject-tags">
+                                    <span class="subject-tag">Mathematics</span>
+                                    <span class="subject-tag">Physics</span>
+                                    <span class="subject-tag">English</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card contact-card">
+                        <h3>Contact</h3>
+                        <div class="contact-info">
+                            <p><i>📞</i> 09 774152166</p>
+                            <p><i>📧</i> hr.admin@uit.edu.mm</p>
+                            <p><i>🌐</i> www.uit.edu.mm</p>
+                        </div>
+                        <button class="contact-btn">Get in Touch</button>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="profile-main">
+                    
+                    <!-- Navigation Tabs -->
+                    <div class="profile-tabs">
+                        <button class="tab-btn active" data-tab="overview">Overview</button>
+                        <button class="tab-btn" data-tab="majors">Majors</button>
+                        <button class="tab-btn" data-tab="projects">Projects</button>
+                        <button class="tab-btn" data-tab="campus">Campus Life</button>
+                        <button class="tab-btn" data-tab="careers">Career Paths</button>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content">
+                        
+                        <!-- Overview Tab -->
+                        <div class="tab-panel active" id="overview">
+                            <div class="content-card">
+                                <h2>About the University</h2>
+                                <p>သတင်းအချက်အလက်နည်းပညာတက္ကသိုလ် (UIT) သည် မြန်မာနိုင်ငံ၏ ICT နယ်ပယ်တွင် ထူးချွန်ထက်မြက်သည့် ပညာရှင်များ မွေးထုတ်ပေးရာ "Center of Excellence" အဆင့်မြင့်တက္ကသိုလ်တစ်ခု ဖြစ်ပါသည်။ ဤတက္ကသိုလ်၏ အမည်ကို ၂၀၁၅ ခုနှစ်၊ ဇန်နဝါရီလ ၁၅ ရက်တွင် တရားဝင်ပြောင်းလဲသတ်မှတ်ခဲ့သော်လည်း ၎င်း၏အစမှာ ၁၉၇၁ ခုနှစ်တွင် စတင်တည်ထောင်ခဲ့သော တက္ကသိုလ်ကွန်ပျူတာဌာန (UCC) မှ ဆင်းသက်လာခြင်း ဖြစ်သည်။ ခေတ်အဆက်ဆက်တွင် ကွန်ပျူတာသိပ္ပံနှင့် နည်းပညာတက္ကသိုလ် (ICST) (၁၉၈၈) နှင့် ရန်ကုန်ကွန်ပျူတာတက္ကသိုလ် (UCSY) (၁၉၉၈) အဖြစ် အဆင့်ဆင့်ပြောင်းလဲခဲ့ပြီးနောက်၊ နိုင်ငံတော်အတွက် လိုအပ်သော ICT လူသားအရင်းအမြစ်များကို ပြိုးထောင်ရန် ၂၀၁၂ ခုနှစ်၊ ဒီဇင်ဘာလ ၃ ရက်တွင် ဗဟန်းနယ်မြေ၌ Center of Excellence အဖြစ် သီးခြားစတင်တည်ထောင်ခဲ့ခြင်း ဖြစ်ပါသည်။
+လက်ရှိတွင် UIT သည် ရန်ကုန်မြို့၊ လှိုင်နယ်မြေ၊ ပရမီလမ်းတွင် တည်ရှိပြီး ICT နယ်ပယ်၏ အဓိကသုတေသနဗဟိုဌာနအဖြစ် ရပ်တည်လျက်ရှိသည်။ တစ်နှစ်လျှင် ဘွဲ့ကြိုကျောင်းသားပေါင်း ၂၀၀ ခန့် မွေးထုတ်ပေးနေရုံသာမက ဘွဲ့လွန်ဒီပလိုမာ၊ မဟာဘွဲ့နှင့် ဒေါက်တာဘွဲ့ သင်တန်းများကိုလည်း အောက်ပါအထူးပြုဘာသာရပ်များဖြင့် သင်ကြားပို့ချပေးလျက်ရှိသည်။
+ * Software Engineering (ဆော့ဖ်ဝဲအင်ဂျင်နီယာပညာ)
+ * Cyber Security (ဆိုင်ဘာလုံခြုံရေး)
+ * Embedded Systems
+ * High-Performance Computing
+ * Knowledge Engineering နှင့် Communication and Networking စသည်တို့ဖြစ်သည်။
+တက္ကသိုလ်၏ ရည်မှန်းချက်ဆောင်ပုဒ်မှာ “ICT နည်းပညာဆိုင်ရာ ဆန်းသစ်တီထွင်မှုဖြင့် ပိုမိုတောက်ပသော အနာဂတ်ဆီသို့” ဟူ၍ ဖြစ်ပါသည်။ UIT သည် အရည်အသွေးရှိသော လူသားအရင်းအမြစ်များ မွေးထုတ်ရန်၊ သုတေသနလုပ်ငန်းများကို အားပေးရန်နှင့် တက္ကသိုလ်နှင့် လုပ်ငန်းခွင်အကြား ပူးပေါင်းဆောင်ရွက်မှုများ တိုးမြှင့်ရန် ကတိကဝတ်ပြုထားသည်။ ထို့အပြင် သမာဓိရှိမှု (Integrity)၊ လေးစားမှု (Respect)၊ ထူးချွန်မှု (Excellence)၊ ဆန်းသစ်တီထွင်မှု (Innovation) နှင့် ပူးပေါင်းဆောင်ရွက်မှု (Collaboration) ဟူသော အဓိကတန်ဖိုး (၅) ရပ်ကို အခြေခံ၍ သင်ကြားသင်ယူမှုနှင့် သုတေသနပတ်ဝန်းကျင်ကောင်းများကို ဖန်တီးပေးလျက်ရှိပါသည်။</p>
+                            </div>
+
+                            
+                               <div class="content-card">
+  <h2>Why Choose UIT?</h2>
+<div class="features-list">
+  <!-- Feature 1: Center of Excellence -->
+  <div class="feature-item">
+    <div class="feature-icon">🏛️</div>
+    <div>
+      <h4>Center of Excellence in I,CT</h4>
+      <p>Established to develop <strong>high-level ICT professionals and specialists</strong>, UIT is positioned as a national-focused institution for advanced IT education and research.</p>
+    </div>
+  </div>
+
+  <!-- Feature 2: Wide, Modern Specializations -->
+  <div class="feature-item">
+    <div class="feature-icon">🧩</div>
+    <div>
+      <h4>Industry-Relevant Specializations</h4>
+      <p>Study fields such as <strong>Software Engineering, Cyber Security, Embedded Systems, Networking, and High Performance Computing</strong> aligned with real technology careers.</p>
+    </div>
+  </div>
+
+  <!-- Feature 3: Research-Driven Identity -->
+  <div class="feature-item">
+    <div class="feature-icon">🔬</div>
+    <div>
+      <h4>Research & Innovation Culture</h4>
+      <p>UIT emphasizes ICT research that supports national development, with programs spanning <strong>undergraduate to doctoral</strong> levels.</p>
+    </div>
+  </div>
+
+  <!-- Feature 4: Multiple Degree Pathways -->
+  <div class="feature-item">
+    <div class="feature-icon">🎓</div>
+    <div>
+      <h4>Undergraduate to Ph.D. Pathway</h4>
+      <p>Advance step-by-step through <strong>Diploma, Bachelor’s, Master’s, and Doctoral</strong> study options within one focused university.</p>
+    </div>
+  </div>
+
+  <!-- Feature 5: Strategic Yangon Campus -->
+  <div class="feature-item">
+    <div class="feature-icon">📍</div>
+    <div>
+      <h4>Yangon Location (Hlaing Campus)</h4>
+      <p>Located on <strong>Parami Road, Hlaing Campus</strong>, UIT offers access to a major academic area and a strong environment for tech learning.</p>
+    </div>
+  </div>
+
+  <!-- Feature 6: Strong Tech Career Outcomes -->
+  <div class="feature-item">
+    <div class="feature-icon">💼</div>
+    <div>
+      <h4>Built for High-Impact Tech Careers</h4>
+      <p>Graduate with skills for roles in <strong>software development, cybersecurity, systems, and networks</strong>, backed by a curriculum designed for professional capability.</p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="content-card">
+  <h2>Campus Gallery</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="uit1.jpg" alt="Computer Lab (placeholder)">
+      <p>UIT</p>
+    </div>
+    <div class="gallery-item">
+      <img src="uit2.jpg" alt="Library (placeholder)">
+      <p>UIT</p>
+    </div>
+    <div class="gallery-item">
+      <img src="uit3.jpg" alt="Main Hall (placeholder)">
+      <p>UIT</p>
+    </div>
+    <div class="gallery-item">
+      <img src="uit4.jpg" alt="Campus Ground (placeholder)">
+      <p>UIT</p>
+    </div>
+  </div>
+</div>
+</div>
+
+                        <!-- Majors Tab -->
+<div class="tab-panel" id="majors">
+  <div class="content-card">
+    <h2>Available Programs</h2>
+    <p class="subtitle">Choose from our comprehensive technology programs</p>
+
+    <div class="majors-list">
+      <!-- Major Card 1 -->
+      <div class="major-card">
+        <div class="major-header">
+          <div class="major-icon">💻</div>
+          <div>
+            <h3>Computer Science (CS)</h3>
+            <span class="major-degree">B.C.Sc</span>
+          </div>
+        </div>
+        <p class="major-desc">
+          UIT offers B.C.Sc programs with specializations such as Software Engineering, Knowledge Engineering, and Business Information Systems.
+        </p>
+
+        <div class="major-details">
+          <div class="detail-row">
+            <strong>Duration:</strong>
+            <span>Not stated on the UIT program pages used here (add only if you have an official UIT admission/handbook source).</span>
+          </div>
+          <div class="detail-row">
+            <strong>Min. Marks:</strong>
+            <span>Not publicly stated on UIT program pages used here (avoid fixed numbers unless published in an official intake notice).</span>
+          </div>
+          <div class="detail-row">
+            <strong>Prerequisites:</strong>
+            <span>Not listed on the UIT program pages used here (use official admissions criteria if available).</span>
+          </div>
+        </div>
+
+        <div class="major-subjects">
+          <strong>Core Majors:</strong>
+          <span>Knowledge Engineering</span>
+          <span>Software Engineering</span>
+          <span>Business Information Systems</span>
+          <span>High Performance Computing</span>
+        </div>
+      </div>
+
+      <!-- Major Card 2 -->
+      <div class="major-card">
+        <div class="major-header">
+          <div class="major-icon">🌐</div>
+          <div>
+            <h3>Computer Technology (CT)</h3>
+            <span class="major-degree">B.C.Tech</span>
+          </div>
+        </div>
+        <p class="major-desc">
+          UIT offers B.C.Tech programs including Computer Systems, Embedded Systems, and Computer Communication & Networking.
+        </p>
+
+        <div class="major-details">
+          <div class="detail-row">
+            <strong>Duration:</strong>
+            <span>Not stated on the UIT program pages used here (add only if you have an official UIT admission/handbook source).</span>
+          </div>
+          <div class="detail-row">
+            <strong>Min. Marks:</strong>
+            <span>Not publicly stated on UIT program pages used here (avoid fixed numbers unless published in an official intake notice).</span>
+          </div>
+          <div class="detail-row">
+            <strong>Prerequisites:</strong>
+            <span>Not listed on the UIT program pages used here (use official admissions criteria if available).</span>
+          </div>
+        </div>
+
+        <div class="major-subjects">
+          <strong>Core Majors:</strong>
+          <span>Computer Systems</span>
+          <span>Embedded Systems</span>
+          <span>Communication and Networking</span>
+          <span>Cyber Security</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Projects Tab -->
+<div class="tab-panel" id="projects">
+  <div class="content-card">
+    <h2>University Projects & Achievements</h2>
+    <p class="subtitle">Selected official activities and achievements</p>
+
+    <div class="projects-timeline">
+      <!-- Project Item 1 -->
+      <div class="project-item">
+        <div class="project-year">2025</div>
+        <div class="project-content">
+          <div class="project-badge">Conference</div>
+          <h3>International Conference on Advanced Information Technologies (ICAIT)</h3>
+          <p>
+            UIT lists ICAIT 2025 under its “Call for Papers” and conference activities, continuing its ICAIT conference series.
+          </p>
+          <div class="project-tags">
+            <span>Conference</span>
+            <span>Call for Papers</span>
+            <span>Research</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Item 2 -->
+      <div class="project-item">
+        <div class="project-year">2020</div>
+        <div class="project-content">
+          <div class="project-badge">Competition</div>
+          <h3>Programming Contest (ICPC) — University Activity</h3>
+          <p>
+            UIT’s academic calendar includes a Programming Contest (ICPC) listed as a university event in 2020.
+          </p>
+          <div class="project-tags">
+            <span>ICPC</span>
+            <span>Competitive Programming</span>
+            <span>Student Event</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Item 3 -->
+      <div class="project-item">
+        <div class="project-year">2020</div>
+        <div class="project-content">
+          <div class="project-badge award">Award</div>
+          <h3>Prize Giving Ceremony — University Event</h3>
+          <p>
+            UIT’s academic calendar lists prize-giving ceremonies (for example, Fresher Welcome and Prize Giving Ceremony, and Paying Homage and Prize Giving Ceremony).
+          </p>
+          <div class="project-tags">
+            <span>Student Awards</span>
+            <span>Campus Event</span>
+            <span>Recognition</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Item 4 -->
+      <div class="project-item">
+        <div class="project-year">—</div>
+        <div class="project-content">
+          <div class="project-badge">Note</div>
+          <h3>Student Projects (Portfolio)</h3>
+          <p>
+            Detailed public write-ups for individual student projects (team names, project titles, datasets, measured outcomes such as “40% accuracy improvement,”
+            and permission for publication) are not consistently available on official UIT pages; this section can be updated once verified information is provided.
+          </p>
+          <div class="project-tags">
+            <span>Awaiting Official Data</span>
+            <span>Verification Needed</span>
+            <span>UIT</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+                       <!-- Campus Life Tab -->
+<div class="tab-panel" id="campus">
+  <div class="content-card">
+    <h2>Campus Life at UIT</h2>
+    <p class="subtitle">Student activities and campus events at the University of Information Technology</p>
+
+    <div class="campus-features">
+      <div class="campus-card">
+        <div class="campus-img">
+          <img src="placeholder.png" alt="Student Activities">
+        </div>
+        <h3>Student Activities</h3>
+        <p>
+          UIT’s academic calendar lists regular student activities such as Sports Competition, Blood Donation, Debate Competition, Essay Competitions, and the Myanmar Traditional Htamane Festival.
+        </p>
+      </div>
+
+      <div class="campus-card">
+        <div class="campus-img">
+          <img src="placeholder.png" alt="Campus Facilities (placeholder)">
+        </div>
+        <h3>Learning Facilities</h3>
+        <p>
+          UIT provides practical learning spaces including labs such as Digital Circuits, Advanced Digital Circuits, Analog Circuits, Microcontroller, Signal Processing, and Control System labs; campus photos will be added once officially provided.
+        </p>
+      </div>
+
+      <div class="campus-card">
+        <div class="campus-img">
+          <img src="images/events.jpg" alt="Events">
+        </div>
+        <h3>Events & Competitions</h3>
+        <p>
+          UIT’s academic calendar includes events such as Programming Contest (ICPC), IT Business Plan Contest (UIT), UIT Open Campus, and ICAIT Conference.
+        </p>
+      </div>
+    </div>
+
+    <div class="testimonial-section">
+      <h3>Student Voices</h3>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <p>
+            No official/public student testimonial quotes were available for publication on UIT’s official pages at the time of writing.
+          </p>
+          <div class="testimonial-author">
+            <strong>— Editorial Note</strong>
+            <span>UIT public sources</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p>
+            If you share approved quotes (with student permission and attribution), we can replace this section with authentic student testimonials.
+          </p>
+          <div class="testimonial-author">
+            <strong>— Editorial Note</strong>
+            <span>Website editor</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+    <!-- CTA Section -->
+    <section class="cta-profile">
+        <div class="container">
+            <h2>Ready to Start Your Journey at UIT?</h2>
+            <p>Explore more universities or get in touch with admissions</p>
+            <div class="cta-buttons">
+                <a href="uni.html" class="btn-secondary">Explore More Universities</a>
+                <a href="error.html" class="btn-primary">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+
+      <div class="footer-section">
+        <h3>High Schooler’s Tool</h3>
+        <p>Empowering Myanmar students to make informed university choices.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="hst.html">Home</a></li>
+          <li><a href="uni.html">Universities</a></li>
+          <li><a href="career-journey.html">Career Journey</a></li>
+          <li><a href="study-mode.html">Study mode</a></li>
+          <li><a href="scholarships.html">Scholarships</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>High Schooler’s Tool</p>
+        <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+        <p>
+          Facebook:
+          <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+            High Schooler’s Tool ARP
+          </a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 High Schooler’s Tool. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="script.js"></script>
+    <script src="ucsy.js"></script>
+    <script src="projectupgrade.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    // Navbar toggle
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    
+    if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+            hamburger.classList.toggle("active");
+        });
+        
+        // Close on link click
+        navLinks.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("active");
+                hamburger.classList.remove("active");
+            });
+        });
+    }
+    
+    // Tab functionality
+    document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+            document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+            
+            btn.classList.add("active");
+            document.getElementById(btn.dataset.tab).classList.add("active");
+        });
+    });
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    
+    hamburger.onclick = function() {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("active");
+    }
+});
+</script>
+</body>
+</html>

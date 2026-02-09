@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>University Profile - High Schooler's Tool</title>
+
+  <link rel="stylesheet" href="hst.css" />
+  <link rel="stylesheet" href="upp.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h2>HST</h2>
+        <span>High Schooler's Tool</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="hst.html">Home</a></li>
+        <li><a href="uni.html" class="active">Universities</a></li>
+        <li><a href="career-journey.html">Career journey</a></li>
+        <li><a href="study-mode.html">Study mode</a></li>
+        <li><a href="scholarships.html">Scholarships</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="uni-hero">
+    <div class="hero-overlay"></div>
+    <!-- Replace with your real image -->
+    <div class="hero-bg" style="background-image: url('ufes.jpg');"></div>
+
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> /
+        <a href="uni.html">Universities</a> /
+        <span>University of Forestry and Environmental Science, Yezin (UFES)</span>
+      </div>
+
+      <div class="uni-hero-content">
+        <div class="uni-logo">
+          <img src="ufeslogo.jpg" alt="UFES Logo" />
+        </div>
+
+        <div class="uni-title">
+          <h1>University of Forestry and Environmental Science - UFES (Yezin)</h1>
+          <p class="uni-subtitle">Myanmar’s specialized university for forestry, biodiversity, and environmental science.</p>
+
+          <div class="uni-meta">
+            <span><i>📍</i> Yezin, Zeyar Thiri Township, Nay Pyi Taw</span>
+            <span><i>🏛️</i> Forestry & Environmental Science</span>
+            <span><i>📅</i> Forestry education since 1923; independent institute since 1992; renamed UFES in 2017</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Stats Bar -->
+  <section class="quick-stats">
+    <div class="container">
+      <div class="stats-grid">
+
+        <div class="stat-item">
+          <div class="stat-icon">🌲</div>
+          <div class="stat-info">
+            <h3>5 Years</h3>
+            <p>Study period (undergraduate)</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">🎓</div>
+          <div class="stat-info">
+            <h3>100</h3>
+            <p>Students accepted in recent years (reported)</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">🌿</div>
+          <div class="stat-info">
+            <h3>Forestry</h3>
+            <p>Core specialization</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">🌏</div>
+          <div class="stat-info">
+            <h3>Environment</h3>
+            <p>Environmental science focus</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="profile-content">
+    <div class="container">
+      <div class="content-layout">
+
+        <!-- Sidebar -->
+        <aside class="profile-sidebar">
+
+          <div class="sidebar-card">
+            <h3>Quick Info</h3>
+            <div class="info-list">
+              <div class="info-item">
+                <strong>Type</strong>
+                <span>Government / Public</span>
+              </div>
+              <div class="info-item">
+                <strong>Location</strong>
+                <span>Yezin, Zeyar Thiri Township, Nay Pyi Taw</span>
+              </div>
+              <div class="info-item">
+                <strong>Focus</strong>
+                <span>Forestry, biodiversity, environmental management</span>
+              </div>
+              <div class="info-item">
+                <strong>Nearby institutions</strong>
+                <span>YAU, UVS, DAR & Forest Research departments (co-located area)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>Entrance Requirements</h3>
+            <div class="requirement-box">
+              <div class="requirement-item">
+                <span class="req-label">Academic</span>
+                <span class="req-value">Science-major matriculation (check yearly rules)</span>
+              </div>
+              <div class="requirement-item">
+                <span class="req-label">Fitness</span>
+                <span class="req-value">Fit for field study (physical test required)</span>
+              </div>
+              <div class="requirement-item">
+                <span class="req-label">Notes</span>
+                <span class="req-value">Admission details can change; confirm on official site</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card contact-card">
+            <h3>Contact</h3>
+            <div class="contact-info">
+              <p><i>📍</i> Yezin, Zeyar Thiri Township, Nay Pyi Taw</p>
+              <p><i>🌐</i> ufes.edu.mm</p>
+              <p><i>🌐</i> ufesmyanmar.org</p>
+            </div>
+            <button class="contact-btn">Get in Touch</button>
+          </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="profile-main">
+
+          <!-- Navigation Tabs -->
+          <div class="profile-tabs">
+            <button class="tab-btn active" data-tab="overview">Overview</button>
+            <button class="tab-btn" data-tab="majors">Majors</button>
+            <button class="tab-btn" data-tab="projects">Projects</button>
+            <button class="tab-btn" data-tab="campus">Campus Life</button>
+            <button class="tab-btn" data-tab="careers">Career Paths</button>
+          </div>
+
+          <!-- Tab Content -->
+          <div class="tab-content">
+
+            <!-- Overview Tab -->
+            <div class="tab-panel active" id="overview">
+              <div class="content-card">
+                <h2>About the University</h2>
+                <p>
+                  The University of Forestry and Environmental Science (UFES), Yezin has roots in forestry education introduced
+                  under Yangon University around 1923. It moved to Yezin in 1985, became an independent institute on 16 July 1992,
+                  became the University of Forestry in 2003, and was renamed the University of Forestry and Environmental Science on 10 October 2017.
+                </p>
+              </div>
+
+              <div class="content-card">
+                <h2>Why Choose UFES?</h2>
+                <div class="features-list">
+
+                  <div class="feature-item">
+                    <div class="feature-icon">🌲</div>
+                    <div>
+                      <h4>Forestry + Environment Focus</h4>
+                      <p>Specialized training in sustainable forestry, biodiversity, natural resources, and environmental management.</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">🥾</div>
+                    <div>
+                      <h4>Field-Based Learning</h4>
+                      <p>Forestry education at UFES includes strong field components and practical training.</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">🏛️</div>
+                    <div>
+                      <h4>Yezin Academic Zone</h4>
+                      <p>UFES is located in Yezin alongside YAU, UVS, and national research departments.</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">🎓</div>
+                    <div>
+                      <h4>Five-Year Study Period</h4>
+                      <p>The UFES history notes the study period has been 5 years from 1995 to present.</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="content-card">
+                <h2>Campus Gallery</h2>
+                <div class="gallery-grid">
+                  <div class="gallery-item">
+                    <img src="ufes1.jpg" alt="UFES Campus" />
+                    <p>🏛️</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="ufes2.jpg" alt="Forest Field Training" />
+                    <p>🌲</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="ufes3.jpg" alt="Environmental Lab" />
+                    <p>🧪</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="ufes4.jpg" alt="Wildlife / Biodiversity" />
+                    <p>🦌</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="ufes5.jpg" alt="Lecture Hall" />
+                    <p>🎓</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="ufes6.jpg" alt="Student Activities" />
+                    <p>🤝</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Majors Tab -->
+            <div class="tab-panel" id="majors">
+              <div class="content-card">
+                <h2>Available Programs</h2>
+                <p class="subtitle">Core forestry and environmental science pathways (verify current list on official site)</p>
+
+                <div class="majors-list">
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">🌲</div>
+                      <div>
+                        <h3>Forestry (B.Sc. / 5-year)</h3>
+                        <span class="major-degree">Undergraduate</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">
+                      Forestry-focused study with sustainable management, forest ecology, soils, water, climate, and biodiversity topics.
+                    </p>
+                    <div class="major-details">
+                      <div class="detail-row">
+                        <strong>Duration:</strong>
+                        <span>5 Years (reported)</span>
+                      </div>
+                      <div class="detail-row">
+                        <strong>Style:</strong>
+                        <span>Field study + practical learning</span>
+                      </div>
+                    </div>
+                    <div class="major-subjects">
+                      <span>Forest Ecology</span>
+                      <span>Soil, Water & Climate</span>
+                      <span>Forest Management</span>
+                      <span>Wildlife & Biodiversity</span>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">🌏</div>
+                      <div>
+                        <h3>Environmental Science (UFES expanded scope)</h3>
+                        <span class="major-degree">Undergraduate / Interdisciplinary</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">
+                      Environmental policy, pollution control, natural resource management, and environmental economics topics are part of UFES’s expanded scope.
+                    </p>
+                    <div class="major-subjects">
+                      <span>Pollution Control</span>
+                      <span>Natural Resource Mgmt</span>
+                      <span>Environmental Policy</span>
+                      <span>Environmental Economics</span>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">🎓</div>
+                      <div>
+                        <h3>Postgraduate (Master / PhD)</h3>
+                        <span class="major-degree">Postgraduate</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">
+                      UFES offers postgraduate pathways (exact availability depends on academic year and conditions).
+                    </p>
+                    <div class="major-subjects">
+                      <span>Forestry Research</span>
+                      <span>Conservation</span>
+                      <span>Environmental Management</span>
+                      <span>Climate & Ecosystems</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Projects Tab - timeline format -->
+            <div class="tab-panel" id="projects">
+              <div class="content-card">
+                <h2>UFES Research & Projects</h2>
+                <p class="subtitle">Forestry and environmental initiatives (publicly described)</p>
+
+                <div class="projects-timeline">
+
+                  <div class="project-item">
+                    <div class="project-year">Ongoing</div>
+                    <div class="project-content">
+                      <div class="project-badge">Research</div>
+                      <h3>Sustainable Forestry & Forest Ecology</h3>
+                      <p>
+                        UFES’s academic scope includes sustainable forestry and forest ecology themes, supporting research and training
+                        for long-term forest management and ecosystem health.
+                      </p>
+                      <div class="project-tags">
+                        <span>Sustainable Forestry</span>
+                        <span>Ecology</span>
+                        <span>Management</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-item">
+                    <div class="project-year">Ongoing</div>
+                    <div class="project-content">
+                      <div class="project-badge">Conservation</div>
+                      <h3>Biodiversity & Wildlife Conservation</h3>
+                      <p>
+                        UFES’s forestry and environment focus supports biodiversity and wildlife conservation learning and related
+                        research activities in Myanmar’s forest landscapes.
+                      </p>
+                      <div class="project-tags">
+                        <span>Biodiversity</span>
+                        <span>Wildlife</span>
+                        <span>Conservation</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-item">
+                    <div class="project-year">Ongoing</div>
+                    <div class="project-content">
+                      <div class="project-badge">Environment</div>
+                      <h3>Pollution Control & Environmental Management</h3>
+                      <p>
+                        UFES’s environmental science scope includes pollution control/management and natural resource management,
+                        helping build skills for environmental protection and sustainable development.
+                      </p>
+                      <div class="project-tags">
+                        <span>Pollution Control</span>
+                        <span>Environmental Mgmt</span>
+                        <span>Policy</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Campus Life Tab -->
+            <div class="tab-panel" id="campus">
+              <div class="content-card">
+                <h2>Campus Life at UFES (Yezin)</h2>
+                <p class="subtitle">Field training and nature-based learning environment</p>
+
+                <div class="campus-features">
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#1b5e20,#a5d6a7);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                        🌲
+                      </div>
+                    </div>
+                    <h3>Field Training Culture</h3>
+                    <p>Forestry education emphasizes outdoor learning and applied practice.</p>
+                  </div>
+
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                        🧪
+                      </div>
+                    </div>
+                    <h3>Lab + Research Learning</h3>
+                    <p>Environmental science and forestry topics combine labs, data, and field observations.</p>
+                  </div>
+
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#283c86,#45a247);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                        🏛️
+                      </div>
+                    </div>
+                    <h3>Yezin Academic Zone</h3>
+                    <p>UFES is located in Yezin with other major universities and research departments nearby.</p>
+                  </div>
+                </div>
+
+                <div class="testimonial-section">
+                  <h3>Official Contact</h3>
+                  <div class="contact-grid">
+                    <div class="contact-card">
+                      <h4>🌐 Website</h4>
+                      <p><a href="https://ufes.edu.mm" target="_blank" rel="noopener">ufes.edu.mm</a></p>
+                    </div>
+                    <div class="contact-card">
+                      <h4>History</h4>
+                      <p>
+                        <a href="https://ufesmyanmar.org/history/" target="_blank" rel="noopener">
+                          UFES history (public page)
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Career Paths Tab -->
+            <div class="tab-panel" id="careers">
+              <div class="content-card">
+                <h2>Career Paths - UFES Graduates</h2>
+                <p class="subtitle">Forestry, conservation, environment, and natural resource careers</p>
+
+                <div class="career-paths">
+                  <div class="career-card">
+                    <div class="career-icon">🌲</div>
+                    <h3>Forestry Officer</h3>
+                    <p>Forest management, conservation planning, and sustainable forestry operations.</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">🦌</div>
+                    <h3>Conservation Specialist</h3>
+                    <p>Biodiversity conservation, wildlife monitoring, protected area management.</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">🌏</div>
+                    <h3>Environmental Manager</h3>
+                    <p>Environmental assessment, pollution control, and sustainability roles.</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">🔬</div>
+                    <h3>Researcher / Lecturer</h3>
+                    <p>Research institutes, universities, and postgraduate pathways (Master/PhD).</p>
+                  </div>
+                </div>
+
+                <div class="employer-logos">
+                  <h4>Possible Destinations:</h4>
+                  <div class="logo-grid">
+                    <div class="employer-logo">Forest Department</div>
+                    <div class="employer-logo">Environmental Agencies</div>
+                    <div class="employer-logo">NGOs / Conservation</div>
+                    <div class="employer-logo">Research Institutes</div>
+                    <div class="employer-logo">Development Projects</div>
+                    <div class="employer-logo">Further Study</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div><!-- /tab-content -->
+        </main>
+
+      </div><!-- /content-layout -->
+    </div><!-- /container -->
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-profile">
+    <div class="container">
+      <h2>Ready to Start Your Journey at UFES?</h2>
+      <p>Explore more universities or get in touch with admissions</p>
+      <div class="cta-buttons">
+        <a href="uni.html" class="btn-secondary">Explore More Universities</a>
+        <a href="error.html" class="btn-primary">Apply Now</a>
+      </div>
+    </div>
+  </section>
+
+ <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+
+      <div class="footer-section">
+        <h3>High Schooler’s Tool</h3>
+        <p>Empowering Myanmar students to make informed university choices.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="hst.html">Home</a></li>
+          <li><a href="uni.html">Universities</a></li>
+          <li><a href="career-journey.html">Career Journey</a></li>
+          <li><a href="study-mode.html">Study mode</a></li>
+          <li><a href="scholarships.html">Scholarships</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>High Schooler’s Tool</p>
+        <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+        <p>
+          Facebook:
+          <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+            High Schooler’s Tool ARP
+          </a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 High Schooler’s Tool. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+  <script src="upp.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Navbar toggle
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+          hamburger.classList.toggle("active");
+        });
+
+        navLinks.querySelectorAll("a").forEach(link => {
+          link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            hamburger.classList.remove("active");
+          });
+        });
+      }
+
+      // Tab functionality
+      document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+          document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+
+          btn.classList.add("active");
+          document.getElementById(btn.dataset.tab).classList.add("active");
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
