@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>University Profile - High Schooler's Tool</title>
+
+  <link rel="stylesheet" href="hst.css" />
+  <link rel="stylesheet" href="upp.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h2>HST</h2>
+        <span>High Schooler's Tool</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="hst.html">Home</a></li>
+        <li><a href="uni.html" class="active">Universities</a></li>
+        <li><a href="career-journey.html">Career journey</a></li>
+        <li><a href="study-mode.html">Study mode</a></li>
+        <li><a href="scholarships.html">Scholarships</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="uni-hero">
+    <div class="hero-overlay"></div>
+    <!-- Replace with your real image -->
+    <div class="hero-bg" style="background-image: url('uvs.jpg');"></div>
+
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> /
+        <a href="uni.html">Universities</a> /
+        <span>University of Veterinary Science, Yezin (UVS)</span>
+      </div>
+
+      <div class="uni-hero-content">
+        <div class="uni-logo">
+          <img src="uvslogo.jpg" alt="UVS Logo" />
+        </div>
+
+        <div class="uni-title">
+          <h1>University of Veterinary Science, Yezin - UVS</h1>
+          <p class="uni-subtitle">Myanmar’s leading veterinary and animal science university.</p>
+
+          <div class="uni-meta">
+            <span><i>📍</i> Yezin, Pyinmana / Nay Pyi Taw area</span>
+            <span><i>🏛️</i> Veterinary Medicine & Animal Science</span>
+            <span><i>📅</i> Founded 1957 (renamed to University of Veterinary Science in 1999)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Stats Bar -->
+  <section class="quick-stats">
+    <div class="container">
+      <div class="stats-grid">
+
+        <div class="stat-item">
+          <div class="stat-icon">🐾</div>
+          <div class="stat-info">
+            <h3>DVM</h3>
+            <p>Veterinary degree pathway</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">🐄</div>
+          <div class="stat-info">
+            <h3>BASc</h3>
+            <p>Animal Science program</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">🏥</div>
+          <div class="stat-info">
+            <h3>Teaching Hospital</h3>
+            <p>Clinical training</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">🏛️</div>
+          <div class="stat-info">
+            <h3>25+</h3>
+            <p>Departments/Units (reported)</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="profile-content">
+    <div class="container">
+      <div class="content-layout">
+
+        <!-- Sidebar -->
+        <aside class="profile-sidebar">
+
+          <div class="sidebar-card">
+            <h3>Quick Info</h3>
+            <div class="info-list">
+              <div class="info-item">
+                <strong>Type</strong>
+                <span>Government / Public</span>
+              </div>
+              <div class="info-item">
+                <strong>Location</strong>
+                <span>Yezin, Nay Pyi Taw area</span>
+              </div>
+              <div class="info-item">
+                <strong>Focus</strong>
+                <span>Veterinary services & livestock development</span>
+              </div>
+              <div class="info-item">
+                <strong>Key Facilities</strong>
+                <span>Veterinary Teaching Hospital, Demonstration Farms</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>Entrance Requirements</h3>
+            <div class="requirement-box">
+              <div class="requirement-item">
+                <span class="req-label">Selection</span>
+                <span class="req-value">Entrance selection/exam (varies by year)</span>
+              </div>
+              <div class="requirement-item">
+                <span class="req-label">Recommended Subjects</span>
+                <div class="subject-tags">
+                  <span class="subject-tag">Biology</span>
+                  <span class="subject-tag">Chemistry</span>
+                  <span class="subject-tag">English</span>
+                </div>
+              </div>
+              <div class="requirement-item">
+                <span class="req-label">Note</span>
+                <span class="req-value">Confirm current intake rules on uvs.edu.mm</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card contact-card">
+            <h3>Contact</h3>
+            <div class="contact-info">
+              <p><i>📍</i> Yezin, Pyinmana / Nay Pyi Taw, Myanmar</p>
+              <p><i>🌐</i> uvs.edu.mm</p>
+              <p><i>✉️</i> (Check official site for updated email/phone)</p>
+            </div>
+            <button class="contact-btn">Get in Touch</button>
+          </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="profile-main">
+
+          <!-- Navigation Tabs -->
+          <div class="profile-tabs">
+            <button class="tab-btn active" data-tab="overview">Overview</button>
+            <button class="tab-btn" data-tab="majors">Majors</button>
+            <button class="tab-btn" data-tab="projects">Projects</button>
+            <button class="tab-btn" data-tab="campus">Campus Life</button>
+            <button class="tab-btn" data-tab="careers">Career Paths</button>
+          </div>
+
+          <!-- Tab Content -->
+          <div class="tab-content">
+
+            <!-- Overview Tab -->
+            <div class="tab-panel active" id="overview">
+              <div class="content-card">
+                <h2>About the University</h2>
+                <p>
+                  The University of Veterinary Science (Yezin) was founded in 1957 and initially offered the six-year BVSc program.
+                  The institution’s history includes an upgrade to IAHVS in 1964, relocation to Yezin in 1981, transfer under the
+                  Ministry of Livestock and Fisheries in 1994, and a formal renaming to the University of Veterinary Science in 1999.
+                </p>
+              </div>
+
+              <div class="content-card">
+                <h2>Why Choose UVS (Yezin)?</h2>
+                <div class="features-list">
+
+                  <div class="feature-item">
+                    <div class="feature-icon">🏥</div>
+                    <div>
+                      <h4>Clinical Training</h4>
+                      <p>
+                        UVS includes a Veterinary Teaching Hospital and livestock demonstration farms for hands-on learning.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">🐄</div>
+                    <div>
+                      <h4>Livestock Development Mission</h4>
+                      <p>
+                        UVS’s “About Us” highlights its role in developing the nation through livestock production and veterinary services.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">🎓</div>
+                    <div>
+                      <h4>Postgraduate Study</h4>
+                      <p>
+                        The university’s background history notes postgraduate programs (Master and PhD) started in 1992 and continue.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">🏛️</div>
+                    <div>
+                      <h4>Many Specialized Departments</h4>
+                      <p>
+                        UVS reports a Rector’s Office plus many departments and units covering veterinary medicine, animal science,
+                        public health, aquaculture diseases, and more.
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="content-card">
+                <h2>Campus Gallery</h2>
+                <div class="gallery-grid">
+                  <div class="gallery-item">
+                    <img src="uvs1.jpg" alt="UVS Campus" />
+                    <p>🏛️</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="uvs2.jpg" alt="Veterinary Teaching Hospital" />
+                    <p>🏥</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="uvs3.jpg" alt="Laboratory" />
+                    <p>🧪</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="uvs4.jpg" alt="Demonstration Farms" />
+                    <p>🐄</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="uvs5.jpg" alt="Lecture Hall" />
+                    <p>🎓</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="uvs6.jpg" alt="Student Activities" />
+                    <p>🤝</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Majors Tab -->
+            <div class="tab-panel" id="majors">
+              <div class="content-card">
+                <h2>Available Programs</h2>
+                <p class="subtitle">Programs mentioned by UVS public information</p>
+
+                <div class="majors-list">
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">🐾</div>
+                      <div>
+                        <h3>Veterinary Medicine (BVSc / DVM pathway)</h3>
+                        <span class="major-degree">Professional veterinary program</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">
+                      UVS started with a six-year BVSc program and later awarded degrees including DVM (reported by UVS background history).
+                    </p>
+                    <div class="major-details">
+                      <div class="detail-row">
+                        <strong>Type:</strong>
+                        <span>Veterinary professional degree</span>
+                      </div>
+                      <div class="detail-row">
+                        <strong>Learning:</strong>
+                        <span>Strong practical + clinical components</span>
+                      </div>
+                    </div>
+                    <div class="major-subjects">
+                      <span>Anatomy</span>
+                      <span>Physiology & Biochemistry</span>
+                      <span>Pathology & Microbiology</span>
+                      <span>Surgery & Theriogenology</span>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">🐄</div>
+                      <div>
+                        <h3>Bachelor of Animal Science (BASc)</h3>
+                        <span class="major-degree">Undergraduate</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">
+                      UVS reports awarding BASc degrees and includes Animal Science and related departments and farms.
+                    </p>
+                    <div class="major-subjects">
+                      <span>Animal Nutrition</span>
+                      <span>Genetics & Breeding</span>
+                      <span>Livestock Production</span>
+                      <span>Veterinary Public Health</span>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">🎓</div>
+                      <div>
+                        <h3>Postgraduate Programs</h3>
+                        <span class="major-degree">MPhil / MVM / MVSc / PhD (reported)</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">
+                      UVS’s background history lists postgraduate degrees such as MPhil, MVM, MVSc and PhD among degrees conferred.
+                    </p>
+                    <div class="major-subjects">
+                      <span>Veterinary Research</span>
+                      <span>Animal Health</span>
+                      <span>Epidemiology</span>
+                      <span>Aquatic Diseases</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Projects Tab - timeline format -->
+            <div class="tab-panel" id="projects">
+              <div class="content-card">
+                <h2>UVS Research & Projects</h2>
+                <p class="subtitle">Clinical, livestock, and public health activities (based on public info)</p>
+
+                <div class="projects-timeline">
+
+                  <div class="project-item">
+                    <div class="project-year">Ongoing</div>
+                    <div class="project-content">
+                      <div class="project-badge">Clinical</div>
+                      <h3>Veterinary Teaching Hospital (training + services)</h3>
+                      <p>
+                        UVS lists a Veterinary Teaching Hospital as one of its main units, supporting practical clinical training and
+                        veterinary service activities.
+                      </p>
+                      <div class="project-tags">
+                        <span>Clinical</span>
+                        <span>Teaching</span>
+                        <span>Animal Health</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-item">
+                    <div class="project-year">Ongoing</div>
+                    <div class="project-content">
+                      <div class="project-badge">Field</div>
+                      <h3>Livestock Demonstration Farms (hands-on learning)</h3>
+                      <p>
+                        UVS lists Livestock Demonstration Farms, supporting field practice and applied livestock production learning.
+                      </p>
+                      <div class="project-tags">
+                        <span>Livestock</span>
+                        <span>Demonstration</span>
+                        <span>Training</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-item">
+                    <div class="project-year">Since 1992</div>
+                    <div class="project-content">
+                      <div class="project-badge">Postgraduate</div>
+                      <h3>Postgraduate Research Programs</h3>
+                      <p>
+                        UVS background history states that postgraduate study programs (Master and PhD) started in 1992 and continue,
+                        supporting long-term research activity across veterinary and animal science fields.
+                      </p>
+                      <div class="project-tags">
+                        <span>MSc/MVSc</span>
+                        <span>MPhil</span>
+                        <span>PhD</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Campus Life Tab -->
+            <div class="tab-panel" id="campus">
+              <div class="content-card">
+                <h2>Campus Life at UVS (Yezin)</h2>
+                <p class="subtitle">A residential, practice-focused veterinary campus</p>
+
+                <div class="campus-features">
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#141e30,#243b55);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                        🏥
+                      </div>
+                    </div>
+                    <h3>Clinical Environment</h3>
+                    <p>Students learn using clinical facilities such as the Veterinary Teaching Hospital.</p>
+                  </div>
+
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#134e5e,#71b280);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                        🐄
+                      </div>
+                    </div>
+                    <h3>Farm & Field Practice</h3>
+                    <p>Demonstration farms support livestock training and applied learning.</p>
+                  </div>
+
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#000428,#004e92);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                        🧪
+                      </div>
+                    </div>
+                    <h3>Lab-Based Learning</h3>
+                    <p>Core biomedical and veterinary science departments support theory + lab work.</p>
+                  </div>
+                </div>
+
+                <div class="testimonial-section">
+                  <h3>Official Contact</h3>
+                  <div class="contact-grid">
+                    <div class="contact-card">
+                      <h4>🌐 Website</h4>
+                      <p><a href="https://uvs.edu.mm" target="_blank" rel="noopener">uvs.edu.mm</a></p>
+                    </div>
+                    <div class="contact-card">
+                      <h4>Background History</h4>
+                      <p>
+                        <a href="https://uvs.edu.mm/background-history-of-university-of-veterinary-science/" target="_blank" rel="noopener">
+                          View official history
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Career Paths Tab -->
+            <div class="tab-panel" id="careers">
+              <div class="content-card">
+                <h2>Career Paths - UVS Graduates</h2>
+                <p class="subtitle">Veterinary practice, livestock sector, public health, and research</p>
+
+                <div class="career-paths">
+                  <div class="career-card">
+                    <div class="career-icon">🐾</div>
+                    <h3>Veterinarian (DVM/BVSc)</h3>
+                    <p>Clinical practice, animal hospitals, field services, and government veterinary roles.</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">🐄</div>
+                    <h3>Livestock & Animal Production</h3>
+                    <p>Farm management, breeding programs, nutrition, and livestock development projects.</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">🧫</div>
+                    <h3>Veterinary Public Health</h3>
+                    <p>Food safety, zoonotic disease control, epidemiology, and One Health-related work.</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">🔬</div>
+                    <h3>Researcher / Lecturer</h3>
+                    <p>Postgraduate research pathways (MPhil/MVSc/PhD) and academic careers.</p>
+                  </div>
+                </div>
+
+                <div class="employer-logos">
+                  <h4>Possible Destinations:</h4>
+                  <div class="logo-grid">
+                    <div class="employer-logo">Govt Veterinary Services</div>
+                    <div class="employer-logo">Animal Hospitals</div>
+                    <div class="employer-logo">Livestock Industry</div>
+                    <div class="employer-logo">Research Institutes</div>
+                    <div class="employer-logo">NGOs / Development</div>
+                    <div class="employer-logo">Further Study</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div><!-- /tab-content -->
+        </main>
+
+      </div><!-- /content-layout -->
+    </div><!-- /container -->
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-profile">
+    <div class="container">
+      <h2>Ready to Start Your Journey at UVS (Yezin)?</h2>
+      <p>Explore more universities or get in touch with admissions</p>
+      <div class="cta-buttons">
+        <a href="uni.html" class="btn-secondary">Explore More Universities</a>
+        <a href="error.html" class="btn-primary">Apply Now</a>
+      </div>
+    </div>
+  </section>
+
+ <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+
+      <div class="footer-section">
+        <h3>High Schooler’s Tool</h3>
+        <p>Empowering Myanmar students to make informed university choices.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="hst.html">Home</a></li>
+          <li><a href="uni.html">Universities</a></li>
+          <li><a href="career-journey.html">Career Journey</a></li>
+          <li><a href="study-mode.html">Study mode</a></li>
+          <li><a href="scholarships.html">Scholarships</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>High Schooler’s Tool</p>
+        <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+        <p>
+          Facebook:
+          <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+            High Schooler’s Tool ARP
+          </a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 High Schooler’s Tool. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+  <script src="upp.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Navbar toggle
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+          hamburger.classList.toggle("active");
+        });
+
+        navLinks.querySelectorAll("a").forEach(link => {
+          link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            hamburger.classList.remove("active");
+          });
+        });
+      }
+
+      // Tab functionality
+      document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+          document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+
+          btn.classList.add("active");
+          document.getElementById(btn.dataset.tab).classList.add("active");
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

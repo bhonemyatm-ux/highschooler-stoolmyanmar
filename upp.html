@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Profile - High Schooler's Tool</title>
+    <link rel="stylesheet" href="hst.css">
+    <link rel="stylesheet" href="upp.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h2>HST</h2>
+                <span>High Schooler's Tool</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="hst.html">Home</a></li>
+                <li><a href="uni.html" class="active">Universities</a></li>
+                 <li><a href="career-journey.html">Career journey</a></li>
+                <li><a href="study-mode.html">Study mode</a></li>
+                <li><a href="scholarships.html">Scholarships</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="uni-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-bg" style="background-image: url('photo_2025-12-30_15-17-21.jpg');"></div>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / 
+                <a href="universities.html">Universities</a> / 
+                <span>University of Computer Studies, Taunggyi</span>
+            </div>
+            <div class="uni-hero-content">
+                <div class="uni-logo">
+                    <img src="unnamed.png" alt="UCST Logo">
+                </div>
+                <div class="uni-title">
+                    <h1>University of Computer Studies, Taunggyi</h1>
+                    <p class="uni-subtitle">Leading Technology Education in Shan State</p>
+                    <div class="uni-meta">
+                        <span><i>📍</i> Taunggyi, Shan State</span>
+                        <span><i>🏛️</i> Technology University</span>
+                        <span><i>📅</i> Founded 1998</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats Bar -->
+    <section class="quick-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">🎓</div>
+                    <div class="stat-info">
+                        <h3>700+</h3>
+                        <p>Students</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">📚</div>
+                    <div class="stat-info">
+                        <h3>2+</h3>
+                        <p>Programs</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">👨‍🏫</div>
+                    <div class="stat-info">
+                        <h3>7+</h3>
+                        <p>Faculty</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-info">
+                        <h3>15+</h3>
+                        <p>Projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="profile-content">
+        <div class="container">
+            <div class="content-layout">
+                
+                <!-- Sidebar -->
+                <aside class="profile-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Quick Info</h3>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <strong>Type</strong>
+                                <span>Government</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Location</strong>
+                                <span>Taunggyi, Shan State</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Campus Size</strong>
+                                <span>215 Acres</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Language</strong>
+                                <span>Myanmar, English</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Entrance Requirements</h3>
+                        <div class="requirement-box">
+                            <div class="requirement-item">
+                                <span class="req-label">Minimum Marks</span>
+                                <span class="req-value">350+</span>
+                            </div>
+                            <div class="requirement-item">
+                                <span class="req-label">Required Subjects</span>
+                                <div class="subject-tags">
+                                    <span class="subject-tag">Mathematics</span>
+                                    <span class="subject-tag">Physics</span>
+                                    <span class="subject-tag">English</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card contact-card">
+                        <h3>Contact</h3>
+                        <div class="contact-info">
+                            <p><i>📞</i> 09 662 598205</p>
+                            <p><i>📧</i> info@ucstgi.edu.mm</p>
+                            <p><i>🌐</i> www.ucstgi.edu.mm</p>
+                        </div>
+                        <button class="contact-btn">Get in Touch</button>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="profile-main">
+                    
+                    <!-- Navigation Tabs -->
+                    <div class="profile-tabs">
+                        <button class="tab-btn active" data-tab="overview">Overview</button>
+                        <button class="tab-btn" data-tab="majors">Majors</button>
+                        <button class="tab-btn" data-tab="projects">Projects</button>
+                        <button class="tab-btn" data-tab="campus">Campus Life</button>
+                        <button class="tab-btn" data-tab="careers">Career Paths</button>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content">
+                        
+                        <!-- Overview Tab -->
+                        <div class="tab-panel active" id="overview">
+                            <div class="content-card">
+                                <h2>About the University</h2>
+                                <p>တောင်ကြီးကွန်ပျူတာတက္ကသိုလ်(UCSTGI)ကို ရှမ်းပြည်နယ်၏ ICT ကဏ္ဍ ဖွံ့ဖြိုးတိုးတက်စေရန် ရည်ရွယ်၍ ၂၀၀၀ ပြည့်နှစ်၊ သြဂုတ်လ ၁၅ ရက်နေ့တွင် အစိုးရကွန်ပျူတာကောလိပ် (GCC) အဖြစ် စတင်တည်ထောင်ခဲ့ပါသည်။ ၂၀၀၇ ခုနှစ်၊ ဇန်နဝါရီလ ၂၀ ရက်နေ့တွင် တက္ကသိုလ်အဆင့်သို့ တိုးမြှင့်သတ်မှတ်ခဲ့ပြီး လက်ရှိတွင် တောင်ကြီး-ဟိုပုံး ပြည်ထောင်စုလမ်းမကြီးအနီး ၂၁၅ ဧက ကျယ်ဝန်းသော ဝင်းအတွင်း တည်ရှိပါသည်။ ဤတက္ကသိုလ်သည် ဒေသတွင်းရှိ လူငယ်များအား ခေတ်မီကွန်ပျူတာနည်းပညာရပ်များကို အဆင့်မြင့်စွာ သင်ယူခွင့်ရရှိစေရန်နှင့် နိုင်ငံတော်အတွက် လိုအပ်သော နည်းပညာရှင်များ မွေးထုတ်ပေးရာ အဓိကဗဟိုဌာနတစ်ခု ဖြစ်ပါသည်။
+သင်ကြားရေးပိုင်းတွင် တောင်ကြီးကွန်ပျူတာတက္ကသိုလ်သည် ကွန်ပျူတာသိပ္ပံ (B.C.Sc.) နှင့် ကွန်ပျူတာနည်းပညာ (B.C.Tech.) ဘွဲ့ကြိုသင်တန်းများအပြင်၊ မဟာဘွဲ့သင်တန်းများဖြစ်သော M.C.Sc. နှင့် M.C.Tech. တို့ကိုလည်း ဖွင့်လှစ်သင်ကြားပေးလျက်ရှိသည်။ ထို့ပြင် အလုပ်လုပ်ကိုင်နေသူများအတွက် အချိန်ပိုင်းကွန်ပျူတာဒီပလိုမာ (D.C.Sc.) သင်တန်းများကိုလည်း ပံ့ပိုးပေးထားပါသည်။ တက္ကသိုလ်၏ သင်ရိုးညွှန်းတမ်းများသည် ခေတ်နှင့်အညီ ပြောင်းလဲလာသော Software Development, Networking နှင့် AI ကဲ့သို့သော နည်းပညာရပ်များကို အသားပေးထားပြီး လက်တွေ့အသုံးချနိုင်မှုကို အလေးထားပါသည်။
+တက္ကသိုလ်၏ ရည်မှန်းချက်မှာ ကျောင်းသားများအား နည်းပညာကျွမ်းကျင်ရုံသာမက ကျင့်ဝတ်သိက္ခာနှင့် ပြည့်စုံသော ပညာရှင်များဖြစ်လာစေရန် လေ့ကျင့်ပေးရန်ဖြစ်သည်။ ထိုသို့ဆောင်ရွက်ရာတွင် Moodle ကဲ့သို့သော အွန်လိုင်းသင်ကြားရေးစနစ် (Learning Management System) များကို အသုံးပြု၍ ခေတ်မီသင်ကြားရေးပတ်ဝန်းကျင်ကို ဖန်တီးထားပါသည်။ ထို့ပြင် သုတေသနလုပ်ငန်းများကို အားပေးခြင်းဖြင့် ဒေသတွင်းနှင့် နိုင်ငံတကာအဆင့်မီ နည်းပညာဆိုင်ရာ တီထွင်ဆန်းသစ်မှုများကို ဖော်ဆောင်နိုင်ရန် ကြိုးပမ်းလျက်ရှိသော တက္ကသိုလ်တစ်ခု ဖြစ်ပါသည်။</p>
+                                <p>With state-of-the-art computer labs, experienced faculty, and strong industry partnerships, UCSTgiprovides students with both theoretical knowledge and practical skills needed in today's tech industry.</p>
+                            </div>
+
+                            <div class="content-card">
+                                <h2>Why Choose UCSTgi?</h2>
+                                <div class="features-list">
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🌄</div>
+                                        <div>
+                                            <h4>Best Campus</h4>
+                                            <p>တောင်တန်းတွေနဲ့အတူလှပနေမယ့် UCSTgi</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">👥</div>
+                                        <div>
+                                            <h4>Experienced Faculty</h4>
+                                            <p>Learn from industry experts and PhD holders</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🌟</div>
+                                        <div>
+                                            <h4>Strong Alumni Network</h4>
+                                            <p>Connect with successful graduates across tech industry</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🚀</div>
+                                        <div>
+                                            <h4>Innovation Hub</h4>
+                                            <p>Active research and student project initiatives like HST ARP</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content-card">
+                                <h2>Campus Gallery</h2>
+                                <div class="gallery-grid">
+                                    <div class="gallery-item">
+                                        <img src="ucstgi.jpg" alt="Computer Lab">
+                                        <p>🌸</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="ucstgi1.jpg" alt="Library">
+                                        <p>🌸</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="ucstgi2.jpg" alt="Main Hall">
+                                        <p>🌸</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="ucstgi3.jpg" alt="Campus Ground">
+                                        <p>🌸</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="ucstgi4.jpg" alt="Campus Ground">
+                                        <p>🌸</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="ucstgi6.jpg" alt="Campus Ground">
+                                        <p>🌸</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Majors Tab -->
+                        <div class="tab-panel" id="majors">
+                            <div class="content-card">
+                                <h2>Available Programs</h2>
+                                <p class="subtitle">Choose from our comprehensive technology programs</p>
+                                
+                                <div class="majors-list">
+                                    <!-- Major Card 1 -->
+                                    <div class="major-card">
+                                        <div class="major-header">
+                                            <div class="major-icon">💻</div>
+                                            <div>
+                                                <h3>Computer Science (CS)</h3>
+                                                <span class="major-degree">B.C.Sc / M.C.Sc</span>
+                                            </div>
+                                        </div>
+                                        <p class="major-desc">Core computer science principles, algorithms, software development, and system design.</p>
+                                        <div class="major-details">
+                                            <div class="detail-row">
+                                                <strong>Duration:</strong>
+                                                <span>4 Years (Bachelor)</span>
+                                            </div>
+                                            <div class="detail-row">
+                                                <strong>Min. Marks:</strong>
+                                                <span>380</span>
+                                            </div>
+                                            <div class="detail-row">
+                                                <strong>Prerequisites:</strong>
+                                                <span>Math, Physics, English</span>
+                                            </div>
+                                        </div>
+                                        <div class="major-subjects">
+                                            <span>Data Structures</span>
+                                            <span>Algorithms</span>
+                                            <span>Java/C++</span>
+                                            <span>Database</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Major Card 2 -->
+                                    <div class="major-card">
+                                        <div class="major-header">
+                                            <div class="major-icon">🌐</div>
+                                            <div>
+                                                <h3>Computer Technology (CT)</h3>
+                                                <span class="major-degree">B.C.Tech</span>
+                                            </div>
+                                        </div>
+                                        <p class="major-desc">Focus on hardware, networking, system administration, and technical infrastructure.</p>
+                                        <div class="major-details">
+                                            <div class="detail-row">
+                                                <strong>Duration:</strong>
+                                                <span>4 Years</span>
+                                            </div>
+                                            <div class="detail-row">
+                                                <strong>Min. Marks:</strong>
+                                                <span>360</span>
+                                            </div>
+                                            <div class="detail-row">
+                                                <strong>Prerequisites:</strong>
+                                                <span>Math, Physics</span>
+                                            </div>
+                                        </div>
+                                        <div class="major-subjects">
+                                            <span>Networking</span>
+                                            <span>Hardware</span>
+                                            <span>System Admin</span>
+                                            <span>Cloud Computing</span>
+                                        </div>
+                                    </div>
+
+                                    
+                                               
+                                </div>
+                            </div>
+                        </div>
+
+                       <!-- Projects Tab - UCST Taunggyi Real Data -->
+<div class="tab-panel" id="projects">
+    <div class="content-card">
+        <h2>UCS Taunggyi Projects & Research</h2>
+        <p class="subtitle">University research and student achievements</p>
+        
+        <div class="no-data-section">
+            <div class="no-data-icon">💻</div>
+            <h3>Limited Public Data Available</h3>
+            <p><strong>Official Status:</strong> UCS Taunggyi focuses on practical IT projects but specific student achievements are not publicly documented online.</p>
+            
+            <div class="known-facts">
+                <h4>✅ Known Research Areas:</h4>
+                <ul>
+                    <li>Software development projects</li>
+                    <li>Networking & system administration</li>
+                    <li>Database management systems</li>
+                    <li>Local industry collaboration</li>
+                </ul>
+            </div>
+            
+            <!-- HST Project 2025 -->
+            <div class="project-item hst-project">
+                <div class="project-year">2025</div>
+                <div class="project-content">
+                    <div class="project-badge hst">HST Featured</div>
+                    <h3>High Schooler's Tool University Portal</h3>
+                    <p>UCST Taunggyi featured in HST platform showcasing Shan State IT education. Developed by student collaborators.</p>
+                    <div class="project-tags">
+                        <span>Web Development</span>
+                        <span>HST Platform</span>
+                        <span>Shan State IT</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-research">
+                <p><strong>For project details:</strong> Contact UCST Taunggyi at <a href="mailto:info@ucstgi.edu.mm">info@ucstgi.edu.mm</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        <!-- Campus Life Tab - UCST Taunggyi -->
+<div class="tab-panel" id="campus">
+    <div class="content-card">
+        <h2>Campus Life at UCST Taunggyi</h2>
+        <p class="subtitle">
+            ရှမ်းပြည်မှ CU ကျောင်းသားဘဝ
+        </p>
+        
+        <div class="campus-features">
+            <div class="campus-card">
+                <div class="campus-img">
+                    <img src="School Club logos.png" alt="Student Clubs">
+                </div>
+                <h3>Student Organizations</h3>
+                <p>Programming Club, Web Development Society, annual coding competitions, and tech workshops.</p>
+            </div>
+
+            <div class="campus-card">
+                <div class="campus-img">
+                    <img src="images/facilities.jpg" alt="Computer Labs">
+                </div>
+                <h3>Modern Facilities</h3>
+                <p>Multiple computer labs with 100+ PCs, high-speed internet, air-conditioned classrooms, campus WiFi.</p>
+            </div>
+
+            <div class="campus-card">
+                <div class="campus-img">
+                    <img src="images/events.jpg" alt="Tech Events">
+                </div>
+                <h3>Events & Activities</h3>
+                <p>Tech fests, Matric result workshops, career fairs, guest lectures from Yangon/Mandalay IT companies.</p>
+            </div>
+        </div>
+
+        <div class="testimonial-section">
+            <h3>Student Voices</h3>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"Hi2"</p>
+                    <div class="testimonial-author">
+                        <strong>Bhone Myat Min</strong>
+                        <span>3nd Year CS Student</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"hi"</p>
+                    <div class="testimonial-author">
+                        <strong>Sai Kyaw Kyaw Aung</strong>
+                        <span>2nd Year CS Student</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                        <!-- Career Paths Tab -->
+                        <div class="tab-panel" id="careers">
+                            <div class="content-card">
+                                <h2>Career Opportunities</h2>
+                                <p class="subtitle">Where can you go after UCSTgi?</p>
+                                
+                                <div class="career-paths">
+                                    <div class="career-card">
+                                        <div class="career-icon">👨‍💻</div>
+                                        <h3>Software Developer</h3>
+                                        <p>Build applications, websites, and software systems for local and international companies.</p>
+                                        <span class="salary-range">Average: 400,000 - 1,500,000 MMK/month</span>
+                                    </div>
+
+                                    <div class="career-card">
+                                        <div class="career-icon">🔒</div>
+                                        <h3>Cybersecurity Specialist</h3>
+                                        <p>Protect systems and networks from cyber threats in banking, government, and tech sectors.</p>
+                                        <span class="salary-range">Average: 500,000 - 2,000,000 MMK/month</span>
+                                    </div>
+
+                                    <div class="career-card">
+                                        <div class="career-icon">📊</div>
+                                        <h3>Data Analyst</h3>
+                                        <p>Analyze data to drive business decisions in telecommunications, e-commerce, and finance.</p>
+                                        <span class="salary-range">Average: 450,000 - 1,800,000 MMK/month</span>
+                                    </div>
+
+                                    <div class="career-card">
+                                        <div class="career-icon">🌐</div>
+                                        <h3>Network Engineer</h3>
+                                        <p>Design and maintain network infrastructure for ISPs, enterprises, and government.</p>
+                                        <span class="salary-range">Average: 400,000 - 1,600,000 MMK/month</span>
+                                    </div>
+
+                                    <div class="career-card">
+                                        <div class="career-icon">📱</div>
+                                        <h3>Mobile App Developer</h3>
+                                        <p>Create iOS and Android applications for startups and established companies.</p>
+                                        <span class="salary-range">Average: 500,000 - 2,500,000 MMK/month</span>
+                                    </div>
+
+                                    <div class="career-card">
+                                        <div class="career-icon">🎓</div>
+                                        <h3>IT Educator</h3>
+                                        <p>Teach computer science at schools, universities, or training institutions.</p>
+                                        <span class="salary-range">Average: 300,000 - 800,000 MMK/month</span>
+                                    </div>
+                                </div>
+
+                                <div class="employer-logos">
+                                    <h4>Our Graduates Work At:</h4>
+                                    <div class="logo-grid">
+                                        <div class="employer-logo">Wave Money</div>
+                                        <div class="employer-logo">KBZ Bank</div>
+                                        <div class="employer-logo">Ooredoo</div>
+                                        <div class="employer-logo">Telenor</div>
+                                        <div class="employer-logo">Government IT</div>
+                                        <div class="employer-logo">Tech Startups</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-profile">
+        <div class="container">
+            <h2>Ready to Start Your Journey at UCSTgi?</h2>
+            <p>Explore more universities or get in touch with admissions</p>
+            <div class="cta-buttons">
+                <a href="uni.html" class="btn-secondary">Explore More Universities</a>
+                <a href="error.html" class="btn-primary">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+
+      <div class="footer-section">
+        <h3>High Schooler’s Tool</h3>
+        <p>Empowering Myanmar students to make informed university choices.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="hst.html">Home</a></li>
+          <li><a href="uni.html">Universities</a></li>
+          <li><a href="career-journey.html">Career Journey</a></li>
+          <li><a href="study-mode.html">Study mode</a></li>
+          <li><a href="scholarships.html">Scholarships</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>High Schooler’s Tool</p>
+        <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+        <p>
+          Facebook:
+          <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+            High Schooler’s Tool ARP
+          </a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 High Schooler’s Tool. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="script.js"></script>
+    <script src="upp.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    // Navbar toggle
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    
+    if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+            hamburger.classList.toggle("active");
+        });
+        
+        // Close on link click
+        navLinks.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("active");
+                hamburger.classList.remove("active");
+            });
+        });
+    }
+    
+    // Tab functionality
+    document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+            document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+            
+            btn.classList.add("active");
+            document.getElementById(btn.dataset.tab).classList.add("active");
+        });
+    });
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    
+    hamburger.onclick = function() {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("active");
+    }
+});
+</script>
+
+
+</body>
+</html>

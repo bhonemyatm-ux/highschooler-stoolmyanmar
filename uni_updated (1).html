@@ -1,0 +1,4405 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Universities - High Schooler's Tool</title>
+<link href="hst.css" rel="stylesheet"/>
+<link href="uni.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar">
+<div class="container">
+<div class="logo">
+<h2>HST</h2>
+<span>High Schooler's Tool</span>
+</div>
+<ul class="nav-links">
+<li><a href="hst.html">Home</a></li>
+<li><a class="active" href="uni.html">Universities</a></li>
+<li><a href="career-journey.html">Career journey</a></li>
+<li><a href="study-mode.html">Study mode</a></li>
+<li><a href="scholarships.html">Scholarships</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+<div class="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</nav>
+<!-- Page Header -->
+<section class="page-header">
+<div class="container">
+<h1>Explore Universities</h1>
+<p>Discover all universities across Myanmar with detailed information</p>
+</div>
+</section>
+<!-- Filter Section - ONLY ONE! -->
+<section class="filter-section" id="filterBar">
+<div class="container">
+<div class="filter-controls">
+<!-- Search Box -->
+<div class="search-box">
+<input id="universitySearch" onkeyup="filterUniversities()" placeholder="Search universities..." type="text"/>
+<span class="search-icon">🔍</span>
+</div>
+<!-- Region Filter -->
+<select class="filter-dropdown" id="regionFilter" onchange="filterUniversities()">
+<option value="">All Regions</option>
+<option value="yangon">Yangon Region</option>
+<option value="mandalay">Mandalay Region</option>
+<option value="shan">Shan State</option>
+<option value="kachin">Kachin State</option>
+<option value="kayah">Kayah State</option>
+<option value="kayin">Kayin State</option>
+<option value="chin">Chin State</option>
+<option value="mon">Mon State</option>
+<option value="rakhine">Rakhine State</option>
+<option value="ayeyarwady">Ayeyarwady Region</option>
+<option value="bago">Bago Region</option>
+<option value="magway">Magway Region</option>
+<option value="sagaing">Sagaing Region</option>
+<option value="tanintharyi">Tanintharyi Region</option>
+<option value="naypyitaw">Naypyitaw</option>
+<option value="unknown">Unknown / To be confirmed</option></select>
+<!-- Major Filter -->
+<select class="filter-dropdown" id="majorFilter" onchange="filterUniversities()">
+<option value="">All Majors</option>
+<option value="computer-science">Computer Science</option>
+<option value="engineering">Engineering</option>
+<option value="medicine">Medicine</option>
+<option value="agriculture">Agriculture</option>
+<option value="aerospace">Aerospace Engineering</option>
+<option value="economics">Economics</option>
+<option value="law">Law</option>
+<option value="education">Education</option>
+<option value="arts">Arts &amp; Humanities</option>
+<option value="languages">foreign-languages</option>
+<option value="unknown">Unknown / To be confirmed</option></select>
+<!-- Type Filter -->
+<select class="filter-dropdown" id="typeFilter" onchange="filterUniversities()"><option value="">All Types</option><option value="public">Public</option><option value="technology">Technology</option><option value="engineering">Engineering</option><option value="medical">Medical</option><option value="nursing">Nursing</option><option value="health">Health</option><option value="economics">Economics</option><option value="language">Languages</option><option value="polytechnic">Polytechnic</option><option value="military">Military</option><option value="agriculture">Agriculture Institute</option><option value="cooperative">Cooperative</option><option value="gti">GTI</option><option value="gtc">GTC</option><option value="general">General</option><option value="specialized">Specialized</option><option value="unknown">Unknown / To be confirmed</option></select>
+</div>
+<!-- Results Info -->
+<div class="results-info">
+<span id="resultCount">8 institutions found</span>
+</div>
+</div>
+</section>
+<!-- Universities Grid -->
+<section class="universities-section">
+<div class="container">
+<div class="universities-grid" id="universitiesGrid">
+<!-- University Card 1 -->
+<div class="university-card" data-major="computer-science" data-region="yangon" data-type="technology">
+<div class="uni-image">
+<img alt="University of Computer Studies, Yangon" src="ucsy1.jpg"/>
+<div class="uni-badge">Technology</div>
+</div>
+<div class="uni-content">
+<h3>University of Computer Studies, Yangon</h3>
+<div class="uni-location">
+<span>📍</span> Yangon Region
+                        </div>
+<div class="uni-majors">
+<span class="major-tag">Computer Science</span>
+<span class="major-tag">Software Engineering</span>
+<span class="major-tag">+3 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>400+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>5</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>12+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=ucsy">View Details</a>
+</div>
+</div>
+<!-- University Card 2 -->
+<div class="university-card" data-major="computer-science" data-region="shan" data-type="technology">
+<div class="uni-image">
+<img alt="University of Computer Studies, Taunggyi" src="photo_2025-12-30_15-17-21.jpg"/>
+<div class="uni-badge">Technology</div>
+</div>
+<div class="uni-content">
+<h3>University of Computer Studies, Taunggyi</h3>
+<div class="uni-location">
+<span>📍</span> Shan State
+                        </div>
+<div class="uni-majors">
+<span class="major-tag">Computer Science</span>
+<span class="major-tag">IT</span>
+<span class="major-tag">+2 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>350+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>2</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>8+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html">View Details</a>
+</div>
+</div>
+<!-- University Card 3 -->
+<div class="university-card" data-major="engineering" data-region="yangon" data-type="technology">
+<div class="uni-image">
+<img alt="Yangon Technological University" src="R.jpg"/>
+<div class="uni-badge">Engineering</div>
+</div>
+<div class="uni-content">
+<h3>Yangon Technological University</h3>
+<div class="uni-location">
+<span>📍</span> Yangon Region
+                        </div>
+<div class="uni-majors">
+<span class="major-tag">Mechanical Eng.</span>
+<span class="major-tag">Civil Eng.</span>
+<span class="major-tag">+5 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>420+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>7</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>15+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=ytu">View Details</a>
+</div>
+</div>
+<!-- University Card 4 -->
+<div class="university-card" data-major="medicine" data-region="mandalay" data-type="medical">
+<div class="uni-image">
+<img alt="University of Medicine, Mandalay" src="OIP (2).webp"/>
+<div class="uni-badge">Medical</div>
+</div>
+<div class="uni-content">
+<h3>University of Medicine, Mandalay</h3>
+<div class="uni-location">
+<span>📍</span> Mandalay Region
+                        </div>
+<div class="uni-majors">
+<span class="major-tag">Medicine</span>
+<span class="major-tag">Surgery</span>
+<span class="major-tag">+3 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>480+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>4</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>10+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=um-mdy">View Details</a>
+</div>
+</div>
+<!-- University Card 5 -->
+<div class="university-card" data-major="agriculture" data-region="naypyitaw" data-type="specialized">
+<div class="uni-image">
+<img alt="Yezin Agricultural University" src="Yezin.jpg"/>
+<div class="uni-badge">Agriculture</div>
+</div>
+<div class="uni-content">
+<h3>Yezin Agricultural University</h3>
+<div class="uni-location">
+<span>📍</span> Naypyitaw
+                        </div>
+<div class="uni-majors">
+<span class="major-tag">Agriculture</span>
+<span class="major-tag">Forestry</span>
+<span class="major-tag">+4 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>350+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>6</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>20+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=yau">View Details</a>
+</div>
+</div>
+<!-- University Card 6 -->
+<div class="university-card" data-major="engineering" data-region="mandalay" data-type="specialized">
+<div class="uni-image">
+<img alt="Mandalay Technological University" src="OIP (3).webp"/>
+<div class="uni-badge">Engineering</div>
+</div>
+<div class="uni-content">
+<h3>Mandalay Technological University</h3>
+<div class="uni-location">
+<span>📍</span> Mandalay Region
+                        </div>
+<div class="uni-majors">
+<span class="major-tag">Aerospace Eng.</span>
+<span class="major-tag">Electronics</span>
+<span class="major-tag">+4 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>410+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>6</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>14+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=mtu">View Details</a>
+</div>
+</div>
+<!-- University Card 7 -->
+<div class="university-card" data-major="aerospace" data-region="mandalay" data-type="specialized">
+<div class="uni-image">
+<img alt="Myanmar Aerospace Engineering University" src="aero.jpg"/>
+<div class="uni-badge">Engineering</div>
+</div>
+<div class="uni-content">
+<h3>Myanmar Aerospace Engineering University</h3>
+<div class="uni-location">
+<span>📍</span> Mandalay Region
+                        </div>
+<div class="uni-majors">
+<span class="major-tag">Aerospace Eng.</span>
+<span class="major-tag">Electronics</span>
+<span class="major-tag">+4 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>410+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>6</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>14+</p>
+</div>
+</div>
+<a class="view-btn" href="maeu.html">View Details</a>
+</div>
+</div>
+<!-- University Card 8 -->
+<div class="university-card" data-major="computer-science engineering" data-region="naypyitaw" data-type="specialized">
+<div class="uni-image">
+<img alt="Naypyitaw State Polytechnic University" src="NSPU.jpg"/>
+<div class="uni-badge">Engineering</div>
+</div>
+<div class="uni-content">
+<h3>Naypyitaw State Polytechnic University</h3>
+<div class="uni-location">
+<span>📍</span> Naypyitaw
+                        </div>
+<div class="uni-majors">
+<span class="major-tag">Engineering</span>
+<span class="major-tag">Computer Science</span>
+<span class="major-tag">+4 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>410+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>6</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>14+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=nspu">View Details</a>
+</div>
+</div>
+<!-- University Card -9 DSA -->
+<div class="university-card" data-major="military liberal-arts sciences" data-region="mandalay" data-type="military">
+<div class="uni-image">
+<img alt="Defence Services Academy" src="DSA.jpg"/>
+<div class="uni-badge">Military</div>
+</div>
+<div class="uni-content">
+<h3>Defence Services Academy (DSA)</h3>
+<div class="uni-location">
+<span>📍</span> Pyin Oo Lwin
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Military</span>
+<span class="major-tag">Liberal Arts</span>
+<span class="major-tag">+2 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>Selection Process</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>3</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Classified</p>
+</div>
+</div>
+<a class="view-btn" href="dsa.html">View Details</a>
+</div>
+</div>
+<!-- University Card -10 DSTA -->
+<div class="university-card" data-major="defense-technology engineering" data-region="naypyitaw" data-type="military">
+<div class="uni-image">
+<img alt="Defence Services Technological Academy" src="dsta.jpg"/>
+<div class="uni-badge">Defense Tech</div>
+</div>
+<div class="uni-content">
+<h3>Defence Services Technological Academy (DSTA)</h3>
+<div class="uni-location">
+<span>📍</span> Naypyitaw
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Defense Tech</span>
+<span class="major-tag">Engineering</span>
+<span class="major-tag">+3 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>Selection Process</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>5</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Classified</p>
+</div>
+</div>
+<a class="view-btn" href="dsta.html?id=dsta">View Details</a>
+</div>
+</div>
+<!-- University Card - 11 DSMA -->
+<div class="university-card" data-major="medicine" data-region="yangon" data-type="military">
+<div class="uni-image">
+<img alt="Defence Services Medical Academy" src="dsma.jpg"/>
+<div class="uni-badge">Medical</div>
+</div>
+<div class="uni-content">
+<h3>Defence Services Medical Academy (DSMA)</h3>
+<div class="uni-location">
+<span>📍</span> Mingaladon, Yangon
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Medicine</span>
+<span class="major-tag">Military Medicine</span>
+<span class="major-tag">+3 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>Selection Process</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>6</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Classified</p>
+</div>
+</div>
+<a class="view-btn" href="dsma.html?id=dsma">View Details</a>
+</div>
+</div>
+<!-- University Card -12 Yangon University -->
+<div class="university-card" data-major="arts sciences law" data-region="yangon" data-type="public">
+<div class="uni-image">
+<img alt="University of Yangon" src="YU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>University of Yangon</h3>
+<div class="uni-location">
+<span>📍</span> Kamayut, Yangon
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+<span class="major-tag">+19 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>400+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>21</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>50+</p>
+</div>
+</div>
+<a class="view-btn" href="UYgn.html">View Details</a>
+</div>
+</div>
+<!-- University of Medicine 1, Yangon -->
+<div class="university-card" data-major="medicine" data-region="yangon" data-type="medical">
+<div class="uni-image">
+<img alt="University of Medicine 1, Yangon" src="UM1.jpg"/>
+<div class="uni-badge">Medicine</div>
+</div>
+<div class="uni-content">
+<h3>University of Medicine 1, Yangon</h3>
+<div class="uni-location">
+<span>📍</span> Lanmadaw, Yangon
+        </div>
+<div class="uni-majors">
+<span class="major-tag">MBBS</span>
+<span class="major-tag">Postgraduate</span>
+<span class="major-tag">+20 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>450+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>25+</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>30+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=um1">View Details</a>
+</div>
+</div>
+<!-- University of Medicine 2, Yangon -->
+<div class="university-card" data-major="medicine" data-region="yangon" data-type="medical">
+<div class="uni-image">
+<img alt="University of Medicine 2, Yangon" src="UM2.jpg"/>
+<div class="uni-badge">Medicine</div>
+</div>
+<div class="uni-content">
+<h3>University of Medicine 2, Yangon</h3>
+<div class="uni-location">
+<span>📍</span> North Okkalapa, Yangon
+        </div>
+<div class="uni-majors">
+<span class="major-tag">MBBS</span>
+<span class="major-tag">Specialties</span>
+<span class="major-tag">+18 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>440+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>22</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>25+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=um2">View Details</a>
+</div>
+</div>
+<!-- University of Medicine, Magway -->
+<div class="university-card" data-major="medicine" data-region="magway" data-type="medical">
+<div class="uni-image">
+<img alt="University of Medicine, Magway" src="UMMagway.jpg"/>
+<div class="uni-badge">Medicine</div>
+</div>
+<div class="uni-content">
+<h3>University of Medicine, Magway</h3>
+<div class="uni-location">
+<span>📍</span> Magway
+        </div>
+<div class="uni-majors">
+<span class="major-tag">MBBS</span>
+<span class="major-tag">Clinical</span>
+<span class="major-tag">+10 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>420+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>15</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>15+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=ummagway">View Details</a>
+</div>
+</div>
+<!-- University of Medicine, Taunggyi -->
+<div class="university-card" data-major="medicine" data-region="shan" data-type="medical">
+<div class="uni-image">
+<img alt="University of Medicine, Taunggyi" src="UMTaunggyi.jpg"/>
+<div class="uni-badge">Medicine</div>
+</div>
+<div class="uni-content">
+<h3>University of Medicine, Taunggyi</h3>
+<div class="uni-location">
+<span>📍</span> Taunggyi
+        </div>
+<div class="uni-majors">
+<span class="major-tag">MBBS</span>
+<span class="major-tag">Community</span>
+<span class="major-tag">+8 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>410+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>12</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>10+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=umtaunggyi">View Details</a>
+</div>
+</div>
+<!-- Major Technology Universities in Myanmar -->
+<!-- West Yangon Technological University -->
+<div class="university-card" data-major="engineering" data-region="yangon" data-type="Engineering">
+<div class="uni-image">
+<img alt="West Yangon Technological University" src="WYTU.jpg"/>
+<div class="uni-badge">Engineering</div>
+</div>
+<div class="uni-content">
+<h3>West Yangon Technological University (WYTU)</h3>
+<div class="uni-location">
+<span>📍</span> Htantabin, Yangon
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Engineering</span>
+<span class="major-tag">IT</span>
+<span class="major-tag">+8 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>400+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>10</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>30+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=wytu">View Details</a>
+</div>
+</div>
+<!-- University of Technology, Yatanarpon Cyber City (UTYCC) -->
+<div class="university-card" data-major="Computer" data-region="mandalay" data-type="technology">
+<div class="uni-image">
+<img alt="University of Technology Yatanarpon Cyber City" src="UTYCC.jpg"/>
+<div class="uni-badge">Cyber Tech</div>
+</div>
+<div class="uni-content">
+<h3>University of Technology Yatanarpon Cyber City (UTYCC)</h3>
+<div class="uni-location">
+<span>📍</span> Pyin Oo Lwin, Mandalay
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Cybersecurity</span>
+<span class="major-tag">IT</span>
+<span class="major-tag">+5 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>430+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>7</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>25+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=utycc">View Details</a>
+</div>
+</div>
+<!-- Technological University, Taunggyi -->
+<div class="university-card" data-major="engineering" data-region="shan" data-type="Engineering">
+<div class="uni-image">
+<img alt="Technological University, Taunggyi" src="TUTaunggyi.jpg"/>
+<div class="uni-badge">Engineering</div>
+</div>
+<div class="uni-content">
+<h3>Technological University, Taunggyi</h3>
+<div class="uni-location">
+<span>📍</span> Taunggyi, Shan State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Engineering</span>
+<span class="major-tag">Electronics</span>
+<span class="major-tag">+7 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>390+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>8</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>20+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=tutaunggyi">View Details</a>
+</div>
+</div>
+<!-- Remaining Technology Universities in Myanmar (Complete List) -->
+<!-- Technological University, Hmawbi -->
+<div class="university-card" data-major="engineering" data-region="yangon" data-type="Engineering">
+<div class="uni-image">
+<img alt="Technological University, Hmawbi" src="TUHmawbi.jpg"/>
+<div class="uni-badge">Engineering</div>
+</div>
+<div class="uni-content">
+<h3>Technological University, Hmawbi</h3>
+<div class="uni-location">
+<span>📍</span> Hmawbi, Yangon
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Engineering</span>
+<span class="major-tag">Mechanical</span>
+<span class="major-tag">+7 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>380+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>8</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>18+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=tuhmawbi">View Details</a>
+</div>
+</div>
+<!-- Technological University, Kyaukse -->
+<div class="university-card" data-major="engineering" data-region="mandalay" data-type="Engineering">
+<div class="uni-image">
+<img alt="Technological University, Kyaukse" src="TUKyaukse.jpg"/>
+<div class="uni-badge">Engineering</div>
+</div>
+<div class="uni-content">
+<h3>Technological University, Kyaukse</h3>
+<div class="uni-location">
+<span>📍</span> Kyaukse, Mandalay
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Engineering</span>
+<span class="major-tag">Civil</span>
+<span class="major-tag">+6 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>370+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>7</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>15+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=tukyaukse">View Details</a>
+</div>
+</div>
+<!-- Technological University, Maubin -->
+<div class="university-card" data-major="engineering" data-region="ayeyarwady" data-type="Engineering">
+<div class="uni-image">
+<img alt="Technological University, Maubin" src="TUMaubin.jpg"/>
+<div class="uni-badge">Engineering</div>
+</div>
+<div class="uni-content">
+<h3>Technological University, Maubin</h3>
+<div class="uni-location">
+<span>📍</span> Maubin, Ayeyarwady
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Engineering</span>
+<span class="major-tag">Textile</span>
+<span class="major-tag">+5 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>360+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>6</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>10+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=tumaubin">View Details</a>
+</div>
+</div>
+<!-- Technological University, Meiktila -->
+<div class="university-card" data-major="engineering" data-region="mandalay" data-type="Engineering">
+<div class="uni-image">
+<img alt="Technological University, Meiktila" src="TUMeiktila.jpg"/>
+<div class="uni-badge">Engineering</div>
+</div>
+<div class="uni-content">
+<h3>Technological University, Meiktila</h3>
+<div class="uni-location">
+<span>📍</span> Meiktila, Mandalay
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Engineering</span>
+<span class="major-tag">Chemical</span>
+<span class="major-tag">+6 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>370+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>7</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>15+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=tumeiktila">View Details</a>
+</div>
+</div>
+<!-- Technological University, Pakokku -->
+<div class="university-card" data-major="engineering" data-region="magway" data-type="Engineering">
+<div class="uni-image">
+<img alt="Technological University, Pakokku" src="TUPakokku.jpg"/>
+<div class="uni-badge">Engineering</div>
+</div>
+<div class="uni-content">
+<h3>Technological University, Pakokku</h3>
+<div class="uni-location">
+<span>📍</span> Pakokku, Magway
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Engineering</span>
+<span class="major-tag">Information Tech</span>
+<span class="major-tag">+5 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>360+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>6</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>12+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=tupakokku">View Details</a>
+</div>
+</div>
+<!-- Technological University, Sittwe -->
+<div class="university-card" data-major="engineering" data-region="rakhine" data-type="Engineering">
+<div class="uni-image">
+<img alt="Technological University, Sittwe" src="TUSittwe.jpg"/>
+<div class="uni-badge">Engineering</div>
+</div>
+<div class="uni-content">
+<h3>Technological University, Sittwe</h3>
+<div class="uni-location">
+<span>📍</span> Sittwe, Rakhine
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Engineering</span>
+<span class="major-tag">Marine</span>
+<span class="major-tag">+5 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>350+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>6</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>10+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=tusittwe">View Details</a>
+</div>
+</div>
+<!-- Myanmar Computer Universities (excluding UCSY, UCSTgi) + UIT, MIIT -->
+<!-- University of Computer Studies, Mandalay (UCSM) -->
+<div class="university-card" data-major="computer-science" data-region="mandalay" data-type="Technology">
+<div class="uni-image">
+<img alt="University of Computer Studies, Mandalay" src="UCSM.jpg"/>
+<div class="uni-badge">Technology</div>
+</div>
+<div class="uni-content">
+<h3>University of Computer Studies, Mandalay</h3>
+<div class="uni-location">
+<span>📍</span> Aung San Road, Mandalay
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.C.Sc</span>
+<span class="major-tag">B.C.Tech</span>
+<span class="major-tag">+6 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>400+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>8</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>40+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=ucsm">View Details</a>
+</div>
+</div>
+<!-- University of Information Technology (UIT) -->
+<div class="university-card" data-major="computer-science" data-region="mandalay" data-type="Technology">
+<div class="uni-image">
+<img alt="University of Information Technology" src="UIT.jpg"/>
+<div class="uni-badge">Technology</div>
+</div>
+<div class="uni-content">
+<h3>University of Information Technology (UIT)</h3>
+<div class="uni-location">
+<span>📍</span> Mandalay
+        </div>
+<div class="uni-majors">
+<span class="major-tag">IT</span>
+<span class="major-tag">Cybersecurity</span>
+<span class="major-tag">+4 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>420+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>6</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>30+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=uit">View Details</a>
+</div>
+</div>
+<!-- Myanmar Institute of Information Technology (MIIT) -->
+<div class="university-card" data-major="computer-science" data-region="mandalay" data-type="Technology">
+<div class="uni-image">
+<img alt="Myanmar Institute of Information Technology" src="MIIT.jpg"/>
+<div class="uni-badge">Technology</div>
+</div>
+<div class="uni-content">
+<h3>Myanmar Institute of Information Technology (MIIT)</h3>
+<div class="uni-location">
+<span>📍</span> Mandalay
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Computer Science</span>
+<span class="major-tag">Software Eng</span>
+<span class="major-tag">+3 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>410+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>5</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>25+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=miit">View Details</a>
+</div>
+</div>
+<!-- University of Computer Studies, Meiktila -->
+<div class="university-card" data-major="computer-science" data-region="mandalay" data-type="Technology">
+<div class="uni-image">
+<img alt="University of Computer Studies, Meiktila" src="UCSMeiktila.jpg"/>
+<div class="uni-badge">Technology</div>
+</div>
+<div class="uni-content">
+<h3>University of Computer Studies, Meiktila</h3>
+<div class="uni-location">
+<span>📍</span> Meiktila, Mandalay
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.C.Sc</span>
+<span class="major-tag">Networking</span>
+<span class="major-tag">+4 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>370+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>6</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>18+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=ucs-meiktila">View Details</a>
+</div>
+</div>
+<!-- University of Computer Studies, Monywa -->
+<div class="university-card" data-major="computer-science" data-region="sagaing" data-type="Technology">
+<div class="uni-image">
+<img alt="University of Computer Studies, Monywa" src="UCSMonywa.jpg"/>
+<div class="uni-badge">Technology</div>
+</div>
+<div class="uni-content">
+<h3>University of Computer Studies, Monywa</h3>
+<div class="uni-location">
+<span>📍</span> Monywa, Sagaing
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.C.Sc</span>
+<span class="major-tag">B.C.Tech</span>
+<span class="major-tag">+4 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>370+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>6</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>15+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=ucs-monywa">View Details</a>
+</div>
+</div>
+<!-- University of Computer Studies, Pakokku -->
+<div class="university-card" data-major="computer-science" data-region="magway" data-type="Technology">
+<div class="uni-image">
+<img alt="University of Computer Studies, Pakokku" src="UCSPakokku.jpg"/>
+<div class="uni-badge">Technology</div>
+</div>
+<div class="uni-content">
+<h3>University of Computer Studies, Pakokku</h3>
+<div class="uni-location">
+<span>📍</span> Pakokku, Magway
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.C.Sc</span>
+<span class="major-tag">Database</span>
+<span class="major-tag">+4 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>360+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>6</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>15+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=ucs-pakokku">View Details</a>
+</div>
+</div>
+<!-- University of Computer Studies, Pathein -->
+<div class="university-card" data-major="computer-science" data-region="ayeyarwady" data-type="Technology">
+<div class="uni-image">
+<img alt="University of Computer Studies, Pathein" src="UCSPathein.jpg"/>
+<div class="uni-badge">Technology</div>
+</div>
+<div class="uni-content">
+<h3>University of Computer Studies, Pathein</h3>
+<div class="uni-location">
+<span>📍</span> Pathein, Ayeyarwady
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.C.Sc</span>
+<span class="major-tag">Software</span>
+<span class="major-tag">+4 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>360+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>6</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>12+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=ucs-pathein">View Details</a>
+</div>
+</div>
+<!-- University of Computer Studies, Pyay -->
+<div class="university-card" data-major="computer-science" data-region="bago" data-type="Technology">
+<div class="uni-image">
+<img alt="University of Computer Studies, Pyay" src="UCSPyay.jpg"/>
+<div class="uni-badge">Technology</div>
+</div>
+<div class="uni-content">
+<h3>University of Computer Studies, Pyay</h3>
+<div class="uni-location">
+<span>📍</span> Pyay, Bago
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.C.Sc</span>
+<span class="major-tag">B.C.Tech</span>
+<span class="major-tag">+4 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>360+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>6</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>12+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=ucs-pyay">View Details</a>
+</div>
+</div>
+<!-- Yangon University of Economics (YUE) - CONFIRMED -->
+<div class="university-card" data-major="economics" data-region="yangon" data-type="economics">
+<div class="uni-image">
+<img alt="Yangon University of Economics" src="YUE.jpg"/>
+<div class="uni-badge">Economics</div>
+</div>
+<div class="uni-content">
+<h3>Yangon University of Economics</h3>
+<div class="uni-location">
+<span>📍</span> Kamayut, Yangon
+        </div>
+<div class="uni-majors">
+<span class="major-tag">BEcon</span>
+<span class="major-tag">BCom</span>
+<span class="major-tag">+4 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>370+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>Not public</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Not public</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=yue">View Details</a>
+</div>
+</div>
+<!-- Monywa University of Economics - CONFIRMED -->
+<div class="university-card" data-major="economics" data-region="sagaing" data-type="economics">
+<div class="uni-image">
+<img alt="Monywa University of Economics" src="MUEMonywa.jpg"/>
+<div class="uni-badge">Economics</div>
+</div>
+<div class="uni-content">
+<h3>Monywa University of Economics</h3>
+<div class="uni-location">
+<span>📍</span> Monywa
+        </div>
+<div class="uni-majors">
+<span class="major-tag">BEcon</span>
+<span class="major-tag">Statistics</span>
+<span class="major-tag">+2 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>350+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>Not public</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Not public</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=muemonywa">View Details</a>
+</div>
+</div>
+<!-- Meiktila University of Economics - VERIFIED -->
+<div class="university-card" data-major="economics" data-region="mandalay" data-type="economics">
+<div class="uni-image">
+<img alt="Meiktila University of Economics" src="MUEMeiktila.jpg"/>
+<div class="uni-badge">Economics</div>
+</div>
+<div class="uni-content">
+<h3>Meiktila University of Economics</h3>
+<div class="uni-location">
+<span>📍</span> Meiktila, Mandalay Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">BEcon</span>
+<span class="major-tag">Commerce</span>
+<span class="major-tag">Statistics</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>350+</p>
+</div>
+<div class="stat">
+<strong>Established</strong>
+<p>2001</p>
+</div>
+<div class="stat">
+<strong>Status</strong>
+<p>Active</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=muemeiktila">View Details</a>
+</div>
+</div>
+<!-- Yangon University of Foreign Languages -->
+<div class="university-card" data-major="languages" data-region="yangon" data-type="language">
+<div class="uni-image">
+<img alt="Yangon University of Foreign Languages" src="UFLYangon.jpg"/>
+<div class="uni-badge">Languages</div>
+</div>
+<div class="uni-content">
+<h3>Yangon University of Foreign Languages</h3>
+<div class="uni-location">
+<span>📍</span> Kamayut, Yangon
+        </div>
+<div class="uni-majors">
+<span class="major-tag">English</span>
+<span class="major-tag">Japanese</span>
+<span class="major-tag">Korean +7 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>360+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>10</p>
+</div>
+<div class="stat">
+<strong>Established</strong>
+<p>2000</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=uflyangon">View Details</a>
+</div>
+</div>
+<!-- Mandalay University of Foreign Languages -->
+<div class="university-card" data-major="languages" data-region="mandalay" data-type="language">
+<div class="uni-image">
+<img alt="Mandalay University of Foreign Languages" src="UFLMandalay.jpg"/>
+<div class="uni-badge">Languages</div>
+</div>
+<div class="uni-content">
+<h3>Mandalay University of Foreign Languages</h3>
+<div class="uni-location">
+<span>📍</span> Mandalay
+        </div>
+<div class="uni-majors">
+<span class="major-tag">English</span>
+<span class="major-tag">Chinese</span>
+<span class="major-tag">French +6 more</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>350+</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>9</p>
+</div>
+<div class="stat">
+<strong>Status</strong>
+<p>Active</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=uflmandalay">View Details</a>
+</div>
+</div>
+<!-- University of Nursing, Yangon (MAIN) -->
+<div class="university-card" data-major="medicine" data-region="yangon" data-type="nursing">
+<div class="uni-image">
+<img alt="University of Nursing, Yangon" src="UNYangon.jpg"/>
+<div class="uni-badge">Nursing</div>
+</div>
+<div class="uni-content">
+<h3>University of Nursing, Yangon</h3>
+<div class="uni-location">
+<span>📍</span> Lanmadaw, Yangon
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.N.Sc</span>
+<span class="major-tag">M.N.Sc</span>
+<span class="major-tag">PhD</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>380+</p>
+</div>
+<div class="stat">
+<strong>Established</strong>
+<p>1986</p>
+</div>
+<div class="stat">
+<strong>Intake</strong>
+<p>161/yr</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=un-yangon">View Details</a>
+</div>
+</div>
+<!-- University of Nursing, Mandalay -->
+<div class="university-card" data-major="medicine" data-region="mandalay" data-type="nursing">
+<div class="uni-image">
+<img alt="University of Nursing, Mandalay" src="UNMandalay.jpg"/>
+<div class="uni-badge">Nursing</div>
+</div>
+<div class="uni-content">
+<h3>University of Nursing, Mandalay</h3>
+<div class="uni-location">
+<span>📍</span> Mandalay
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.N.Sc</span>
+<span class="major-tag">M.N.Sc</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>370+</p>
+</div>
+<div class="stat">
+<strong>Intake</strong>
+<p>152/yr</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=un-mandalay">View Details</a>
+</div>
+</div>
+<!-- University of Medical Technology, Yangon -->
+<div class="university-card" data-major="medicine" data-region="yangon" data-type="health">
+<div class="uni-image">
+<img alt="University of Medical Technology, Yangon" src="UMTY.jpg"/>
+<div class="uni-badge">Health Tech</div>
+</div>
+<div class="uni-content">
+<h3>University of Medical Technology, Yangon</h3>
+<div class="uni-location">
+<span>📍</span> Yangon
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Med.Tech</span>
+<span class="major-tag">Lab Tech</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Intake</strong>
+<p>142/yr</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=umt-yangon">View Details</a>
+</div>
+</div>
+<!-- University of Medical Technology, Mandalay -->
+<div class="university-card" data-major="medicine" data-region="mandalay" data-type="health">
+<div class="uni-image">
+<img alt="University of Medical Technology, Mandalay" src="UMTM.jpg"/>
+<div class="uni-badge">Health Tech</div>
+</div>
+<div class="uni-content">
+<h3>University of Medical Technology, Mandalay</h3>
+<div class="uni-location">
+<span>📍</span> Mandalay
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Med.Tech</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Intake</strong>
+<p>81/yr</p>
+</div>
+</div>
+</div>
+</div>
+<!-- University of Community Health, Magway -->
+<div class="university-card" data-major="medicine" data-region="magway" data-type="health">
+<div class="uni-image">
+<img alt="University of Community Health, Magway" src="UCHMagway.jpg"/>
+<div class="uni-badge">Community Health</div>
+</div>
+<div class="uni-content">
+<h3>University of Community Health, Magway</h3>
+<div class="uni-location">
+<span>📍</span> Magway
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Com.H</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Intake</strong>
+<p>154/yr</p>
+</div>
+</div>
+</div>
+</div>
+<!-- University Card -1 University of Yangon -->
+<div class="university-card" data-major="arts sciences law" data-region="yangon" data-type="public">
+<div class="uni-image">
+<img alt="University of Yangon" src="UYangon.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>University of Yangon</h3>
+<div class="uni-location">
+<span>📍</span> Kamayut, Yangon
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+<span class="major-tag">Law</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>400+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>21</p> <!-- 21 departments [web:31][web:18] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>50+</p>
+</div>
+</div>
+<a class="view-btn" href="UYgn.html">View Details</a>
+</div>
+</div>
+<!-- University Card -2 Dagon University -->
+<div class="university-card" data-major="arts sciences" data-region="yangon" data-type="public">
+<div class="uni-image">
+<img alt="Dagon University" src="DagonU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Dagon University</h3>
+<div class="uni-location">
+<span>📍</span> North Dagon, Yangon
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+<span class="major-tag">Distance</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>380+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>15+</p> <!-- Many arts & science departments [web:32][web:31] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>30+</p>
+</div>
+</div>
+<a class="view-btn" href="UDagon.html">View Details</a>
+</div>
+</div>
+<!-- University Card -3 East Yangon University -->
+<div class="university-card" data-major="arts sciences" data-region="yangon" data-type="public">
+<div class="uni-image">
+<img alt="East Yangon University" src="EYU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>East Yangon University</h3>
+<div class="uni-location">
+<span>📍</span> Thanlyin, Yangon
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+<span class="major-tag">Undergrad</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>370+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>10+</p> <!-- Arts & science faculties [web:31][web:32] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>20+</p>
+</div>
+</div>
+<a class="view-btn" href="EastYgn.html">View Details</a>
+</div>
+</div>
+<!-- University Card -4 West Yangon University (University of West Yangon) -->
+<div class="university-card" data-major="arts sciences" data-region="yangon" data-type="public">
+<div class="uni-image">
+<img alt="University of West Yangon" src="WYU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>University of West Yangon</h3>
+<div class="uni-location">
+<span>📍</span> Htantabin, Yangon
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+<span class="major-tag">Undergrad</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>360+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>10+</p> <!-- Listed as a general university [web:31][web:35] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>20+</p>
+</div>
+</div>
+<a class="view-btn" href="WYU.html">View Details</a>
+</div>
+</div>
+<!-- University Card -5 Taunggyi University -->
+<div class="university-card" data-major="arts sciences" data-region="shan" data-type="public">
+<div class="uni-image">
+<img alt="Taunggyi University" src="TGIU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Taunggyi University</h3>
+<div class="uni-location">
+<span>📍</span> Taunggyi, Shan State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+<span class="major-tag">Regional</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>350+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>10+</p> <!-- General arts & science uni [web:31][web:34] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>20+</p>
+</div>
+</div>
+<a class="view-btn" href="TGIU.html">View Details</a>
+</div>
+</div>
+<!-- University Card -6 Mawlamyine University -->
+<div class="university-card" data-major="arts sciences" data-region="mon" data-type="public">
+<div class="uni-image">
+<img alt="Mawlamyine University" src="MawU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Mawlamyine University</h3>
+<div class="uni-location">
+<span>📍</span> Mawlamyine, Mon State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+<span class="major-tag">Coastal</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>340+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>10+</p> <!-- General university [web:31][web:35] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>20+</p>
+</div>
+</div>
+<a class="view-btn" href="MawU.html">View Details</a>
+</div>
+</div>
+<!-- University Card -7 Mandalay University (University of Mandalay) -->
+<div class="university-card" data-major="arts sciences" data-region="mandalay" data-type="public">
+<div class="uni-image">
+<img alt="Mandalay University" src="MU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Mandalay University</h3>
+<div class="uni-location">
+<span>📍</span> Maha Aungmye, Mandalay
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+<span class="major-tag">Postgrad</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>380+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>15+</p> <!-- Major general university [web:31][web:34] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>30+</p>
+</div>
+</div>
+<a class="view-btn" href="MU.html">View Details</a>
+</div>
+</div>
+<!-- University Card -8 Bago University -->
+<div class="university-card" data-major="arts sciences" data-region="bago" data-type="public">
+<div class="uni-image">
+<img alt="Bago University" src="BagoU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Bago University</h3>
+<div class="uni-location">
+<span>📍</span> Bago, Bago Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+<span class="major-tag">Regional</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>340+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>8+</p> <!-- Listed as general university [web:34][web:35] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>15+</p>
+</div>
+</div>
+<a class="view-btn" href="BagoU.html">View Details</a>
+</div>
+</div>
+<!-- University Card -9 Magway University -->
+<div class="university-card" data-major="arts sciences" data-region="magway" data-type="public">
+<div class="uni-image">
+<img alt="Magway University" src="MagwayU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Magway University</h3>
+<div class="uni-location">
+<span>📍</span> Magway, Magway Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+<span class="major-tag">Regional</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>330+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>8+</p> <!-- General university [web:31][web:35] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>15+</p>
+</div>
+</div>
+<a class="view-btn" href="MagwayU.html">View Details</a>
+</div>
+</div>
+<!-- University Card -10 Shwebo University -->
+<div class="university-card" data-major="arts sciences" data-region="sagaing" data-type="public">
+<div class="uni-image">
+<img alt="Shwebo University" src="ShweboU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Shwebo University</h3>
+<div class="uni-location">
+<span>📍</span> Shwebo, Sagaing Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+<span class="major-tag">Regional</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>330+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>8+</p> <!-- General uni [web:31][web:34] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>15+</p>
+</div>
+</div>
+<a class="view-btn" href="ShweboU.html">View Details</a>
+</div>
+</div>
+<!-- University Card -11 Sagaing University -->
+<div class="university-card" data-major="arts sciences" data-region="sagaing" data-type="public">
+<div class="uni-image">
+<img alt="Sagaing University" src="SagaingU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Sagaing University</h3>
+<div class="uni-location">
+<span>📍</span> Sagaing, Sagaing Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+<span class="major-tag">Regional</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>330+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>8+</p> <!-- Listed general university [web:34][web:31] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>15+</p>
+</div>
+</div>
+<a class="view-btn" href="SagaingU.html">View Details</a>
+</div>
+</div>
+<!-- University Card -12 Hinthada University -->
+<div class="university-card" data-major="arts sciences" data-region="ayeyarwady" data-type="public">
+<div class="uni-image">
+<img alt="Hinthada University" src="HinthadaU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Hinthada University</h3>
+<div class="uni-location">
+<span>📍</span> Hinthada, Ayeyarwady Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+<span class="major-tag">Regional</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>320+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>6+</p> <!-- General university [web:31][web:35] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>10+</p>
+</div>
+</div>
+<a class="view-btn" href="HinthadaU.html">View Details</a>
+</div>
+</div>
+<!-- University Card -13 Sittwe University -->
+<div class="university-card" data-major="arts sciences" data-region="rakhine" data-type="public">
+<div class="uni-image">
+<img alt="Sittwe University" src="SittweU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Sittwe University</h3>
+<div class="uni-location">
+<span>📍</span> Sittwe, Rakhine State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+<span class="major-tag">18 Depts</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>330+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>18</p> <!-- 18 departments [web:84] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>15+</p>
+</div>
+</div>
+<a class="view-btn" href="SittweU.html">View Details</a>
+</div>
+</div>
+<!-- University Card -14 Loikaw University -->
+<div class="university-card" data-major="arts sciences" data-region="kayah" data-type="public">
+<div class="uni-image">
+<img alt="Loikaw University" src="LoikawU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Loikaw University</h3>
+<div class="uni-location">
+<span>📍</span> Loikaw, Kayah State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+<span class="major-tag">Regional</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>330+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>10+</p> <!-- General university [web:85][web:88] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>15+</p>
+</div>
+</div>
+<a class="view-btn" href="LoikawU.html">View Details</a>
+</div>
+</div>
+<!-- University Card -15 Pathein University -->
+<div class="university-card" data-major="arts sciences" data-region="ayeyarwady" data-type="public">
+<div class="uni-image">
+<img alt="Pathein University" src="PatheinU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Pathein University</h3>
+<div class="uni-location">
+<span>📍</span> Pathein, Ayeyarwady Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+<span class="major-tag">Regional</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>340+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>10+</p> <!-- Upgraded from degree college [web:87] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>20+</p>
+</div>
+</div>
+<a class="view-btn" href="PatheinU.html">View Details</a>
+</div>
+</div>
+<!-- University Card -16 Pyay University -->
+<div class="university-card" data-major="arts sciences" data-region="bago" data-type="public">
+<div class="uni-image">
+<img alt="Pyay University" src="PyayU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Pyay University</h3>
+<div class="uni-location">
+<span>📍</span> Pyay, Bago Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+<span class="major-tag">Regional</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>330+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>8+</p> <!-- General university [web:32] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>15+</p>
+</div>
+</div>
+<a class="view-btn" href="PyayU.html">View Details</a>
+</div>
+</div>
+<!-- University Card -17 Lashio University -->
+<div class="university-card" data-major="arts sciences" data-region="shan" data-type="public">
+<div class="uni-image">
+<img alt="Lashio University" src="LashioU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Lashio University</h3>
+<div class="uni-location">
+<span>📍</span> Lashio, Northern Shan State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+<span class="major-tag">Regional</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>340+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>10+</p> <!-- General university [web:32] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>15+</p>
+</div>
+</div>
+<a class="view-btn" href="LashioU.html">View Details</a>
+</div>
+</div>
+<!-- University Card -18 Panglong University -->
+<div class="university-card" data-major="arts sciences" data-region="shan" data-type="public">
+<div class="uni-image">
+<img alt="Panglong University" src="PanglongU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Panglong University</h3>
+<div class="uni-location">
+<span>📍</span> Panglong, Southern Shan State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+<span class="major-tag">Regional</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>330+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>8+</p> <!-- General university [web:32] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>15+</p>
+</div>
+</div>
+<a class="view-btn" href="PanglongU.html">View Details</a>
+</div>
+</div>
+<!-- University Card -19 Taungoo University -->
+<div class="university-card" data-major="arts sciences" data-region="bago" data-type="public">
+<div class="uni-image">
+<img alt="Taungoo University" src="TaungooU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Taungoo University</h3>
+<div class="uni-location">
+<span>📍</span> Taungoo, Bago Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+<span class="major-tag">Regional</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>320+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>8+</p> <!-- General university [web:32] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>15+</p>
+</div>
+</div>
+<a class="view-btn" href="TaungooU.html">View Details</a>
+</div>
+</div>
+<!-- University Card -20 Myeik University -->
+<div class="university-card" data-major="arts sciences" data-region="tanintharyi" data-type="public">
+<div class="uni-image">
+<img alt="Myeik University" src="MyeikU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Myeik University</h3>
+<div class="uni-location">
+<span>📍</span> Myeik, Tanintharyi Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+<span class="major-tag">Coastal</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>320+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>8+</p> <!-- General university -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>10+</p>
+</div>
+</div>
+<a class="view-btn" href="MyeikU.html">View Details</a>
+</div>
+</div>
+<!-- University Card -21 Kyaing Tong University -->
+<div class="university-card" data-major="arts sciences" data-region="shan" data-type="public">
+<div class="uni-image">
+<img alt="Kyaing Tong University" src="KyaingTongU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Kyaing Tong University</h3>
+<div class="uni-location">
+<span>📍</span> Kyaing Tong, Eastern Shan State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+<span class="major-tag">Regional</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>330+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>8+</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>15+</p>
+</div>
+</div>
+<a class="view-btn" href="KyaingTongU.html">View Details</a>
+</div>
+</div>
+<!-- University Card -22 Dawei University -->
+<div class="university-card" data-major="arts sciences" data-region="tanintharyi" data-type="public">
+<div class="uni-image">
+<img alt="Dawei University" src="DaweiU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Dawei University</h3>
+<div class="uni-location">
+<span>📍</span> Dawei, Tanintharyi Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+<span class="major-tag">Coastal</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>330+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>8+</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>15+</p>
+</div>
+</div>
+<a class="view-btn" href="DaweiU.html">View Details</a>
+</div>
+</div>
+<!-- University Card - University of Forestry and Environmental Science, Yezin -->
+<div class="university-card" data-major="forestry environmental" data-region="naypyitaw" data-type="public">
+<div class="uni-image">
+<img alt="University of Forestry and Environmental Science, Yezin" src="UFES-Yezin.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>University of Forestry and Environmental Science, Yezin</h3>
+<div class="uni-location">
+<span>📍</span> Yezin, Zayar Thiri Township, Naypyitaw
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Sc Forestry</span>
+<span class="major-tag">M.Sc Forestry</span>
+<span class="major-tag">Environmental Science</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>360+</p> <!-- Minimum 360 marks required [web:101][web:111] -->
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>5 Years B.Sc</p> <!-- 5-year bachelor's program [web:101][web:116] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>100 students/year</p> <!-- 100 candidates allowed per year [web:111] -->
+</div>
+</div>
+<a class="view-btn" href="UFES.html">View Details</a>
+</div>
+</div>
+<!-- University Card - Naypyitaw State Academy (NSA) -->
+<div class="university-card" data-major="arts sciences economics law medicine" data-region="naypyitaw" data-type="public">
+<div class="uni-image">
+<img alt="Naypyitaw State Academy" src="NSA.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Naypyitaw State Academy (NSA)</h3>
+<div class="uni-location">
+<span>📍</span> Zabuthiri, Naypyitaw
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Science</span>
+<span class="major-tag">Medicine</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>380+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>7 Faculties</p> <!-- 7 faculties: Arts, Science, Economics, Law, Medicine, Social Science, Sports [web:97][web:95] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>New (2022)</p>
+</div>
+</div>
+<a class="view-btn" href="NSA.html">View Details</a>
+</div>
+</div>
+<!-- University Card - University of Veterinary Science, Yezin -->
+<div class="university-card" data-major="veterinary" data-region="naypyitaw" data-type="public">
+<div class="uni-image">
+<img alt="University of Veterinary Science, Yezin" src="UVSYezin.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>University of Veterinary Science, Yezin</h3>
+<div class="uni-location">
+<span>📍</span> Yezin, Naypyitaw
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Veterinary</span>
+<span class="major-tag">Animal Science</span>
+<span class="major-tag">B.V.Sc</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>360+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>8+</p> <!-- Veterinary programs [web:91] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>15+</p>
+</div>
+</div>
+<a class="view-btn" href="UVSYezin.html">View Details</a>
+</div>
+</div>
+<!-- Polytechnic University (Bhamo) -->
+<div class="university-card" data-major="engineering technology" data-region="kachin" data-type="polytechnic">
+<div class="uni-image">
+<img alt="Polytechnic University (Bhamo)" src="PU-Bhamo.jpg"/>
+<div class="uni-badge">Polytechnic</div>
+</div>
+<div class="uni-content">
+<h3>Polytechnic University (Bhamo)</h3>
+<div class="uni-location">
+<span>📍</span> Bhamo, Kachin State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Civil Eng</span>
+<span class="major-tag">Mechanical</span>
+<span class="major-tag">Electrical</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>350+</p> <!-- Typical polytechnic engineering stream cut-off [web:46][web:52] -->
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>3-4</p> <!-- Civil, Mechanical, Electrical Engineering [web:46] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>10+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=pu-bhamo">View Details</a>
+</div>
+</div>
+<!-- Polytechnic University (Lashio) -->
+<div class="university-card" data-major="engineering technology" data-region="shan" data-type="polytechnic">
+<div class="uni-image">
+<img alt="Polytechnic University (Lashio)" src="PU-Lashio.jpg"/>
+<div class="uni-badge">Polytechnic</div>
+</div>
+<div class="uni-content">
+<h3>Polytechnic University (Lashio)</h3>
+<div class="uni-location">
+<span>📍</span> Lashio, Northern Shan State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Civil Eng</span>
+<span class="major-tag">Mechanical</span>
+<span class="major-tag">Electrical</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>350+</p> <!-- Standard polytechnic requirement [web:46][web:52] -->
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>3-4</p> <!-- Core engineering disciplines [web:46] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>10+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=pu-lashio">View Details</a>
+</div>
+</div>
+<!-- Polytechnic University (Kyaing Tong) -->
+<div class="university-card" data-major="engineering technology" data-region="shan" data-type="polytechnic">
+<div class="uni-image">
+<img alt="Polytechnic University (Kyaing Tong)" src="PU-KyaingTong.jpg"/>
+<div class="uni-badge">Polytechnic</div>
+</div>
+<div class="uni-content">
+<h3>Polytechnic University (Kyaing Tong)</h3>
+<div class="uni-location">
+<span>📍</span> Kyaing Tong, Eastern Shan State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Civil Eng</span>
+<span class="major-tag">Mechanical</span>
+<span class="major-tag">Electrical</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>350+</p> <!-- Engineering stream cut-off [web:46][web:52] -->
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>3-4</p> <!-- Standard polytechnic offerings [web:46] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>10+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=pu-kyaingtong">View Details</a>
+</div>
+</div>
+<!-- Polytechnic University (Panglong) -->
+<div class="university-card" data-major="engineering technology" data-region="shan" data-type="polytechnic">
+<div class="uni-image">
+<img alt="Polytechnic University (Panglong)" src="PU-Panglong.jpg"/>
+<div class="uni-badge">Polytechnic</div>
+</div>
+<div class="uni-content">
+<h3>Polytechnic University (Panglong)</h3>
+<div class="uni-location">
+<span>📍</span> Panglong, Southern Shan State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Civil Eng</span>
+<span class="major-tag">Mechanical</span>
+<span class="major-tag">Electrical</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>350+</p> <!-- Typical for polytechnics [web:46] -->
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>3-4</p> <!-- Core engineering [web:46] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>10+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=pu-panglong">View Details</a>
+</div>
+</div>
+<!-- Polytechnic University (Maubin) -->
+<div class="university-card" data-major="engineering technology" data-region="ayeyarwady" data-type="polytechnic">
+<div class="uni-image">
+<img alt="Polytechnic University (Maubin)" src="PU-Maubin.jpg"/>
+<div class="uni-badge">Polytechnic</div>
+</div>
+<div class="uni-content">
+<h3>Polytechnic University (Maubin)</h3>
+<div class="uni-location">
+<span>📍</span> Maubin, Ayeyarwady Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Civil Eng</span>
+<span class="major-tag">Mechanical</span>
+<span class="major-tag">Electrical</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>350+</p> <!-- Polytechnic engineering standard [web:46][web:52] -->
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>3-4</p> <!-- Civil, Mechanical, Electrical [web:46] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>10+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=pu-maubin">View Details</a>
+</div>
+</div>
+<!-- Polytechnic University (Dawei) -->
+<div class="university-card" data-major="engineering technology" data-region="tanintharyi" data-type="polytechnic">
+<div class="uni-image">
+<img alt="Polytechnic University (Dawei)" src="PU-Dawei.jpg"/>
+<div class="uni-badge">Polytechnic</div>
+</div>
+<div class="uni-content">
+<h3>Polytechnic University (Dawei)</h3>
+<div class="uni-location">
+<span>📍</span> Dawei, Tanintharyi Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Civil Eng</span>
+<span class="major-tag">Mechanical</span>
+<span class="major-tag">Electrical</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>350+</p> <!-- Engineering stream cut-off [web:46][web:53] -->
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>3-4</p> <!-- Standard polytechnic engineering [web:46] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>10+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=pu-dawei">View Details</a>
+</div>
+</div>
+<!-- Polytechnic University (Myeik) -->
+<div class="university-card" data-major="engineering technology" data-region="tanintharyi" data-type="polytechnic">
+<div class="uni-image">
+<img alt="Polytechnic University (Myeik)" src="PU-Myeik.jpg"/>
+<div class="uni-badge">Polytechnic</div>
+</div>
+<div class="uni-content">
+<h3>Polytechnic University (Myeik)</h3>
+<div class="uni-location">
+<span>📍</span> Myeik, Tanintharyi Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Civil Eng</span>
+<span class="major-tag">Mechanical</span>
+<span class="major-tag">Electrical</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>350+</p> <!-- Polytechnic engineering requirement [web:46][web:53] -->
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>3-4</p> <!-- Core engineering disciplines [web:46][web:53] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>10+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=pu-myeik">View Details</a>
+</div>
+</div>
+<!-- University Card - Yangon University of Education (YUOE) -->
+<div class="university-card" data-major="education" data-region="yangon" data-type="public">
+<div class="uni-image">
+<img alt="Yangon University of Education" src="YUOE.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Yangon University of Education (YUOE)</h3>
+<div class="uni-location">
+<span>📍</span> Kamayut, Yangon
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Ed</span>
+<span class="major-tag">M.Ed</span>
+<span class="major-tag">Ph.D</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>370+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>5-Year B.Ed</p> <!-- 5-year B.Ed program [web:133][web:135] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Teacher Training</p>
+</div>
+</div>
+<a class="view-btn" href="YUOE.html">View Details</a>
+</div>
+</div>
+<!-- University Card - Sagaing University of Education (SUOE) -->
+<div class="university-card" data-major="education" data-region="sagaing" data-type="public">
+<div class="uni-image">
+<img alt="Sagaing University of Education" src="SUOE.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Sagaing University of Education (SUOE)</h3>
+<div class="uni-location">
+<span>📍</span> Sagaing, Sagaing Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Ed</span>
+<span class="major-tag">M.Ed</span>
+<span class="major-tag">MPhil &amp; Ph.D</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>360+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>B.Ed, M.Ed, Ph.D</p> <!-- Bachelor, Master, Doctoral programs [web:134] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Teacher Training</p>
+</div>
+</div>
+<a class="view-btn" href="SUOE.html">View Details</a>
+</div>
+</div>
+<!-- Education College - Bogalay Education College -->
+<div class="university-card" data-major="education" data-region="ayeyarwady" data-type="public">
+<div class="uni-image">
+<img alt="Bogalay Education College" src="BogalayEC.jpg"/>
+<div class="uni-badge">College</div>
+</div>
+<div class="uni-content">
+<h3>Bogale Education College</h3>
+<div class="uni-location">
+<span>📍</span> Bogalay, Ayeyarwady Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Ed</span>
+<span class="major-tag">Teacher Training</span>
+<span class="major-tag">DTEd</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>320+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>B.Ed, DTEd</p> <!-- [web:31][web:35] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Teacher Training</p>
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- Education College - Myaungmya Education College -->
+<div class="university-card" data-major="education" data-region="ayeyarwady" data-type="public">
+<div class="uni-image">
+<img alt="Myaungmya Education College" src="MyaungmyaEC.jpg"/>
+<div class="uni-badge">College</div>
+</div>
+<div class="uni-content">
+<h3>Myaungmya Education College</h3>
+<div class="uni-location">
+<span>📍</span> Myaungmya, Ayeyarwady Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Ed</span>
+<span class="major-tag">Teacher Training</span>
+<span class="major-tag">DTEd</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>320+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>B.Ed, DTEd</p> <!-- [web:31][web:40] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Teacher Training</p>
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- Education College - Pathein Education College -->
+<div class="university-card" data-major="education" data-region="ayeyarwady" data-type="public">
+<div class="uni-image">
+<img alt="Pathein Education College" src="PatheinEC.jpg"/>
+<div class="uni-badge">College</div>
+</div>
+<div class="uni-content">
+<h3>Pathein Education College</h3>
+<div class="uni-location">
+<span>📍</span> Pathein, Ayeyarwady Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Ed</span>
+<span class="major-tag">Teacher Training</span>
+<span class="major-tag">DTEd</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>340+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>B.Ed, DTEd</p> <!-- [web:31][web:35] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Teacher Training</p>
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- Education College - Myitkyina Education College -->
+<div class="university-card" data-major="education" data-region="kachin" data-type="public">
+<div class="uni-image">
+<img alt="Myitkyina Education College" src="MyitkyinaEC.jpg"/>
+<div class="uni-badge">College</div>
+</div>
+<div class="uni-content">
+<h3>Myitkyina Education Degree College</h3>
+<div class="uni-location">
+<span>📍</span> Myitkyina, Kachin State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Ed</span>
+<span class="major-tag">4-Year Program</span>
+<span class="major-tag">DTEd</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>330+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>B.Ed (4 Years)</p> <!-- [web:31][web:157] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Teacher Training</p>
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- Education College - Loikaw Education College -->
+<div class="university-card" data-major="education" data-region="kayah" data-type="public">
+<div class="uni-image">
+<img alt="Loikaw Education College" src="LoikawEC.jpg"/>
+<div class="uni-badge">College</div>
+</div>
+<div class="uni-content">
+<h3>Loikaw Education College</h3>
+<div class="uni-location">
+<span>📍</span> Loikaw, Kayah State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Ed</span>
+<span class="major-tag">Teacher Training</span>
+<span class="major-tag">DTEd</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>320+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>B.Ed, DTEd</p> <!-- [web:31][web:35] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Teacher Training</p>
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- Education College - Hpa-An Education College -->
+<div class="university-card" data-major="education" data-region="kayin" data-type="public">
+<div class="uni-image">
+<img alt="Hpa-An Education College" src="HpaAnEC.jpg"/>
+<div class="uni-badge">College</div>
+</div>
+<div class="uni-content">
+<h3>Hpa-An Education College</h3>
+<div class="uni-location">
+<span>📍</span> Hpa-An, Kayin State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Ed</span>
+<span class="major-tag">Teacher Training</span>
+<span class="major-tag">DTEd</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>320+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>B.Ed, DTEd</p> <!-- [web:31] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Teacher Training</p>
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- Education College - Magway Education College -->
+<div class="university-card" data-major="education" data-region="magway" data-type="public">
+<div class="uni-image">
+<img alt="Magway Education College" src="MagwayEC.jpg"/>
+<div class="uni-badge">College</div>
+</div>
+<div class="uni-content">
+<h3>Magway Education College</h3>
+<div class="uni-location">
+<span>📍</span> Magway, Magway Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Ed</span>
+<span class="major-tag">Teacher Training</span>
+<span class="major-tag">DTEd</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>320+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>B.Ed, DTEd</p> <!-- [web:31][web:35] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Teacher Training</p>
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- Education College - Pakokku Education Degree College -->
+<div class="university-card" data-major="education" data-region="magway" data-type="public">
+<div class="uni-image">
+<img alt="Pakokku Education Degree College" src="PakokkuEC.jpg"/>
+<div class="uni-badge">College</div>
+</div>
+<div class="uni-content">
+<h3>Pakokku Education Degree College</h3>
+<div class="uni-location">
+<span>📍</span> Pakokku, Magway Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Ed</span>
+<span class="major-tag">BA.Ed</span>
+<span class="major-tag">BSc.Ed</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>330+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>Degree Level</p> <!-- [web:31][web:35] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Teacher Training</p>
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- Education College - Mandalay Education College -->
+<div class="university-card" data-major="education" data-region="mandalay" data-type="public">
+<div class="uni-image">
+<img alt="Mandalay Education College" src="MandalayEC.jpg"/>
+<div class="uni-badge">College</div>
+</div>
+<div class="uni-content">
+<h3>Mandalay Education College</h3>
+<div class="uni-location">
+<span>📍</span> Mandalay, Mandalay Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Ed</span>
+<span class="major-tag">Teacher Training</span>
+<span class="major-tag">DTEd</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>340+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>B.Ed, DTEd</p> <!-- [web:31][web:35] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Teacher Training</p>
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- Education College - Meiktila Education College -->
+<div class="university-card" data-major="education" data-region="mandalay" data-type="public">
+<div class="uni-image">
+<img alt="Meiktila Education Degree College" src="MeiktilaEC.jpg"/>
+<div class="uni-badge">College</div>
+</div>
+<div class="uni-content">
+<h3>Meiktila Education Degree College</h3>
+<div class="uni-location">
+<span>📍</span> Meiktila, Mandalay Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Ed</span>
+<span class="major-tag">Teacher Training</span>
+<span class="major-tag">DTEd</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>330+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>B.Ed, DTEd</p> <!-- [web:31][web:158] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Teacher Training</p>
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- Education College - Mawlamyine Education Degree College -->
+<div class="university-card" data-major="education" data-region="mon" data-type="public">
+<div class="uni-image">
+<img alt="Mawlamyine Education Degree College" src="MawlamyineEC.jpg"/>
+<div class="uni-badge">College</div>
+</div>
+<div class="uni-content">
+<h3>Mawlamyine Education Degree College</h3>
+<div class="uni-location">
+<span>📍</span> Mawlamyine, Mon State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Ed</span>
+<span class="major-tag">BA.Ed</span>
+<span class="major-tag">BSc.Ed</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>330+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>Degree Level</p> <!-- [web:31] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Teacher Training</p>
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- Education College - Monywa Education College -->
+<div class="university-card" data-major="education" data-region="sagaing" data-type="public">
+<div class="uni-image">
+<img alt="Monywa Education College" src="MonywaEC.jpg"/>
+<div class="uni-badge">College</div>
+</div>
+<div class="uni-content">
+<h3>Monywa Education College</h3>
+<div class="uni-location">
+<span>📍</span> Monywa, Sagaing Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Ed</span>
+<span class="major-tag">Teacher Training</span>
+<span class="major-tag">DTEd</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>330+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>B.Ed, DTEd</p> <!-- [web:31][web:40] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Teacher Training</p>
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- Education College - Dawei Education College -->
+<div class="university-card" data-major="education" data-region="tanintharyi" data-type="public">
+<div class="uni-image">
+<img alt="Dawei Education Degree College" src="DaweiEC.jpg"/>
+<div class="uni-badge">College</div>
+</div>
+<div class="uni-content">
+<h3>Dawei Education Degree College</h3>
+<div class="uni-location">
+<span>📍</span> Arzarni Road, Dawei, Tanintharyi
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Ed</span>
+<span class="major-tag">Education</span>
+<span class="major-tag">Upgraded 2020</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>320+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>Bachelor's Degree</p> <!-- Upgraded 2020 [web:156] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Created 2002</p>
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- Education College - Thingangyun Education College -->
+<div class="university-card" data-major="education" data-region="yangon" data-type="public">
+<div class="uni-image">
+<img alt="Thingangyun Education College" src="ThingangyunEC.jpg"/>
+<div class="uni-badge">College</div>
+</div>
+<div class="uni-content">
+<h3>Thingangyun Education College</h3>
+<div class="uni-location">
+<span>📍</span> Thingangyun, Yangon
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Ed</span>
+<span class="major-tag">Teacher Training</span>
+<span class="major-tag">DTEd</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>350+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>B.Ed, DTEd</p> <!-- [web:31][web:35] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Teacher Training</p>
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- Education College - Taungoo Educational College -->
+<div class="university-card" data-major="education" data-region="bago" data-type="public">
+<div class="uni-image">
+<img alt="Taungoo Educational College" src="TaungooEC.jpg"/>
+<div class="uni-badge">College</div>
+</div>
+<div class="uni-content">
+<h3>Taungoo Educational College</h3>
+<div class="uni-location">
+<span>📍</span> Taungoo, Bago Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">BA.Ed</span>
+<span class="major-tag">BSc.Ed</span>
+<span class="major-tag">DTEd</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>330+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>BA.Ed, BSc.Ed, DTEd</p> <!-- [web:149][web:31] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Primary &amp; Secondary</p>
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- Polytechnic University (Myitkyina) -->
+<div class="university-card" data-major="engineering technology" data-region="kachin" data-type="polytechnic">
+<div class="uni-image">
+<img alt="Polytechnic University (Myitkyina)" src="PU-Myitkyina.jpg"/>
+<div class="uni-badge">Polytechnic</div>
+</div>
+<div class="uni-content">
+<h3>Polytechnic University (Myitkyina)</h3>
+<div class="uni-location">
+<span>📍</span> Myitkyina, Kachin State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Civil Eng</span>
+<span class="major-tag">Mechanical</span>
+<span class="major-tag">Electrical</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>350+</p> <!-- Typical polytechnic cut-off [web:46][web:52] -->
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>3-4</p> <!-- Civil, Mechanical, Electrical [web:46] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>10+</p>
+</div>
+</div>
+<a class="view-btn" href="upp.html?id=pu-myitkyina">View Details</a>
+</div>
+</div>
+<!-- Education College - Taunggyi Education Degree College -->
+<div class="university-card" data-major="education teaching" data-region="shan" data-type="public">
+<div class="uni-image">
+<img alt="Taunggyi Education Degree College" src="TaunggyiEC.jpg"/>
+<div class="uni-badge">College</div>
+</div>
+<div class="uni-content">
+<h3>Taunggyi Education Degree College</h3>
+<div class="uni-location">
+<span>📍</span> Bogyoke Aung San Street, Taunggyi
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Ed</span>
+<span class="major-tag">Upgrading Soon</span>
+<span class="major-tag">University Level</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>340+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>B.Ed Programs</p> <!-- [web:159][web:160][web:163] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Upgrading 2026</p> <!-- MoE inspected Jan 26, 2026 for upgrade [web:163] -->
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- Education College - Lashio Education College -->
+<div class="university-card" data-major="education teaching" data-region="shan" data-type="public">
+<div class="uni-image">
+<img alt="Lashio Education College" src="LashioEC.jpg"/>
+<div class="uni-badge">College</div>
+</div>
+<div class="uni-content">
+<h3>Lashio Education College</h3>
+<div class="uni-location">
+<span>📍</span> Lashio, Northern Shan State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Ed</span>
+<span class="major-tag">Teacher Training</span>
+<span class="major-tag">DTEd</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>330+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>B.Ed, DTEd</p> <!-- [web:31][web:35] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Teacher Training</p>
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- University Card - Bhamo University (Banmaw University) -->
+<div class="university-card" data-major="arts sciences" data-region="kachin" data-type="public">
+<div class="uni-image">
+<img alt="Bhamo University" src="BhamoU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Bhamo University</h3>
+<div class="uni-location">
+<span>📍</span> Bhamo, Kachin State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>330+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>Upgraded 2001</p> <!-- Degree College → University 2001 [web:31] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Regional</p>
+</div>
+</div>
+<a class="view-btn" href="BhamoU.html">View Details</a>
+</div>
+</div>
+<!-- University Card - Myitkyina University -->
+<div class="university-card" data-major="arts sciences" data-region="kachin" data-type="public">
+<div class="uni-image">
+<img alt="Myitkyina University" src="MyitkyinaU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Myitkyina University</h3>
+<div class="uni-location">
+<span>📍</span> Myitkyina, Kachin State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>350+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>Est. 1963</p> <!-- Established 1963 [web:200] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Arts &amp; Sciences</p> <!-- Arts, Humanities, Natural Sciences [web:200] -->
+</div>
+</div>
+<a class="view-btn" href="MyitkyinaU.html">View Details</a>
+</div>
+</div>
+<!-- University Card - University of Myitkyina -->
+<div class="university-card" data-major="arts sciences" data-region="kachin" data-type="public">
+<div class="uni-image">
+<img alt="University of Myitkyina" src="UMyitkyina.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>University of Myitkyina</h3>
+<div class="uni-location">
+<span>📍</span> Myitkyina, Kachin State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>340+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>Ministry of Science</p> <!-- Ministry of Science & Technology [web:203] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Coeducational</p> <!-- Coeducational public university [web:203] -->
+</div>
+</div>
+<a class="view-btn" href="UMyitkyina.html">View Details</a>
+</div>
+</div>
+<!-- College Card - Mohnyin Degree College (Moenyin မိုးညှင်း) -->
+<div class="university-card" data-major="arts sciences" data-region="kachin" data-type="public">
+<div class="uni-image">
+<img alt="Mohnyin Degree College" src="MohnyinDC.jpg"/>
+<div class="uni-badge">Degree College</div>
+</div>
+<div class="uni-content">
+<h3>Mohnyin Degree College</h3>
+<div class="uni-location">
+<span>📍</span> Ywathitkone Village, Mohnyin, Kachin State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>320+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>210 Acres</p> <!-- 210 acres campus [web:191] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Opened 2004</p> <!-- Opened Feb 11, 2004 [web:191] -->
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- College Card - Myitkyina Education College -->
+<div class="university-card" data-major="education" data-region="kachin" data-type="public">
+<div class="uni-image">
+<img alt="Myitkyina Education College" src="MyitkyinaEC.jpg"/>
+<div class="uni-badge">Education College</div>
+</div>
+<div class="uni-content">
+<h3>Myitkyina Education College</h3>
+<div class="uni-location">
+<span>📍</span> Myitkyina, Kachin State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Ed</span>
+<span class="major-tag">Teacher Training</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>330+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>B.Ed, DTEd</p> <!-- Confirmed education college [web:31] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Teacher Training</p>
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- University Card - Computer University, Loikaw -->
+<div class="university-card" data-major="computer" data-region="kayah" data-type="Technology">
+<div class="uni-image">
+<img alt="Computer University, Loikaw" src="CU-Loikaw.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>University of Computer Studies, Loikaw</h3>
+<div class="uni-location">
+<span>📍</span> Loikaw, Kayah State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.C.Sc</span>
+<span class="major-tag">B.C.Tech</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>380+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>Est. 2007</p> <!-- Established 2007 [web:244][web:245] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>IT Programs</p>
+</div>
+</div>
+<a class="view-btn" href="CU-Loikaw.html">View Details</a>
+</div>
+</div>
+<!-- University Card - Technological University, Loikaw -->
+<div class="university-card" data-major="engineering" data-region="kayah" data-type="public">
+<div class="uni-image">
+<img alt="Technological University, Loikaw" src="TU-Loikaw.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Technological University, Loikaw</h3>
+<div class="uni-location">
+<span>📍</span> Loikaw, Kayah State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.E</span>
+<span class="major-tag">ISO Certified</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>400+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>ISO 2016</p> <!-- ISO certified 2016 [web:242] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Engineering</p>
+</div>
+</div>
+<a class="view-btn" href="TU-Loikaw.html">View Details</a>
+</div>
+</div>
+<!-- College Card - GTI/GTC Loikaw (Government Technical Institute) -->
+<div class="university-card" data-major="technical" data-region="kayah" data-type="public">
+<div class="uni-image">
+<img alt="Government Technical Institute, Loikaw" src="GTI-Loikaw.jpg"/>
+<div class="uni-badge">GTI</div>
+</div>
+<div class="uni-content">
+<h3>Government Technical Institute, Loikaw</h3>
+<div class="uni-location">
+<span>📍</span> Loikaw, Kayah State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Diploma</span>
+<span class="major-tag">Technical</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>300+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>3-Year Diploma</p> <!-- Standard GTI programs [web:31] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Vocational Training</p>
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- Education College - Kyaukphyu Education Degree College -->
+<div class="university-card" data-major="education teaching" data-region="rakhine" data-type="public">
+<div class="uni-image">
+<img alt="Kyaukphyu Education Degree College" src="KyaukphyuEC.jpg"/>
+<div class="uni-badge">College</div>
+</div>
+<div class="uni-content">
+<h3>Kyaukphyu Education Degree College</h3>
+<div class="uni-location">
+<span>📍</span> Kyaukphyu, Rakhine State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Ed</span>
+<span class="major-tag">Teacher Training</span>
+<span class="major-tag">DTEd</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>320+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>B.Ed, DTEd</p> <!-- [web:31] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Teacher Training</p>
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- University Card - Hpa-An University -->
+<div class="university-card" data-major="arts sciences" data-region="kayin" data-type="public">
+<div class="uni-image">
+<img alt="Hpa-An University" src="HpaAnU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Hpa-An University</h3>
+<div class="uni-location">
+<span>📍</span> Ahdipati St., Hpa-An, Kayin State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>340+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>🟢 Active</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Government</p>
+</div>
+</div>
+<a class="view-btn" href="HpaAnU.html">View Details</a>
+</div>
+</div>
+<!-- University Card - Computer University, Hpa-An -->
+<div class="university-card" data-major="computer" data-region="kayin" data-type="public">
+<div class="uni-image">
+<img alt="Computer University, Hpa-An" src="CU-HpaAn.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Computer University, Hpa-An</h3>
+<div class="uni-location">
+<span>📍</span> West bank Salween River, Hpa-An
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.C.Sc</span>
+<span class="major-tag">B.C.Tech</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>380+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>Est. 2007</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>IT Programs</p>
+</div>
+</div>
+<a class="view-btn" href="CU-HpaAn.html">View Details</a>
+</div>
+</div>
+<!-- University Card - Technological University, Hpa-An -->
+<div class="university-card" data-major="engineering" data-region="kayin" data-type="public">
+<div class="uni-image">
+<img alt="Technological University, Hpa-An" src="TU-HpaAn.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Technological University, Hpa-An</h3>
+<div class="uni-location">
+<span>📍</span> Field No.1185, Hpa-An
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.E</span>
+<span class="major-tag">Engineering</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>400+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>35 Acres</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Est. 1993</p>
+</div>
+</div>
+<a class="view-btn" href="TU-HpaAn.html">View Details</a>
+</div>
+</div>
+<!-- College Card - Hpa-An Education College -->
+<div class="university-card" data-major="education" data-region="kayin" data-type="public">
+<div class="uni-image">
+<img alt="Hpa-An Education College" src="HpaAnEC.jpg"/>
+<div class="uni-badge">Education College</div>
+</div>
+<div class="uni-content">
+<h3>Hpa-An Education College</h3>
+<div class="uni-location">
+<span>📍</span> Hpa-An, Kayin State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Ed</span>
+<span class="major-tag">DTEd</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>330+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>Teacher Training</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>B.Ed Programs</p>
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- College Card - GTI Hpa-An -->
+<div class="university-card" data-major="technical" data-region="kayin" data-type="public">
+<div class="uni-image">
+<img alt="Government Technical Institute, Hpa-An" src="GTI-HpaAn.jpg"/>
+<div class="uni-badge">GTI</div>
+</div>
+<div class="uni-content">
+<h3>Government Technical Institute, Hpa-An</h3>
+<div class="uni-location">
+<span>📍</span> Hpa-An, Kayin State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Diploma</span>
+<span class="major-tag">Technical</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>300+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>3-Year Diploma</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Vocational</p>
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- College Card - State Agricultural Institute, Zwekabin -->
+<div class="university-card" data-major="agriculture" data-region="kayin" data-type="public">
+<div class="uni-image">
+<img alt="State Agricultural Institute, Zwekabin" src="SAI-Zwekabin.jpg"/>
+<div class="uni-badge">SAI</div>
+</div>
+<div class="uni-content">
+<h3>State Agricultural Institute, Zwekabin</h3>
+<div class="uni-location">
+<span>📍</span> Zwekabin, Hpa-An, Kayin State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Agriculture</span>
+<span class="major-tag">Diploma</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>300+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>Agriculture Diploma</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Farming Training</p>
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- University Card - Hakha University -->
+<div class="university-card" data-major="arts sciences" data-region="chin" data-type="public">
+<div class="uni-image">
+<img alt="Hakha University" src="HakhaU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Hakha University</h3>
+<div class="uni-location">
+<span>📍</span> Myo Thit Quarter, Hakha, Chin State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>330+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>524 Acres</p> <!-- 524 acres campus [web:294] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Est. Nov 2016</p> <!-- Opened Nov 9, 2016 with 264 students [web:294] -->
+</div>
+</div>
+<a class="view-btn" href="HakhaU.html">View Details</a>
+</div>
+</div>
+<!-- College Card - Hakha Education College -->
+<div class="university-card" data-major="education" data-region="chin" data-type="public">
+<div class="uni-image">
+<img alt="Hakha Education College" src="HakhaEC.jpg"/>
+<div class="uni-badge">Education College</div>
+</div>
+<div class="uni-content">
+<h3>Hakha Education College</h3>
+<div class="uni-location">
+<span>📍</span> Hakha, Chin State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Ed</span>
+<span class="major-tag">DTEd</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>320+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>Teacher Training</p> <!-- Confirmed [web:278][web:297] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>B.Ed Programs</p>
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- College Card - Government Technical Institute, Hakha -->
+<div class="university-card" data-major="technical" data-region="chin" data-type="public">
+<div class="uni-image">
+<img alt="Government Technical Institute, Hakha" src="GTI-Hakha.jpg"/>
+<div class="uni-badge">GTI</div>
+</div>
+<div class="uni-content">
+<h3>Government Technical Institute, Hakha</h3>
+<div class="uni-location">
+<span>📍</span> Hakha, Chin State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Diploma</span>
+<span class="major-tag">Technical</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>300+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>3-Year Diploma</p> <!-- Confirmed [web:295][web:297] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Vocational Training</p>
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- College Card - State Agricultural Institute, Lungpi -->
+<div class="university-card" data-major="agriculture" data-region="chin" data-type="public">
+<div class="uni-image">
+<img alt="State Agricultural Institute, Lungpi" src="SAI-Lungpi.jpg"/>
+<div class="uni-badge">SAI</div>
+</div>
+<div class="uni-content">
+<h3>State Agricultural Institute, Lungpi</h3>
+<div class="uni-location">
+<span>📍</span> Lungpi Village, Falam Township, Chin State
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Agriculture</span>
+<span class="major-tag">Nutrition</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>300+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>Agriculture Diploma</p> <!-- Agricultural High School/SAI [web:278][web:292] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Est. 2016</p> <!-- Newly established, partnered with Yezin 2016 [web:292] -->
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- University Card - Monywa University -->
+<div class="university-card" data-major="arts sciences" data-region="sagaing" data-type="public">
+<div class="uni-image">
+<img alt="Monywa University" src="MonywaU.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Monywa University</h3>
+<div class="uni-location">
+<span>📍</span> Monywa, Sagaing Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Arts</span>
+<span class="major-tag">Sciences</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>350+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>🟢 Active</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Est. 1996</p> <!-- Established 1996 [web:300][web:302] -->
+</div>
+</div>
+<a class="view-btn" href="MonywaU.html">View Details</a>
+</div>
+</div>
+<!-- University Card - Monywa University of Economics -->
+<div class="university-card" data-major="economics" data-region="sagaing" data-type="public">
+<div class="uni-image">
+<img alt="Monywa University of Economics" src="MonywaUE.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Monywa University of Economics</h3>
+<div class="uni-location">
+<span>📍</span> Monywa, Sagaing Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Econ</span>
+<span class="major-tag">BBA</span>
+<span class="major-tag">M.Econ</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>380+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>🟢 Active</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Est. 2000</p> <!-- Established 2000 [web:304] -->
+</div>
+</div>
+<a class="view-btn" href="MonywaUE.html">View Details</a>
+</div>
+</div>
+<!-- University Card - Co-operative University, Sagaing -->
+<div class="university-card" data-major="business cooperative" data-region="sagaing" data-type="public">
+<div class="uni-image">
+<img alt="Co-operative University, Sagaing" src="UCMS.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>University of Co-operative and Management, Sagaing</h3>
+<div class="uni-location">
+<span>📍</span> Sagaing, Sagaing Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Co-operative</span>
+<span class="major-tag">Management</span>
+<span class="major-tag">BBA</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>370+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>🟢 Active</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Est. 1996</p> <!-- Opened 1996 [web:316][web:353] -->
+</div>
+</div>
+<a class="view-btn" href="UCMS.html">View Details</a>
+</div>
+</div>
+<!-- University Card - Computer University, Monywa -->
+<div class="university-card" data-major="computer" data-region="sagaing" data-type="public">
+<div class="uni-image">
+<img alt="Computer University, Monywa" src="CU-Monywa.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Computer University, Monywa</h3>
+<div class="uni-location">
+<span>📍</span> Monywa, Sagaing Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.C.Sc</span>
+<span class="major-tag">B.C.Tech</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>380+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>🟢 Active</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>IT Programs</p> <!-- Computer University [web:306] -->
+</div>
+</div>
+<a class="view-btn" href="CU-Monywa.html">View Details</a>
+</div>
+</div>
+<!-- University Card - Technological University, Monywa -->
+<div class="university-card" data-major="engineering" data-region="sagaing" data-type="public">
+<div class="uni-image">
+<img alt="Technological University, Monywa" src="TU-Monywa.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Technological University, Monywa</h3>
+<div class="uni-location">
+<span>📍</span> Monywa, Sagaing Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.E</span>
+<span class="major-tag">Engineering</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>400+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>🟢 Active</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Engineering</p>
+</div>
+</div>
+<a class="view-btn" href="TU-Monywa.html">View Details</a>
+</div>
+</div>
+<!-- College Card - State Agricultural Institute, Dawei -->
+<div class="university-card" data-major="agriculture" data-region="tanintharyi" data-type="public">
+<div class="uni-image">
+<img alt="State Agricultural Institute, Dawei" src="SAI-Dawei.jpg"/>
+<div class="uni-badge">SAI</div>
+</div>
+<div class="uni-content">
+<h3>State Agricultural Institute, Dawei</h3>
+<div class="uni-location">
+<span>📍</span> Maungmagan, Dawei, Tanintharyi Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">Agriculture</span>
+<span class="major-tag">Diploma</span>
+</div>
+<div class="uni-stats">
+<div class=". Marks&lt;/strong&gt; &lt;p&gt;300+ (estimated)&lt;/p&gt; &lt;/div&gt; &lt;div class=" stat"="">
+<strong>Programs</strong>
+<p>Agriculture Diploma</p> <!-- State Agricultural Institute [web:370] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Farming Training</p>
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- Note: GTC Dawei was upgraded to Technological University, Dawei in 2007 -->
+<!-- University Card - Technological University, Dawei (formerly GTC Dawei) -->
+<div class="university-card" data-major="engineering" data-region="tanintharyi" data-type="public">
+<div class="uni-image">
+<img alt="Technological University, Dawei" src="TU-Dawei.jpg"/>
+<div class="uni-badge">Public</div>
+</div>
+<div class="uni-content">
+<h3>Technological University, Dawei</h3>
+<div class="uni-location">
+<span>📍</span> Dawei District, Tanintharyi Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.E</span>
+<span class="major-tag">Engineering</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>400+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>90.8 Acres</p> <!-- 90.8 acres campus [web:361][web:374] -->
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>GTC→TU 2007</p> <!-- GTC 1999 → University 2007 [web:361][web:374] -->
+</div>
+</div>
+<a class="view-btn" href="TU-Dawei.html">View Details</a>
+</div>
+</div>
+<!-- College Card - Sagaing Education College -->
+<div class="university-card" data-major="education" data-region="sagaing" data-type="public">
+<div class="uni-image">
+<img alt="Sagaing Education College" src="SagaingEC.jpg"/>
+<div class="uni-badge">Education College</div>
+</div>
+<div class="uni-content">
+<h3>Sagaing Education College</h3>
+<div class="uni-location">
+<span>📍</span> Aye Mya Wati Quarter, Sagaing
+        </div>
+<div class="uni-majors">
+<span class="major-tag">B.Ed</span>
+<span class="major-tag">DTEd</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>340+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>🟢 Active</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Teacher Training</p> <!-- [web:314][web:319] -->
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- =======================
+BAGO REGION (Pyay) - CARDS
+Requested: Computer + Technology + GTI + (SAI if verified) + Education Degree College (Pyay)
+======================= -->
+<!-- Education Degree College - Pyay -->
+<div class="university-card" data-major="education" data-region="bago" data-town="pyay" data-type="public">
+<div class="uni-image">
+<img alt="Pyay Education Degree College" src="PyayEDC.jpg"/>
+<div class="uni-badge">Education Degree College</div>
+</div>
+<div class="uni-content">
+<h3>Pyay Education Degree College (PEDC)</h3>
+<div class="uni-location"><span>📍</span> Pyay, Bago Region</div>
+<div class="uni-majors">
+<span class="major-tag">B.Ed</span>
+<span class="major-tag">D.TEd</span>
+<span class="major-tag">Teacher Training</span>
+</div>
+<div class="uni-stats">
+<div class="stat"><strong>Type</strong><p>Public</p></div>
+<div class="stat"><strong>Category</strong><p>Education</p></div>
+<div class="stat"><strong>Website</strong><p>pyayedc.edu.mm</p></div>
+</div>
+<a class="view-btn" href="pyay-education-degree-college.html">View Details</a>
+</div>
+</div>
+<!-- Government Technical Institute - Pyay -->
+<div class="university-card" data-major="technical" data-region="bago" data-type="public">
+<div class="uni-image">
+<img alt="Government Technical Institute, Pyay" src="GTI-Pyay.jpg"/>
+<div class="uni-badge">GTI</div>
+</div>
+<div class="uni-content">
+<h3>Government Technical Institute, Pyay</h3>
+<div class="uni-location">
+<span>📍</span> Pyay, Bago Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">AGTI</span>
+<span class="major-tag">Diploma</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>300+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>🟢 Active</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>3-Year Diploma</p> <!-- [web:408][web:431] -->
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- Government Technical Institute - Taungoo -->
+<div class="university-card" data-major="technical" data-region="bago" data-type="public">
+<div class="uni-image">
+<img alt="Government Technical Institute, Taungoo" src="GTI-Taungoo.jpg"/>
+<div class="uni-badge">GTI</div>
+</div>
+<div class="uni-content">
+<h3>Government Technical Institute, Taungoo</h3>
+<div class="uni-location">
+<span>📍</span> Taungoo, Bago Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">AGTI</span>
+<span class="major-tag">Diploma</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>300+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>🟢 Active</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>Engineering Diploma</p> <!-- [web:447][web:449] -->
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- Government Technical Institute - Letpandaung -->
+<div class="university-card" data-major="technical" data-region="bago" data-type="public">
+<div class="uni-image">
+<img alt="Government Technical Institute, Letpandaung" src="GTI-Letpandaung.jpg"/>
+<div class="uni-badge">GTI</div>
+</div>
+<div class="uni-content">
+<h3>Government Technical Institute, Letpandaung</h3>
+<div class="uni-location">
+<span>📍</span> Letpandaung, Bago Region
+        </div>
+<div class="uni-majors">
+<span class="major-tag">AGTI</span>
+<span class="major-tag">Agriculture Tech</span>
+</div>
+<div class="uni-stats">
+<div class="stat">
+<strong>Min. Marks</strong>
+<p>300+ (estimated)</p>
+</div>
+<div class="stat">
+<strong>Programs</strong>
+<p>🟢 Active</p>
+</div>
+<div class="stat">
+<strong>Projects</strong>
+<p>AGTI Programs</p> <!-- [web:443] -->
+</div>
+</div>
+<a class="view-btn" href="error.html">View Details</a>
+</div>
+</div>
+<!-- Technological University - Pyay (Pyay Technological University) -->
+<div class="university-card" data-major="engineering" data-region="bago" data-town="pyay" data-type="public">
+<div class="uni-image">
+<img alt="Pyay Technological University" src="PTU.jpg"/>
+<div class="uni-badge">Technological University</div>
+</div>
+<div class="uni-content">
+<h3>Pyay Technological University (PTU)</h3>
+<div class="uni-location"><span>📍</span> Pyay, Bago Region</div>
+<div class="uni-majors">
+<span class="major-tag">B.Tech</span>
+<span class="major-tag">B.E</span>
+<span class="major-tag">Engineering</span>
+</div>
+<div class="uni-stats">
+<div class="stat"><strong>Type</strong><p>Public</p></div>
+<div class="stat"><strong>Category</strong><p>Engineering</p></div>
+<div class="stat"><strong>Known as</strong><p>PTU</p></div>
+</div>
+<a class="view-btn" href="pyay-technological-university.html">View Details</a>
+</div>
+</div>
+<!-- GTI - Pyay -->
+<div class="university-card" data-major="technical" data-region="bago" data-town="pyay" data-type="public">
+<div class="uni-image">
+<img alt="Government Technical Institute, Pyay" src="GTI-Pyay.jpg"/>
+<div class="uni-badge">GTI</div>
+</div>
+<div class="uni-content">
+<h3>Government Technical Institute (Pyay)</h3>
+<div class="uni-location"><span>📍</span> Pyay, Bago Region</div>
+<div class="uni-majors">
+<span class="major-tag">A.G.T.I</span>
+<span class="major-tag">Diploma</span>
+<span class="major-tag">Engineering</span>
+</div>
+<div class="uni-stats">
+<div class="stat"><strong>Type</strong><p>Public</p></div>
+<div class="stat"><strong>Category</strong><p>GTI</p></div>
+<div class="stat"><strong>Award</strong><p>Diploma (A.G.T.I)</p></div>
+</div>
+<a class="view-btn" href="gti-pyay.html">View Details</a>
+</div>
+</div>
+<div class="university-card" data-major="agriculture" data-region="tanintharyi" data-type="agriculture"><div class="uni-image"><img alt="Agricultural Institute (Dawei)" src="placeholder.jpg"/><div class="uni-badge">Agriculture</div></div><div class="uni-content"><h3>Agricultural Institute (Dawei)</h3><div class="uni-location"><span>📍</span> Dawei (location to be confirmed)</div><div class="uni-majors"><span class="major-tag">Agriculture</span><span class="major-tag">Not specified</span></div><div class="uni-stats"><div class="stat"><strong>Min. Marks</strong><p>Not publicly available</p></div><div class="stat"><strong>Programs</strong><p>Not published</p></div><div class="stat"><strong>Projects</strong><p>Not publicly disclosed</p></div></div><a class="view-btn" href="upp.html?id=agricultural-institute">View Details</a></div></div><div class="university-card" data-major="agriculture" data-region="kayah" data-type="agriculture"><div class="uni-image"><img alt="Agricultural Institute (Demoso)" src="placeholder.jpg"/><div class="uni-badge">Agriculture</div></div><div class="uni-content"><h3>Agricultural Institute (Demoso)</h3><div class="uni-location"><span>📍</span> Demoso (location to be confirmed)</div><div class="uni-majors"><span class="major-tag">Agriculture</span><span class="major-tag">Not specified</span></div><div class="uni-stats"><div class="stat"><strong>Min. Marks</strong><p>Not publicly available</p></div><div class="stat"><strong>Programs</strong><p>Not published</p></div><div class="stat"><strong>Projects</strong><p>Not publicly disclosed</p></div></div><a class="view-btn" href="upp.html?id=agricultural-institute">View Details</a></div></div><div class="university-card" data-major="agriculture" data-region="shan" data-type="agriculture"><div class="uni-image"><img alt="Agricultural Institute (Heho)" src="placeholder.jpg"/><div class="uni-badge">Agriculture</div></div><div class="uni-content"><h3>Agricultural Institute (Heho)</h3><div class="uni-location"><span>📍</span> Heho (location to be confirmed)</div><div class="uni-majors"><span class="major-tag">Agriculture</span><span class="major-tag">Not specified</span></div><div class="uni-stats"><div class="stat"><strong>Min. Marks</strong><p>Not publicly available</p></div><div class="stat"><strong>Programs</strong><p>Not published</p></div><div class="stat"><strong>Projects</strong><p>Not publicly disclosed</p></div></div><a class="view-btn" href="upp.html?id=agricultural-institute">View Details</a></div></div><div class="university-card" data-major="agriculture" data-region="sagaing" data-type="agriculture"><div class="uni-image"><img alt="Agricultural Institute (Hkamti / Homalin)" src="placeholder.jpg"/><div class="uni-badge">Agriculture</div></div><div class="uni-content"><h3>Agricultural Institute (Hkamti / Homalin)</h3><div class="uni-location"><span>📍</span> Hkamti / Homalin (location to be confirmed)</div><div class="uni-majors"><span class="major-tag">Agriculture</span><span class="major-tag">Not specified</span></div><div class="uni-stats"><div class="stat"><strong>Min. Marks</strong><p>Not publicly available</p></div><div class="stat"><strong>Programs</strong><p>Not published</p></div><div class="stat"><strong>Projects</strong><p>Not publicly disclosed</p></div></div><a class="view-btn" href="upp.html?id=agricultural-institute">View Details</a></div></div><div class="university-card" data-major="agriculture" data-region="rakhine" data-type="agriculture"><div class="uni-image"><img alt="Agricultural Institute (Kyauktaw)" src="placeholder.jpg"/><div class="uni-badge">Agriculture</div></div><div class="uni-content"><h3>Agricultural Institute (Kyauktaw)</h3><div class="uni-location"><span>📍</span> Kyauktaw (location to be confirmed)</div><div class="uni-majors"><span class="major-tag">Agriculture</span><span class="major-tag">Not specified</span></div><div class="uni-stats"><div class="stat"><strong>Min. Marks</strong><p>Not publicly available</p></div><div class="stat"><strong>Programs</strong><p>Not published</p></div><div class="stat"><strong>Projects</strong><p>Not publicly disclosed</p></div></div><a class="view-btn" href="upp.html?id=agricultural-institute">View Details</a></div></div><div class="university-card" data-major="agriculture" data-region="kayah" data-type="agriculture"><div class="uni-image"><img alt="Agricultural Institute (Lonpi)" src="placeholder.jpg"/><div class="uni-badge">Agriculture</div></div><div class="uni-content"><h3>Agricultural Institute (Lonpi)</h3><div class="uni-location"><span>📍</span> Lonpi (location to be confirmed)</div><div class="uni-majors"><span class="major-tag">Agriculture</span><span class="major-tag">Not specified</span></div><div class="uni-stats"><div class="stat"><strong>Min. Marks</strong><p>Not publicly available</p></div><div class="stat"><strong>Programs</strong><p>Not published</p></div><div class="stat"><strong>Projects</strong><p>Not publicly disclosed</p></div></div><a class="view-btn" href="upp.html?id=agricultural-institute">View Details</a></div></div><div class="university-card" data-major="agriculture" data-region="ayeyarwady" data-type="agriculture"><div class="uni-image"><img alt="Agricultural Institute (Myaungmya)" src="placeholder.jpg"/><div class="uni-badge">Agriculture</div></div><div class="uni-content"><h3>Agricultural Institute (Myaungmya)</h3><div class="uni-location"><span>📍</span> Myaungmya (location to be confirmed)</div><div class="uni-majors"><span class="major-tag">Agriculture</span><span class="major-tag">Not specified</span></div><div class="uni-stats"><div class="stat"><strong>Min. Marks</strong><p>Not publicly available</p></div><div class="stat"><strong>Programs</strong><p>Not published</p></div><div class="stat"><strong>Projects</strong><p>Not publicly disclosed</p></div></div><a class="view-btn" href="upp.html?id=agricultural-institute">View Details</a></div></div><div class="university-card" data-major="agriculture" data-region="kachin" data-type="agriculture"><div class="uni-image"><img alt="Agricultural Institute (Myitkyina)" src="placeholder.jpg"/><div class="uni-badge">Agriculture</div></div><div class="uni-content"><h3>Agricultural Institute (Myitkyina)</h3><div class="uni-location"><span>📍</span> Myitkyina (location to be confirmed)</div><div class="uni-majors"><span class="major-tag">Agriculture</span><span class="major-tag">Not specified</span></div><div class="uni-stats"><div class="stat"><strong>Min. Marks</strong><p>Not publicly available</p></div><div class="stat"><strong>Programs</strong><p>Not published</p></div><div class="stat"><strong>Projects</strong><p>Not publicly disclosed</p></div></div><a class="view-btn" href="upp.html?id=agricultural-institute">View Details</a></div></div><div class="university-card" data-major="agriculture" data-region="mandalay" data-type="agriculture"><div class="uni-image"><img alt="Agricultural Institute (Patheingyi)" src="placeholder.jpg"/><div class="uni-badge">Agriculture</div></div><div class="uni-content"><h3>Agricultural Institute (Patheingyi)</h3><div class="uni-location"><span>📍</span> Patheingyi (location to be confirmed)</div><div class="uni-majors"><span class="major-tag">Agriculture</span><span class="major-tag">Not specified</span></div><div class="uni-stats"><div class="stat"><strong>Min. Marks</strong><p>Not publicly available</p></div><div class="stat"><strong>Programs</strong><p>Not published</p></div><div class="stat"><strong>Projects</strong><p>Not publicly disclosed</p></div></div><a class="view-btn" href="upp.html?id=agricultural-institute">View Details</a></div></div><div class="university-card" data-major="agriculture" data-region="magway" data-type="agriculture"><div class="uni-image"><img alt="Agricultural Institute (Pwintbyu)" src="placeholder.jpg"/><div class="uni-badge">Agriculture</div></div><div class="uni-content"><h3>Agricultural Institute (Pwintbyu)</h3><div class="uni-location"><span>📍</span> Pwintbyu (location to be confirmed)</div><div class="uni-majors"><span class="major-tag">Agriculture</span><span class="major-tag">Not specified</span></div><div class="uni-stats"><div class="stat"><strong>Min. Marks</strong><p>Not publicly available</p></div><div class="stat"><strong>Programs</strong><p>Not published</p></div><div class="stat"><strong>Projects</strong><p>Not publicly disclosed</p></div></div><a class="view-btn" href="upp.html?id=agricultural-institute">View Details</a></div></div><div class="university-card" data-major="agriculture" data-region="naypyitaw" data-type="agriculture"><div class="uni-image"><img alt="Agricultural Institute (Pyinmana)" src="placeholder.jpg"/><div class="uni-badge">Agriculture</div></div><div class="uni-content"><h3>Agricultural Institute (Pyinmana)</h3><div class="uni-location"><span>📍</span> Pyinmana (location to be confirmed)</div><div class="uni-majors"><span class="major-tag">Agriculture</span><span class="major-tag">Not specified</span></div><div class="uni-stats"><div class="stat"><strong>Min. Marks</strong><p>Not publicly available</p></div><div class="stat"><strong>Programs</strong><p>Not published</p></div><div class="stat"><strong>Projects</strong><p>Not publicly disclosed</p></div></div><a class="view-btn" href="upp.html?id=agricultural-institute">View Details</a></div></div><div class="university-card" data-major="agriculture" data-region="sagaing" data-type="agriculture"><div class="uni-image"><img alt="Agricultural Institute (Shwebo)" src="placeholder.jpg"/><div class="uni-badge">Agriculture</div></div><div class="uni-content"><h3>Agricultural Institute (Shwebo)</h3><div class="uni-location"><span>📍</span> Shwebo (location to be confirmed)</div><div class="uni-majors"><span class="major-tag">Agriculture</span><span class="major-tag">Not specified</span></div><div class="uni-stats"><div class="stat"><strong>Min. Marks</strong><p>Not publicly available</p></div><div class="stat"><strong>Programs</strong><p>Not published</p></div><div class="stat"><strong>Projects</strong><p>Not publicly disclosed</p></div></div><a class="view-btn" href="upp.html?id=agricultural-institute">View Details</a></div></div><div class="university-card" data-major="agriculture" data-region="mon" data-type="agriculture"><div class="uni-image"><img alt="Agricultural Institute (Thaton)" src="placeholder.jpg"/><div class="uni-badge">Agriculture</div></div><div class="uni-content"><h3>Agricultural Institute (Thaton)</h3><div class="uni-location"><span>📍</span> Thaton (location to be confirmed)</div><div class="uni-majors"><span class="major-tag">Agriculture</span><span class="major-tag">Not specified</span></div><div class="uni-stats"><div class="stat"><strong>Min. Marks</strong><p>Not publicly available</p></div><div class="stat"><strong>Programs</strong><p>Not published</p></div><div class="stat"><strong>Projects</strong><p>Not publicly disclosed</p></div></div><a class="view-btn" href="upp.html?id=agricultural-institute">View Details</a></div></div><div class="university-card" data-major="agriculture" data-region="bago" data-type="agriculture"><div class="uni-image"><img alt="Agricultural Institute (Thayarwady)" src="placeholder.jpg"/><div class="uni-badge">Agriculture</div></div><div class="uni-content"><h3>Agricultural Institute (Thayarwady)</h3><div class="uni-location"><span>📍</span> Thayarwady (location to be confirmed)</div><div class="uni-majors"><span class="major-tag">Agriculture</span><span class="major-tag">Not specified</span></div><div class="uni-stats"><div class="stat"><strong>Min. Marks</strong><p>Not publicly available</p></div><div class="stat"><strong>Programs</strong><p>Not published</p></div><div class="stat"><strong>Projects</strong><p>Not publicly disclosed</p></div></div><a class="view-btn" href="upp.html?id=agricultural-institute">View Details</a></div></div><div class="university-card" data-major="agriculture" data-region="kayin" data-type="agriculture"><div class="uni-image"><img alt="Agricultural Institute (Zwegabin)" src="placeholder.jpg"/><div class="uni-badge">Agriculture</div></div><div class="uni-content"><h3>Agricultural Institute (Zwegabin)</h3><div class="uni-location"><span>📍</span> Zwegabin (location to be confirmed)</div><div class="uni-majors"><span class="major-tag">Agriculture</span><span class="major-tag">Not specified</span></div><div class="uni-stats"><div class="stat"><strong>Min. Marks</strong><p>Not publicly available</p></div><div class="stat"><strong>Programs</strong><p>Not published</p></div><div class="stat"><strong>Projects</strong><p>Not publicly disclosed</p></div></div><a class="view-btn" href="upp.html?id=agricultural-institute">View Details</a></div></div><div class="university-card" data-major="economics cooperative" data-region="yangon" data-type="cooperative"><div class="uni-image"><img alt="Central Cooperative College (Hmawbi / Htaukkyant area—often listed as Phaunggyi)" src="placeholder.jpg"/><div class="uni-badge">Cooperative</div></div><div class="uni-content"><h3>Central Cooperative College (Hmawbi / Htaukkyant area—often listed as Phaunggyi)</h3><div class="uni-location"><span>📍</span> Hmawbi / Htaukkyant area—often listed as Phaunggyi (location to be confirmed)</div><div class="uni-majors"><span class="major-tag">Cooperative Studies</span><span class="major-tag">Not specified</span></div><div class="uni-stats"><div class="stat"><strong>Min. Marks</strong><p>Not publicly available</p></div><div class="stat"><strong>Programs</strong><p>Not published</p></div><div class="stat"><strong>Projects</strong><p>Not publicly disclosed</p></div></div><a class="view-btn" href="upp.html?id=central-cooperative-college">View Details</a></div></div><div class="university-card" data-major="economics cooperative" data-region="mandalay" data-type="cooperative"><div class="uni-image"><img alt="Cooperative College (Mandalay)" src="placeholder.jpg"/><div class="uni-badge">Cooperative</div></div><div class="uni-content"><h3>Cooperative College (Mandalay)</h3><div class="uni-location"><span>📍</span> Mandalay (location to be confirmed)</div><div class="uni-majors"><span class="major-tag">Cooperative Studies</span><span class="major-tag">Not specified</span></div><div class="uni-stats"><div class="stat"><strong>Min. Marks</strong><p>Not publicly available</p></div><div class="stat"><strong>Programs</strong><p>Not published</p></div><div class="stat"><strong>Projects</strong><p>Not publicly disclosed</p></div></div><a class="view-btn" href="upp.html?id=cooperative-college">View Details</a></div></div><div class="university-card" data-major="economics cooperative" data-region="sagaing" data-type="cooperative"><div class="uni-image"><img alt="Cooperative University (Sagaing)" src="placeholder.jpg"/><div class="uni-badge">Cooperative</div></div><div class="uni-content"><h3>Cooperative University (Sagaing)</h3><div class="uni-location"><span>📍</span> Sagaing (location to be confirmed)</div><div class="uni-majors"><span class="major-tag">Cooperative Studies</span><span class="major-tag">Not specified</span></div><div class="uni-stats"><div class="stat"><strong>Min. Marks</strong><p>Not publicly available</p></div><div class="stat"><strong>Programs</strong><p>Not published</p></div><div class="stat"><strong>Projects</strong><p>Not publicly disclosed</p></div></div><a class="view-btn" href="upp.html?id=cooperative-university">View Details</a></div></div><div class="university-card" data-major="economics cooperative" data-region="yangon" data-type="cooperative"><div class="uni-image"><img alt="Cooperative University (Thanlyin)" src="placeholder.jpg"/><div class="uni-badge">Cooperative</div></div><div class="uni-content"><h3>Cooperative University (Thanlyin)</h3><div class="uni-location"><span>📍</span> Thanlyin (location to be confirmed)</div><div class="uni-majors"><span class="major-tag">Cooperative Studies</span><span class="major-tag">Not specified</span></div><div class="uni-stats"><div class="stat"><strong>Min. Marks</strong><p>Not publicly available</p></div><div class="stat"><strong>Programs</strong><p>Not published</p></div><div class="stat"><strong>Projects</strong><p>Not publicly disclosed</p></div></div><a class="view-btn" href="upp.html?id=cooperative-university">View Details</a></div></div><div class="university-card" data-major="education" data-region="tanintharyi" data-type="public"><div class="uni-image"><img alt="Dawei Education College" src="placeholder.jpg"/><div class="uni-badge">College</div></div><div class="uni-content"><h3>Dawei Education College</h3><div class="uni-location"><span>📍</span> Myanmar (location to be confirmed)</div><div class="uni-majors"><span class="major-tag">Not specified</span><span class="major-tag">Not specified</span></div><div class="uni-stats"><div class="stat"><strong>Min. Marks</strong><p>Not publicly available</p></div><div class="stat"><strong>Programs</strong><p>Not published</p></div><div class="stat"><strong>Projects</strong><p>Not publicly disclosed</p></div></div><a class="view-btn" href="upp.html?id=dawei-education-college">View Details</a></div></div><div class="university-card" data-major="computer-science" data-region="unknown" data-type="military"><div class="uni-image"><img alt="Defence Services Institute of Computer and Technology" src="placeholder.jpg"/><div class="uni-badge">Military</div></div><div class="uni-content"><h3>Defence Services Institute of Computer and Technology</h3><div class="uni-location"><span>📍</span> Myanmar (location to be confirmed)</div><div class="uni-majors"><span class="major-tag">Computer Science</span><span class="major-tag">Not specified</span></div><div class="uni-stats"><div class="stat"><strong>Min. Marks</strong><p>Selection process</p></div><div class="stat"><strong>Programs</strong><p>Not published</p></div><div class="stat"><strong>Projects</strong><p>Not publicly disclosed</p></div></div><a class="view-btn" href="upp.html?id=defence-services-institute-of-computer-and-technology">View Details</a></div></div><div class="university-card" data-major="nursing health" data-region="yangon" data-type="military"><div class="uni-image"><img alt="Defence Services University of Nursing and Paramedical Sciences" src="placeholder.jpg"/><div class="uni-badge">Military</div></div><div class="uni-content"><h3>Defence Services University of Nursing and Paramedical Sciences</h3><div class="uni-location"><span>📍</span> Mingaladon, Yangon</div><div class="uni-majors"><span class="major-tag">Medicine</span><span class="major-tag">Not specified</span></div><div class="uni-stats"><div class="stat"><strong>Min. Marks</strong><p>Selection process</p></div><div class="stat"><strong>Programs</strong><p>Not published</p></div><div class="stat"><strong>Projects</strong><p>Not publicly disclosed</p></div></div><a class="view-btn" href="upp.html?id=defence-services-university-of-nursing-and-paramedical-scien">View Details</a></div></div><div class="university-card" data-major="engineering" data-region="unknown" data-type="military"><div class="uni-image"><img alt="Defence Services Technological University" src="placeholder.jpg"/><div class="uni-badge">Military</div></div><div class="uni-content"><h3>Defence Services Technological University</h3><div class="uni-location"><span>📍</span> Myanmar (location to be confirmed)</div><div class="uni-majors"><span class="major-tag">Military</span><span class="major-tag">Not specified</span></div><div class="uni-stats"><div class="stat"><strong>Min. Marks</strong><p>Selection process</p></div><div class="stat"><strong>Programs</strong><p>Not published</p></div><div class="stat"><strong>Projects</strong><p>Not publicly disclosed</p></div></div><a class="view-btn" href="upp.html?id=defence-services-technological-university">View Details</a></div></div><div class="university-card" data-major="engineering technology" data-region="kachin" data-type="gtc"><div class="uni-image"><img alt="Government Technical College (Mohnyin)" src="placeholder.jpg"/><div class="uni-badge">GTC</div></div><div class="uni-content"><h3>Government Technical College (Mohnyin)</h3><div class="uni-location"><span>📍</span> Mohnyin (location to be confirmed)</div><div class="uni-majors"><span class="major-tag">Engineering</span><span class="major-tag">Not specified</span></div><div class="uni-stats"><div class="stat"><strong>Min. Marks</strong><p>Not publicly available</p></div><div class="stat"><strong>Programs</strong><p>Not published</p></div><div class="stat"><strong>Projects</strong><p>Not publicly disclosed</p></div></div><a class="view-btn" href="upp.html?id=government-technical-college">View Details</a></div></div><div class="university-card" data-major="engineering technology" data-region="sagaing" data-type="gtc"><div class="uni-image"><img alt="Government Technical College (Shwebo)" src="placeholder.jpg"/><div class="uni-badge">GTC</div></div><div class="uni-content"><h3>Government Technical College (Shwebo)</h3><div class="uni-location"><span>📍</span> Shwebo (location to be confirmed)</div><div class="uni-majors"><span class="major-tag">Engineering</span><span class="major-tag">Not specified</span></div><div class="uni-stats"><div class="stat"><strong>Min. Marks</strong><p>Not publicly available</p></div><div class="stat"><strong>Programs</strong><p>Not published</p></div><div class="stat"><strong>Projects</strong><p>Not publicly disclosed</p></div></div><a class="view-btn" href="upp.html?id=government-technical-college">View Details</a></div></div></div>
+<!-- No Results Message -->
+<div class="no-results" id="noResults" style="display: none;">
+<h3>😔 No universities found</h3>
+<p>Try adjusting your filters or search terms</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="footer-content">
+<div class="footer-section">
+<h3>High Schooler's Tool</h3>
+<p>Empowering Myanmar students to make informed university choices</p>
+</div>
+<div class="footer-section">
+<h4>Quick Links</h4>
+<ul>
+<li><a href="hst.html">Home</a></li>
+<li><a href="uni.html">Universities</a></li>
+<li><a href="career-journey.html">Career Journey</a></li>
+<li><a href="study-mode.html">Study mode</a></li>
+<li><a href="scholarships.html">Scholarships</a></li>
+<li><a href="about.html">About Us</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h4>Contact</h4>
+<p>University of Computer Studies, Taunggyi</p>
+<p>Email: highschoolertoolmm@gmail.com</p>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2025 High Schooler's Tool. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- Floating Action Button -->
+<button class="fab-filters" id="showFiltersBtn" title="Show Filters">
+        🔍
+    </button>
+<!-- Scripts -->
+<script src="script.js"></script>
+<script src="uni.js"></script>
+<script>
+        // ============================================
+        // AUTO-HIDE FILTER BAR ON SCROLL
+        // ============================================
+        let lastScrollTop = 0;
+        const filterBar = document.getElementById('filterBar');
+        const showFiltersBtn = document.getElementById('showFiltersBtn');
+        const scrollThreshold = 100;
+
+        if (filterBar) {
+            window.addEventListener('scroll', function() {
+                const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+                // Show/hide floating button
+                if (currentScroll > 300) {
+                    showFiltersBtn.classList.add('show');
+                } else {
+                    showFiltersBtn.classList.remove('show');
+                }
+
+                // Don't hide filter bar if at top
+                if (currentScroll <= scrollThreshold) {
+                    filterBar.classList.remove('hidden');
+                    filterBar.classList.add('visible');
+                    return;
+                }
+
+                // Scrolling down - hide
+                if (currentScroll > lastScrollTop && currentScroll > scrollThreshold) {
+                    filterBar.classList.add('hidden');
+                    filterBar.classList.remove('visible');
+                } 
+                // Scrolling up - show
+                else if (currentScroll < lastScrollTop) {
+                    filterBar.classList.remove('hidden');
+                    filterBar.classList.add('visible');
+                }
+
+                lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+            });
+
+            // Show on mouse near top
+            document.addEventListener('mousemove', function(e) {
+                if (e.clientY < 150 && window.pageYOffset > scrollThreshold) {
+                    filterBar.classList.remove('hidden');
+                    filterBar.classList.add('visible');
+                }
+            });
+
+            console.log('✅ Auto-hide filter bar initialized!');
+        }
+
+        // Floating button click
+        if (showFiltersBtn) {
+            showFiltersBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+                
+                if (filterBar) {
+                    filterBar.classList.remove('hidden');
+                    filterBar.classList.add('visible');
+                }
+            });
+
+            console.log('✅ Floating filter button initialized!');
+        }
+    </script>
+<style>
+        /* Floating Button Styles */
+        .fab-filters {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+            z-index: 1000;
+            transition: all 0.3s;
+            opacity: 0;
+            transform: scale(0);
+        }
+
+        .fab-filters.show {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .fab-filters:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 30px rgba(102, 126, 234, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            .fab-filters {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (!hamburger || !navLinks) return;
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  });
+
+  // Close menu after clicking a link (mobile UX)
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+      hamburger.classList.remove('active');
+    });
+  });
+});
+</script>
+<script src="uni_updated.js"></script></body>
+</html>
