@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>University Profile - High Schooler's Tool</title>
+
+  <link rel="stylesheet" href="hst.css" />
+  <link rel="stylesheet" href="upp.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h2>HST</h2>
+        <span>High Schooler's Tool</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="hst.html">Home</a></li>
+        <li><a href="uni.html" class="active">Universities</a></li>
+        <li><a href="career-journey.html">Career journey</a></li>
+        <li><a href="study-mode.html">Study mode</a></li>
+        <li><a href="scholarships.html">Scholarships</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="uni-hero">
+    <div class="hero-overlay"></div>
+    <!-- Replace with your real image -->
+    <div class="hero-bg" style="background-image: url('mcti.jpg');"></div>
+
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> /
+        <a href="uni.html">Universities</a> /
+        <span>Military Computer & Technological Institute (MCTI)</span>
+      </div>
+
+      <div class="uni-hero-content">
+        <div class="uni-logo">
+          <img src="mctilogo.jpg" alt="MCTI Logo" />
+        </div>
+
+        <div class="uni-title">
+          <h1>Military Computer & Technological Institute - MCTI</h1>
+          <p class="uni-subtitle">A Myanmar defence services institute for military technology and engineering training.</p>
+
+          <div class="uni-meta">
+            <span><i>📍</i> Hopong Station, Eastern Command (Shan State)</span>
+            <span><i>🏛️</i> Military Technology, Computing & Engineering Training</span>
+            <span><i>📅</i> Moved to Hopong on 22 October 2002 (report)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Stats Bar -->
+  <section class="quick-stats">
+    <div class="container">
+      <div class="stats-grid">
+
+        <div class="stat-item">
+          <div class="stat-icon">💻</div>
+          <div class="stat-info">
+            <h3>MCTI</h3>
+            <p>Military IT/Tech training</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">🪖</div>
+          <div class="stat-info">
+            <h3>Defence</h3>
+            <p>Defence Services institute</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">📍</div>
+          <div class="stat-info">
+            <h3>Hopong</h3>
+            <p>Eastern Command area</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">🧰</div>
+          <div class="stat-info">
+            <h3>Engineering</h3>
+            <p>Skills-focused training</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="profile-content">
+    <div class="container">
+      <div class="content-layout">
+
+        <!-- Sidebar -->
+        <aside class="profile-sidebar">
+
+          <div class="sidebar-card">
+            <h3>Quick Info</h3>
+            <div class="info-list">
+              <div class="info-item">
+                <strong>Type</strong>
+                <span>Military-run training institute</span>
+              </div>
+              <div class="info-item">
+                <strong>Location</strong>
+                <span>Hopong Station, Eastern Command (Shan State)</span>
+              </div>
+              <div class="info-item">
+                <strong>Also known as</strong>
+                <span>Formerly Military Technological College / Military Technological Institute (reported)</span>
+              </div>
+              <div class="info-item">
+                <strong>Focus</strong>
+                <span>Military engineering skills, technology, and discipline-based training</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>Entrance Requirements</h3>
+            <div class="requirement-box">
+              <div class="requirement-item">
+                <span class="req-label">Selection</span>
+                <span class="req-value">Defence Services intake (varies by year)</span>
+              </div>
+              <div class="requirement-item">
+                <span class="req-label">Typical checks</span>
+                <span class="req-value">Medical/fitness + interviews (common for military training schools)</span>
+              </div>
+              <div class="requirement-item">
+                <span class="req-label">Best action</span>
+                <span class="req-value">Follow official Defence Services announcements for current intake rules</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card contact-card">
+            <h3>Contact</h3>
+            <div class="contact-info">
+              <p><i>📍</i> Hopong, Shan State (Pa-O Self-Administered Zone area)</p>
+              <p><i>🗞️</i> Check official Defence Services news/announcements</p>
+            </div>
+            <button class="contact-btn">Get in Touch</button>
+          </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="profile-main">
+
+          <!-- Navigation Tabs -->
+          <div class="profile-tabs">
+            <button class="tab-btn active" data-tab="overview">Overview</button>
+            <button class="tab-btn" data-tab="majors">Majors</button>
+            <button class="tab-btn" data-tab="projects">Projects</button>
+            <button class="tab-btn" data-tab="campus">Campus Life</button>
+            <button class="tab-btn" data-tab="careers">Career Paths</button>
+          </div>
+
+          <!-- Tab Content -->
+          <div class="tab-content">
+
+            <!-- Overview Tab -->
+            <div class="tab-panel active" id="overview">
+              <div class="content-card">
+                <h2>About MCTI</h2>
+                <p>
+                  Military Computer & Technological Institute (MCTI) is located in Hopong Station under the Eastern Command in Shan State.
+                  Public reports describe MCTI as a defence services technology/engineering training institute and note it was moved to Hopong
+                  on 22 October 2002.
+                </p>
+              </div>
+
+              <div class="content-card">
+                <h2>Why Choose MCTI?</h2>
+                <div class="features-list">
+
+                  <div class="feature-item">
+                    <div class="feature-icon">💻</div>
+                    <div>
+                      <h4>Technology + Engineering Skills</h4>
+                      <p>Training focuses on improving skills in military engineering/technology-related subjects.</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">🪖</div>
+                    <div>
+                      <h4>Military Career Path</h4>
+                      <p>As a defence services institute, it supports career development within military units and battalions.</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">📍</div>
+                    <div>
+                      <h4>Eastern Command Location</h4>
+                      <p>Based in Hopong (Pa-O Self-Administered Zone area) in southern Shan State.</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="content-card">
+                <h2>Campus Gallery</h2>
+                <div class="gallery-grid">
+                  <div class="gallery-item">
+                    <img src="mcti1.jpg" alt="MCTI Campus" />
+                    <p>🏛️</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="mcti2.jpg" alt="Training Hall" />
+                    <p>🎓</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="mcti3.jpg" alt="Computer Training" />
+                    <p>💻</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="mcti4.jpg" alt="Engineering Practice" />
+                    <p>🧰</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="mcti5.jpg" alt="Parade Ground" />
+                    <p>🪖</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="mcti6.jpg" alt="Student Life" />
+                    <p>🤝</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Majors Tab -->
+            <div class="tab-panel" id="majors">
+              <div class="content-card">
+                <h2>Programs / Training Areas</h2>
+                <p class="subtitle">Public details are limited; examples based on reported training descriptions</p>
+
+                <div class="majors-list">
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">💻</div>
+                      <div>
+                        <h3>Military Computing & Technology Training</h3>
+                        <span class="major-degree">Military training program</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">
+                      Public reports describe trainees being trained to improve skills in the military engineering field and to learn engineering subjects.
+                    </p>
+                    <div class="major-subjects">
+                      <span>Computing Basics</span>
+                      <span>Engineering Subjects</span>
+                      <span>Technical Skills</span>
+                      <span>Discipline & Leadership</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Projects Tab (timeline style) -->
+            <div class="tab-panel" id="projects">
+              <div class="content-card">
+                <h2>MCTI Activities & Training</h2>
+                <p class="subtitle">Events publicly reported in news sources</p>
+
+                <div class="projects-timeline">
+
+                  <div class="project-item">
+                    <div class="project-year">2025</div>
+                    <div class="project-content">
+                      <div class="project-badge">Training</div>
+                      <h3>People’s Military Service Training Course No. 10/2025 (Opening Ceremony)</h3>
+                      <p>
+                        Public news reports state the opening ceremony of People’s Military Service Training Course No. 10/2025 was held
+                        at the MCTI parade ground in Hopong Township, with attendance by senior officials.
+                      </p>
+                      <div class="project-tags">
+                        <span>Training</span>
+                        <span>Hopong</span>
+                        <span>Course 10/2025</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-item">
+                    <div class="project-year">2023</div>
+                    <div class="project-content">
+                      <div class="project-badge">Visit</div>
+                      <h3>Inspection / Address to Trainees</h3>
+                      <p>
+                        Public reporting notes a visit where trainees at MCTI were told to practice and learn engineering subjects and apply
+                        their training in assigned duties after the course.
+                      </p>
+                      <div class="project-tags">
+                        <span>Engineering Skills</span>
+                        <span>Training</span>
+                        <span>Discipline</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-item">
+                    <div class="project-year">2002</div>
+                    <div class="project-content">
+                      <div class="project-badge">History</div>
+                      <h3>Relocation to Hopong</h3>
+                      <p>
+                        A published report states the institute (formerly MTC/MTI) was moved from Pyin Oo Lwin to Hopong on 22 October 2002.
+                      </p>
+                      <div class="project-tags">
+                        <span>Hopong</span>
+                        <span>Relocation</span>
+                        <span>History</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Campus Life Tab -->
+            <div class="tab-panel" id="campus">
+              <div class="content-card">
+                <h2>Campus Life at MCTI</h2>
+                <p class="subtitle">Military training environment with structured routines</p>
+
+                <div class="campus-features">
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#232526,#414345);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                        🪖
+                      </div>
+                    </div>
+                    <h3>Discipline & Routine</h3>
+                    <p>Military institutes typically follow strict schedules, discipline rules, and structured training.</p>
+                  </div>
+
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#141e30,#243b55);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                        💻
+                      </div>
+                    </div>
+                    <h3>Technical Learning</h3>
+                    <p>Training includes technology/engineering subjects and practical skill development.</p>
+                  </div>
+
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#1f4037,#99f2c8);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                        🧰
+                      </div>
+                    </div>
+                    <h3>Hands-on Practice</h3>
+                    <p>Reports highlight trainees practicing and learning engineering subjects to apply in their units.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Career Paths Tab -->
+            <div class="tab-panel" id="careers">
+              <div class="content-card">
+                <h2>Career Paths</h2>
+                <p class="subtitle">Technical roles within defence services</p>
+
+                <div class="career-paths">
+                  <div class="career-card">
+                    <div class="career-icon">🛠️</div>
+                    <h3>Military Technical Specialist</h3>
+                    <p>Engineering/technology roles supporting military operations and unit technical readiness.</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">💻</div>
+                    <h3>IT & Communications Support</h3>
+                    <p>Computing and technical support roles (depending on training and assigned unit).</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">📡</div>
+                    <h3>Signals / Systems Support</h3>
+                    <p>Work with communication systems and technology-related duties in respective units.</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">🎓</div>
+                    <h3>Trainer / Instructor Path</h3>
+                    <p>Experienced personnel may move into training roles (depends on defence services postings).</p>
+                  </div>
+                </div>
+
+                <div class="employer-logos">
+                  <h4>Typical Destination:</h4>
+                  <div class="logo-grid">
+                    <div class="employer-logo">Defence Services Units</div>
+                    <div class="employer-logo">Engineering Battalions</div>
+                    <div class="employer-logo">Signals Units</div>
+                    <div class="employer-logo">Technical Training Schools</div>
+                    <div class="employer-logo">Logistics / Support</div>
+                    <div class="employer-logo">Further Military Training</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div><!-- /tab-content -->
+        </main>
+
+      </div><!-- /content-layout -->
+    </div><!-- /container -->
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-profile">
+    <div class="container">
+      <h2>Interested in MCTI?</h2>
+      <p>Follow official Defence Services announcements for intake information</p>
+      <div class="cta-buttons">
+        <a href="uni.html" class="btn-secondary">Explore More Universities</a>
+        <a href="error.html" class="btn-primary">Apply Now</a>
+      </div>
+    </div>
+  </section>
+
+ <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+
+      <div class="footer-section">
+        <h3>High Schooler’s Tool</h3>
+        <p>Empowering Myanmar students to make informed university choices.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="hst.html">Home</a></li>
+          <li><a href="uni.html">Universities</a></li>
+          <li><a href="career-journey.html">Career Journey</a></li>
+          <li><a href="study-mode.html">Study mode</a></li>
+          <li><a href="scholarships.html">Scholarships</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>High Schooler’s Tool</p>
+        <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+        <p>
+          Facebook:
+          <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+            High Schooler’s Tool ARP
+          </a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 High Schooler’s Tool. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+  <script src="upp.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Navbar toggle
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+          hamburger.classList.toggle("active");
+        });
+
+        navLinks.querySelectorAll("a").forEach(link => {
+          link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            hamburger.classList.remove("active");
+          });
+        });
+      }
+
+      // Tab functionality
+      document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+          document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+
+          btn.classList.add("active");
+          document.getElementById(btn.dataset.tab).classList.add("active");
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
