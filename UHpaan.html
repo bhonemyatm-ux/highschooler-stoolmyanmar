@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hpa-An University - High Schooler's Tool</title>
+    <link rel="stylesheet" href="hst.css">
+    <link rel="stylesheet" href="upp.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h2>HST</h2>
+                <span>High Schooler's Tool</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="hst.html">Home</a></li>
+                <li><a href="uni.html" class="active">Universities</a></li>
+                <li><a href="career-journey.html">Career journey</li>
+                <li><a href="study-mode.html">Study mode</a></li>
+                <li><a href="scholarships.html">Scholarships</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="uni-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-bg" style="background-image: url('hpaanuni.webp');"></div>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="hst.html">Home</a> / 
+                <a href="uni.html">Universities</a> / 
+                <span>Hpa-An University</span>
+            </div>
+            <div class="uni-hero-content">
+                <div class="uni-logo">
+                    <img src="hpaan-logo.jpg" alt="Hpa-An University Logo">
+                </div>
+                <div class="uni-title">
+                    <h1>Hpa-An University</h1>
+                    <p class="uni-subtitle">State university serving Kayin State students</p>
+                    <div class="uni-meta">
+                        <span><i>📍</i> Hpa-An, Kayin State</span>
+                        <span><i>🏛️</i> Arts, Sciences, Economics</span>
+                        <span><i>📅</i> State Arts & Science University</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats Bar -->
+    <section class="quick-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">🎓</div>
+                    <div class="stat-info">
+                        <h3>1000+</h3>
+                        <p>Students</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">📚</div>
+                    <div class="stat-info">
+                        <h3>20+</h3>
+                        <p>Programs</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">👨‍🏫</div>
+                    <div class="stat-info">
+                        <h3>10+</h3>
+                        <p>Faculty</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-info">
+                        <h3>Kayin State</h3>
+                        <p>Regional Hub</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="profile-content">
+        <div class="container">
+            <div class="content-layout">
+                
+                <!-- Sidebar -->
+                <aside class="profile-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Quick Info</h3>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <strong>Type</strong>
+                                <span>Government</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Location</strong>
+                                <span>Hpa-An Township, Kayin State</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Programs</strong>
+                                <span>B.A., B.Sc. degrees</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Language</strong>
+                                <span>Myanmar/English</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Entrance Requirements</h3>
+                        <div class="requirement-box">
+                            <div class="requirement-item">
+                                <span class="req-label">Minimum Marks</span>
+                                <span class="req-value">240+</span>
+                            </div>
+                            <div class="requirement-item">
+                                <span class="req-label">Required Subjects</span>
+                                <div class="subject-tags">
+                                    <span class="subject-tag">Matriculation</span>
+                                    <span class="subject-tag">Arts/Science</span>
+                                    <span class="subject-tag">Economics</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card contact-card">
+                        <h3>Contact</h3>
+                        <div class="contact-info">
+                            <p><i>📍</i> Hpa-An, Kayin State</p>
+                            <p><i>🌐</i> Ministry of Education</p>
+                            <p><i>📧</i> Regional education office</p>
+                        </div>
+                        <button class="contact-btn">Get in Touch</button>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="profile-main">
+                    
+                    <!-- Navigation Tabs -->
+                    <div class="profile-tabs">
+                        <button class="tab-btn active" data-tab="overview">Overview</button>
+                        <button class="tab-btn" data-tab="majors">Majors</button>
+                        <button class="tab-btn" data-tab="campus">Campus Life</button>
+                        <button class="tab-btn" data-tab="careers">Career Paths</button>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content">
+                        
+                        <!-- Overview Tab -->
+                        <div class="tab-panel active" id="overview">
+                            <div class="content-card">
+                                <h2>About the University</h2>
+                                <p>Hpa-An University is a state-run arts and science university serving students from Kayin State and surrounding regions. As a regional higher education institution under Myanmar's Ministry of Education, it provides accessible university education to students who qualify through the national matriculation examination system.</p>
+                                <p>The university focuses on foundational undergraduate programs in arts, sciences, and economics, supporting Kayin State's educational development and serving as an important academic center for local communities.</p>
+                            </div>
+
+                            <div class="content-card">
+                                <h2>Why Choose Hpa-An University?</h2>
+                                <div class="features-list">
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🏞️</div>
+                                        <div>
+                                            <h4>Kayin State Location</h4>
+                                            <p>Home university for Kayin State students - no need to relocate to Yangon or Mandalay</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="feature-item">
+                                        <div class="feature-icon">📚</div>
+                                        <div>
+                                            <h4>Standard Arts & Science</h4>
+                                            <p>Traditional B.A. and B.Sc. programs covering core academic disciplines</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🎓</div>
+                                        <div>
+                                            <h4>Regional Access</h4>
+                                            <p>Serves students from Kayin State and border regions with accessible entry requirements</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🌿</div>
+                                        <div>
+                                            <h4>Natural Environment</h4>
+                                            <p>Peaceful campus setting in scenic Hpa-An, known for its natural beauty</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content-card">
+                                <h2>Campus Gallery</h2>
+                                <div class="gallery-grid">
+                                    <div class="gallery-item">
+                                        <img src="hpaan1.jpg" alt="Main Campus">
+                                        <p>🏫</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="hpaan2.jpg" alt="Lecture Halls">
+                                        <p>📚</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="hpaan3.jpg" alt="Science Labs">
+                                        <p>🔬</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="hpaan4.jpg" alt="Library">
+                                        <p>📖</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="hpaan5.jpg" alt="Student Activities">
+                                        <p>🎓</p>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="hpaan6.jpg" alt="Campus Grounds">
+                                        <p>🌳</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Majors Tab -->
+                        <div class="tab-panel" id="majors">
+                            <div class="content-card">
+                                <h2>Available Programs</h2>
+                                <p class="subtitle">Core arts, science, and economics programs</p>
+                                
+                                <div class="majors-list">
+                                    <!-- Arts -->
+                                    <div class="major-card">
+                                        <div class="major-header">
+                                            <div class="major-icon">📖</div>
+                                            <div>
+                                                <h3>Faculty of Arts</h3>
+                                                <span class="major-degree">B.A. (Bachelor of Arts)</span>
+                                            </div>
+                                        </div>
+                                        <p class="major-desc">Myanmar, English, History, Geography, Psychology, and related humanities programs.</p>
+                                        <div class="major-details">
+                                            <div class="detail-row">
+                                                <strong>Duration:</strong>
+                                                <span>4 Years</span>
+                                            </div>
+                                            <div class="detail-row">
+                                                <strong>Min. Marks:</strong>
+                                                <span>340+ marks</span>
+                                            </div>
+                                        </div>
+                                        <div class="major-subjects">
+                                            <span>Myanmar</span>
+                                            <span>English</span>
+                                            <span>History</span>
+                                            <span>Geography</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Science -->
+                                    <div class="major-card">
+                                        <div class="major-header">
+                                            <div class="major-icon">🔬</div>
+                                            <div>
+                                                <h3>Faculty of Science</h3>
+                                                <span class="major-degree">B.Sc. (Bachelor of Science)</span>
+                                            </div>
+                                        </div>
+                                        <p class="major-desc">Physics, Chemistry, Mathematics, Zoology, Botany, and foundational science programs.</p>
+                                        <div class="major-details">
+                                            <div class="detail-row">
+                                                <strong>Duration:</strong>
+                                                <span>4 Years</span>
+                                            </div>
+                                            <div class="detail-row">
+                                                <strong>Min. Marks:</strong>
+                                                <span>380+ marks</span>
+                                            </div>
+                                        </div>
+                                        <div class="major-subjects">
+                                            <span>Physics</span>
+                                            <span>Chemistry</span>
+                                            <span>Mathematics</span>
+                                            <span>Zoology</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Economics -->
+                                    <div class="major-card">
+                                        <div class="major-header">
+                                            <div class="major-icon">📊</div>
+                                            <div>
+                                                <h3>Economics</h3>
+                                                <span class="major-degree">B.Econ. (Bachelor of Economics)</span>
+                                            </div>
+                                        </div>
+                                        <p class="major-desc">Economics, Statistics, Public Administration, and business-related programs.</p>
+                                        <div class="major-details">
+                                            <div class="detail-row">
+                                                <strong>Duration:</strong>
+                                                <span>4 Years</span>
+                                            </div>
+                                            <div class="detail-row">
+                                                <strong>Min. Marks:</strong>
+                                                <span>360+ marks</span>
+                                            </div>
+                                        </div>
+                                        <div class="major-subjects">
+                                            <span>Economics</span>
+                                            <span>Statistics</span>
+                                            <span>Public Admin</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Campus Life Tab -->
+                        <div class="tab-panel" id="campus">
+                            <div class="content-card">
+                                <h2>Campus Life at Hpa-An University</h2>
+                                <p class="subtitle">Regional university experience</p>
+                                
+                                <div class="campus-features">
+                                    <div class="campus-card">
+                                        <div class="campus-img">
+                                            <div style="width:100%;height:200px;background:linear-gradient(135deg,#667eea,#764ba2);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">🏫</div>
+                                        </div>
+                                        <h3>Academic Facilities</h3>
+                                        <p>Standard lecture halls, science laboratories, and library facilities for arts and science programs.</p>
+                                    </div>
+
+                                    <div class="campus-card">
+                                        <div class="campus-img">
+                                            <div style="width:100%;height:200px;background:linear-gradient(135deg,#f093fb,#f5576c);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">🌳</div>
+                                        </div>
+                                        <h3>Natural Setting</h3>
+                                        <p>Located in scenic Hpa-An with surrounding limestone caves and natural attractions.</p>
+                                    </div>
+
+                                    <div class="campus-card">
+                                        <div class="campus-img">
+                                            <div style="width:100%;height:200px;background:linear-gradient(135deg,#4facfe,#00f2fe);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">👥</div>
+                                        </div>
+                                        <h3>Student Community</h3>
+                                        <p>Serving primarily Kayin State students and regional communities.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Career Paths Tab -->
+                        <div class="tab-panel" id="careers">
+                            <div class="content-card">
+                                <h2>Career Paths</h2>
+                                <p class="subtitle">Traditional academic pathways</p>
+                                
+                                <div class="career-paths">
+                                    <div class="career-card">
+                                        <div class="career-icon">📚</div>
+                                        <h3>Teaching</h3>
+                                        <p>Government schools, private education, tutoring</p>
+                                    </div>
+
+                                    <div class="career-card">
+                                        <div class="career-icon">🏢</div>
+                                        <h3>Government Service</h3>
+                                        <p>Civil service, regional administration</p>
+                                    </div>
+
+                                    <div class="career-card">
+                                        <div class="career-icon">📊</div>
+                                        <h3>Business & Banking</h3>
+                                        <p>Economics graduates in commerce and finance</p>
+                                    </div>
+
+                                    <div class="career-card">
+                                        <div class="career-icon">🔬</div>
+                                        <h3>Laboratory Work</h3>
+                                        <p>Science graduates in testing and research labs</p>
+                                    </div>
+
+                                    <div class="career-card">
+                                        <div class="career-icon">✍️</div>
+                                        <h3>Media & Writing</h3>
+                                        <p>Arts graduates in journalism and content creation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-profile">
+        <div class="container">
+            <h2>Ready to Study at Hpa-An University?</h2>
+            <p>Explore more universities or contact admissions office</p>
+            <div class="cta-buttons">
+                <a href="uni.html" class="btn-secondary">← More Universities</a>
+                <a href="#" class="btn-primary">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>High Schooler's Tool</h3>
+                    <p>Empowering Myanmar students to make informed university choices.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="hst.html">Home</a></li>
+                        <li><a href="uni.html">Universities</a></li>
+                        <li><a href="career-journey.html">Career Journey</a></li>
+                        <li><a href="scholarships.html">Scholarships</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+                    <p>
+                        Facebook: <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank">High Schooler's Tool ARP</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 High Schooler's Tool. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="upp.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Navbar toggle
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        
+        if (hamburger && navLinks) {
+            hamburger.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+                hamburger.classList.toggle("active");
+            });
+            
+            navLinks.querySelectorAll("a").forEach(link => {
+                link.addEventListener("click", () => {
+                    navLinks.classList.remove("active");
+                    hamburger.classList.remove("active");
+                });
+            });
+        }
+        
+        // Tab functionality
+        document.querySelectorAll(".tab-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+                document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+                
+                btn.classList.add("active");
+                document.getElementById(btn.dataset.tab).classList.add("active");
+            });
+        });
+    });
+    </script>
+</body>
+</html>
