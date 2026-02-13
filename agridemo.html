@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Agricultural Institute, Demoso - High Schooler's Tool</title>
+    <link rel="stylesheet" href="hst.css">
+    <link rel="stylesheet" href="upp.css">
+    <style>
+    /* DEMOSO KAYAH HILLS THEME */
+    .auto-logo {
+        width: 120px; height: 120px; border-radius: 20px;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        background: linear-gradient(135deg, #2ed573 0%, #1e90ff 50%, #ff9ff3 100%);
+        box-shadow: 0 15px 35px rgba(46,213,115,0.4);
+        position: relative; overflow: hidden;
+    }
+    .auto-logo::before {
+        content: ''; position: absolute; top: 10px; left: 10px; right: 10px; height: 4px;
+        background: linear-gradient(90deg, #ffeb3b, #ff9800, #ffeb3b); border-radius: 2px;
+        animation: shine 3s infinite;
+    }
+    .auto-logo .logo-icon { font-size: 3.5rem; z-index: 2; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3)); }
+    .auto-logo .logo-text { font-size: 0.7rem; font-weight: bold; color: white; text-align: center; margin-top: 5px; text-shadow: 0 1px 2px rgba(0,0,0,0.5); letter-spacing: 1px; }
+    
+    /* DEMOSO SAFE GRADIENT CLASSES */
+    .demo-emerald { background: linear-gradient(135deg, #2ed573, #1e90ff); }
+    .demo-forest { background: linear-gradient(135deg, #00b894, #00cec9); }
+    .demo-mountain { background: linear-gradient(135deg, #74b9ff, #0984e3); }
+    .demo-coffee { background: linear-gradient(135deg, #6c5ce7, #a29bfe); }
+    .demo-orchard { background: linear-gradient(135deg, #fdcb6e, #e17055); }
+    .demo-hill { background: linear-gradient(135deg, #ff9ff3, #fd79a8); }
+    
+    .farm-img { width: 100%; height: 250px; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem; border-radius: 15px 15px 0 0; }
+    
+    .gradient-bg { background: linear-gradient(135deg, #2ed573, #1e90ff); color: white; }
+    .gradient-btn { background: linear-gradient(135deg, #2ed573, #1e90ff); border: none; color: white; padding: 12px 24px; border-radius: 25px; font-weight: bold; transition: all 0.3s ease; text-decoration: none; display: inline-block; }
+    .gradient-btn:hover { transform: scale(1.05); }
+    .glass-effect { background: rgba(255,255,255,0.9); backdrop-filter: blur(10px); border-radius: 20px; border: 1px solid rgba(255,255,255,0.2); }
+    .glow-effect:hover { box-shadow: 0 10px 30px rgba(46,213,115,0.4); transform: translateY(-5px); }
+    
+    .farm-gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+    .farm-item { position: relative; border-radius: 15px; overflow: hidden; transition: transform 0.3s ease; }
+    .farm-item:hover { transform: scale(1.05); }
+    .farm-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 20px; opacity: 0; transition: opacity 0.3s ease; }
+    
+    .modern-tabs .tab-btn { position: relative; padding: 15px 25px; margin: 0 5px; border-radius: 25px; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 2px solid rgba(255,255,255,0.2); transition: all 0.3s ease; cursor: pointer; }
+    .modern-tabs .tab-btn.active { background: linear-gradient(135deg, #2ed573, #1e90ff); box-shadow: 0 10px 30px rgba(46,213,115,0.4); transform: translateY(-3px); }
+    
+    .schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+    .schedule-item { background: rgba(255,255,255,0.9); padding: 20px; border-radius: 15px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+    
+    @keyframes shine { 0%, 100% { opacity: 1; transform: translateX(-100%); } 50% { opacity: 0.7; transform: translateX(100%); } }
+    @media (max-width: 768px) { .auto-logo { width: 100px; height: 100px; } .auto-logo .logo-icon { font-size: 3rem; } .auto-logo .logo-text { font-size: 0.6rem; } }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h2>HST</h2>
+                <span>High Schooler's Tool</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="hst.html">Home</a></li>
+                <li><a href="uni.html" class="active">Universities</a></li>
+                <li><a href="career-journey.html">Career journey</a></li>
+                <li><a href="study-mode.html">Study mode</a></li>
+                <li><a href="scholarships.html">Scholarships</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="uni-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-bg gradient-bg"></div>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="hst.html">Home</a> / 
+                <a href="uni.html">Universities</a> / 
+                <span>State Agricultural Institute, Demoso</span>
+            </div>
+            <div class="uni-hero-content">
+                <!-- AUTO-GENERATED LOGO -->
+                <div class="uni-logo">
+                    <div class="auto-logo">
+                        <div class="logo-icon">🏔️</div>
+                        <div class="logo-text">SAI<br>Demoso</div>
+                    </div>
+                </div>
+                <div class="uni-title">
+                    <h1>State Agricultural Institute, Demoso</h1>
+                    <p class="uni-subtitle">Kayah Hill Tracts Agricultural Excellence</p>
+                    <div class="uni-meta">
+                        <span><i>📍</i> Demoso Township, Kayah State</span>
+                        <span><i>🏔️</i> 3-Year Diploma Programs</span>
+                        <span><i>🌾</i> 90+ Acre Hill Farms</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="quick-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">🏔️</div>
+                    <div class="stat-info"><h3>350+</h3><p>Students</p></div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">☕</div>
+                    <div class="stat-info"><h3>14+</h3><p>Specializations</p></div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🌲</div>
+                    <div class="stat-info"><h3>90+</h3><p>Acres Hill Farms</p></div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🐐</div>
+                    <div class="stat-info"><h3>40+</h3><p>Faculty</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="profile-content">
+        <div class="container">
+            <div class="content-layout">
+                <!-- Sidebar -->
+                <aside class="profile-sidebar">
+                    <div class="sidebar-card gradient-bg">
+                        <h3>🏔️ Quick Info</h3>
+                        <div class="info-list">
+                            <div class="info-item"><strong>Type</strong><span>Government Agricultural Institute</span></div>
+                            <div class="info-item"><strong>Location</strong><span>Demoso Township, Kayah State</span></div>
+                            <div class="info-item"><strong>Farm Size</strong><span>90+ acres hill cultivation</span></div>
+                            <div class="info-item"><strong>Awards</strong><span>Diploma certificates</span></div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Entrance Requirements</h3>
+                        <div class="requirement-box">
+                            <div class="requirement-item">
+                                <span class="req-label">Minimum Marks</span>
+                                <span class="req-value">320+ marks</span>
+                            </div>
+                            <div class="requirement-item">
+                                <span class="req-label">Duration</span>
+                                <div class="subject-tags">
+                                    <span class="subject-tag">3 Years</span>
+                                    <span class="subject-tag">Diploma</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card contact-card">
+                        <h3>🏔️ Contact</h3>
+                        <div class="contact-info">
+                            <p><i>📍</i> Demoso Township, Kayah State, Myanmar</p>
+                            <p><i>🌐</i> Ministry of Agriculture</p>
+                            <p><i>📧</i> Regional agriculture office</p>
+                        </div>
+                        <a href="#" class="contact-btn gradient-btn">Visit Hill Farms</a>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="profile-main">
+                    <div class="profile-tabs modern-tabs">
+                        <button class="tab-btn active" data-tab="overview"><span>🏔️</span> Overview</button>
+                        <button class="tab-btn" data-tab="majors"><span>📚</span> Programs</button>
+                        <button class="tab-btn" data-tab="farm"><span>☕</span> Hill Farms</button>
+                        <button class="tab-btn" data-tab="careers"><span>💼</span> Careers</button>
+                    </div>
+
+                    <div class="tab-content">
+                        <!-- Overview Tab -->
+                        <div class="tab-panel active" id="overview">
+                            <div class="content-card glass-effect">
+                                <h2>🏔️ About SAI Demoso</h2>
+                                <p>Nestled in the scenic Kayah hill tracts, State Agricultural Institute Demoso specializes in upland agriculture perfect for Kayah State's highland climate. With 90+ acres of terraced hill farms, coffee plantations, and temperate fruit orchards, SAI Demoso delivers 3-year diploma programs featuring intensive practical training in hill farming techniques.</p>
+                                <p>Perfect for students seeking careers in upland agriculture, coffee production, and hill livestock management in Kayah's unique highland ecosystem.</p>
+                            </div>
+
+                            <div class="content-card">
+                                <h2>Why Choose SAI Demoso?</h2>
+                                <div class="features-list">
+                                    <div class="feature-item glow-effect">
+                                        <div class="feature-icon">☕</div>
+                                        <div>
+                                            <h4>90+ Acre Hill Farms</h4>
+                                            <p>Terraced cultivation, coffee plantations, fruit orchards</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item glow-effect">
+                                        <div class="feature-icon">🏔️</div>
+                                        <div>
+                                            <h4>Hill Agriculture</h4>
+                                            <p>Hill rice, coffee, temperate fruits, terrace farming</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item glow-effect">
+                                        <div class="feature-icon">🐐</div>
+                                        <div>
+                                            <h4>Hill Livestock</h4>
+                                            <p>Goats, poultry, hill cattle management</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content-card">
+                                <h2>Hill Farm Gallery</h2>
+                                <div class="farm-gallery-grid">
+                                    <div class="farm-item">
+                                        <div class="farm-img demo-emerald"><span>☕</span></div>
+                                        <div class="farm-overlay"><span>Coffee Plantations</span></div>
+                                    </div>
+                                    <div class="farm-item">
+                                        <div class="farm-img demo-forest"><span>🌾</span></div>
+                                        <div class="farm-overlay"><span>Hill Rice Terraces</span></div>
+                                    </div>
+                                    <div class="farm-item">
+                                        <div class="farm-img demo-mountain"><span>🍎</span></div>
+                                        <div class="farm-overlay"><span>Temperate Fruits</span></div>
+                                    </div>
+                                    <div class="farm-item">
+                                        <div class="farm-img demo-coffee"><span>🌲</span></div>
+                                        <div class="farm-overlay"><span>Timber Plantations</span></div>
+                                    </div>
+                                    <div class="farm-item">
+                                        <div class="farm-img demo-orchard"><span>🐐</span></div>
+                                        <div class="farm-overlay"><span>Hill Livestock</span></div>
+                                    </div>
+                                    <div class="farm-item">
+                                        <div class="farm-img demo-hill"><span>🥔</span></div>
+                                        <div class="farm-overlay"><span>Potato Cultivation</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Programs Tab -->
+                        <div class="tab-panel" id="majors">
+                            <div class="content-card glass-effect">
+                                <h2>Hill Agriculture Programs</h2>
+                                <p class="subtitle">3-year courses • 70% practical hill farming</p>
+                                <div class="majors-list">
+                                    <div class="major-card glow-effect">
+                                        <div class="major-header">
+                                            <div class="major-icon">☕</div>
+                                            <div>
+                                                <h3>Hill Crops & Coffee</h3>
+                                                <span class="major-degree">Diploma (3 Years)</span>
+                                            </div>
+                                        </div>
+                                        <p class="major-desc">Coffee production, hill rice, terrace farming, temperate vegetables</p>
+                                        <div class="major-subjects">
+                                            <span>☕ Coffee Cultivation</span>
+                                            <span>🌾 Hill Rice</span>
+                                            <span>🥔 Potato Farming</span>
+                                            <span>🌱 Terrace Systems</span>
+                                        </div>
+                                    </div>
+                                    <div class="major-card glow-effect">
+                                        <div class="major-header">
+                                            <div class="major-icon">🍎</div>
+                                            <div>
+                                                <h3>Temperate Fruits</h3>
+                                                <span class="major-degree">Diploma (3 Years)</span>
+                                            </div>
+                                        </div>
+                                        <p class="major-desc">Apple, pear, plum, peach cultivation in Kayah highlands</p>
+                                        <div class="major-subjects">
+                                            <span>🍎 Apple Orchards</span>
+                                            <span>🍐 Pear Cultivation</span>
+                                            <span>🍑 Stone Fruits</span>
+                                            <span>🌳 Nursery Management</span>
+                                        </div>
+                                    </div>
+                                    <div class="major-card glow-effect">
+                                        <div class="major-header">
+                                            <div class="major-icon">🐐</div>
+                                            <div>
+                                                <h3>Hill Livestock</h3>
+                                                <span class="major-degree">Diploma (3 Years)</span>
+                                            </div>
+                                        </div>
+                                        <p class="major-desc">Goat farming, hill poultry, highland cattle management</p>
+                                        <div class="major-subjects">
+                                            <span>🐐 Goat Husbandry</span>
+                                            <span>🐔 Hill Poultry</span>
+                                            <span>🐄 Highland Cattle</span>
+                                            <span>🏥 Veterinary Care</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hill Farms Tab -->
+                        <div class="tab-panel" id="farm">
+                            <div class="content-card glass-effect">
+                                <h2>☕ Hill Farm Experience</h2>
+                                <p class="subtitle">70% hands-on training on terraced hill farms</p>
+                                <div class="campus-features" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                                    <div class="campus-card glow-effect">
+                                        <div class="campus-img farm-img demo-emerald">
+                                            <span>☕</span>
+                                        </div>
+                                        <h3>Coffee Plantations</h3>
+                                        <p>Arabica coffee cultivation, processing, quality control</p>
+                                    </div>
+                                    <div class="campus-card glow-effect">
+                                        <div class="campus-img farm-img demo-forest">
+                                            <span>🌾</span>
+                                        </div>
+                                        <h3>Terrace Rice Fields</h3>
+                                        <p>Hill rice varieties, terrace maintenance, water management</p>
+                                    </div>
+                                    <div class="campus-card glow-effect">
+                                        <div class="campus-img farm-img demo-mountain">
+                                            <span>🍎</span>
+                                        </div>
+                                        <h3>Temperate Fruit Orchards</h3>
+                                        <p>Apple, pear, plum orchards for Kayah highlands</p>
+                                    </div>
+                                </div>
+                                <div style="margin-top: 30px;">
+                                    <h3>Typical Student Day</h3>
+                                    <div class="schedule-grid">
+                                        <div class="schedule-item">
+                                            <span style="font-size: 1.5rem; font-weight: bold; color: #2ed573;">6:00 AM</span><br>
+                                            <span>🌅 Morning Farm Duties</span>
+                                        </div>
+                                        <div class="schedule-item">
+                                            <span style="font-size: 1.5rem; font-weight: bold; color: #2ed573;">8:00 AM</span><br>
+                                            <span>📚 Theory Classes</span>
+                                        </div>
+                                        <div class="schedule-item">
+                                            <span style="font-size: 1.5rem; font-weight: bold; color: #2ed573;">10:00 AM</span><br>
+                                            <span>🏔️ Terrace Farming</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Careers Tab -->
+                        <div class="tab-panel" id="careers">
+                            <div class="content-card glass-effect">
+                                <h2>💼 Hill Agriculture Careers</h2>
+                                <p class="subtitle">Immediate employment in upland agriculture</p>
+                                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                                    <div class="career-card glow-effect" style="background: rgba(255,255,255,0.9); padding: 25px; border-radius: 15px; text-align: center;">
+                                        <div class="career-icon" style="font-size: 3.5rem; margin-bottom: 15px;">☕</div>
+                                        <h3>Coffee Plantation Manager</h3>
+                                        <p>Arabica coffee estates, processing plants</p>
+                                    </div>
+                                    <div class="career-card glow-effect" style="background: rgba(255,255,255,0.9); padding: 25px; border-radius: 15px; text-align: center;">
+                                        <div class="career-icon" style="font-size: 3.5rem; margin-bottom: 15px;">🏔️</div>
+                                        <h3>Hill Farm Supervisor</h3>
+                                        <p>Terrace farms, upland crop production</p>
+                                    </div>
+                                    <div class="career-card glow-effect" style="background: rgba(255,255,255,0.9); padding: 25px; border-radius: 15px; text-align: center;">
+                                        <div class="career-icon" style="font-size: 3.5rem; margin-bottom: 15px;">🐐</div>
+                                        <h3>Livestock Technician</h3>
+                                        <p>Hill goat farms, poultry operations</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-profile" style="background: linear-gradient(135deg, #2ed573, #1e90ff); color: white; padding: 60px 0;">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Ready for Hill Agriculture?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 30px;">Join SAI Demoso - Masters of Kayah Highlands</p>
+            <div class="cta-buttons">
+                <a href="uni.html" style="background: white; color: #2ed573; padding: 15px 30px; border-radius: 25px; text-decoration: none; margin-right: 15px;">← More Universities</a>
+                <a href="#" class="gradient-btn" style="padding: 15px 30px; font-size: 1.1rem;">Start Hill Farm Career</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- YOUR EXACT FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>High Schooler's Tool</h3>
+                    <p>Empowering Myanmar students to make informed university choices.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="hst.html">Home</a></li>
+                        <li><a href="uni.html">Universities</a></li>
+                        <li><a href="career-journey.html">Career Journey</a></li>
+                        <li><a href="study-mode.html">Study mode</a></li>
+                        <li><a href="scholarships.html">Scholarships</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>High Schooler's Tool</p>
+                    <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+                    <p>
+                        Facebook:
+                        <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+                            High Schooler's Tool ARP
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 High Schooler's Tool. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="upp.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Navbar toggle
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        if (hamburger && navLinks) {
+            hamburger.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+                hamburger.classList.toggle("active");
+            });
+        }
+        
+        // Tab functionality
+        document.querySelectorAll(".tab-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+                document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+                btn.classList.add("active");
+                document.getElementById(btn.dataset.tab).classList.add("active");
+            });
+        });
+        
+        // Logo hover
+        const logo = document.querySelector('.auto-logo');
+        if (logo) {
+            logo.addEventListener('mouseenter', () => {
+                logo.style.transform = 'scale(1.05) rotate(2deg)';
+            });
+            logo.addEventListener('mouseleave', () => {
+                logo.style.transform = 'scale(1) rotate(0deg)';
+            });
+        }
+        
+        // Gallery hover
+        document.querySelectorAll('.farm-item').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                item.querySelector('.farm-overlay').style.opacity = '1';
+            });
+            item.addEventListener('mouseleave', () => {
+                item.querySelector('.farm-overlay').style.opacity = '0';
+            });
+        });
+    });
+    </script>
+</body>
+</html>
