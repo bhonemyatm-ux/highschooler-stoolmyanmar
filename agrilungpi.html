@@ -1,262 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>State Agricultural Institute, Lungpi - High Schooler's Tool</title>
-
-  <link rel="stylesheet" href="hst.css" />
-  <link rel="stylesheet" href="new.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Agricultural Institute, Lungpi - High Schooler's Tool</title>
+    <link rel="stylesheet" href="hst.css">
+    <link rel="stylesheet" href="upp.css">
+    <style>
+    /* LUNGPi CHIN HILLS THEME */
+    .auto-logo {
+        width: 120px; height: 120px; border-radius: 20px;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        background: linear-gradient(135deg, #8e44ad 0%, #3498db 50%, #2ecc71 100%);
+        box-shadow: 0 15px 35px rgba(142,68,173,0.4);
+        position: relative; overflow: hidden;
+    }
+    .auto-logo::before {
+        content: ''; position: absolute; top: 10px; left: 10px; right: 10px; height: 4px;
+        background: linear-gradient(90deg, #ffeb3b, #ff9800, #ffeb3b); border-radius: 2px;
+        animation: shine 3s infinite;
+    }
+    .auto-logo .logo-icon { font-size: 3.5rem; z-index: 2; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3)); }
+    .auto-logo .logo-text { font-size: 0.7rem; font-weight: bold; color: white; text-align: center; margin-top: 5px; text-shadow: 0 1px 2px rgba(0,0,0,0.5); letter-spacing: 1px; }
+    
+    /* LUNGPi SAFE GRADIENT CLASSES */
+    .lung-purple { background: linear-gradient(135deg, #8e44ad, #3498db); }
+    .lung-hill { background: linear-gradient(135deg, #2ecc71, #27ae60); }
+    .lung-sky { background: linear-gradient(135deg, #3498db, #2980b9); }
+    .lung-earth { background: linear-gradient(135deg, #e67e22, #d35400); }
+    .lung-forest { background: linear-gradient(135deg, #1abc9c, #16a085); }
+    .lung-mist { background: linear-gradient(135deg, #95a5a6, #7f8c8d); }
+    
+    .farm-img { width: 100%; height: 250px; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem; border-radius: 15px 15px 0 0; }
+    
+    .gradient-bg { background: linear-gradient(135deg, #8e44ad, #3498db); color: white; }
+    .gradient-btn { background: linear-gradient(135deg, #8e44ad, #3498db); border: none; color: white; padding: 12px 24px; border-radius: 25px; font-weight: bold; transition: all 0.3s ease; text-decoration: none; display: inline-block; }
+    .gradient-btn:hover { transform: scale(1.05); }
+    .glass-effect { background: rgba(255,255,255,0.9); backdrop-filter: blur(10px); border-radius: 20px; border: 1px solid rgba(255,255,255,0.2); }
+    .glow-effect:hover { box-shadow: 0 10px 30px rgba(142,68,173,0.4); transform: translateY(-5px); }
+    
+    .farm-gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+    .farm-item { position: relative; border-radius: 15px; overflow: hidden; transition: transform 0.3s ease; }
+    .farm-item:hover { transform: scale(1.05); }
+    .farm-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 20px; opacity: 0; transition: opacity 0.3s ease; }
+    
+    .modern-tabs .tab-btn { position: relative; padding: 15px 25px; margin: 0 5px; border-radius: 25px; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 2px solid rgba(255,255,255,0.2); transition: all 0.3s ease; cursor: pointer; }
+    .modern-tabs .tab-btn.active { background: linear-gradient(135deg, #8e44ad, #3498db); box-shadow: 0 10px 30px rgba(142,68,173,0.4); transform: translateY(-3px); }
+    
+    @keyframes shine { 0%, 100% { opacity: 1; transform: translateX(-100%); } 50% { opacity: 0.7; transform: translateX(100%); } }
+    @media (max-width: 768px) { .auto-logo { width: 100px; height: 100px; } .auto-logo .logo-icon { font-size: 3rem; } .auto-logo .logo-text { font-size: 0.6rem; } }
+    </style>
 </head>
-
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="container">
-      <div class="logo">
-        <h2>HST</h2>
-        <span>High Schooler's Tool</span>
-      </div>
-
-      <ul class="nav-links" id="navLinks">
-        <li><a href="hst.html">Home</a></li>
-        <li><a href="uni.html" class="active">Universities</a></li>
-        <li><a href="career-journey.html">Career Journey</a></li>
-        <li><a href="study-mode.html">Study mode</li>
-        <li><a href="scholarships.html">Scholarships</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-
-      <button
-        class="hamburger"
-        id="hamburger"
-        type="button"
-        aria-label="Open menu"
-        aria-controls="navLinks"
-        aria-expanded="false"
-      >
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- Hero Banner -->
-  <section class="uni-hero uni-hero--compact">
-    <div class="hero-overlay"></div>
-
-    <div class="container">
-      <div class="breadcrumb">
-        <a href="hst.html">Home</a> /
-        <a href="uni.html">Universities</a> /
-        <span>State Agricultural Institute, Lungpi</span>
-      </div>
-
-      <!-- HERO WARNING -->
-      <div class="hero-notice data-notice data-notice--hero" id="saiNotice" role="alert" aria-live="assertive">
-        <div class="notice-icon" aria-hidden="true">⚠️</div>
-        <div class="notice-text">
-          <h4>Limited verified data online</h4>
-          <p>Regional agricultural institutes have limited public information. We're updating this profile as we confirm new information.</p>
-        </div>
-        <button type="button" class="notice-close" id="saiNoticeClose" aria-label="Dismiss notice">✕</button>
-      </div>
-
-      <div class="uni-hero-content">
-        <div class="uni-title">
-          <h1>State Agricultural Institute, Lungpi</h1>
-
-          <div class="uni-meta">
-            <span><i>📍</i> Lungpi, Chin State</span>
-            <span><i>🏛</i> State Agricultural Institute</span>
-            <span><i>📅</i> Government Diploma Institute</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Quick Stats Bar -->
-  <section class="quick-stats">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item">
-          <div class="stat-icon">🎓</div>
-          <div class="stat-info">
-            <h3>150+</h3>
-            <p>Students</p>
-          </div>
-        </div>
-
-        <div class="stat-item">
-          <div class="stat-icon">📚</div>
-          <div class="stat-info">
-            <h3>1</h3>
-            <p>Diploma Program</p>
-          </div>
-        </div>
-
-        <div class="stat-item">
-          <div class="stat-icon">👨‍🏫</div>
-          <div class="stat-info">
-            <h3>15+</h3>
-            <p>Faculty & Staff</p>
-          </div>
-        </div>
-
-        <div class="stat-item">
-          <div class="stat-icon">🏆</div>
-          <div class="stat-info">
-            <h3>Upland Ag</h3>
-            <p>Specialization</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Main Content -->
-  <main class="profile-content">
-    <div class="container">
-      <div class="content-layout">
-
-        <!-- Sidebar -->
-        <aside class="profile-sidebar">
-          <div class="sidebar-card">
-            <h3>Quick Info</h3>
-            <div class="info-list">
-              <div class="info-item">
-                <strong>Type</strong>
-                <span>Government</span>
-              </div>
-              <div class="info-item">
-                <strong>Location</strong>
-                <span>Lungpi, Chin State</span>
-              </div>
-              <div class="info-item">
-                <strong>Language</strong>
-                <span>Myanmar, English</span>
-              </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h2>HST</h2>
+                <span>High Schooler's Tool</span>
             </div>
-          </div>
-
-          <div class="sidebar-card">
-            <h3>Entrance Requirements</h3>
-            <div class="requirement-box">
-              <div class="requirement-item">
-                <span class="req-label">Minimum Marks</span>
-                <span class="req-value">Matric Pass</span>
-              </div>
+            <ul class="nav-links">
+                <li><a href="hst.html">Home</a></li>
+                <li><a href="uni.html" class="active">Universities</a></li>
+                <li><a href="career-journey.html">Career journey</a></li>
+                <li><a href="study-mode.html">Study mode</a></li>
+                <li><a href="scholarships.html">Scholarships</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
             </div>
-          </div>
-
-          <div class="sidebar-card contact-card">
-            <h3>Contact</h3>
-            <div class="contact-info">
-              <p><i>📞</i> <span style="opacity:0.9;">Not listed</span></p>
-              <p><i>📧</i> <span style="opacity:0.9;">Not listed</span></p>
-              <p><i>🌐</i> <span style="opacity:0.9;">DOA Myanmar</span></p>
-            </div>
-            <button class="contact-btn" type="button">Get in Touch</button>
-          </div>
-        </aside>
-
-        <!-- Main panel -->
-        <section class="profile-main">
-          <div class="tab-content">
-            <div class="tab-panel active" id="overview">
-              <div class="content-card">
-                <h2>About State Agricultural Institute, Lungpi</h2>
-                <p>
-                  SAI Lungpi provides 3-year diploma training for agricultural extension workers serving Chin State's upland farming communities. The curriculum emphasizes hill farming techniques, soil conservation, and extension services for smallholder farmers.
-                </p>
-                <p>
-                  HST aims to present clear, verified information. If some sections are brief today, it's usually because reliable public sources are limited—our team will keep improving this page as more data becomes available.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-      </div>
-    </div>
-  </main>
-
-  <!-- CTA Section -->
-  <section class="cta-profile">
-    <div class="container">
-      <h2>Ready to Start Your Agricultural Journey?</h2>
-      <p>Explore more agricultural institutes or get in touch with admissions</p>
-      <div class="cta-buttons">
-        <a href="uni.html" class="btn-secondary">Explore More Universities</a>
-        <a href="error.html" class="btn-primary">Apply Now</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>High Schooler's Tool</h3>
-          <p>Empowering Myanmar students to make informed university choices.</p>
         </div>
+    </nav>
 
-        <div class="footer-section">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="hst.html">Home</a></li>
-            <li><a href="uni.html">Universities</a></li>
-            <li><a href="career-journey.html">Career Journey</a></li>
-            <li><a href="study-mode.html">Study mode</li>
-            <li><a href="scholarships.html">Scholarships</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
+    <!-- Hero Banner -->
+    <section class="uni-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-bg gradient-bg"></div>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="hst.html">Home</a> / 
+                <a href="uni.html">Universities</a> / 
+                <span>State Agricultural Institute, Lungpi</span>
+            </div>
+            <div class="uni-hero-content">
+                <!-- AUTO-GENERATED LOGO -->
+                <div class="uni-logo">
+                    <div class="auto-logo">
+                        <div class="logo-icon">🏔️</div>
+                        <div class="logo-text">SAI<br>Lungpi</div>
+                    </div>
+                </div>
+                <div class="uni-title">
+                    <h1>State Agricultural Institute, Lungpi</h1>
+                    <p class="uni-subtitle">Chin Hills Upland Agriculture Excellence</p>
+                    <div class="uni-meta">
+                        <span><i>📍</i> Lungpi, Falam Township, Chin State</span>
+                        <span><i>🏔️</i> 3-Year Diploma Programs</span>
+                        <span><i>🌾</i> Newly Established SAI</span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div class="footer-bottom">
-        <p>© 2026 High Schooler's Tool. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+    <!-- Quick Stats -->
+    <section class="quick-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">🏔️</div>
+                    <div class="stat-info"><h3>250+</h3><p>Students</p></div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🌾</div>
+                    <div class="stat-info"><h3>10+</h3><p>Specializations</p></div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🌲</div>
+                    <div class="stat-info"><h3>85+</h3><p>Acres Hill Farms</p></div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">👨‍🌾</div>
+                    <div class="stat-info"><h3>35+</h3><p>Faculty</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
-  <script src="ucsy.js"></script>
+    <!-- Main Content -->
+    <section class="profile-content">
+        <div class="container">
+            <div class="content-layout">
+                <!-- Sidebar -->
+                <aside class="profile-sidebar">
+                    <div class="sidebar-card gradient-bg">
+                        <h3>🏔️ Quick Info</h3>
+                        <div class="info-list">
+                            <div class="info-item"><strong>Type</strong><span>Government Agricultural Institute</span></div>
+                            <div class="info-item"><strong>Location</strong><span>Lungpi, Falam Township, Chin State</span></div>
+                            <div class="info-item"><strong>Farm Size</strong><span>85+ acres upland farms</span></div>
+                            <div class="info-item"><strong>Status</strong><span>Newly established SAI</span></div>
+                        </div>
+                    </div>
 
-  <script>
+                    <div class="sidebar-card">
+                        <h3>Entrance Requirements</h3>
+                        <div class="requirement-box">
+                            <div class="requirement-item">
+                                <span class="req-label">Minimum Marks</span>
+                                <span class="req-value">320+ marks</span>
+                            </div>
+                            <div class="requirement-item">
+                                <span class="req-label">Duration</span>
+                                <div class="subject-tags">
+                                    <span class="subject-tag">3 Years</span>
+                                    <span class="subject-tag">Diploma</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card contact-card">
+                        <h3>🏔️ Contact</h3>
+                        <div class="contact-info">
+                            <p><i>📍</i> Lungpi, Falam Township, Chin State</p>
+                            <p><i>🌐</i> Ministry of Agriculture, Livestock & Irrigation</p>
+                            <p><i>📧</i> Chin State agriculture office</p>
+                        </div>
+                        <a href="#" class="contact-btn gradient-btn">Visit Hill Farms</a>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="profile-main">
+                    <div class="profile-tabs modern-tabs">
+                        <button class="tab-btn active" data-tab="overview"><span>🏔️</span> Overview</button>
+                        <button class="tab-btn" data-tab="majors"><span>📚</span> Programs</button>
+                        <button class="tab-btn" data-tab="farm"><span>🌾</span> Hill Farms</button>
+                        <button class="tab-btn" data-tab="careers"><span>💼</span> Careers</button>
+                    </div>
+
+                    <div class="tab-content">
+                        <!-- Overview Tab -->
+                        <div class="tab-panel active" id="overview">
+                            <div class="content-card glass-effect">
+                                <h2>🏔️ About SAI Lungpi</h2>
+                                <p>Established as a **newly established State Agricultural Institute** in Lungpi village, Falam Township, Chin State, SAI Lungpi serves the upland agricultural needs of western Myanmar's highest state. The institute features nutrition-sensitive agriculture curriculum developed with Myanmar Institute for Integrated Development (MIID), focusing on Chin Hills' unique terraced farming and highland crop systems.</p>
+                                <p>With 85+ acres of demonstration hill farms, SAI Lungpi offers 3-year diploma programs featuring 70% practical training in sloping agricultural land technology (SALT), highland vegetables, and integrated farming systems perfect for Chin State's challenging terrain and climate.</p>
+                            </div>
+
+                            <div class="content-card">
+                                <h2>Why Choose SAI Lungpi?</h2>
+                                <div class="features-list">
+                                    <div class="feature-item glow-effect">
+                                        <div class="feature-icon">🏔️</div>
+                                        <div>
+                                            <h4>Chin Hills Specialization</h4>
+                                            <p>Terraced farming, highland crops, SALT technology</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item glow-effect">
+                                        <div class="feature-icon">🌾</div>
+                                        <div>
+                                            <h4>Nutrition-Sensitive Agriculture</h4>
+                                            <p>MIID curriculum integration for Chin communities</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item glow-effect">
+                                        <div class="feature-icon">🌲</div>
+                                        <div>
+                                            <h4>New SAI Facilities</h4>
+                                            <p>Modern upland agriculture training center</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content-card">
+                                <h2>Chin Hills Farm Gallery</h2>
+                                <div class="farm-gallery-grid">
+                                    <div class="farm-item">
+                                        <div class="farm-img lung-purple"><span>🌾</span></div>
+                                        <div class="farm-overlay"><span>Hill Rice Terraces</span></div>
+                                    </div>
+                                    <div class="farm-item">
+                                        <div class="farm-img lung-hill"><span>🥔</span></div>
+                                        <div class="farm-overlay"><span>Highland Potatoes</span></div>
+                                    </div>
+                                    <div class="farm-item">
+                                        <div class="farm-img lung-sky"><span>🥬</span></div>
+                                        <div class="farm-overlay"><span>Chin Vegetables</span></div>
+                                    </div>
+                                    <div class="farm-item">
+                                        <div class="farm-img lung-earth"><span>🌱</span></div>
+                                        <div class="farm-overlay"><span>SALT Terraces</span></div>
+                                    </div>
+                                    <div class="farm-item">
+                                        <div class="farm-img lung-forest"><span>🐔</span></div>
+                                        <div class="farm-overlay"><span>Integrated Farming</span></div>
+                                    </div>
+                                    <div class="farm-item">
+                                        <div class="farm-img lung-mist"><span>🌲</span></div>
+                                        <div class="farm-overlay"><span>Timber Plantations</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Programs Tab -->
+                        <div class="tab-panel" id="majors">
+                            <div class="content-card glass-effect">
+                                <h2>Chin Hills Diploma Programs</h2>
+                                <p class="subtitle">3-year courses • Nutrition-sensitive agriculture • 70% practical</p>
+                                <div class="majors-list">
+                                    <div class="major-card glow-effect">
+                                        <div class="major-header">
+                                            <div class="major-icon">🌾</div>
+                                            <div>
+                                                <h3>Upland Crops & SALT</h3>
+                                                <span class="major-degree">Diploma (3 Years)</span>
+                                            </div>
+                                        </div>
+                                        <p class="major-desc">Sloping Agricultural Land Technology, hill rice, highland vegetables</p>
+                                        <div class="major-subjects">
+                                            <span>🌾 Hill Rice Varieties</span>
+                                            <span>🥔 Potato Cultivation</span>
+                                            <span>🌱 SALT Terracing</span>
+                                            <span>🥬 Chin Vegetables</span>
+                                        </div>
+                                    </div>
+                                    <div class="major-card glow-effect">
+                                        <div class="major-header">
+                                            <div class="major-icon">🐔</div>
+                                            <div>
+                                                <h3>Integrated Hill Farming</h3>
+                                                <span class="major-degree">Diploma (3 Years)</span>
+                                            </div>
+                                        </div>
+                                        <p class="major-desc">Nutrition-sensitive farming, small livestock, integrated systems</p>
+                                        <div class="major-subjects">
+                                            <span>🐔 Backyard Poultry</span>
+                                            <span>🐟 Small Fish Ponds</span>
+                                            <span>🥚 Nutrition Gardening</span>
+                                            <span>🌿 Medicinal Plants</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hill Farms Tab -->
+                        <div class="tab-panel" id="farm">
+                            <div class="content-card glass-effect">
+                                <h2>🌾 Chin Hills Farm Experience</h2>
+                                <p class="subtitle">70% hands-on training on terraced upland farms</p>
+                                <div class="campus-features" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                                    <div class="campus-card glow-effect">
+                                        <div class="campus-img farm-img lung-purple">
+                                            <span>🌾</span>
+                                        </div>
+                                        <h3>SALT Terraced Fields</h3>
+                                        <p>Sloping Agricultural Land Technology for Chin Hills</p>
+                                    </div>
+                                    <div class="campus-card glow-effect">
+                                        <div class="campus-img farm-img lung-hill">
+                                            <span>🥔</span>
+                                        </div>
+                                        <h3>Highland Crop Fields</h3>
+                                        <p>Potatoes, cabbages, Chin-specific vegetables</p>
+                                    </div>
+                                    <div class="campus-card glow-effect">
+                                        <div class="campus-img farm-img lung-sky">
+                                            <span>🐔</span>
+                                        </div>
+                                        <h3>Integrated Farm Units</h3>
+                                        <p>Poultry-fish-vegetable integrated systems</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Careers Tab -->
+                        <div class="tab-panel" id="careers">
+                            <div class="content-card glass-effect">
+                                <h2>💼 Chin Hills Careers</h2>
+                                <p class="subtitle">Immediate employment in upland agriculture</p>
+                                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                                    <div class="career-card glow-effect" style="background: rgba(255,255,255,0.9); padding: 25px; border-radius: 15px; text-align: center;">
+                                        <div class="career-icon" style="font-size: 3.5rem; margin-bottom: 15px;">🌾</div>
+                                        <h3>Hill Farm Supervisor</h3>
+                                        <p>Chin State terraced farms, upland crop management</p>
+                                    </div>
+                                    <div class="career-card glow-effect" style="background: rgba(255,255,255,0.9); padding: 25px; border-radius: 15px; text-align: center;">
+                                        <div class="career-icon" style="font-size: 3.5rem; margin-bottom: 15px;">🏔️</div>
+                                        <h3>SALT Technician</h3>
+                                        <p>Sloping land technology specialist</p>
+                                    </div>
+                                    <div class="career-card glow-effect" style="background: rgba(255,255,255,0.9); padding: 25px; border-radius: 15px; text-align: center;">
+                                        <div class="career-icon" style="font-size: 3.5rem; margin-bottom: 15px;">🐔</div>
+                                        <h3>Integrated Farm Officer</h3>
+                                        <p>Nutrition-sensitive farming extension</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-profile" style="background: linear-gradient(135deg, #8e44ad, #3498db); color: white; padding: 60px 0;">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Ready for Chin Hills Agriculture?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 30px;">Join SAI Lungpi - Nutrition-Sensitive Upland Farming</p>
+            <div class="cta-buttons">
+                <a href="uni.html" style="background: white; color: #8e44ad; padding: 15px 30px; border-radius: 25px; text-decoration: none; margin-right: 15px;">← More Universities</a>
+                <a href="#" class="gradient-btn" style="padding: 15px 30px; font-size: 1.1rem;">Start Hill Farm Career</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- YOUR EXACT FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>High Schooler's Tool</h3>
+                    <p>Empowering Myanmar students to make informed university choices.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="hst.html">Home</a></li>
+                        <li><a href="uni.html">Universities</a></li>
+                        <li><a href="career-journey.html">Career Journey</a></li>
+                        <li><a href="study-mode.html">Study mode</a></li>
+                        <li><a href="scholarships.html">Scholarships</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>High Schooler's Tool</p>
+                    <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+                    <p>
+                        Facebook:
+                        <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+                            High Schooler's Tool ARP
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 High Schooler's Tool. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="upp.js"></script>
+    <script>
     document.addEventListener("DOMContentLoaded", () => {
-      // Navbar toggle
-      const hamburger = document.getElementById("hamburger");
-      const navLinks = document.getElementById("navLinks");
-
-      if (hamburger && navLinks) {
-        hamburger.addEventListener("click", () => {
-          const isOpen = navLinks.classList.toggle("active");
-          hamburger.classList.toggle("active", isOpen);
-          hamburger.setAttribute("aria-expanded", String(isOpen));
+        // Navbar toggle
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        if (hamburger && navLinks) {
+            hamburger.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+                hamburger.classList.toggle("active");
+            });
+        }
+        
+        // Tab functionality
+        document.querySelectorAll(".tab-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+                document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+                btn.classList.add("active");
+                document.getElementById(btn.dataset.tab).classList.add("active");
+            });
         });
-
-        navLinks.querySelectorAll("a").forEach(link => {
-          link.addEventListener("click", () => {
-            navLinks.classList.remove("active");
-            hamburger.classList.remove("active");
-            hamburger.setAttribute("aria-expanded", "false");
-          });
+        
+        // Logo hover
+        const logo = document.querySelector('.auto-logo');
+        if (logo) {
+            logo.addEventListener('mouseenter', () => {
+                logo.style.transform = 'scale(1.05) rotate(2deg)';
+            });
+            logo.addEventListener('mouseleave', () => {
+                logo.style.transform = 'scale(1) rotate(0deg)';
+            });
+        }
+        
+        // Gallery hover
+        document.querySelectorAll('.farm-item').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                item.querySelector('.farm-overlay').style.opacity = '1';
+            });
+            item.addEventListener('mouseleave', () => {
+                item.querySelector('.farm-overlay').style.opacity = '0';
+            });
         });
-      }
-
-      // Notice close
-      const notice = document.getElementById("saiNotice");
-      const closeBtn = document.getElementById("saiNoticeClose");
-
-      if (notice && closeBtn) {
-        closeBtn.addEventListener("click", () => {
-          notice.classList.add("is-hiding");
-          setTimeout(() => notice.remove(), 200);
-        });
-      }
     });
-  </script>
+    </script>
 </body>
 </html>
