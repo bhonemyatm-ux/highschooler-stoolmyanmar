@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>University Profile - High Schooler's Tool</title>
+  <link rel="stylesheet" href="hst.css" />
+  <link rel="stylesheet" href="upp.css" />
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h2>HST</h2>
+        <span>High Schooler's Tool</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="hst.html">Home</a></li>
+        <li><a href="uni.html" class="active">Universities</a></li>
+        <li><a href="career-journey.html">Career journey</a></li>
+        <li><a href="study-mode.html">Study mode</a></li>
+        <li><a href="scholarships.html">Scholarships</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="uni-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-bg" style="background-image:url('nsa1.jpg');"></div>
+
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="hst.html">Home</a> /
+        <a href="uni.html">Universities</a> /
+        <span>Naypyitaw State Academy (NSA)</span>
+      </div>
+
+      <div class="uni-hero-content">
+        <div class="uni-logo">
+          <img src="nsalogo1.jpg" alt="NSA Logo" />
+        </div>
+
+        <div class="uni-title">
+          <h1>Naypyitaw State Academy - NSA</h1>
+          <p class="uni-subtitle">
+            State-run university in Myanmar’s capital, offering multi-disciplinary faculties.
+          </p>
+          <div class="uni-meta">
+            <span><i>📍</i> Zabuthiri Township, Naypyidaw</span>
+            <span><i>🏛️</i> Arts, Science, Law, Economics, Medicine, Social Studies, Sports</span>
+            <span><i>📅</i> Opened 9 Nov 2022</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Stats Bar -->
+  <section class="quick-stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-icon">🎓</div>
+          <div class="stat-info">
+            <h3>~1500</h3>
+            <p>Students (2024–2025)</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">🏫</div>
+          <div class="stat-info">
+            <h3>7</h3>
+            <p>Faculties (reported)</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">📚</div>
+          <div class="stat-info">
+            <h3>20</h3>
+            <p>Specializations (reported)</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">🗓️</div>
+          <div class="stat-info">
+            <h3>2022</h3>
+            <p>Established</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="profile-content">
+    <div class="container">
+      <div class="content-layout">
+
+        <!-- Sidebar -->
+        <aside class="profile-sidebar">
+          <div class="sidebar-card">
+            <h3>Quick Info</h3>
+            <div class="info-list">
+              <div class="info-item">
+                <strong>Type</strong>
+                <span>Government (State-run)</span>
+              </div>
+              <div class="info-item">
+                <strong>Location</strong>
+                <span>Zabuthiri Township, Naypyidaw</span>
+              </div>
+              <div class="info-item">
+                <strong>Opened</strong>
+                <span>9 November 2022</span>
+              </div>
+              <div class="info-item">
+                <strong>Main Areas</strong>
+                <span>Arts, Science, Law, Economics, Medicine, Social Studies, Sports</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>Entrance Requirements</h3>
+            <div class="requirement-box">
+              <div class="requirement-item">
+                <span class="req-label">Minimum Marks</span>
+                <span class="req-value">Varies by intake</span>
+              </div>
+              <div class="requirement-item">
+                <span class="req-label">Required Subjects</span>
+                <div class="subject-tags">
+                  <span class="subject-tag">Depends on faculty</span>
+                  <span class="subject-tag">Matriculation</span>
+                  <span class="subject-tag">Selection list</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card contact-card">
+            <h3>Contact</h3>
+            <div class="contact-info">
+              <p><i>📍</i> Zabuthiri Township, Naypyidaw, Myanmar</p>
+              <p><i>🌐</i> (Add official website link if you have it)</p>
+              <p><i>📧</i> (Add official email if available)</p>
+            </div>
+            <button class="contact-btn">Get in Touch</button>
+          </div>
+        </aside>
+
+        <!-- Main -->
+        <main class="profile-main">
+
+          <!-- Tabs (added NEW tab) -->
+          <div class="profile-tabs">
+            <button class="tab-btn active" data-tab="overview">Overview</button>
+            <button class="tab-btn" data-tab="majors">Majors</button>
+            <button class="tab-btn" data-tab="campus">Campus Life</button>
+            <button class="tab-btn" data-tab="careers">Career Paths</button>
+            <button class="tab-btn" data-tab="new">New</button>
+          </div>
+
+          <div class="tab-content">
+
+            <!-- Overview -->
+            <div class="tab-panel active" id="overview">
+              <div class="content-card">
+                <h2>About the University</h2>
+                <p>
+                  Naypyitaw State Academy (NSA) is a state-run university in Myanmar’s national capital Naypyidaw, located in Zabuthiri Township.
+                  It opened on 9 November 2022 to support higher education opportunities for students in Naypyidaw Union Territory, including children of civil servants.
+                </p>
+              </div>
+
+              <div class="content-card">
+                <h2>Why Choose NSA?</h2>
+                <div class="features-list">
+
+                  <div class="feature-item">
+                    <div class="feature-icon">🏛️</div>
+                    <div>
+                      <h4>Multi-disciplinary Faculties</h4>
+                      <p>Includes faculties such as arts, science, law, economics, medicine, social studies and sports.</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">📍</div>
+                    <div>
+                      <h4>Study in the Capital</h4>
+                      <p>Designed to help students from Naypyidaw study without relocating to Yangon or Mandalay.</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-icon">📚</div>
+                    <div>
+                      <h4>Growing Academic Programs</h4>
+                      <p>Official reporting states expansion to multiple faculties and specializations within a few academic years.</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="content-card">
+                <h2>Campus Gallery</h2>
+                <div class="gallery-grid">
+                  <div class="gallery-item">
+                    <img src="nsa1.jpg" alt="NSA Campus" />
+                    <p>🏫</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="nsa2.jpg" alt="Lecture Hall" />
+                    <p>📚</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="nsa3.jpg" alt="Library" />
+                    <p>📖</p>
+                  </div>
+                  <div class="gallery-item">
+                    <img src="nsa4.jpg" alt="Student Activities" />
+                    <p>🎓</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Majors -->
+            <div class="tab-panel" id="majors">
+              <div class="content-card">
+                <h2>Available Programs</h2>
+                <p class="subtitle">Faculty-based programs (confirm per intake)</p>
+
+                <div class="majors-list">
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">📖</div>
+                      <div>
+                        <h3>Faculty of Arts</h3>
+                        <span class="major-degree">Undergraduate programs</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Arts-related specializations under the academy’s Arts faculty.</p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Admission:</strong> <span>By selection (varies)</span></div>
+                      <div class="detail-row"><strong>Location:</strong> <span>Zabuthiri, Naypyidaw</span></div>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">🔬</div>
+                      <div>
+                        <h3>Faculty of Science</h3>
+                        <span class="major-degree">Undergraduate programs</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Science-related specializations under the academy’s Science faculty.</p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Admission:</strong> <span>By selection (varies)</span></div>
+                      <div class="detail-row"><strong>Location:</strong> <span>Zabuthiri, Naypyidaw</span></div>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">⚖️</div>
+                      <div>
+                        <h3>Faculty of Law</h3>
+                        <span class="major-degree">Undergraduate programs</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Law-related studies under the academy’s Law faculty.</p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Admission:</strong> <span>By selection (varies)</span></div>
+                      <div class="detail-row"><strong>Location:</strong> <span>Zabuthiri, Naypyidaw</span></div>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">📈</div>
+                      <div>
+                        <h3>Faculty of Economics</h3>
+                        <span class="major-degree">Undergraduate programs</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Economics-related specializations under the academy’s Economics faculty.</p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Admission:</strong> <span>By selection (varies)</span></div>
+                      <div class="detail-row"><strong>Location:</strong> <span>Zabuthiri, Naypyidaw</span></div>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">🩺</div>
+                      <div>
+                        <h3>Faculty of Medicine</h3>
+                        <span class="major-degree">Programs under Medicine faculty</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Medicine-related academic areas listed among NSA faculties.</p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Admission:</strong> <span>By selection (varies)</span></div>
+                      <div class="detail-row"><strong>Location:</strong> <span>Zabuthiri, Naypyidaw</span></div>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">👥</div>
+                      <div>
+                        <h3>Faculty of Social Studies</h3>
+                        <span class="major-degree">Undergraduate programs</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Social studies-related programs under NSA.</p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Admission:</strong> <span>By selection (varies)</span></div>
+                      <div class="detail-row"><strong>Location:</strong> <span>Zabuthiri, Naypyidaw</span></div>
+                    </div>
+                  </div>
+
+                  <div class="major-card">
+                    <div class="major-header">
+                      <div class="major-icon">🏅</div>
+                      <div>
+                        <h3>Faculty of Sports</h3>
+                        <span class="major-degree">Sports-related programs</span>
+                      </div>
+                    </div>
+                    <p class="major-desc">Sports-related education listed among NSA faculties.</p>
+                    <div class="major-details">
+                      <div class="detail-row"><strong>Admission:</strong> <span>By selection (varies)</span></div>
+                      <div class="detail-row"><strong>Location:</strong> <span>Zabuthiri, Naypyidaw</span></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Campus -->
+            <div class="tab-panel" id="campus">
+              <div class="content-card">
+                <h2>Campus Life at NSA</h2>
+                <p class="subtitle">Capital-based learning environment</p>
+
+                <div class="campus-features">
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                        🏫
+                      </div>
+                    </div>
+                    <h3>Academic Facilities</h3>
+                    <p>Official reporting mentions learning support facilities such as internet access and e-library.</p>
+                  </div>
+
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#8360c3,#2ebf91);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                        🛏️
+                      </div>
+                    </div>
+                    <h3>Hostels & Infrastructure</h3>
+                    <p>Official reporting notes construction/provisioning of a convocation hall and student dormitory facilities.</p>
+                  </div>
+
+                  <div class="campus-card">
+                    <div class="campus-img">
+                      <div style="width:100%;height:200px;background:linear-gradient(135deg,#ff512f,#dd2476);display:flex;align-items:center;justify-content:center;color:white;font-size:2rem;">
+                        🏅
+                      </div>
+                    </div>
+                    <h3>Sports & Activities</h3>
+                    <p>Sports is listed among the academy’s faculties, reflecting an emphasis on physical education.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Careers -->
+            <div class="tab-panel" id="careers">
+              <div class="content-card">
+                <h2>Career Paths - NSA Students</h2>
+                <p class="subtitle">Multi-faculty pathways</p>
+
+                <div class="career-paths">
+                  <div class="career-card">
+                    <div class="career-icon">🏛️</div>
+                    <h3>Public Administration & Policy</h3>
+                    <p>Potential pathways for graduates studying in the capital environment.</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">⚖️</div>
+                    <h3>Legal Sector</h3>
+                    <p>Law-related career options aligned with the Law faculty.</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">📊</div>
+                    <h3>Economics & Business</h3>
+                    <p>Economics-oriented career options in government and private sector.</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">🧪</div>
+                    <h3>Science & Research</h3>
+                    <p>Science-related roles in labs, education, and applied research.</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">🩺</div>
+                    <h3>Health & Medical Fields</h3>
+                    <p>Career tracks aligned with the Medicine faculty programs.</p>
+                  </div>
+
+                  <div class="career-card">
+                    <div class="career-icon">🏅</div>
+                    <h3>Sports & Coaching</h3>
+                    <p>Sports education and related professional pathways.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- NEW TAB (recent event) -->
+            <div class="tab-panel" id="new">
+              <div class="content-card">
+                <h2>New</h2>
+                <p class="subtitle">Recent updates & events</p>
+
+                <div class="content-card" style="margin-top:14px;">
+                  <h3>Recent Event: 2-Year Anniversary Ceremony</h3>
+                  <p>
+                    Myanmar’s Ministry of Information reported that NSA marked its 2-year anniversary with a ceremony at the academy’s multipurpose hall,
+                    and described the academy’s expansion from early intakes to multiple faculties and specializations.
+                  </p>
+
+                  <div class="known-facts">
+                    <h4>What was reported</h4>
+                    <ul>
+                      <li>NSA was opened in 2022 and reached its second anniversary milestone.</li>
+                      <li>Reporting noted growth in faculties/specializations and student intake over time.</li>
+                      <li>Facilities mentioned include internet access, e-library, and ongoing infrastructure support.</li>
+                    </ul>
+                  </div>
+
+                  <div class="contact-research">
+                    <p>
+                      For the latest official announcements, add a link here to NSA’s official news page when you confirm it.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </main>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-profile">
+    <div class="container">
+      <h2>Ready to Start Your Journey at NSA?</h2>
+      <p>Explore more universities or get in touch with admissions</p>
+      <div class="cta-buttons">
+        <a href="uni.html" class="btn-secondary">Explore More Universities</a>
+        <a href="error.html" class="btn-primary">Apply Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+
+        <div class="footer-section">
+          <h3>High Schooler’s Tool</h3>
+          <p>Empowering Myanmar students to make informed university choices.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="hst.html">Home</a></li>
+            <li><a href="uni.html">Universities</a></li>
+            <li><a href="career-journey.html">Career Journey</a></li>
+            <li><a href="study-mode.html">Study mode</a></li>
+            <li><a href="scholarships.html">Scholarships</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>High Schooler’s Tool</p>
+          <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+          <p>
+            Facebook:
+            <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+              High Schooler’s Tool ARP
+            </a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 High Schooler’s Tool. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="upp.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Navbar toggle
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+          hamburger.classList.toggle("active");
+        });
+
+        // Close on link click
+        navLinks.querySelectorAll("a").forEach(link => {
+          link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            hamburger.classList.remove("active");
+          });
+        });
+      }
+
+      // Tabs
+      document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+          document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+
+          btn.classList.add("active");
+          document.getElementById(btn.dataset.tab).classList.add("active");
+        });
+      });
+    });
+  </script>
+</body>
+</html>
