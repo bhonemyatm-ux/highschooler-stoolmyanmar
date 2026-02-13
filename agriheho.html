@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institute of Agriculture and Livestock (Heho) - High Schooler's Tool</title>
+    <link rel="stylesheet" href="hst.css">
+    <link rel="stylesheet" href="upp.css">
+    <style>
+    /* AUTO-GENERATED LOGO SYSTEM - NO IMAGES REQUIRED */
+    .auto-logo {
+        width: 120px; height: 120px; border-radius: 20px;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 50%, #43e97b 100%);
+        box-shadow: 0 15px 35px rgba(79,172,254,0.4);
+        position: relative; overflow: hidden;
+    }
+    .auto-logo::before {
+        content: ''; position: absolute; top: 10px; left: 10px; right: 10px; height: 4px;
+        background: linear-gradient(90deg, #ffeb3b, #ff9800, #ffeb3b); border-radius: 2px;
+        animation: shine 3s infinite;
+    }
+    .auto-logo .logo-icon { font-size: 3.5rem; z-index: 2; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3)); }
+    .auto-logo .logo-text { 
+        font-size: 0.7rem; font-weight: bold; color: white; text-align: center; 
+        margin-top: 5px; text-shadow: 0 1px 2px rgba(0,0,0,0.5); letter-spacing: 1px;
+    }
+    @keyframes shine { 0%, 100% { opacity: 1; transform: translateX(-100%); } 50% { opacity: 0.7; transform: translateX(100%); } }
+    
+    /* SAFE GRADIENT CLASSES */
+    .farm-green { background: linear-gradient(135deg, #11998e, #38ef7d); }
+    .farm-orange { background: linear-gradient(135deg, #f7971e, #ffd200); }
+    .farm-pink { background: linear-gradient(135deg, #a8edea, #fed6e3); }
+    .farm-purple { background: linear-gradient(135deg, #667eea, #764ba2); }
+    .farm-red { background: linear-gradient(135deg, #ff9a9e, #fecfef); }
+    .farm-yellow { background: linear-gradient(135deg, #fa709a, #fee140); }
+    
+    .farm-img { 
+        width: 100%; height: 250px; display: flex; align-items: center; justify-content: center; 
+        color: white; font-size: 3rem; border-radius: 15px 15px 0 0; 
+    }
+    
+    /* Theme Styles */
+    .gradient-bg { background: linear-gradient(135deg, #11998e, #38ef7d); color: white; }
+    .gradient-btn { 
+        background: linear-gradient(135deg, #4facfe, #00f2fe); border: none; color: white;
+        padding: 12px 24px; border-radius: 25px; font-weight: bold; transition: all 0.3s ease;
+        text-decoration: none; display: inline-block;
+    }
+    .gradient-btn:hover { transform: scale(1.05); }
+    .glass-effect { 
+        background: rgba(255,255,255,0.9); backdrop-filter: blur(10px);
+        border-radius: 20px; border: 1px solid rgba(255,255,255,0.2);
+    }
+    .glow-effect:hover { box-shadow: 0 10px 30px rgba(64,252,120,0.4); transform: translateY(-5px); }
+    
+    .farm-gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+    .farm-item { position: relative; border-radius: 15px; overflow: hidden; transition: transform 0.3s ease; }
+    .farm-item:hover { transform: scale(1.05); }
+    .farm-overlay { 
+        position: absolute; bottom: 0; left: 0; right: 0; 
+        background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white;
+        padding: 20px; opacity: 0; transition: opacity 0.3s ease;
+    }
+    
+    .modern-tabs .tab-btn { 
+        position: relative; padding: 15px 25px; margin: 0 5px;
+        border-radius: 25px; background: rgba(255,255,255,0.1);
+        backdrop-filter: blur(10px); border: 2px solid rgba(255,255,255,0.2);
+        transition: all 0.3s ease; cursor: pointer;
+    }
+    .modern-tabs .tab-btn.active { 
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+        box-shadow: 0 10px 30px rgba(79,172,254,0.4); transform: translateY(-3px);
+    }
+    
+    .schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+    .schedule-item { 
+        background: rgba(255,255,255,0.9); padding: 20px; border-radius: 15px; 
+        text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    @media (max-width: 768px) { 
+        .auto-logo { width: 100px; height: 100px; } 
+        .auto-logo .logo-icon { font-size: 3rem; } 
+        .auto-logo .logo-text { font-size: 0.6rem; }
+    }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h2>HST</h2>
+                <span>High Schooler's Tool</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="hst.html">Home</a></li>
+                <li><a href="uni.html" class="active">Universities</a></li>
+                <li><a href="career-journey.html">Career journey</a></li>
+                <li><a href="study-mode.html">Study mode</a></li>
+                <li><a href="scholarships.html">Scholarships</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="uni-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-bg gradient-bg"></div>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="hst.html">Home</a> / 
+                <a href="uni.html">Universities</a> / 
+                <span>Institute of Agriculture and Livestock (Heho)</span>
+            </div>
+            <div class="uni-hero-content">
+                <!-- AUTO-GENERATED LOGO -->
+                <div class="uni-logo">
+                    <div class="auto-logo">
+                        <div class="logo-icon">🌾</div>
+                        <div class="logo-text">IAL<br>Heho</div>
+                    </div>
+                </div>
+                <div class="uni-title">
+                    <h1>Institute of Agriculture & Livestock (Heho)</h1>
+                    <p class="uni-subtitle">Shan Highlands Agricultural Excellence Center</p>
+                    <div class="uni-meta">
+                        <span><i>📍</i> Kalaw Township, Shan State</span>
+                        <span><i>🌱</i> Diploma Programs (2-3 Years)</span>
+                        <span><i>🚜</i> 100+ Acre Training Farm</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="quick-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">🌾</div>
+                    <div class="stat-info"><h3>500+</h3><p>Students</p></div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🐄</div>
+                    <div class="stat-info"><h3>15+</h3><p>Specializations</p></div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🌳</div>
+                    <div class="stat-info"><h3>100+</h3><p>Acres Farm</p></div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🚜</div>
+                    <div class="stat-info"><h3>50+</h3><p>Faculty</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="profile-content">
+        <div class="container">
+            <div class="content-layout">
+                <!-- Sidebar -->
+                <aside class="profile-sidebar">
+                    <div class="sidebar-card gradient-bg">
+                        <h3>🌱 Quick Info</h3>
+                        <div class="info-list">
+                            <div class="info-item"><strong>Type</strong><span>Government Agricultural Institute</span></div>
+                            <div class="info-item"><strong>Location</strong><span>Kalaw Township, Shan State</span></div>
+                            <div class="info-item"><strong>Farm Size</strong><span>100+ acres practical training</span></div>
+                            <div class="info-item"><strong>Awards</strong><span>Diploma certificates</span></div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Entrance Requirements</h3>
+                        <div class="requirement-box">
+                            <div class="requirement-item">
+                                <span class="req-label">Minimum Marks</span>
+                                <span class="req-value">320+ marks</span>
+                            </div>
+                            <div class="requirement-item">
+                                <span class="req-label">Duration</span>
+                                <div class="subject-tags">
+                                    <span class="subject-tag">2-3 Years</span>
+                                    <span class="subject-tag">Diploma</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card contact-card">
+                        <h3>🌾 Contact</h3>
+                        <div class="contact-info">
+                            <p><i>📍</i> Kalaw Township, Shan State, Myanmar</p>
+                            <p><i>🌐</i> Ministry of Agriculture</p>
+                            <p><i>📧</i> Regional agriculture office</p>
+                        </div>
+                        <a href="#" class="contact-btn gradient-btn">Visit Farm</a>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="profile-main">
+                    <div class="profile-tabs modern-tabs">
+                        <button class="tab-btn active" data-tab="overview"><span>🌱</span> Overview</button>
+                        <button class="tab-btn" data-tab="majors"><span>📚</span> Programs</button>
+                        <button class="tab-btn" data-tab="farm"><span>🚜</span> Farm Life</button>
+                        <button class="tab-btn" data-tab="careers"><span>💼</span> Careers</button>
+                    </div>
+
+                    <div class="tab-content">
+                        <!-- Overview Tab -->
+                        <div class="tab-panel active" id="overview">
+                            <div class="content-card glass-effect">
+                                <h2>🌾 About IAL Heho</h2>
+                                <p>The Institute of Agriculture and Livestock (Heho), located in Kalaw Township of Shan State, is Myanmar's premier practical agricultural training center. Situated in the cool Shan highlands, the institute offers 70% hands-on training across 100+ acres of working demonstration farms.</p>
+                                <p>Specializing in highland agriculture perfect for Shan plateau crops (cabbage, potato, coffee, tea) and livestock management, IAL Heho produces skilled agricultural technicians ready for immediate employment.</p>
+                            </div>
+
+                            <div class="content-card">
+                                <h2>Why Choose IAL Heho?</h2>
+                                <div class="features-list">
+                                    <div class="feature-item glow-effect">
+                                        <div class="feature-icon">🚜</div>
+                                        <div>
+                                            <h4>100+ Acre Training Farm</h4>
+                                            <p>Hands-on practice on real working farms with modern equipment</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item glow-effect">
+                                        <div class="feature-icon">🌾</div>
+                                        <div>
+                                            <h4>Highland Specialization</h4>
+                                            <p>Cabbage, potato, coffee, tea - perfect for Shan climate</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item glow-effect">
+                                        <div class="feature-icon">🐄</div>
+                                        <div>
+                                            <h4>Livestock Expertise</h4>
+                                            <p>Cattle, poultry, piggery with veterinary training</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item glow-effect">
+                                        <div class="feature-icon">🌤️</div>
+                                        <div>
+                                            <h4>Cool Climate Advantage</h4>
+                                            <p>Ideal highland location for temperate agriculture training</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content-card">
+                                <h2>Interactive Farm Gallery</h2>
+                                <div class="farm-gallery-grid">
+                                    <div class="farm-item">
+                                        <div class="farm-img farm-green"><span>🌾</span></div>
+                                        <div class="farm-overlay"><span>Rice Terraces</span></div>
+                                    </div>
+                                    <div class="farm-item">
+                                        <div class="farm-img farm-orange"><span>🐄</span></div>
+                                        <div class="farm-overlay"><span>Livestock Center</span></div>
+                                    </div>
+                                    <div class="farm-item">
+                                        <div class="farm-img farm-pink"><span>🌳</span></div>
+                                        <div class="farm-overlay"><span>Tea Plantation</span></div>
+                                    </div>
+                                    <div class="farm-item">
+                                        <div class="farm-img farm-purple"><span>🥬</span></div>
+                                        <div class="farm-overlay"><span>Vegetables</span></div>
+                                    </div>
+                                    <div class="farm-item">
+                                        <div class="farm-img farm-red"><span>🍎</span></div>
+                                        <div class="farm-overlay"><span>Fruit Orchards</span></div>
+                                    </div>
+                                    <div class="farm-item">
+                                        <div class="farm-img farm-yellow"><span>🌱</span></div>
+                                        <div class="farm-overlay"><span>Greenhouses</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Programs Tab -->
+                        <div class="tab-panel" id="majors">
+                            <div class="content-card glass-effect">
+                                <h2>Agricultural Diploma Programs</h2>
+                                <p class="subtitle">2-3 year courses • 70% practical training</p>
+                                <div class="majors-list">
+                                    <div class="major-card glow-effect">
+                                        <div class="major-header">
+                                            <div class="major-icon">🌾</div>
+                                            <div>
+                                                <h3>Crop Production</h3>
+                                                <span class="major-degree">Diploma (2 Years)</span>
+                                            </div>
+                                        </div>
+                                        <p class="major-desc">Rice, vegetables, highland crops, organic farming techniques</p>
+                                        <div class="major-subjects">
+                                            <span>🌾 Rice Cultivation</span>
+                                            <span>🥬 Vegetable Farming</span>
+                                            <span>🌱 Organic Methods</span>
+                                            <span>💧 Irrigation Systems</span>
+                                        </div>
+                                    </div>
+                                    <div class="major-card glow-effect">
+                                        <div class="major-header">
+                                            <div class="major-icon">🐄</div>
+                                            <div>
+                                                <h3>Livestock Management</h3>
+                                                <span class="major-degree">Diploma (2 Years)</span>
+                                            </div>
+                                        </div>
+                                        <p class="major-desc">Cattle rearing, poultry farming, piggery with veterinary basics</p>
+                                        <div class="major-subjects">
+                                            <span>🐄 Cattle Husbandry</span>
+                                            <span>🐔 Poultry Farming</span>
+                                            <span>🐖 Feed Management</span>
+                                            <span>🏥 Veterinary Care</span>
+                                        </div>
+                                    </div>
+                                    <div class="major-card glow-effect">
+                                        <div class="major-header">
+                                            <div class="major-icon">🌳</div>
+                                            <div>
+                                                <h3>Forestry & Horticulture</h3>
+                                                <span class="major-degree">Diploma (2 Years)</span>
+                                            </div>
+                                        </div>
+                                        <p class="major-desc">Tea, coffee, fruit orchards, plantation management</p>
+                                        <div class="major-subjects">
+                                            <span>🍵 Tea Plantation</span>
+                                            <span>☕ Coffee Cultivation</span>
+                                            <span>🍎 Fruit Orchards</span>
+                                            <span>🌲 Forest Management</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Farm Life Tab -->
+                        <div class="tab-panel" id="farm">
+                            <div class="content-card glass-effect">
+                                <h2>🚜 Farm Life Experience</h2>
+                                <p class="subtitle">70% hands-on training on 100+ acre campus</p>
+                                <div class="campus-features">
+                                    <div class="campus-card glow-effect">
+                                        <div class="campus-img farm-img farm-green">
+                                            <span>🌾</span>
+                                        </div>
+                                        <h3>Crop Research Farm</h3>
+                                        <p>Highland vegetables, rice trials, seed production</p>
+                                    </div>
+                                    <div class="campus-card glow-effect">
+                                        <div class="campus-img farm-img farm-orange">
+                                            <span>🐄</span>
+                                        </div>
+                                        <h3>Livestock Center</h3>
+                                        <p>Cattle breeding, poultry hatchery, piggery units</p>
+                                    </div>
+                                    <div class="campus-card glow-effect">
+                                        <div class="campus-img farm-img farm-pink">
+                                            <span>🌳</span>
+                                        </div>
+                                        <h3>Plantation Nursery</h3>
+                                        <p>Tea, coffee, temperate fruit tree nursery</p>
+                                    </div>
+                                </div>
+                                <div style="margin-top: 30px;">
+                                    <h3>Typical Student Day</h3>
+                                    <div class="schedule-grid">
+                                        <div class="schedule-item">
+                                            <span style="font-size: 1.5rem; font-weight: bold; color: #11998e;">6:00 AM</span><br>
+                                            <span>🌅 Morning Farm Duties</span>
+                                        </div>
+                                        <div class="schedule-item">
+                                            <span style="font-size: 1.5rem; font-weight: bold; color: #11998e;">8:00 AM</span><br>
+                                            <span>📚 Theory Classes</span>
+                                        </div>
+                                        <div class="schedule-item">
+                                            <span style="font-size: 1.5rem; font-weight: bold; color: #11998e;">10:00 AM</span><br>
+                                            <span>🚜 Field Practice</span>
+                                        </div>
+                                        <div class="schedule-item">
+                                            <span style="font-size: 1.5rem; font-weight: bold; color: #11998e;">3:00 PM</span><br>
+                                            <span>🔬 Laboratory Work</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Careers Tab -->
+                        <div class="tab-panel" id="careers">
+                            <div class="content-card glass-effect">
+                                <h2>💼 Career Opportunities</h2>
+                                <p class="subtitle">Immediate employment in agriculture sector</p>
+                                <div class="career-paths" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                                    <div class="career-card glow-effect" style="background: rgba(255,255,255,0.9); padding: 25px; border-radius: 15px; text-align: center;">
+                                        <div class="career-icon" style="font-size: 3.5rem; margin-bottom: 15px;">🌾</div>
+                                        <h3>Farm Supervisor</h3>
+                                        <p>Large plantations, government farms, cooperatives, export agriculture</p>
+                                    </div>
+                                    <div class="career-card glow-effect" style="background: rgba(255,255,255,0.9); padding: 25px; border-radius: 15px; text-align: center;">
+                                        <div class="career-icon" style="font-size: 3.5rem; margin-bottom: 15px;">🐄</div>
+                                        <h3>Livestock Technician</h3>
+                                        <p>Dairy farms, poultry companies, piggery operations, feed mills</p>
+                                    </div>
+                                    <div class="career-card glow-effect" style="background: rgba(255,255,255,0.9); padding: 25px; border-radius: 15px; text-align: center;">
+                                        <div class="career-icon" style="font-size: 3.5rem; margin-bottom: 15px;">🚜</div>
+                                        <h3>Agricultural Officer</h3>
+                                        <p>Government agriculture department, extension services, rural development</p>
+                                    </div>
+                                    <div class="career-card glow-effect" style="background: rgba(255,255,255,0.9); padding: 25px; border-radius: 15px; text-align: center;">
+                                        <div class="career-icon" style="font-size: 3.5rem; margin-bottom: 15px;">💰</div>
+                                        <h3>Own Farm Business</h3>
+                                        <p>Start commercial farming with expert practical training</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-profile" style="background: linear-gradient(135deg, #11998e, #38ef7d); color: white; padding: 60px 0;">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Ready to Grow Your Future?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 30px;">Join IAL Heho and become Myanmar's next agricultural leader</p>
+            <div class="cta-buttons">
+                <a href="uni.html" class="btn-secondary" style="background: white; color: #11998e; padding: 15px 30px; border-radius: 25px; text-decoration: none; margin-right: 15px;">← Explore More Universities</a>
+                <a href="#" class="gradient-btn" style="padding: 15px 30px; font-size: 1.1rem;">Start Farming Career</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- YOUR EXACT FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>High Schooler’s Tool</h3>
+                    <p>Empowering Myanmar students to make informed university choices.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="hst.html">Home</a></li>
+                        <li><a href="uni.html">Universities</a></li>
+                        <li><a href="career-journey.html">Career Journey</a></li>
+                        <li><a href="study-mode.html">Study mode</a></li>
+                        <li><a href="scholarships.html">Scholarships</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>High Schooler’s Tool</p>
+                    <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+                    <p>
+                        Facebook:
+                        <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+                            High Schooler’s Tool ARP
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 High Schooler’s Tool. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="upp.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Navbar toggle
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        if (hamburger && navLinks) {
+            hamburger.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+                hamburger.classList.toggle("active");
+            });
+            navLinks.querySelectorAll("a").forEach(link => {
+                link.addEventListener("click", () => {
+                    navLinks.classList.remove("active");
+                    hamburger.classList.remove("active");
+                });
+            });
+        }
+        
+        // Tab functionality
+        document.querySelectorAll(".tab-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+                document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+                btn.classList.add("active");
+                document.getElementById(btn.dataset.tab).classList.add("active");
+            });
+        });
+        
+        // Logo hover animation
+        const logo = document.querySelector('.auto-logo');
+        if (logo) {
+            logo.addEventListener('mouseenter', () => {
+                logo.style.transform = 'scale(1.05) rotate(2deg)';
+            });
+            logo.addEventListener('mouseleave', () => {
+                logo.style.transform = 'scale(1) rotate(0deg)';
+            });
+        }
+        
+        // Gallery hover effects
+        document.querySelectorAll('.farm-item').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                item.querySelector('.farm-overlay').style.opacity = '1';
+            });
+            item.addEventListener('mouseleave', () => {
+                item.querySelector('.farm-overlay').style.opacity = '0';
+            });
+        });
+    });
+    </script>
+</body>
+</html>
