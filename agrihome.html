@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Agricultural Institute (Homalin) - High Schooler's Tool</title>
+    <link rel="stylesheet" href="hst.css">
+    <link rel="stylesheet" href="upp.css">
+    <style>
+    /* HOMALIN CHINDWIN RIVER THEME */
+    .auto-logo {
+        width: 120px; height: 120px; border-radius: 20px;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 50%, #fdcb6e 100%);
+        box-shadow: 0 15px 35px rgba(108,92,231,0.4);
+        position: relative; overflow: hidden;
+    }
+    .auto-logo::before {
+        content: ''; position: absolute; top: 10px; left: 10px; right: 10px; height: 4px;
+        background: linear-gradient(90deg, #ffeb3b, #ff9800, #ffeb3b); border-radius: 2px;
+        animation: shine 3s infinite;
+    }
+    .auto-logo .logo-icon { font-size: 3.5rem; z-index: 2; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3)); }
+    .auto-logo .logo-text { font-size: 0.7rem; font-weight: bold; color: white; text-align: center; margin-top: 5px; text-shadow: 0 1px 2px rgba(0,0,0,0.5); letter-spacing: 1px; }
+    
+    /* HOMALIN SAFE GRADIENT CLASSES */
+    .hom-indigo { background: linear-gradient(135deg, #6c5ce7, #a29bfe); }
+    .hom-river { background: linear-gradient(135deg, #74b9ff, #0984e3); }
+    .hom-gold { background: linear-gradient(135deg, #fdcb6e, #e17055); }
+    .hom-green { background: linear-gradient(135deg, #00b894, #00cec9); }
+    .hom-earth { background: linear-gradient(135deg, #d63031, #e84393); }
+    .hom-sunset { background: linear-gradient(135deg, #fd79a8, #fdcb6e); }
+    
+    .farm-img { width: 100%; height: 250px; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem; border-radius: 15px 15px 0 0; }
+    
+    .gradient-bg { background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; }
+    .gradient-btn { background: linear-gradient(135deg, #6c5ce7, #a29bfe); border: none; color: white; padding: 12px 24px; border-radius: 25px; font-weight: bold; transition: all 0.3s ease; text-decoration: none; display: inline-block; }
+    .gradient-btn:hover { transform: scale(1.05); }
+    .glass-effect { background: rgba(255,255,255,0.9); backdrop-filter: blur(10px); border-radius: 20px; border: 1px solid rgba(255,255,255,0.2); }
+    .glow-effect:hover { box-shadow: 0 10px 30px rgba(108,92,231,0.4); transform: translateY(-5px); }
+    
+    .farm-gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+    .farm-item { position: relative; border-radius: 15px; overflow: hidden; transition: transform 0.3s ease; }
+    .farm-item:hover { transform: scale(1.05); }
+    .farm-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 20px; opacity: 0; transition: opacity 0.3s ease; }
+    
+    .modern-tabs .tab-btn { position: relative; padding: 15px 25px; margin: 0 5px; border-radius: 25px; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 2px solid rgba(255,255,255,0.2); transition: all 0.3s ease; cursor: pointer; }
+    .modern-tabs .tab-btn.active { background: linear-gradient(135deg, #6c5ce7, #a29bfe); box-shadow: 0 10px 30px rgba(108,92,231,0.4); transform: translateY(-3px); }
+    
+    .schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+    .schedule-item { background: rgba(255,255,255,0.9); padding: 20px; border-radius: 15px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+    
+    @keyframes shine { 0%, 100% { opacity: 1; transform: translateX(-100%); } 50% { opacity: 0.7; transform: translateX(100%); } }
+    @media (max-width: 768px) { .auto-logo { width: 100px; height: 100px; } .auto-logo .logo-icon { font-size: 3rem; } .auto-logo .logo-text { font-size: 0.6rem; } }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h2>HST</h2>
+                <span>High Schooler's Tool</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="hst.html">Home</a></li>
+                <li><a href="uni.html" class="active">Universities</a></li>
+                <li><a href="career-journey.html">Career journey</a></li>
+                <li><a href="study-mode.html">Study mode</a></li>
+                <li><a href="scholarships.html">Scholarships</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="uni-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-bg gradient-bg"></div>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="hst.html">Home</a> / 
+                <a href="uni.html">Universities</a> / 
+                <span>State Agricultural Institute (Homalin)</span>
+            </div>
+            <div class="uni-hero-content">
+                <!-- AUTO-GENERATED LOGO -->
+                <div class="uni-logo">
+                    <div class="auto-logo">
+                        <div class="logo-icon">🌾</div>
+                        <div class="logo-text">SAI<br>Homalin</div>
+                    </div>
+                </div>
+                <div class="uni-title">
+                    <h1>State Agricultural Institute (Homalin)</h1>
+                    <p class="uni-subtitle">15th SAI - Upper Chindwin Agriculture</p>
+                    <div class="uni-meta">
+                        <span><i>📍</i> Homalin Township, Sagaing Region</span>
+                        <span><i>🌾</i> 3-Year Diploma Programs</span>
+                        <span><i>🌊</i> Chindwin River Valley Farms</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="quick-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">🌾</div>
+                    <div class="stat-info"><h3>300+</h3><p>Students</p></div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🌊</div>
+                    <div class="stat-info"><h3>10+</h3><p>Specializations</p></div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🚤</div>
+                    <div class="stat-info"><h3>70+</h3><p>Acres River Farms</p></div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">📚</div>
+                    <div class="stat-info"><h3>35+</h3><p>Faculty</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="profile-content">
+        <div class="container">
+            <div class="content-layout">
+                <!-- Sidebar -->
+                <aside class="profile-sidebar">
+                    <div class="sidebar-card gradient-bg">
+                        <h3>🌾 Quick Info</h3>
+                        <div class="info-list">
+                            <div class="info-item"><strong>Type</strong><span>Government Agricultural Institute</span></div>
+                            <div class="info-item"><strong>Location</strong><span>Homalin Township, Sagaing Region</span></div>
+                            <div class="info-item"><strong>Farm Size</strong><span>70+ acres river valley farms</span></div>
+                            <div class="info-item"><strong>Established</strong><span>2019 (15th SAI in Myanmar)</span></div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Entrance Requirements</h3>
+                        <div class="requirement-box">
+                            <div class="requirement-item">
+                                <span class="req-label">Minimum Marks</span>
+                                <span class="req-value">320+ marks</span>
+                            </div>
+                            <div class="requirement-item">
+                                <span class="req-label">Duration</span>
+                                <div class="subject-tags">
+                                    <span class="subject-tag">3 Years</span>
+                                    <span class="subject-tag">Diploma</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card contact-card">
+                        <h3>🌊 Contact</h3>
+                        <div class="contact-info">
+                            <p><i>📍</i> Homalin Township, Sagaing Region</p>
+                            <p><i>🌐</i> Ministry of Agriculture, Livestock & Irrigation</p>
+                            <p><i>📧</i> Regional agriculture office</p>
+                        </div>
+                        <a href="#" class="contact-btn gradient-btn">Visit River Farms</a>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="profile-main">
+                    <div class="profile-tabs modern-tabs">
+                        <button class="tab-btn active" data-tab="overview"><span>🌾</span> Overview</button>
+                        <button class="tab-btn" data-tab="majors"><span>📚</span> Programs</button>
+                        <button class="tab-btn" data-tab="farm"><span>🌊</span> River Farms</button>
+                        <button class="tab-btn" data-tab="careers"><span>💼</span> Careers</button>
+                    </div>
+
+                    <div class="tab-content">
+                        <!-- Overview Tab -->
+                        <div class="tab-panel active" id="overview">
+                            <div class="content-card glass-effect">
+                                <h2>🌾 About SAI Homalin</h2>
+                                <p>Established in November 2019 as the **15th State Agricultural Institute** in Myanmar and the **2nd in Sagaing Region**, SAI Homalin serves the agricultural needs of Upper Chindwin valley. Located along the Chindwin River, the institute offers 3-year diploma programs with intensive practical training on river valley agriculture tailored to Sagaing's flood-prone lowlands.</p>
+                                <p>With 70+ acres of demonstration farms focusing on flood-tolerant rice, pulses, and riverbank horticulture, SAI Homalin trains agricultural technicians for northwestern Myanmar's unique riverine agricultural ecosystem.</p>
+                            </div>
+
+                            <div class="content-card">
+                                <h2>Why Choose SAI Homalin?</h2>
+                                <div class="features-list">
+                                    <div class="feature-item glow-effect">
+                                        <div class="feature-icon">🌊</div>
+                                        <div>
+                                            <h4>River Valley Agriculture</h4>
+                                            <p>Flood-tolerant rice, pulses, riverbank horticulture</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item glow-effect">
+                                        <div class="feature-icon">🚤</div>
+                                        <div>
+                                            <h4>Chindwin River Location</h4>
+                                            <p>Perfect for flood plain farming techniques</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item glow-effect">
+                                        <div class="feature-icon">🌾</div>
+                                        <div>
+                                            <h4>Newest SAI (2019)</h4>
+                                            <p>Modern facilities, latest agricultural techniques</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content-card">
+                                <h2>River Farm Gallery</h2>
+                                <div class="farm-gallery-grid">
+                                    <div class="farm-item">
+                                        <div class="farm-img hom-indigo"><span>🌾</span></div>
+                                        <div class="farm-overlay"><span>Flood-Tolerant Rice</span></div>
+                                    </div>
+                                    <div class="farm-item">
+                                        <div class="farm-img hom-river"><span>🌊</span></div>
+                                        <div class="farm-overlay"><span>Riverbank Farms</span></div>
+                                    </div>
+                                    <div class="farm-item">
+                                        <div class="farm-img hom-gold"><span>🌱</span></div>
+                                        <div class="farm-overlay"><span>Pulses & Beans</span></div>
+                                    </div>
+                                    <div class="farm-item">
+                                        <div class="farm-img hom-green"><span>🥬</span></div>
+                                        <div class="farm-overlay"><span>River Vegetables</span></div>
+                                    </div>
+                                    <div class="farm-item">
+                                        <div class="farm-img hom-earth"><span>🐟</span></div>
+                                        <div class="farm-overlay"><span>River Fisheries</span></div>
+                                    </div>
+                                    <div class="farm-item">
+                                        <div class="farm-img hom-sunset"><span>🍛</span></div>
+                                        <div class="farm-overlay"><span>Sesame Fields</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Programs Tab -->
+                        <div class="tab-panel" id="majors">
+                            <div class="content-card glass-effect">
+                                <h2>River Valley Diploma Programs</h2>
+                                <p class="subtitle">3-year courses • 70% practical river farming</p>
+                                <div class="majors-list">
+                                    <div class="major-card glow-effect">
+                                        <div class="major-header">
+                                            <div class="major-icon">🌾</div>
+                                            <div>
+                                                <h3>Flood-Tolerant Crops</h3>
+                                                <span class="major-degree">Diploma (3 Years)</span>
+                                            </div>
+                                        </div>
+                                        <p class="major-desc">Floating rice, flood-resistant varieties, riverbank cultivation</p>
+                                        <div class="major-subjects">
+                                            <span>🌾 Floating Rice</span>
+                                            <span>🌱 Pulses</span>
+                                            <span>🌾 Sesame</span>
+                                            <span>🥬 Flood Vegetables</span>
+                                        </div>
+                                    </div>
+                                    <div class="major-card glow-effect">
+                                        <div class="major-header">
+                                            <div class="major-icon">🌊</div>
+                                            <div>
+                                                <h3>Riverine Agriculture</h3>
+                                                <span class="major-degree">Diploma (3 Years)</span>
+                                            </div>
+                                        </div>
+                                        <p class="major-desc">Riverbank horticulture, flood management, water harvesting</p>
+                                        <div class="major-subjects">
+                                            <span>🌊 Flood Management</span>
+                                            <span>🥬 Riverbank Crops</span>
+                                            <span>💧 Water Harvesting</span>
+                                            <span>🐟 River Fisheries</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- River Farms Tab -->
+                        <div class="tab-panel" id="farm">
+                            <div class="content-card glass-effect">
+                                <h2>🌊 River Farm Experience</h2>
+                                <p class="subtitle">70% hands-on training on Chindwin river farms</p>
+                                <div class="campus-features" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                                    <div class="campus-card glow-effect">
+                                        <div class="campus-img farm-img hom-indigo">
+                                            <span>🌾</span>
+                                        </div>
+                                        <h3>Floating Rice Fields</h3>
+                                        <p>Flood-tolerant rice varieties unique to Chindwin valley</p>
+                                    </div>
+                                    <div class="campus-card glow-effect">
+                                        <div class="campus-img farm-img hom-river">
+                                            <span>🌊</span>
+                                        </div>
+                                        <h3>Riverbank Farms</h3>
+                                        <p>Flood plain horticulture, pulse cultivation</p>
+                                    </div>
+                                    <div class="campus-card glow-effect">
+                                        <div class="campus-img farm-img hom-gold">
+                                            <span>🌱</span>
+                                        </div>
+                                        <h3>Pulse & Oilseed Crops</h3>
+                                        <p>Sesame, beans, groundnut for Upper Chindwin</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Careers Tab -->
+                        <div class="tab-panel" id="careers">
+                            <div class="content-card glass-effect">
+                                <h2>💼 Chindwin Valley Careers</h2>
+                                <p class="subtitle">Immediate employment in river agriculture</p>
+                                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                                    <div class="career-card glow-effect" style="background: rgba(255,255,255,0.9); padding: 25px; border-radius: 15px; text-align: center;">
+                                        <div class="career-icon" style="font-size: 3.5rem; margin-bottom: 15px;">🌾</div>
+                                        <h3>River Farm Supervisor</h3>
+                                        <p>Flood plain rice, pulse cultivation management</p>
+                                    </div>
+                                    <div class="career-card glow-effect" style="background: rgba(255,255,255,0.9); padding: 25px; border-radius: 15px; text-align: center;">
+                                        <div class="career-icon" style="font-size: 3.5rem; margin-bottom: 15px;">🌊</div>
+                                        <h3>Flood Management Tech</h3>
+                                        <p>Riverbank agriculture, flood control systems</p>
+                                    </div>
+                                    <div class="career-card glow-effect" style="background: rgba(255,255,255,0.9); padding: 25px; border-radius: 15px; text-align: center;">
+                                        <div class="career-icon" style="font-size: 3.5rem; margin-bottom: 15px;">🚜</div>
+                                        <h3>Agricultural Officer</h3>
+                                        <p>Sagaing Region agriculture department</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-profile" style="background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 60px 0;">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Ready for River Valley Agriculture?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 30px;">Join SAI Homalin - 15th SAI (Established 2019)</p>
+            <div class="cta-buttons">
+                <a href="uni.html" style="background: white; color: #6c5ce7; padding: 15px 30px; border-radius: 25px; text-decoration: none; margin-right: 15px;">← More Universities</a>
+                <a href="#" class="gradient-btn" style="padding: 15px 30px; font-size: 1.1rem;">Start River Farm Career</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- YOUR EXACT FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>High Schooler's Tool</h3>
+                    <p>Empowering Myanmar students to make informed university choices.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="hst.html">Home</a></li>
+                        <li><a href="uni.html">Universities</a></li>
+                        <li><a href="career-journey.html">Career Journey</a></li>
+                        <li><a href="study-mode.html">Study mode</a></li>
+                        <li><a href="scholarships.html">Scholarships</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>High Schooler's Tool</p>
+                    <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+                    <p>
+                        Facebook:
+                        <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+                            High Schooler's Tool ARP
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 High Schooler's Tool. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="upp.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Navbar toggle
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        if (hamburger && navLinks) {
+            hamburger.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+                hamburger.classList.toggle("active");
+            });
+        }
+        
+        // Tab functionality
+        document.querySelectorAll(".tab-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+                document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+                btn.classList.add("active");
+                document.getElementById(btn.dataset.tab).classList.add("active");
+            });
+        });
+        
+        // Logo hover
+        const logo = document.querySelector('.auto-logo');
+        if (logo) {
+            logo.addEventListener('mouseenter', () => {
+                logo.style.transform = 'scale(1.05) rotate(2deg)';
+            });
+            logo.addEventListener('mouseleave', () => {
+                logo.style.transform = 'scale(1) rotate(0deg)';
+            });
+        }
+        
+        // Gallery hover
+        document.querySelectorAll('.farm-item').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                item.querySelector('.farm-overlay').style.opacity = '1';
+            });
+            item.addEventListener('mouseleave', () => {
+                item.querySelector('.farm-overlay').style.opacity = '0';
+            });
+        });
+    });
+    </script>
+</body>
+</html>
