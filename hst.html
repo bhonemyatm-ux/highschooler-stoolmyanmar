@@ -9,25 +9,31 @@
 </head>
 
 <body>
-  
+
   <!-- Navigation Bar -->
   <nav class="navbar">
     <div class="container">
       <div class="logo">
-        <h2>HST</h2>
-        <span>High Schooler's Tool</span>
+        <img src="hstlogo.jpg" alt="HST Logo" class="logo-img" />
+        <div class="logo-text">
+          <h2>HST</h2>
+          <span>High Schooler's Tool</span>
+        </div>
       </div>
       <ul class="nav-links">
-        <li><a href="hst.html" class="active">Home</a></li>
-        <li><a href="uni.html">Universities</a></li>
-        <li><a href="career-journey.html">Career journey</a></li>
-        <li><a href="study-mode.html">Study mode</a></li>
-        <li><a href="scholarships.html">Scholarships</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-      <div class="hamburger">
-        <span></span><span></span><span></span>
-      </div>
+                <li><a href="hst.html">Home</a></li>
+                <li><a href="uni.html" class="active">Universities</a></li>
+                 <li><a href="career-journey.html">Career journey</a></li>
+                 <li><a href="courses.html">Courses</a></li>
+                <li><a href="study-mode.html">Study mode</a></li>
+                <li><a href="scholarships.html">Scholarships</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </nav>
 
@@ -60,47 +66,24 @@
         <!-- Quick Filter Chips -->
         <div class="quick-filters">
           <p class="filter-label">Popular searches:</p>
-          <button type="button" class="filter-chip" data-search="Computer">💻 Computer </button>
+          <button type="button" class="filter-chip" data-search="Computer">💻 Computer</button>
           <button type="button" class="filter-chip" data-search="Engineering">⚙️ Engineering</button>
-          
           <button type="button" class="filter-chip" data-search="Medical">⚕️ Medicine</button>
-          
         </div>
       </div>
 
-      <!-- ✅ Swiper (NOW BELOW search bar) -->
+      <!-- Promo Swiper Banner -->
       <div class="promo-wrap" id="promoWrap">
-        <button class="promo-x" id="promoX" aria-label="Close promo" type="button">×</button>
-
+        <button class="promo-x" id="promoX" aria-label="Close banner" type="button">×</button>
         <div class="swiper promo-swiper">
           <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <img src="banner5 .jpg" alt="Banner 1">
-            </div>
-
-            <div class="swiper-slide">
-              <img src="banner2.jpg" alt="Banner 2">
-            </div>
-
-            <div class="swiper-slide">
-              <img src="banner3.jpg" alt="Banner 3">
-            </div>
-
-            <div class="swiper-slide">
-              <img src="banner4.jpg" alt="Banner 4">
-            </div>
-
-            <div class="swiper-slide">
-              <img src="banner.jpg" alt="Banner 5">
-            </div>
-
-            <div class="swiper-slide">
-              <img src="banner6.jpg" alt="Banner 6">
-            </div>
-
+            <div class="swiper-slide"><img src="banner5 .jpg" alt="Banner 1" loading="lazy"></div>
+            <div class="swiper-slide"><img src="banner2.jpg"   alt="Banner 2" loading="lazy"></div>
+            <div class="swiper-slide"><img src="banner3.jpg"   alt="Banner 3" loading="lazy"></div>
+            <div class="swiper-slide"><img src="banner4.jpg"   alt="Banner 4" loading="lazy"></div>
+            <div class="swiper-slide"><img src="banner.jpg"    alt="Banner 5" loading="lazy"></div>
+            <div class="swiper-slide"><img src="banner6.jpg"   alt="Banner 6" loading="lazy"></div>
           </div>
-
           <div class="swiper-pagination"></div>
         </div>
       </div>
@@ -142,180 +125,55 @@
     <div class="container">
       <h2>Ready to Plan Your Future?</h2>
       <p>Start exploring universities and find the perfect match for your interests</p>
-      <button class="cta-button" onclick="window.location.href='uni.html'">Get Started</button>
+      <button class="cta-button" type="button">Get Started</button>
     </div>
   </section>
 
- <!-- Footer -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-content">
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
 
-      <div class="footer-section">
-        <h3>High Schooler’s Tool</h3>
-        <p>Empowering Myanmar students to make informed university choices.</p>
-      </div>
+        <div class="footer-section">
+          <h3>High Schooler's Tool</h3>
+          <p>Empowering Myanmar students to make informed university choices.</p>
+        </div>
 
-      <div class="footer-section">
-        <h4>Quick Links</h4>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
         <ul>
           <li><a href="hst.html">Home</a></li>
           <li><a href="uni.html">Universities</a></li>
           <li><a href="career-journey.html">Career Journey</a></li>
+          <li><a href="courses.html">Courses</a></li>
           <li><a href="study-mode.html">Study mode</a></li>
           <li><a href="scholarships.html">Scholarships</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
       </div>
 
-      <div class="footer-section">
-        <h4>Contact</h4>
-        <p>High Schooler’s Tool</p>
-        <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
-        <p>
-          Facebook:
-          <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
-            High Schooler’s Tool ARP
-          </a>
-        </p>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>High Schooler's Tool</p>
+          <p>Email: <a href="mailto:highschoolertoolmm@gmail.com">highschoolertoolmm@gmail.com</a></p>
+          <p>
+            Facebook:
+            <a href="https://www.facebook.com/share/17isKhcumg/" target="_blank" rel="noopener noreferrer">
+              High Schooler's Tool ARP
+            </a>
+          </p>
+        </div>
+
       </div>
-
+      <div class="footer-bottom">
+        <p>© 2026 High Schooler's Tool. All rights reserved.</p>
+      </div>
     </div>
+  </footer>
 
-    <div class="footer-bottom">
-      <p>© 2026 High Schooler’s Tool. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
-
-  <!-- ✅ IMPORTANT: load Swiper JS BEFORE your custom script -->
+  <!-- Swiper JS — load BEFORE hst.js -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="hst.js"></script>
 
-  <!-- Your JavaScript -->
-  <script>
-    console.log('🎓 High Schooler\'s Tool - Loading...');
-
-    document.addEventListener('DOMContentLoaded', function() {
-      console.log('✅ Page loaded!');
-
-      // ✅ Swiper init (THIS was missing before)
-      // Swiper supports loop/autoplay/pagination via these options. [web:17]
-      new Swiper(".promo-swiper", {
-        loop: true,
-        autoplay: { delay: 2500, disableOnInteraction: false },
-        pagination: { el: ".promo-wrap .swiper-pagination", clickable: true }
-      });
-
-      // Close promo (optional)
-      const promoWrap = document.getElementById("promoWrap");
-      const promoX = document.getElementById("promoX");
-      if (promoWrap && promoX) {
-        promoX.addEventListener("click", () => promoWrap.style.display = "none");
-      }
-
-      // Search functionality
-      const searchForm = document.getElementById('searchForm');
-      const searchInput = document.getElementById('homeSearch');
-
-      if (searchForm && searchInput) {
-        console.log('✅ Search elements found!');
-
-        searchForm.addEventListener('submit', function(e) {
-          e.preventDefault();
-          console.log('🔍 Search button clicked!');
-
-          const searchTerm = searchInput.value.trim();
-          console.log('Search term:', searchTerm);
-
-          if (searchTerm === '') {
-            searchInput.style.animation = 'shake 0.3s';
-            searchInput.placeholder = '⚠️ Please enter a search term';
-            searchInput.focus();
-
-            setTimeout(() => {
-              searchInput.style.animation = '';
-              searchInput.placeholder = 'Search by university name, major, or location...';
-            }, 2000);
-            return;
-          }
-
-          console.log('✅ Redirecting to uni.html...');
-          window.location.href = 'uni.html?search=' + encodeURIComponent(searchTerm);
-        });
-
-        console.log('✅ Form submit handler attached!');
-      } else {
-        console.error('❌ Search elements NOT found!');
-      }
-
-      // Filter chips
-      const filterChips = document.querySelectorAll('.filter-chip');
-      console.log('Found ' + filterChips.length + ' filter chips');
-
-      filterChips.forEach(function(chip) {
-        chip.addEventListener('click', function() {
-          const searchTerm = this.getAttribute('data-search');
-          console.log('Quick search:', searchTerm);
-
-          if (searchTerm) {
-            window.location.href = 'uni.html?search=' + encodeURIComponent(searchTerm);
-          }
-        });
-      });
-
-      // Mobile menu
-      const hamburger = document.querySelector('.hamburger');
-      const navLinks = document.querySelector('.nav-links');
-
-      if (hamburger && navLinks) {
-        hamburger.addEventListener('click', function() {
-          navLinks.classList.toggle('active');
-          hamburger.classList.toggle('active');
-          console.log('📱 Mobile menu toggled');
-        });
-
-        document.addEventListener('click', function(e) {
-          if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
-            navLinks.classList.remove('active');
-            hamburger.classList.remove('active');
-          }
-        });
-      }
-
-      console.log('✅ All scripts initialized!');
-    });
-
-    // Shake animation
-    const style = document.createElement('style');
-    style.textContent = `
-      @keyframes shake {
-        0%, 100% { transform: translateX(0); }
-        25% { transform: translateX(-10px); }
-        75% { transform: translateX(10px); }
-      }
-    `;
-    document.head.appendChild(style);
-    // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyCqcET4vhCP-fRZi4AVDIbmh9J6__Ec8l0",
-  authDomain: "hst-mm.firebaseapp.com",
-  projectId: "hst-mm",
-  storageBucket: "hst-mm.firebasestorage.app",
-  messagingSenderId: "261062104857",
-  appId: "1:261062104857:web:99da060e35650b69919788",
-  measurementId: "G-MQ1DWNFSYG"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-  </script>
 </body>
 </html>
